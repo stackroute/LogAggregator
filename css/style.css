@@ -1,0 +1,38 @@
+/* Navbar styling start */
+.navbar-brand
+{
+  padding:13px 15px;
+}
+
+/* Navbar styling end */
+#main-tab{
+  margin-top: 100px;
+
+}
+#main-tab .tab-content{
+  width: 100% !important;
+  height: 400px;
+  border:1px solid #e3e3e3;
+  border-top: none;
+}
+#main-tab  .nav-tabs li {
+  width:33.3333333333333%;
+  text-align: center;
+
+}
+#main-tab  .nav-tabs li a{
+    color:black;
+    font-size: 14px;
+}
+/*#main-tab .tab1{
+  background-color:#d9534f;
+}
+#main-tab .tab2{
+  background-color:#f0ad4e;
+}
+#main-tab .tab3{
+  background-color:#5cb85c;
+}*/
+/*#main-tab .active{
+  background-color:#333;
+}*/
