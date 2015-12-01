@@ -1,18 +1,18 @@
 $(document).ready(function() {
-  var svg = d3.select(".wrap").append("svg").attr("width",500).attr("height",400);
+  var svg = d3.select(".wrap").append("svg").attr("width",600).attr("height",400);
   var g = svg.append("g").attr("id","donut");
   color = d3.scale.category10();
 
   var colorLegendG = svg.append("g")
               .attr("class", "color-legend")
-              .attr("transform", "translate(400, 60)")
-              .style("font-size", "15px");
+              .attr("transform", "translate(470, 120)")
+              .style("font-size", "16px");
 
   var colorLegend = d3.legend.color()
                   .scale(color)
                   .shapePadding(10)
-                  .shapeWidth(15)
-                  .shapeHeight(15)
+                  .shapeWidth(18)
+                  .shapeHeight(18)
                   .labelOffset(4)
                   .orient("vertical");
 
@@ -50,7 +50,7 @@ $(document).ready(function() {
         }
       })
     };
-    
+
     $('.criteriaPane').on("click", function(e) {
       // debugger
 
