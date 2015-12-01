@@ -8,31 +8,29 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
 
   <!-- Custom CSS -->
-<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <!-- Include Modernizr in the head, before any other Javascript -->
   <script src="js/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
-    <!--nav bar start -->
-
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-  <div class="navbar-header">
+  <!--nav bar start -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
           <a class="navbar-brand" href="/"><img src="img/logo.png" alt="Logo" height="100%"></a>
-  </div>
-        <div class="navbar-collapse collapse navbar-responsive-collapse">
-
-          <ul class="nav navbar-nav">
-            <li class="" ><a href="#">Home</a></li>
-            <li class="dropdown" id="home">
-              <a href="#"  class="dropdown-toggle" data-toggle="dropdown">
-                About us<strong class="caret"></strong>
-              </a>
+      </div>
+      <div class="navbar-collapse collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav">
+          <li class="" ><a href="#">Home</a></li>
+          <li class="dropdown" id="home">
+            <a href="#"  class="dropdown-toggle" data-toggle="dropdown">
+              About us<strong class="caret"></strong>
+            </a>
             <ul class="dropdown-menu">
               <li>
                 <a href="#">Services</a>
@@ -49,159 +47,91 @@
               <li>
                 <a href="#">Careers</a>
               </li>
-
             </ul><!-- end dropdown-menu -->
           </li>
-          </ul>
-
-
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <span class="glyphicon glyphicon-user"></span> My Account<strong class="caret"></strong>
-              </a>
-              <ul class="dropdown-menu">
-                <table class="table table-hover">
-                  <tr><td>
-                <li>
-                  <a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a>
-                </li></td></tr>
-                <tr><td>
-                <li>
-                  <a href="#"><span class="glyphicon glyphicon-refresh"></span> Update Profile</a>
-                </li></td>
-                </tr>
-                <tr><td>
-                <li>
-                  <a href="#"><span class="glyphicon glyphicon-briefcase"></span> Billing</a>
-                </li></td></tr>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <span class="glyphicon glyphicon-user"></span> My Account<strong class="caret"></strong>
+            </a>
+            <ul class="dropdown-menu">
+              <table class="table table-hover">
                 <tr>
-
-                <!-- <li class="divider"></li> -->
-                <td>
-                <li>
-                  <a href="#"><span class="glyphicon glyphicon-off"></span> Sign out</a>
-                </li></td>
+                  <td>
+                    <li>
+                      <a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a>
+                    </li>
+                  </td>
                 </tr>
-                </table>
-              </ul>
-            </li>
-          </ul>
+                <tr>
+                  <td>
+                    <li>
+                      <a href="#"><span class="glyphicon glyphicon-refresh"></span> Update Profile</a>
+                    </li>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <li>
+                      <a href="#"><span class="glyphicon glyphicon-briefcase"></span> Billing</a>
+                    </li>
+                  </td>
+                </tr>
+                <tr>
+                <!-- <li class="divider"></li> -->
+                  <td>
+                    <li>
+                      <a href="#"><span class="glyphicon glyphicon-off"></span> Sign out</a>
+                    </li>
+                  </td>
+                </tr>
+              </table>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><!-- Navbar End-->
+  <div class="container">
+  	<div class="tabbable" id="main-tab">
+  		<ul class="nav nav-tabs">
+  			<li class="active tab1"><a href="#logListing" data-toggle="tab">Log Listing</a></li>
+  			<li class="tab2"><a href="#agentAnalytics" data-toggle="tab">User Agent</a></li>
+        <li class="tab3"><a href="#requestRate" data-toggle="tab">Request Rate</a></li>
+  		</ul>
+  		<div class="tab-content">
+  			<div class="tab-pane active" id="logListing">
+
+  			</div><!-- end tab-pane -->
+
+  			<div class="tab-pane" id="agentAnalytics">
+          <div class="btn-group-vertical criteriaGroup" role="group" aria-label="...">
+            <button type="button" class="btn btn-default criteriaPane" value=browser id="browserShare">Browser Share</button>
+            <button type="button" class="btn btn-default criteriaPane" value=os id="osShare">OS Share</button>
           </div>
-        </div>
-      </nav><!-- Navbar End-->
-<div class="container">
-	<div class="tabbable" id="main-tab">
-		<ul class="nav nav-tabs">
-			<li class="active tab1"><a href="#logListing" data-toggle="tab">Log Listing</a></li>
-			<li class="tab2"><a href="#agentAnalytics" data-toggle="tab">User Agent</a></li>
-      <li class="tab3"><a href="#requestRate" data-toggle="tab">Request Rate</a></li>
-		</ul>
-		<div class="tab-content">
-			<div class="tab-pane active" id="logListing">
-			</div><!-- end tab-pane -->
+          <div class="wrap">
 
-			<div class="tab-pane" id="agentAnalytics">
-        <div class="btn-group-vertical criteriaGroup" role="group" aria-label="...">
-          <button type="button" class="btn btn-default criteriaPane" value=browser id="browserShare">Browser Share</button>
-          <button type="button" class="btn btn-default criteriaPane" value=os id="osShare">OS Share</button>
-        </div>
-        <div class="wrap">
+          </div>
+  			</div><!-- end tab-pane -->
+        
+        <div class="tab-pane" id="requestRate">
 
-        </div>
-			</div><!-- end tab-pane -->
-      <div class="tab-pane" id="requestRate">
-
-      </div><!-- end tab-pane -->
-		</div><!-- end tab-content -->
-	</div><!-- end tabbable -->
-</div>
+        </div><!-- end tab-pane -->
+  		</div><!-- end tab-content -->
+  	</div><!-- end tabbable -->
+  </div>
   <!-- All Javascript at the bottom of the page for faster page loading -->
 	<script src="js/jquery-1.11.3.min.js"></script>
 	<!-- Bootstrap JS -->
 	<script src="js/bootstrap.min.js"></script>
 	<!-- Custom JS -->
-	<script src="js/script.js"></script>
+
   <script src="D3/js/d3.min.js"></script>
   <script src="D3/js/d3-legend.js"></script>
   <script src="D3/js/d3.tip.js"></script>
   <script src="D3/js/agentAnalytics.js"></script>
-
-  <script>
-
-  $(document).ready(function() {
-    var svg = d3.select(".wrap").append("svg").attr("width",500).attr("height",400);
-    var g = svg.append("g").attr("id","donut");
-    color = d3.scale.category10();
-
-    var colorLegendG = svg.append("g")
-                .attr("class", "color-legend")
-                .attr("transform", "translate(400, 60)")
-                .style("font-size", "15px");
-
-    var colorLegend = d3.legend.color()
-                    .scale(color)
-                    .shapePadding(10)
-                    .shapeWidth(15)
-                    .shapeHeight(15)
-                    .labelOffset(4)
-                    .orient("vertical");
-
-    var nestedData, data;
-
-
-      var render = function( element ) {
-        console.log("hi this is working");
-        var nestKey = element.attr("value");
-        d3.json("sampledata/agentData.json", function (error, data) {
-
-          d3.select("#donut").html="";
-          d3.select(".color-legend").html="";
-          console.log(nestKey);
-
-          nestedData = d3.nest()
-                          .key(function(d) { return d[nestKey]; })
-                          .entries(data);
-
-          console.log(nestedData);
-
-          color.domain(nestedData.map(function (data) {
-              return data.key;
-          }));
-          Donut3D.draw("donut", randomData(), 200, 200, 170, 140, 30, 0.4);
-          Donut3D.transition("salesDonut", randomData(), 130, 100, 30, 0.4);
-
-          console.log(colorLegend);
-          colorLegendG.call(colorLegend);
-
-          function randomData(){
-            return nestedData.map(function(d, i){
-              return {label:d.key, value:d.values.length, color:color.range()[i]};
-            });
-          }
-        })
-      };
-
-
-
-
-      $('.criteriaPane').on("click", function(e) {
-        // debugger
-
-        render( $(this) );
-        $('.criteriaPane').css("border-left","0");
-        $(this).css("border-left", "4px solid blue");
-        e.preventDefault();
-      });
-
-
-      $('.tab2').on("click", function(e) {
-        $("#browserShare").css("border-left", "4px solid blue");
-        render( $("#browserShare"));
-      });
-  });
-
-  </script>
+  <script src="js/script.js"></script>
 
 </body>
 </html>
