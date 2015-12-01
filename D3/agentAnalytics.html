@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 960px;
+  height: 500px;
+  position: relative;
+}
+path.slice{
+	stroke-width:2px;
+}
+polyline{
+	opacity: .3;
+	stroke: black;
+	stroke-width: 2px;
+	fill: none;
+}
+svg text.percent{
+	fill:white;
+	text-anchor:middle;
+	font-size:12px;
+}
+
+</style>
+</head>
+<body onload="change('browser')">
+  <div class="ex1">
+<input type="radio" name="criteria" value="browser" onchange="change(this.value)" checked="checked">Browser</input>
+<input type="radio" name="criteria" value="os" onchange="change(this.value)">OS</input>
+<script src="D3/js/d3.min.js"></script>
+<script src="D3/js/d3-legend.min.js"></script>
+<script src="D3/js/d3.tip.js"></script>
+<script src="D3/js/agentAnalytics.js"></script>
+<script>
+  var svg = d3.select(".wrap").append("svg").attr("width",700).attr("height",300);
+  var g = svg.append("g").attr("id","salesDonut");
+  var color = d3.scale.category10();
+  var colorLegendG = svg.append("g")
+              .attr("class", "color-legend")
+              .attr("transform", "translate(300, 0)")
+              .style("font-size", "12px");
+
+  var colorLegend = d3.legend.color()
+                  .scale(color)
+                  .shapePadding(10)
+                  .shapeWidth(15)
+                  .shapeHeight(15)
+                  .labelOffset(4)
+                  .orient("vertical");
+
+  function change(nestKey) {
+    d3.select(".color-legend").html="";
+    console.log(nestKey);
+    var salesData = d3.json("sampledata/agentData.json", function (error, data) {
+    var nestedData = d3.nest()
+                        .key(function(d) { return d[nestKey]; })
+                        .entries(data);
+
+    console.log(nestedData);
+
+    color.domain(nestedData.map(function (data) {
+        return data.key;
+      }));
+    Donut3D.transition("salesDonut", randomData(), 130, 100, 30, 0.4);
+    Donut3D.draw("salesDonut", randomData(), 150, 150, 130, 100, 30, 0.4);
+
+    colorLegendG.call(colorLegend);
+
+    function randomData(){
+      return nestedData.map(function(d, i){
+        return {label:d.key, value:d.values.length, color:color.range()[i]};});
+    }
+  });
+  }
+</script>
+</div>
+</body>
+</html>
