@@ -63,3 +63,8 @@
   float: right;
   height: 100%;
 }
+
+.wrap svg{
+  display: block;
+  margin: auto;
+}

@@ -114,8 +114,8 @@
 			.each(function(d){this._current=d;});
 
 		slices.selectAll(".percent").data(_data).enter().append("text").attr("class", "percent")
-			.attr("x",function(d){ return 0.6*rx*Math.cos(0.5*(d.startAngle+d.endAngle));})
-			.attr("y",function(d){ return 0.6*ry*Math.sin(0.5*(d.startAngle+d.endAngle));})
+			.attr("x",function(d){ return 0.7*rx*Math.cos(0.5*(d.startAngle+d.endAngle));})
+			.attr("y",function(d){ return 0.7*ry*Math.sin(0.5*(d.startAngle+d.endAngle));})
 			.text(getPercent).each(function(d){this._current=d;});
 
 	}
