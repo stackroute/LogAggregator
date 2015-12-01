@@ -68,3 +68,7 @@
   display: block;
   margin: auto;
 }
+
+.nav li.active a{
+  background-color: lightblue !important;
+}

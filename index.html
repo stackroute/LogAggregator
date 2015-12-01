@@ -153,9 +153,7 @@
       var render = function( element ) {
         console.log("hi this is working");
         var nestKey = element.attr("value");
-        d3.json("sampledata/agentData.json", function (error, dat) {
-          data = dat;
-
+        d3.json("sampledata/agentData.json", function (error, data) {
 
           d3.select("#donut").html="";
           d3.select(".color-legend").html="";
@@ -171,6 +169,7 @@
               return data.key;
           }));
           Donut3D.draw("donut", randomData(), 200, 200, 170, 140, 30, 0.4);
+          Donut3D.transition("salesDonut", randomData(), 130, 100, 30, 0.4);
 
           console.log(colorLegend);
           colorLegendG.call(colorLegend);
@@ -184,12 +183,21 @@
       };
 
 
-      render( $("#browserShare"));
+
 
       $('.criteriaPane').on("click", function(e) {
         // debugger
+
         render( $(this) );
+        $('.criteriaPane').css("border-left","0");
+        $(this).css("border-left", "4px solid blue");
         e.preventDefault();
+      });
+
+
+      $('.tab2').on("click", function(e) {
+        $("#browserShare").css("border-left", "4px solid blue");
+        render( $("#browserShare"));
       });
   });
 
