@@ -1,5 +1,11 @@
 !function(){
 	var Donut3D={};
+  var tip = d3.tip()
+            .attr('class', 'd3-tip')
+            .offset([-10, 0])
+            .html(function(d) {
+              return "<strong>"+d.data.label+" : </strong> <span style='color:lightblue'>" +d.value+ "</span>";
+            });
 
 	function pieTop(d, rx, ry, ir ){
 		if(d.endAngle - d.startAngle == 0 ) return "M 0 0";
@@ -91,6 +97,7 @@
 
 	Donut3D.draw=function(id, data, x /*center x*/, y/*center y*/,
 			rx/*radius x*/, ry/*radius y*/, h/*height*/, ir/*inner radius*/){
+    d3.select("#"+id).call(tip, data);
 
 		var _data = d3.layout.pie().sort(null).value(function(d) {return d.value;})(data);
 
@@ -100,13 +107,17 @@
 		slices.selectAll(".innerSlice").data(_data).enter().append("path").attr("class", "innerSlice")
 			.style("fill", function(d) { return d3.hsl(d.data.color).darker(0.7); })
 			.attr("d",function(d){ return pieInner(d, rx+0.5,ry+0.5, h, ir);})
-			.each(function(d){this._current=d;});
+			.each(function(d){this._current=d;})
+      .on('mouseover', tip.show)
+      .on('mouseout', tip.hide);
 
 		slices.selectAll(".topSlice").data(_data).enter().append("path").attr("class", "topSlice")
 			.style("fill", function(d) { return d.data.color; })
 			.style("stroke", function(d) { return d.data.color; })
 			.attr("d",function(d){ return pieTop(d, rx, ry, ir);})
-			.each(function(d){this._current=d;});
+			.each(function(d){this._current=d;})
+      .on('mouseover', tip.show)
+      .on('mouseout', tip.hide);
 
 		slices.selectAll(".outerSlice").data(_data).enter().append("path").attr("class", "outerSlice")
 			.style("fill", function(d) { return d3.hsl(d.data.color).darker(0.7); })

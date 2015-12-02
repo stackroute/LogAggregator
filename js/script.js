@@ -22,8 +22,8 @@ $(document).ready(function() {
     var nestKey = element.attr("value");
     d3.json("sampledata/agentData.json", function (error, data) {
 
-      d3.select("#donut").html="";
-      d3.select(".color-legend").html="";
+    d3.select("#donut").html="";
+    d3.select(".color-legend").html="";
 
     var nestedData = d3.nest()
                       .key(function(d) { return d[nestKey]; })
