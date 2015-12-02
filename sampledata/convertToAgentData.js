@@ -34,5 +34,5 @@ file.readFile("server.logs.json", "utf8", function(err, data) {
   }
 
   file.writeFile("agentData.json", JSON.stringify(reqData, null, 2));
-  
+
 });
