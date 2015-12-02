@@ -4,13 +4,12 @@ file.readFile("server.logs.json", "utf8", function(err, data) {
   var dataObj = JSON.parse(data);
   var reqData = [];
 
-  // file.writeFile("data.json", JSON.stringify(dataObj, null, 2));
-
   for(var i = 0, len = dataObj.length; i < len ; i++) {
     var user = {
       browser : "none",
       os : "none",
     };
+
     var agent = dataObj[i]["agent"],
         browser = ["OPR", "Chrome", "Firefox", "Trident", "Edge", "Safari"],
         browserNames = ["Opera", "Google Chrome", "Mozilla Firefox", "Internet Explorer", "Microsoft Edge", "Safari"],
@@ -23,15 +22,17 @@ file.readFile("server.logs.json", "utf8", function(err, data) {
         break;
       }
     }
+
     for(var k = 0, osLen = os.length; k < osLen; k++) {
       if(agent.indexOf(os[k], 0) != -1) {
         user["os"] = osNames[k];
         break;
       }
     }
+
     reqData.push(user);
   }
-  console.log(reqData.length);
 
   file.writeFile("agentData.json", JSON.stringify(reqData, null, 2));
+  
 });
