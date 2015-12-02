@@ -5,14 +5,14 @@ $(document).ready(function() {
 
   var colorLegendG = svg.append("g")
               .attr("class", "color-legend")
-              .attr("transform", "translate(400, 60)")
-              .style("font-size", "15px");
+              .attr("transform", "translate(470, 120)")
+              .style("font-size", "16px");
 
   var colorLegend = d3.legend.color()
                   .scale(color)
                   .shapePadding(10)
-                  .shapeWidth(15)
-                  .shapeHeight(15)
+                  .shapeWidth(18)
+                  .shapeHeight(18)
                   .labelOffset(4)
                   .orient("vertical");
 
