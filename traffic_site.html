@@ -16,6 +16,23 @@
       margin-top: 20px;
     }
 
+    .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+
+  /*.x.axis path {
+    display: none;
+  }*/
+
+  .line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+  }
+
   </style>
 </head>
 <body>
@@ -42,109 +59,232 @@
 </div>
   <!-- <div class="population-plot"></div> -->
   <!-- <div class="pp-plot"></div> -->
-
+  <div><g></g></div>
+  <svg></svg>
+    <script src="js/jquery-1.11.3.min.js"></script>
   <script>
 
-  var margin={top:20,right:10,bottom:100,left:75}
+  var margin = {top: 20, right: 20, bottom: 30, left: 50},
+    width = 960 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
 
-  var w = 1000-margin.right-margin.left;
-  var h = 600-margin.top-margin.bottom;
+var parseDate = d3.time.format("%d-%b-%y").parse;
 
-  var xScale = d3.scale.ordinal()
-      .rangeRoundBands([0, w], 0.3,0.2);
+var x = d3.time.scale()
+    .range([0, width]);
 
-  var yScale = d3.scale.linear()
-      .range([h, 0]);
 
-  var xAxisScale = d3.scale.ordinal()
-        .rangeRoundBands([0, w], 0.07,0.2);
+var y = d3.scale.linear()
+    .range([height, 0]);
 
-  var xaxis=d3.svg.axis()
-          .scale(xAxisScale)
-          .orient("bottom")
-          .ticks(5);
+var color = d3.scale.category10();
 
-  var yaxis=d3.svg.axis()
-          .scale(yScale)
-          .orient("left");
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom")
+    .ticks(15);
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left");
+
 
       /* Loading GDP DATA JSON ////////////////////////////////////////////////////////////////*/
 
-  d3.json("json/day_traffic_parse.json",function(json){
 
-    var month_selected;
-    var data=json;
     $('.dropdown-menu a').on('click',function(e){
-      data=json;
-      month_selected=$(this).attr('value');
-      e.preventDefault();
-      console.log(parseInt(data[0].date.substring(5,7))+1);
+      var dropdown=$(this);
+      d3.json("json/day_traffic_parse1.json",function(json){
 
-      data.filter(function(d) { return (parseInt(d.date.substring(5,7))+1) == month_selected });
-    });
-    var svg = d3.select("body")
-      .append("svg")
-      .attr("width", w + margin.right+ margin.left)
-      .attr("height", h + margin.top+ margin.bottom)
+        var month_selected;
+        var data=json;
+
+      month_selected=dropdown.attr('value');
+      var dataNest = d3.nest()
+        .key(function(d) {return parseInt(String(d.date).substring(5,7))+1;})
+        .entries(data);
+      var newdata;
+
+      for(i in dataNest)
+      {
+          if(dataNest[i].key==month_selected){
+                  newdata=dataNest[i].values;
+          }
+      }
+      data=newdata;
+
+      var months = [ "January", "February", "March", "April", "May", "June",
+               "July", "August", "September", "October", "November", "December" ];
+      $(".dropdown button").html(months[parseInt(month_selected)-1]+"  <span class='caret'></span>");
+      var check=0;
+
+    if(!data){
+      d3.select("svg")
+          .html('');
+
+        d3.select('g')
+          .html('No Data Available for Selected Month');
+    }
+    else{
+      var month_days;
+      if(month_selected==1 || month_selected==3 || month_selected==5 || month_selected==7 ||
+        month_selected==8 || month_selected==10 || month_selected==12){
+          month_days=31;
+        }
+      else{
+        month_days=30;
+      }
+      if(month_selected==2){
+        month_days=28;
+      }
+      var parts = newdata[0].date.split('-');
+      var year=parts[0];
+      var month=parts[1];
+      var flag;
+      var date_created;
+      for(i=0;i<month_days;i++){
+        for(j=0;j<newdata.length;j++){
+          flag=0;
+          if(i<10){
+            date_created=year+'-'+ month +'-'+ '0' + (i+1);
+          }else{
+            date_created=year+'-'+ month +'-'+ (i+1);
+          }
+          if(date_created==newdata[j].date){
+            flag=1;
+          }
+        }
+        if(flag==0){
+          var obj={};
+          obj.date=date_created;
+          obj.GET=0;
+          obj.POST=0;
+          obj.OPTIONS=0;
+          obj.HEAD=0;
+          data.push(obj);
+        }
+      }
+    //   for(i in data){
+    //   // console.log(data[i].date);
+    //   // console.log(
+    //   //   String(data[i].date).substring(0,8) +
+    //   //   (parseInt(String(data[i].date).substring(8,10))+1)
+    //   //   + String(data[i].date).substring(10));
+    //  if((parseInt(String(data[i].date).substring(8,10))+1)<10){
+    //    data[i].date= String(data[i].date).substring(0,8) +'0'+
+    //                      (parseInt(String(data[i].date).substring(8,10))+1)
+    //                      + String(data[i].date).substring(10);
+    //  }
+    //  else{
+    // data[i].date= String(data[i].date).substring(0,8) +
+    //                   (parseInt(String(data[i].date).substring(8,10))+1)
+    //                   + String(data[i].date).substring(10);
+    //     }
+    //   }
+      data.forEach(function(d) {
+             var parts = (d.date).split('-');
+             d.date= new Date(parts[0], parts[1]-1, parts[2]);
+          //  d.date = new Date(d.date);
+ });
+
+     var line = d3.svg.line()
+                  .interpolate("basis")
+                  .x(function(d) { return x(d.date); })
+                  .y(function(d) { return y(d.count); });
+
+      d3.select('g')
+        .html('');
+
+        d3.select('svg')
+          .html('');
+
+        var svg = d3.select("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
       .append("g")
-      .attr("transform","translate("+margin.left+','+margin.right+")");
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-      var colorscale = d3.scale.linear()
-                      .domain([0,d3.max(data, function(d) {return d.GET;})])
-                      .range(["red","green","lightblue"]);
-
-      data.sort(function (a, b) {
-          return d3.ascending(a.date, b.date);
-      });
-
-      xAxisScale.domain(data.map(function(d){return String(new Date(String(d.date).substring(4,10))).substring(4,10);}));
-      xScale.domain(data.map(function(d){return d.date;}));
-      yScale.domain([0, d3.max(data, function(d) {return d.GET;})]);
+        color.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
 
 
-      svg.selectAll("rect")
-       .data(data)
-       .enter()
-       .append("rect")
-       .attr("height",0)
-       .attr("y",h)
-       .transition().duration(1000)
-       .delay(function(d,i){return i*20;})
-       .attr("x", function(d, i) {
-        return xScale(d.date);
-       })
-       .attr("y", function(d) {
-        return yScale(d.GET);
-       })
-       .attr("width", xScale.rangeBand())
-       .attr("height", function(d) {
-        return h-yScale(d.GET);
-       })
-       .attr("fill", "steelblue")
-       .style("background","1px dotted black");
+        data.sort(function (a, b) {
+            return d3.ascending(a.date, b.date);
+        });
 
-      svg.append("g")
-          .attr("class","x axis")
-          .attr("transform","translate(0,"+ h +")")
-          .call(xaxis)
-          .selectAll("text")
-          .attr("transform","rotate(-60)")
-          .attr("dx","-.8em")
-          .attr("dy",".25em")
-          .style("text-anchor","end")
-
-      svg.append("g")
-          .attr("class","y axis")
-          .call(yaxis)
-          .append("text")
-    .attr("transform", "rotate(-90)")
-    .attr("dx","-6em")
-    .attr("dy", "-4em")
-    .style("text-anchor", "end")
-    .text("GET Request Traffic");
+        var methods = color.domain().map(function(name) {
+    return {
+      REQUEST: name,
+      values: data.map(function(d) {
+        return {date: d.date, count: +d[name]};
+      })
+    };
   });
+
+  x.domain(d3.extent(data, function(d) { return d.date; }));
+  y.domain([
+    d3.min(methods, function(c) { return d3.min(c.values, function(v) { return v.count; }); }),
+    d3.max(methods, function(c) { return d3.max(c.values, function(v) { return v.count; }); })
+  ]);
+
+        svg.append("g")
+            .attr("class","x axis")
+            .attr("transform","translate(0,"+ height +")")
+            .call(xAxis)
+            .selectAll("text")
+            .attr("transform","rotate(-60)")
+            .attr("dx","-.8em")
+            .attr("dy",".25em")
+            .style("text-anchor","end")
+
+        svg.append("g")
+            .attr("class","y axis")
+            .call(yAxis)
+            .append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("y", 6)
+            .attr("dy", ".71em")
+            .style("text-anchor", "end")
+            .text("Request Rate Traffic");
+
+      var city = svg.selectAll(".city")
+                    .data(methods)
+                    .enter()
+                    .append("g")
+                    .attr("class", "city");
+
+    city.append("path")
+        .attr("class", "line")
+        .attr("d", function(d) { return line(d.values); })
+        .style("stroke", function(d) { return color(d.REQUEST); });
+
+    var legend = svg.selectAll(".legend")
+                .data(color.domain().slice())
+                .enter()
+                .append("g")
+                .attr("class", "legend")
+                .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+    legend.append("rect")
+        .attr("x", width - 18)
+        .attr("width", 18)
+        .attr("height", 18)
+        .style("fill", color);
+
+    legend.data(methods);
+
+    legend.append("text")
+        .attr("x", width - 24)
+        .attr("y", 9)
+        .attr("dy", ".35em")
+        .style("text-anchor", "end")
+        .text(function(d) { return d.REQUEST; });
+
+    }
+    e.preventDefault();
+  });
+    });
+
   </script>
-  <script src="js/jquery-1.11.3.min.js"></script>
 
   <script src="js/bootstrap.min.js"></script>
 
