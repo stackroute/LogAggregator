@@ -44,49 +44,6 @@ var flag;
       }
   }
 
-// var months={
-//   Jan : 01,
-//   Feb : 02,
-//   Mar : 03,
-//   Apr : 04,
-//   May : 05,
-//   Jun : 06,
-//   Jul : 07,
-//   Aug : 08,
-//   Sep : 09,
-//   Oct : 10,
-//   Nov : 11,
-//   Dec : 12
-// }
-// var A=[];
-// for(i in plotdata)
-// {
-//   A[months[(String(plotdata[i].date).substring(4,7))]-1]=1;
-// }
-// for(i=0;i<=11;i++)
-// {
-//   if(!A[i]){
-//     A[i]=0;
-//   }
-// }
-// var month_days;
-// for(i in A){
-//   if(A[i]==1){
-//     if(i==1 || i==3 || i==5 || i==7 || i==8 || i==10 || i==12){
-//       month_days=31;
-//     }
-//     else{
-//       month_days=30;
-//     }
-//     if(i==2){
-//       month_days=28;
-//     }
-//     for(i=0;i<month_days;i++)
-//     {
-//
-//     }
-//   }
-// }
  fs.writeFile("../json/day_traffic_parse.json", JSON.stringify(plotdata, null, 4), function(err) {
       if(err) {
         console.log(err);
