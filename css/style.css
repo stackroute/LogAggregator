@@ -96,6 +96,9 @@
 
 
 
+
+
+
 /*log listing page stylesheet*/
 .logButtonStyle{
     border-radius: 0px;
@@ -186,3 +189,36 @@ table, td, tr{
 #remote{
   width: 148px;
 }*/
+
+/* Traffic Page *******************************************************************************************/
+.dropdown.months{
+  width: 50px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.axis path,
+.axis line {
+fill: none;
+stroke: #000;
+shape-rendering: crispEdges;
+}
+
+.traffic{
+  width: 700px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.traffic no_data{
+  font-size: 20px;
+}
+
+.line {
+fill: none;
+stroke: steelblue;
+stroke-width: 1.5px;
+}
+
+/* Traffic Page End*******************************************************************************************/
