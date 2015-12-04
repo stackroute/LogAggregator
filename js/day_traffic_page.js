@@ -1,6 +1,6 @@
 
   var margin = {top: 20, right: 20, bottom: 30, left: 50},
-    width = 700 - margin.left - margin.right,
+    width = 800 - margin.left - margin.right,
     height = 340 - margin.top - margin.bottom;
 
 var parseDate = d3.time.format("%d-%b-%y").parse;
@@ -16,8 +16,8 @@ var color = d3.scale.category10();
 
 var xAxis = d3.svg.axis()
     .scale(x)
-    .orient("bottom")
-    .ticks(15);
+    .orient("bottom");
+
 
 var yAxis = d3.svg.axis()
     .scale(y)
@@ -78,15 +78,16 @@ var yAxis = d3.svg.axis()
       var flag;
       var date_created;
       for(i=0;i<month_days;i++){
+        flag=0;
         for(j=0;j<newdata.length;j++){
-          flag=0;
-          if(i<10){
+          if(i<9){
             date_created=year+'-'+ month +'-'+ '0' + (i+1);
           }else{
             date_created=year+'-'+ month +'-'+ (i+1);
           }
           if(date_created==newdata[j].date){
             flag=1;
+            break;
           }
         }
         if(flag==0){
@@ -96,20 +97,30 @@ var yAxis = d3.svg.axis()
           obj.POST=0;
           obj.OPTIONS=0;
           obj.HEAD=0;
-          data.push(obj);
+          newdata.push(obj);
         }
       }
-      console.log(data);
+
+      data=newdata;
       data.forEach(function(d) {
              var parts = (d.date).split('-');
              d.date= new Date(parts[0], parts[1]-1, parts[2]);
           //  d.date = new Date(d.date);
  });
 
+ // var tip = d3.tip()
+ //           .attr('class', 'd3-tip')
+ //           .offset([-10, 0])
+ //           .html(function(d,i) {
+ //             console.log(d);
+ //             return "<strong>Count</strong><span style='color:lightblue'>" +d.values[i].count+ "</span>";
+ //           });
+
      var line = d3.svg.line()
-                  .interpolate("basis")
+                  .interpolate("monotone")
                   .x(function(d) { return x(d.date); })
                   .y(function(d) { return y(d.count); });
+
 
       d3.select('g')
         .html('');
@@ -132,11 +143,11 @@ var yAxis = d3.svg.axis()
         });
 
         var methods = color.domain().map(function(name) {
-    return {
-      REQUEST: name,
-      values: data.map(function(d) {
-        return {date: d.date, count: +d[name]};
-      })
+              return {
+                REQUEST: name,
+                values: data.map(function(d) {
+                  return {date: d.date, count: +d[name]};
+                })
     };
   });
 
@@ -165,23 +176,25 @@ var yAxis = d3.svg.axis()
             .style("text-anchor", "end")
             .text("Request Rate Traffic");
 
-      var city = svg.selectAll(".city")
+      var plot = svg.selectAll(".city")
                     .data(methods)
                     .enter()
                     .append("g")
                     .attr("class", "city");
 
-    city.append("path")
+    // svg.call(tip,methods.values);
+    plot.append("path")
         .attr("class", "line")
         .attr("d", function(d) { return line(d.values); })
         .style("stroke", function(d) { return color(d.REQUEST); });
+
 
     var legend = svg.selectAll(".legend")
                 .data(color.domain().slice())
                 .enter()
                 .append("g")
                 .attr("class", "legend")
-                .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+                .attr("transform", function(d, i) { return "translate(23," + i * 25 + ")"; });
 
     legend.append("rect")
         .attr("x", width - 18)

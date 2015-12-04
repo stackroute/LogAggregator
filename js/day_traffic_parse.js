@@ -7,8 +7,12 @@ var flag;
   for(i in result){
     var obj={};
 
-    var day_date =result[i].year+'-' + (result[i].month) + '-' + result[i].date;
-
+    if(result[i].date<10)
+    {
+    var day_date =result[i].year+'-' + (result[i].month) + '-' +'0'+result[i].date;
+  }else{
+    var day_date =result[i].year+'-' + (result[i].month) + '-'+result[i].date;
+  }
     flag=0;
     for(k=0;k<plotdata.length;k++)
     {
