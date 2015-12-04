@@ -38,7 +38,7 @@
           $(this).css({'border-left-color':'blue','border-left-width': '4px',
                   'border-left-style': 'solid'});
 
-          no_of_rows_all = 0;
+           no_of_rows_all = 0;
           $('tbody').remove();
           var $path = this.id;
           var loop = 1;
@@ -52,7 +52,6 @@
 
                     if(($path)=="All")
                     {
-                        $("#personDataTable").html('');
                         $(".header").html('');
                         drawHeader(data);
                         drawTable(data);
