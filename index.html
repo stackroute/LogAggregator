@@ -102,7 +102,15 @@
       </ul>
       <div class="tab-content">
         <div class="tab-pane active" id="logListing">
-
+            <div class="header"></div>
+            <div class="logcontainer"></div>
+              <div class="Mytable">
+              <table border="0" cellpadding="0" width="100%" id='personDataTable'> </table>
+            </div>
+            <div class="prev_next btn-group-horizontal criteriaGroup">
+              <button id= "prev"class="btn btn-default criteriaPane" value="prev">Previous Page</button>
+              <button id="next" class="btn btn-default criteriaPane" value="next">Next Page</button>
+            </div>
         </div><!-- end tab-pane -->
 
         <div class="tab-pane" id="agentAnalytics">
@@ -127,6 +135,10 @@
   <script src="js/bootstrap.min.js"></script>
   <!-- Custom JS -->
   <script src="js/site_traffic_parse.js"></script>
+
+  <!--log listing page scripts-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/logListingScript.js"></script>
 
   <script src="D3/js/d3.min.js"></script>
   <script src="D3/js/d3-legend.js"></script>

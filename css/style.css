@@ -11,7 +11,8 @@
 }
 #main-tab .tab-content{
   width: 100% !important;
-  height: 400px;
+  height: 900px;
+  overflow: hidden;
   border:1px solid #e3e3e3;
   border-top: none;
 }
@@ -24,18 +25,7 @@
     color:black;
     font-size: 14px;
 }
-/*#main-tab .tab1{
-  background-color:#d9534f;
-}
-#main-tab .tab2{
-  background-color:#f0ad4e;
-}
-#main-tab .tab3{
-  background-color:#5cb85c;
-}*/
-/*#main-tab .active{
-  background-color:#333;
-}*/
+
 
 .tab-content {
   background-color: #F8F8F8;
@@ -103,3 +93,96 @@
   top: 100%;
   left: 0;
 }
+
+
+
+/*log listing page stylesheet*/
+.logButtonStyle{
+    border-radius: 0px;
+    border: 0px;
+    border-bottom: 2px solid lightgrey;
+    background-color: white;
+    border: 0.5px lightgrey;
+    height: 50px;
+    width: 100%;
+    margin-left: 0;
+    padding: 6px 12px;
+    overflow:visible;
+    white-space: normal;
+}
+
+.buttonClicked{
+  color: blue;
+}
+.logcontainer{
+  margin-top: 0px;
+  font-size: 1em;
+  font-family: sans-serif;
+  padding: 0;
+  line-height: 40px;
+  float: left;
+  width:28%;
+}
+.Mytable{
+  margin-top: 0px;
+  width: 72%;
+  float: left;
+  height: 600px;
+}
+.Mytable tr{ width: 50px;}
+table, td, tr{
+    border-collapse: collapse;
+   border: 1px solid black;
+   text-align: center;
+   width: 820px;
+}
+.logcontainer tr, td {
+  width: 280px !important;
+      /*display:inline;*/
+}
+.Mytable td{
+  padding: 5px;
+}
+
+.header {
+  font-size: 14px;
+  font-style: none;
+  margin-left: 318px;
+  margin-top: 20px;
+  /*font-size: 20px;*/
+  /*left :350px;*/
+  /*width:70%;*/
+  background: white;
+}
+
+#prev{
+  float: left;
+}
+
+.prev_next{
+  visibility: hidden;
+  margin-left: 800px;
+  margin-bottom: 20px;
+}
+/*#method, #code{
+  width:91px;
+}
+
+#size{
+  width:93px;
+}
+
+#agent{
+  width:300px;
+}
+
+#time{
+  width:200px;
+}
+
+#referrer{
+  width:30px;
+}
+#remote{
+  width: 148px;
+}*/
