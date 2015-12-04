@@ -51,7 +51,7 @@ var year_selected;
 $('.year a').on('click',function(e){
   margin.bottom=100;
   year_selected=parseInt($(this).text());
-  d3.json("../json/day_traffic_parse.json",function(json){
+  d3.json("json/day_traffic_parse.json",function(json){
 
     var data=json;
     var dataNest = d3.nest()
@@ -233,7 +233,7 @@ $('.year a').on('click',function(e){
     $('.months a').on('click',function(e){
       margin.bottom=29;
       month_selected=($(this).attr('value'));
-      d3.json("../json/day_traffic_parse.json",function(json){
+      d3.json("json/day_traffic_parse.json",function(json){
 
         var data=json;
         if(year_selected){
