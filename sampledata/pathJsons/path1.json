@@ -1,0 +1,5714 @@
+[
+    {
+        "remote": "172.23.238.175",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "http://172.23.238.253/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
+        "time": {
+            "$date": 1447670426000
+        }
+    },
+    {
+        "remote": "172.23.238.177",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "http://172.23.238.253/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
+        "time": {
+            "$date": 1447673525000
+        }
+    },
+    {
+        "remote": "172.23.238.177",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1",
+        "referer": "http://172.23.238.253/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
+        "time": {
+            "$date": 1447673747000
+        }
+    },
+    {
+        "remote": "172.23.238.177",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "167025490",
+        "referer": "http://172.23.238.253/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
+        "time": {
+            "$date": 1447673781000
+        }
+    },
+    {
+        "remote": "172.23.238.215",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "http://172.23.238.253/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
+        "time": {
+            "$date": 1447845824000
+        }
+    },
+    {
+        "remote": "172.23.238.217",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "http://172.23.238.253/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
+        "time": {
+            "$date": 1447846017000
+        }
+    },
+    {
+        "remote": "172.23.238.217",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1",
+        "referer": "http://172.23.238.253/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
+        "time": {
+            "$date": 1447846703000
+        }
+    },
+    {
+        "remote": "172.23.238.217",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "167025490",
+        "referer": "http://172.23.238.253/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
+        "time": {
+            "$date": 1447846718000
+        }
+    },
+    {
+        "remote": "172.23.238.216",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "http://172.23.238.253/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko",
+        "time": {
+            "$date": 1447846884000
+        }
+    },
+    {
+        "remote": "172.23.238.206",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "http://172.23.238.253/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.79 Safari/537.4",
+        "time": {
+            "$date": 1447848877000
+        }
+    },
+    {
+        "remote": "172.23.238.219",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "http://172.23.238.253/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
+        "time": {
+            "$date": 1447849723000
+        }
+    },
+    {
+        "remote": "172.23.238.223",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "http://172.23.238.253/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
+        "time": {
+            "$date": 1447849724000
+        }
+    },
+    {
+        "remote": "172.23.238.214",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "http://172.23.238.253/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko",
+        "time": {
+            "$date": 1447849725000
+        }
+    },
+    {
+        "remote": "172.23.238.229",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "http://172.23.238.253/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
+        "time": {
+            "$date": 1447849726000
+        }
+    },
+    {
+        "remote": "172.23.238.218",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "http://172.23.238.253/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
+        "time": {
+            "$date": 1447849727000
+        }
+    },
+    {
+        "remote": "172.23.238.224",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "http://172.23.238.253/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
+        "time": {
+            "$date": 1447849729000
+        }
+    },
+    {
+        "remote": "172.23.238.225",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "http://172.23.238.253/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
+        "time": {
+            "$date": 1447849743000
+        }
+    },
+    {
+        "remote": "172.23.238.220",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "http://172.23.238.253/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
+        "time": {
+            "$date": 1447849749000
+        }
+    },
+    {
+        "remote": "172.23.238.221",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "http://172.23.238.253/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
+        "time": {
+            "$date": 1447849749000
+        }
+    },
+    {
+        "remote": "172.23.238.210",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "http://172.23.238.253/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
+        "time": {
+            "$date": 1447849804000
+        }
+    },
+    {
+        "remote": "172.23.238.152",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36",
+        "time": {
+            "$date": 1445868805000
+        }
+    },
+    {
+        "remote": "172.23.238.158",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36",
+        "time": {
+            "$date": 1445963310000
+        }
+    },
+    {
+        "remote": "172.23.238.162",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1",
+        "referer": "-",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36",
+        "time": {
+            "$date": 1445963929000
+        }
+    },
+    {
+        "remote": "172.23.238.162",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "41570318",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36",
+        "time": {
+            "$date": 1445963978000
+        }
+    },
+    {
+        "remote": "172.23.238.162",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "167025490",
+        "referer": "-",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36",
+        "time": {
+            "$date": 1445964001000
+        }
+    },
+    {
+        "remote": "172.23.238.160",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "15869938",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445964643000
+        }
+    },
+    {
+        "remote": "172.23.238.163",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445964679000
+        }
+    },
+    {
+        "remote": "172.23.238.160",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445964739000
+        }
+    },
+    {
+        "remote": "172.23.238.160",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "131100",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445964816000
+        }
+    },
+    {
+        "remote": "172.23.238.160",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "209978",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445964890000
+        }
+    },
+    {
+        "remote": "172.23.238.160",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445964896000
+        }
+    },
+    {
+        "remote": "172.23.238.160",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "96059",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445964957000
+        }
+    },
+    {
+        "remote": "172.23.238.164",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36",
+        "time": {
+            "$date": 1445964983000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "11557098",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445964990000
+        }
+    },
+    {
+        "remote": "172.23.238.159",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "-",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36",
+        "time": {
+            "$date": 1445965050000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "34987178",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965074000
+        }
+    },
+    {
+        "remote": "172.23.238.155",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "30180858",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36",
+        "time": {
+            "$date": 1445965086000
+        }
+    },
+    {
+        "remote": "172.23.238.155",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36",
+        "time": {
+            "$date": 1445965372000
+        }
+    },
+    {
+        "remote": "172.23.238.165",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1",
+        "referer": "-",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36",
+        "time": {
+            "$date": 1445965379000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965386000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "61028",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965388000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "323756",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965394000
+        }
+    },
+    {
+        "remote": "172.23.238.170",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "13517878",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965396000
+        }
+    },
+    {
+        "remote": "172.23.238.165",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "141663538",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36",
+        "time": {
+            "$date": 1445965423000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129648",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965428000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "61023",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965448000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "61021",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965449000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "481501",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965451000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1087408",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965452000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "61023",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965458000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129643",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965459000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "554503",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965459000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "278561",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965460000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129641",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965462000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "218701",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965462000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "773502",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965463000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142781",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965464000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "296083",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965464000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "440623",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965466000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "434781",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965467000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142781",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965468000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "659621",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965469000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1007102",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965470000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129641",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965474000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129643",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965475000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129643",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965476000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129641",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965477000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129641",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965477000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "218702",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965479000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129641",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965484000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142783",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965485000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1204205",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965485000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "367621",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965486000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "725323",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965486000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "488803",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965486000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "742842",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965486000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "374923",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965487000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "735541",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965487000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "414343",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965492000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1071341",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965492000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "388062",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965494000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "2059768",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965496000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "415801",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965496000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "201183",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965497000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "239143",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965499000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129642",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965503000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "385143",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965508000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "554503",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965508000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "364704",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965509000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1024621",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965509000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1014401",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965510000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "304841",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965554000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "262502",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965554000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "61023",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965554000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "61023",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965554000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "61024",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965554000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "317981",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0))",
+        "time": {
+            "$date": 1445965554000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129643",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965557000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129643",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965558000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1515183",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965563000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129643",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965564000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142782",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965565000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "472741",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965566000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129642",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965567000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142788",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965568000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129644",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965568000
+        }
+    },
+    {
+        "remote": "172.23.238.161",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "53751098",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36",
+        "time": {
+            "$date": 1445965570000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "224402",
+        "referer": "-",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965572000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "707801",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965573000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "61058",
+        "referer": "-",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965579000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142784",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965582000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "969141",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965586000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "655243",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965587000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "155923",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965588000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "313603",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965589000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "897602",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965592000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "61021",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965592000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1516641",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965593000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "297578",
+        "referer": "-",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965595000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "372003",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965603000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "389523",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965604000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129641",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965605000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "377842",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965605000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "296083",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965605000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "377841",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965605000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "395364",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965605000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "747221",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965607000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "699048",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965611000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "2715301",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965615000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129641",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965631000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129641",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965632000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129643",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965633000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "309258",
+        "referer": "-",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965634000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129643",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965634000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1789665",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965637000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142781",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965638000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1764842",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965643000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "204104",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965644000
+        }
+    },
+    {
+        "remote": "172.23.238.172",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36",
+        "time": {
+            "$date": 1445965647000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "2201381",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965649000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "179283",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965650000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "61022",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965651000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "61024",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965652000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "682981",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965653000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "645021",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965653000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "2090423",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965653000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "482963",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965662000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "97521",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965677000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129643",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965678000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "224544",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965679000
+        }
+    },
+    {
+        "remote": "172.23.238.161",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36",
+        "time": {
+            "$date": 1445965679000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129643",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965680000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "201182",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965681000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "428943",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965682000
+        }
+    },
+    {
+        "remote": "172.23.238.172",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "113254858",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36",
+        "time": {
+            "$date": 1445965685000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "306301",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965686000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "574942",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965687000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "61024",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965688000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "515083",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965688000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "499021",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965690000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "445001",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965693000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "646483",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965693000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "383683",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965707000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "488801",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965708000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "61023",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965712000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "465441",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965713000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129643",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965714000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "342801",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965717000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "360323",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965717000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "61023",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965717000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129642",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965718000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129643",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965719000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129641",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965719000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "703424",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965719000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "193883",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965720000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129642",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965720000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142783",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965724000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "385141",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965725000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "173441",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965726000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129644",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965728000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142781",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965730000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142783",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965735000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129643",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965736000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129642",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965737000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129643",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965738000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129641",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965740000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142783",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965740000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142784",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965741000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129643",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965742000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129641",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965743000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129643",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965751000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129643",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965752000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129643",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965754000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "377841",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965756000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "477124",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965757000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "398283",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965757000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "405581",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965760000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "249363",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965761000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "196803",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965761000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "301924",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965762000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "269802",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965762000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "148621",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965762000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "541361",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965763000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "737003",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965764000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "847961",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965767000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "215783",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965768000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129643",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965769000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1043602",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965770000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "671303",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965770000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129644",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965771000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "190961",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965773000
+        }
+    },
+    {
+        "remote": "172.23.238.171",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "139356738",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965805000
+        }
+    },
+    {
+        "remote": "172.23.238.171",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965812000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "266884",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965812000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129643",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965814000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "259581",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965815000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "417263",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965815000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "275642",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965816000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129641",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965819000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "144241",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965820000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "97521",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965821000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142784",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965822000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "447921",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965825000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142781",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965826000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "294623",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965827000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "204103",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965827000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "586622",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965828000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "396821",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965828000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "341343",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965829000
+        }
+    },
+    {
+        "remote": "172.23.238.172",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "167022854",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36",
+        "time": {
+            "$date": 1445965831000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142781",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965832000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "572021",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965834000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "193883",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965840000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "188041",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965841000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "296081",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965841000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "202641",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965841000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "374923",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965842000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "190964",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965842000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "190962",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965845000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129643",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965851000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "423104",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965852000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "393903",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965862000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "728242",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965863000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1072803",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965864000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1415903",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965864000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "415801",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965864000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "434784",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965865000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1259681",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965866000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "158841",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965866000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129641",
+        "referer": "http://172.23.238.13/software/Setup/Windows/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965889000
+        }
+    },
+    {
+        "remote": "172.23.238.166",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965891000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "865481",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965894000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1427581",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965895000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1186683",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965896000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1230483",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965896000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142781",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965902000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1040684",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965903000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142783",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965904000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142783",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965905000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129641",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965906000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129644",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965911000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "61021",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965911000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "275641",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965912000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "300498",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965916000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "726783",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965919000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "212861",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965920000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "282941",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965929000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "437701",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965932000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "309223",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965932000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "2472942",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965933000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "656704",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965934000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "138403",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965937000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "2538641",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965937000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "951623",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965938000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "284401",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965939000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1175001",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965939000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "2702163",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965941000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129641",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965941000
+        }
+    },
+    {
+        "remote": "172.23.238.170",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965941000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "701968",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965943000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "61021",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965947000
+        }
+    },
+    {
+        "remote": "172.23.238.171",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "88046460",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965951000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "496103",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965952000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "569101",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965956000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1274281",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965957000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "407045",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965958000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "707803",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965962000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "877162",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965963000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129643",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965963000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129641",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965964000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129641",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965965000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129643",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965966000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142783",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965971000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "97523",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965972000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129643",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965974000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129642",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965975000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142781",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965975000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142781",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965976000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129645",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965979000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129641",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965980000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "661081",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965980000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129643",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965981000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129643",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965982000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142785",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965985000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142783",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965985000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129642",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965986000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "261041",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965986000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "2633543",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965987000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "61023",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965989000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142785",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965991000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142783",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965994000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142782",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965994000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1186681",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965994000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129641",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965995000
+        }
+    },
+    {
+        "remote": "172.23.238.170",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "167025490",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965995000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "583703",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965996000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "833364",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965996000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "993961",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965997000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129643",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965997000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "2207222",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445965998000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "906361",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966001000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "649403",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966006000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "84381",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966009000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129641",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966009000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "469823",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966010000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "738463",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966010000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1141421",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966011000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "974981",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966015000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142781",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966017000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1275743",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966018000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142783",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966018000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "443545",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966018000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "986664",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966019000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142781",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966023000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "129641",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966024000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1291803",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966024000
+        }
+    },
+    {
+        "remote": "172.23.238.167",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "-",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966027000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1223182",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966027000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "472741",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966029000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "3481801",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966030000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "609983",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966030000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142783",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966036000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "386604",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966044000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "398281",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966045000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "380761",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966047000
+        }
+    },
+    {
+        "remote": "172.23.238.160",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "20995998",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko",
+        "time": {
+            "$date": 1445966047000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "2335703",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966066000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "7085081",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966083000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "5838243",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966109000
+        }
+    },
+    {
+        "remote": "172.23.238.165",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "167022854",
+        "referer": "-",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36",
+        "time": {
+            "$date": 1445966138000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "8627667",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966160000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "10184661",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966163000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "14540614",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966169000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "13506448",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966175000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "12069523",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966191000
+        }
+    },
+    {
+        "remote": "172.23.238.160",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "13472576",
+        "referer": "-",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko",
+        "time": {
+            "$date": 1445966191000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "15297552",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966191000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "12545483",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966200000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "13633181",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966204000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "2372204",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966206000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1357584",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966207000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "12551323",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966208000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "577865",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966208000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "9637164",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966209000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "2217442",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966209000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "2402864",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966209000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "142783",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966209000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "61024",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966210000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "46078",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966210000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "47452",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966210000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "43590",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966210000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "1277929",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966210000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "116088",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966210000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "457135",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966210000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "136268",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966210000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "321120",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966210000
+        }
+    },
+    {
+        "remote": "172.23.238.168",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966221000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "16614501",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966249000
+        }
+    },
+    {
+        "remote": "172.23.238.155",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "167022854",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36",
+        "time": {
+            "$date": 1445966252000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "17786509",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966261000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "19285968",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966261000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "6423920",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966261000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "19432221",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966262000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "9247614",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966263000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "19768104",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966263000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "2703622",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966264000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "973522",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966264000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "869865",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966264000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "61023",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966264000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "19990023",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966265000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "61025",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966265000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "61024",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966265000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "403924",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966265000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "528905",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966265000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "338483",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966265000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "696005",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966265000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "51645",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966265000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "55118",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966266000
+        }
+    },
+    {
+        "remote": "172.23.238.161",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "73373460",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36",
+        "time": {
+            "$date": 1445966289000
+        }
+    },
+    {
+        "remote": "172.23.238.171",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
+        "time": {
+            "$date": 1445966522000
+        }
+    },
+    {
+        "remote": "172.23.238.169",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "-",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36",
+        "time": {
+            "$date": 1445966586000
+        }
+    },
+    {
+        "remote": "172.23.238.160",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "206",
+        "size": "133984534",
+        "referer": "-",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko",
+        "time": {
+            "$date": 1445966592000
+        }
+    },
+    {
+        "remote": "172.23.238.161",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "-",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36",
+        "time": {
+            "$date": 1445966599000
+        }
+    },
+    {
+        "remote": "172.23.238.143",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "7095338",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.10240",
+        "time": {
+            "$date": 1445272005000
+        }
+    },
+    {
+        "remote": "172.23.238.73",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "17205838",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36",
+        "time": {
+            "$date": 1445338907000
+        }
+    },
+    {
+        "remote": "172.23.238.144",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko",
+        "time": {
+            "$date": 1445341365000
+        }
+    },
+    {
+        "remote": "172.23.238.144",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko",
+        "time": {
+            "$date": 1445341378000
+        }
+    },
+    {
+        "remote": "172.23.238.80",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "200",
+        "size": "167026688",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.10240",
+        "time": {
+            "$date": 1445355819000
+        }
+    }
+]
