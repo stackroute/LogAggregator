@@ -1,0 +1,1136 @@
+[
+    {
+        "remote": "172.23.238.177",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1447670319000
+        }
+    },
+    {
+        "remote": "172.23.238.177",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1447670459000
+        }
+    },
+    {
+        "remote": "172.23.238.175",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1447670806000
+        }
+    },
+    {
+        "remote": "172.23.238.175",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1447670901000
+        }
+    },
+    {
+        "remote": "172.23.238.190",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1446490544000
+        }
+    },
+    {
+        "remote": "172.23.238.190",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1446490577000
+        }
+    },
+    {
+        "remote": "172.23.238.152",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445868466000
+        }
+    },
+    {
+        "remote": "172.23.238.144",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445868514000
+        }
+    },
+    {
+        "remote": "172.23.238.152",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445868623000
+        }
+    },
+    {
+        "remote": "172.23.238.144",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445868851000
+        }
+    },
+    {
+        "remote": "172.23.238.144",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445938060000
+        }
+    },
+    {
+        "remote": "172.23.238.144",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445938162000
+        }
+    },
+    {
+        "remote": "172.23.238.140",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445968327000
+        }
+    },
+    {
+        "remote": "172.23.238.160",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445968361000
+        }
+    },
+    {
+        "remote": "172.23.238.161",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445968362000
+        }
+    },
+    {
+        "remote": "172.23.238.165",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445968373000
+        }
+    },
+    {
+        "remote": "172.23.238.158",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445968373000
+        }
+    },
+    {
+        "remote": "172.23.238.163",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445968378000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445968379000
+        }
+    },
+    {
+        "remote": "172.23.238.166",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445968400000
+        }
+    },
+    {
+        "remote": "172.23.238.159",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445968409000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445968422000
+        }
+    },
+    {
+        "remote": "172.23.238.155",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445968443000
+        }
+    },
+    {
+        "remote": "172.23.238.166",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445968547000
+        }
+    },
+    {
+        "remote": "172.23.238.156",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445968571000
+        }
+    },
+    {
+        "remote": "172.23.238.163",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445968640000
+        }
+    },
+    {
+        "remote": "172.23.238.159",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445968643000
+        }
+    },
+    {
+        "remote": "172.23.238.160",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445968897000
+        }
+    },
+    {
+        "remote": "172.23.238.161",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445969144000
+        }
+    },
+    {
+        "remote": "172.23.238.158",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445969171000
+        }
+    },
+    {
+        "remote": "172.23.238.140",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445969180000
+        }
+    },
+    {
+        "remote": "172.23.238.155",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445969182000
+        }
+    },
+    {
+        "remote": "172.23.238.165",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445969199000
+        }
+    },
+    {
+        "remote": "172.23.238.157",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445969251000
+        }
+    },
+    {
+        "remote": "172.23.238.169",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445970310000
+        }
+    },
+    {
+        "remote": "172.23.238.172",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445970311000
+        }
+    },
+    {
+        "remote": "172.23.238.168",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445970316000
+        }
+    },
+    {
+        "remote": "172.23.238.170",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445970317000
+        }
+    },
+    {
+        "remote": "172.23.238.167",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445970319000
+        }
+    },
+    {
+        "remote": "172.23.238.171",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445970320000
+        }
+    },
+    {
+        "remote": "172.23.238.170",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445970429000
+        }
+    },
+    {
+        "remote": "172.23.238.162",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445970460000
+        }
+    },
+    {
+        "remote": "172.23.238.169",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445970486000
+        }
+    },
+    {
+        "remote": "172.23.238.171",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445970522000
+        }
+    },
+    {
+        "remote": "172.23.238.162",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445970541000
+        }
+    },
+    {
+        "remote": "172.23.238.172",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445970541000
+        }
+    },
+    {
+        "remote": "172.23.238.167",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445970588000
+        }
+    },
+    {
+        "remote": "172.23.238.168",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445970676000
+        }
+    },
+    {
+        "remote": "172.23.238.171",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445971583000
+        }
+    },
+    {
+        "remote": "172.23.238.171",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "7892497",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445971761000
+        }
+    },
+    {
+        "remote": "172.23.238.171",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445972042000
+        }
+    },
+    {
+        "remote": "172.23.238.171",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "206",
+        "size": "13120716",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445972323000
+        }
+    },
+    {
+        "remote": "172.23.238.171",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445972705000
+        }
+    },
+    {
+        "remote": "172.23.238.171",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "206",
+        "size": "6340475",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445972894000
+        }
+    },
+    {
+        "remote": "172.23.238.171",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1446024060000
+        }
+    },
+    {
+        "remote": "172.23.238.171",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1446024177000
+        }
+    },
+    {
+        "remote": "172.23.238.164",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1446028261000
+        }
+    },
+    {
+        "remote": "172.23.238.164",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1446028375000
+        }
+    },
+    {
+        "remote": "172.23.238.77",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36",
+        "time": {
+            "$date": 1445338999000
+        }
+    },
+    {
+        "remote": "172.23.238.77",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445339295000
+        }
+    },
+    {
+        "remote": "172.23.238.77",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445339516000
+        }
+    },
+    {
+        "remote": "172.23.238.145",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445357311000
+        }
+    },
+    {
+        "remote": "172.23.238.145",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445357350000
+        }
+    },
+    {
+        "remote": "172.23.238.144",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445357573000
+        }
+    },
+    {
+        "remote": "172.23.238.80",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445357599000
+        }
+    },
+    {
+        "remote": "172.23.238.80",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445357754000
+        }
+    },
+    {
+        "remote": "172.23.238.144",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445357764000
+        }
+    },
+    {
+        "remote": "172.23.238.73",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445357994000
+        }
+    },
+    {
+        "remote": "172.23.238.73",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445358103000
+        }
+    },
+    {
+        "remote": "172.23.238.73",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445361185000
+        }
+    },
+    {
+        "remote": "172.23.238.73",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445361291000
+        }
+    },
+    {
+        "remote": "172.23.238.86",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.2",
+        "time": {
+            "$date": 1445602158000
+        }
+    },
+    {
+        "remote": "172.23.238.86",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.2",
+        "time": {
+            "$date": 1445602323000
+        }
+    },
+    {
+        "remote": "172.23.238.148",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.2",
+        "time": {
+            "$date": 1445614748000
+        }
+    },
+    {
+        "remote": "172.23.238.148",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "23150361",
+        "referer": "-",
+        "agent": "Vagrant/1.7.2",
+        "time": {
+            "$date": 1445614796000
+        }
+    },
+    {
+        "remote": "172.23.238.86",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.2",
+        "time": {
+            "$date": 1445614821000
+        }
+    },
+    {
+        "remote": "172.23.238.144",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445615246000
+        }
+    },
+    {
+        "remote": "172.23.238.144",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "380026880",
+        "referer": "-",
+        "agent": "Vagrant/1.7.4",
+        "time": {
+            "$date": 1445615315000
+        }
+    },
+    {
+        "remote": "172.23.238.86",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "206",
+        "size": "322078335",
+        "referer": "-",
+        "agent": "Vagrant/1.7.2",
+        "time": {
+            "$date": 1445615913000
+        }
+    },
+    {
+        "remote": "172.23.238.148",
+        "host": "-",
+        "user": "-",
+        "method": "HEAD",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "200",
+        "size": "0",
+        "referer": "-",
+        "agent": "Vagrant/1.7.2",
+        "time": {
+            "$date": 1445616814000
+        }
+    },
+    {
+        "remote": "172.23.238.148",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+        "code": "206",
+        "size": "39614737",
+        "referer": "-",
+        "agent": "Vagrant/1.7.2",
+        "time": {
+            "$date": 1445616838000
+        }
+    }
+]
