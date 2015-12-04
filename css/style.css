@@ -99,19 +99,21 @@
 
 
 
-/*log listing page stylesheet*/
+/*---------------------------------------log listing page stylesheet------------------------------------------------*/
 .logButtonStyle{
     border-radius: 0px;
     border: 0px;
     border-bottom: 2px solid lightgrey;
-    background-color: white;
-    border: 0.5px lightgrey;
+    border: 0.5px solid red;
     height: 50px;
     width: 100%;
     margin-left: 0;
     padding: 6px 12px;
     overflow:visible;
     white-space: normal;
+    margin-top: -0.5px;
+    color: #333;
+    background-color: #fff;
 }
 
 .buttonClicked{
@@ -132,16 +134,16 @@
   float: left;
   height: 600px;
 }
-.Mytable tr{ width: 50px;}
+.Mytable tr{
+  width: 50px;
+}
 table, td, tr{
-    border-collapse: collapse;
-   border: 1px solid black;
+   border: 1px solid #e3e3e3;
    text-align: center;
    width: 820px;
 }
 .logcontainer tr, td {
   width: 280px !important;
-      /*display:inline;*/
 }
 .Mytable td{
   padding: 5px;
@@ -152,13 +154,11 @@ table, td, tr{
   font-style: none;
   margin-left: 318px;
   margin-top: 20px;
-  /*font-size: 20px;*/
-  /*left :350px;*/
-  /*width:70%;*/
   background: white;
 }
 
-#prev{
+/*Buttons nxt*/
+/*#prev{
   float: left;
 }
 
@@ -166,29 +166,9 @@ table, td, tr{
   visibility: hidden;
   margin-left: 800px;
   margin-bottom: 20px;
-}
-/*#method, #code{
-  width:91px;
-}
-
-#size{
-  width:93px;
-}
-
-#agent{
-  width:300px;
-}
-
-#time{
-  width:200px;
-}
-
-#referrer{
-  width:30px;
-}
-#remote{
-  width: 148px;
 }*/
+
+/*----------------------------------------------logListing Stylesheet end------------------------------------------------------------*/
 
 /* Traffic Page *******************************************************************************************/
 .dropdown.months{
