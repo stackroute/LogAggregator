@@ -423,6 +423,7 @@ $('.year a').on('click',function(e){
         $(".dropdown.month_text button").html("Month <span class='caret'></span>");
         $(".dropdown.year_text button").html("Year <span class='caret'></span>");
         $(".traffic").html('');
+        $('.month_text button').attr("disabled","yes");
         e.preventDefault();
       });
       //**************************Clear Filters End***************************************//////////////////////
