@@ -171,10 +171,14 @@ table, td, tr{
 /*----------------------------------------------logListing Stylesheet end------------------------------------------------------------*/
 
 /* Traffic Page *******************************************************************************************/
-.dropdown.months{
-  width: 50px;
-  margin: auto;
-  margin-top: 20px;
+.dropdown.month_text,.dropdown.year_text{
+float: left;
+padding: 10px;
+}
+
+#clear_filters{
+  padding: 10px;
+  padding-top: 15px;
 }
 
 .axis path,
@@ -185,10 +189,11 @@ shape-rendering: crispEdges;
 }
 
 .traffic{
-  width: 700px;
-  height: 500px;
+  width: 800px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 60px;
 }
 
 .traffic no_data{

@@ -24,7 +24,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-          <a class="navbar-brand" href="/"><img src="img/logo.png" alt="Logo" height="100%"></a>
+        <a class="navbar-brand" href="/"><img src="img/logo.png" alt="Logo" height="100%"></a>
       </div>
       <div class="navbar-collapse collapse navbar-responsive-collapse">
         <ul class="nav navbar-nav">
@@ -81,7 +81,7 @@
                   </td>
                 </tr>
                 <tr>
-                <!-- <li class="divider"></li> -->
+                  <!-- <li class="divider"></li> -->
                   <td>
                     <li>
                       <a href="#"><span class="glyphicon glyphicon-off"></span> Sign out</a>
@@ -104,29 +104,42 @@
       </ul>
       <div class="tab-content">
         <div class="tab-pane active" id="logListing">
-            <div class="header"></div>
-            <div class="logcontainer"></div>
-              <div class="Mytable">
-              <table border="0" cellpadding="0" width="100%" id='personDataTable'> </table>
-            </div>
-            <!-- <div class="prev_next btn-group-horizontal criteriaGroup">
-              <button id= "prev"class="btn btn-default criteriaPane" value="prev">Previous Page</button>
-              <button id="next" class="btn btn-default criteriaPane" value="next">Next Page</button>
-            </div> -->
-        </div><!-- end tab-pane -->
-
-        <div class="tab-pane" id="agentAnalytics">
-          <div class="btn-group-vertical criteriaGroup" role="group" aria-label="...">
-            <button type="button" class="btn btn-default criteriaPane" value=browser id="browserShare">Browser Share</button>
-            <button type="button" class="btn btn-default criteriaPane" value=os id="osShare">OS Share</button>
+          <div class="header"></div>
+          <div class="logcontainer"></div>
+          <div class="Mytable">
+            <table border="0" cellpadding="0" width="100%" id='personDataTable'> </table>
           </div>
-          <div class="wrap">
+          <!-- <div class="prev_next btn-group-horizontal criteriaGroup">
+          <button id= "prev"class="btn btn-default criteriaPane" value="prev">Previous Page</button>
+          <button id="next" class="btn btn-default criteriaPane" value="next">Next Page</button>
+        </div> -->
+      </div><!-- end tab-pane -->
 
-          </div>
-  			</div>  <!-- end tab-pane -->
+      <div class="tab-pane" id="agentAnalytics">
+        <div class="btn-group-vertical criteriaGroup" role="group" aria-label="...">
+          <button type="button" class="btn btn-default criteriaPane" value=browser id="browserShare">Browser Share</button>
+          <button type="button" class="btn btn-default criteriaPane" value=os id="osShare">OS Share</button>
+        </div>
+        <div class="wrap">
 
-        <div class="tab-pane" id="requestRate">
-          <div class="dropdown">
+        </div>
+      </div>  <!-- end tab-pane -->
+
+      <div class="tab-pane" id="requestRate">
+        <!--Traffic  Page  Traffic  Page   Traffic  Page   Traffic  Page   Traffic  Page   Traffic  Page-->
+        <div class="dropdown year_text">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Year
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu year" aria-labelledby="dropdownMenu1">
+            <script id=blogTemplate type=tuts/template>
+            <li><a href="#">{{Year}}</a></li>
+            </script>
+          </ul>
+        </div>
+
+        <div class="dropdown month_text">
           <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
             Month
             <span class="caret"></span>
@@ -146,31 +159,34 @@
             <li><a href="#" value=12>December</a></li>
           </ul>
         </div>
-          <!-- <div class="population-plot"></div> -->
-          <!-- <div class="pp-plot"></div> -->
-          <div><g></g></div>
-            <div class="traffic"></div>
-        </div><!-- end tab-pane -->
 
-      </div><!-- end tab-content -->
-    </div><!-- end tabbable -->
-  </div>
-  <!-- All Javascript at the bottom of the page for faster page loading -->
-  <script src="js/jquery-1.11.3.min.js"></script>
-  <!-- Bootstrap JS -->
-  <script src="js/bootstrap.min.js"></script>
-  <!-- Custom JS -->
-  <script src="js/day_traffic_page.js"></script>
+        <a href="" class="btn btn-link" id="clear_filters">Clear Filters</a>
+        <!-- <div class="population-plot"></div> -->
+        <!-- <div class="pp-plot"></div> -->
+        <div><g></g></div>
+        <div class="traffic"></div>
+        <!--Traffic  Page  Traffic  Page   Traffic  Page   Traffic  Page   Traffic  Page   Traffic  Page-->
+      </div><!-- end tab-pane -->
 
-  <!--log listing page scripts-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script src="js/logListingScript.js"></script>
+    </div><!-- end tab-content -->
+  </div><!-- end tabbable -->
+</div>
+<!-- All Javascript at the bottom of the page for faster page loading -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Custom JS -->
+<script src="js/day_traffic_page1.js"></script>
 
-  <script src="D3/js/d3.min.js"></script>
-  <script src="D3/js/d3-legend.js"></script>
-  <script src="D3/js/d3.tip.js"></script>
-  <script src="D3/js/agentAnalytics.js"></script>
-  <script src="js/script.js"></script>
+<!--log listing page scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/logListingScript.js"></script>
+
+<script src="D3/js/d3.min.js"></script>
+<script src="D3/js/d3-legend.js"></script>
+<script src="D3/js/d3.tip.js"></script>
+<script src="D3/js/agentAnalytics.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
