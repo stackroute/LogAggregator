@@ -49,31 +49,7 @@
                 dataType : "json",
                 url : "sampledata/pathJsons/path"+(i+1)+".json",
                 success : function(data){
-
-                    if(($path)=="All")
-                    {
-                        $(".header").html('');
-                        drawHeader(data);
-                        drawTable(data);
-                        $('#nav').html('');
-                        $('#personDataTable').after('<div id="nav"></div>');
-                        var rowsShown = 4;
-                        var rowsTotal =  no_of_rows_all;
-                        drawRowDynamic(data,rowsTotal);
-                    }
-                    if($path==data[0].path)
-                    {
-                        $("#personDataTable").html('');
-                        $(".header").html('');
-                        drawHeader(data);
-                        drawTable(data);
-                        $('#nav').html('');
-                        $('#personDataTable').after('<div id="nav"></div>');
-                        var rowsShown = 4;
-                        var rowsTotal =  no_of_rows;
-                        drawRowDynamic(data,rowsTotal);
-
-                        function drawRowDynamic(data, rowsTotal){
+  			 function drawRowDynamic(data, rowsTotal){
 
                               var numPages = rowsTotal/rowsShown;
 
@@ -98,6 +74,33 @@
                               });//end pagenumber link fn
 
                         }//end drawRowDynamic
+
+                    if(($path)=="All")
+                    {
+                        $(".header").html('');
+                        drawHeader(data);
+                        drawTable(data);
+                        $('#nav').html('');
+                        $('#personDataTable').after('<div id="nav"></div>');
+                        var rowsShown = 4;
+                        var rowsTotal =  no_of_rows_all;
+                     
+                        drawRowDynamic(data,rowsTotal);
+                    }
+                    if($path==data[0].path)
+                    {
+                        $("#personDataTable").html('');
+                        $(".header").html('');
+                        drawHeader(data);
+                        drawTable(data);
+                        $('#nav').html('');
+                        $('#personDataTable').after('<div id="nav"></div>');
+                        var rowsShown = 4;
+                        var rowsTotal =  no_of_rows;
+                       
+
+                        
+		 drawRowDynamic(data,rowsTotal);
 
                       loop=0;
                   }// if-checking for path
