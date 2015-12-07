@@ -201,14 +201,20 @@ table, td, tr{
   color: grey;
 }
 
-.dropdown.month_text,.dropdown.year_text{
+.dropdown.month_text,.dropdown.year_text,.crossMonthFilter{
 float: left;
 padding: 10px;
 }
-
-#clear_filters{
+.dropdown.month_text{
+  padding-right: 0px;
+}
+#clear_filters,.crossMonthFilter{
   padding: 10px;
-  padding-top: 15px;
+  padding-top: 18px;
+}
+.crossMonthFilter{
+  padding-top: 10px;
+  padding-left: 0px;
 }
 
 .axis path,
