@@ -22,7 +22,7 @@ $(document).ready(function() {
     var nestKey = element.attr("value");
     d3.json("sampledata/agentData.json", function (error, data) {
     data = JSON.stringify(data);
-    data = data.replace(/none/g, "unknown");
+    data = data.replace(/none/g, "others");
     data = JSON.parse(data);
     console.log(data);
 
@@ -50,15 +50,16 @@ $(document).ready(function() {
 
   $('.criteriaPane').on("click", function(e) {
     render( $(this) );
-    $('.criteriaPane').css("border-left","0");
-    $(this).css("border-left", "4px solid blue");
+    $('.criteriaPane').attr("class", "btn btn-default criteriaPane");
+    $('.criteriaPane').addClass("noBorder");
+    $(this).addClass("withBorder");
     e.preventDefault();
   });
 
   var i=0;
   $('.tab2').on("click", function(e) {
     if(i==0) {
-      $("#browserShare").css("border-left", "4px solid blue");
+      $("#browserShare").addClass("withBorder");
       render( $("#browserShare"));
       i++;
     }
