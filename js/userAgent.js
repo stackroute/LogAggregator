@@ -24,7 +24,6 @@ $(document).ready(function() {
     data = JSON.stringify(data);
     data = data.replace(/none/g, "others");
     data = JSON.parse(data);
-    console.log(data);
 
     d3.select("#donut").html="";
     d3.select(".color-legend").html="";
