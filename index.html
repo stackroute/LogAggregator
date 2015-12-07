@@ -6,7 +6,7 @@
   <title>Document</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="D3/js/d3.min.js"></script>
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
@@ -121,50 +121,56 @@
           <button type="button" class="btn btn-default criteriaPane" value=os id="osShare">OS Share</button>
         </div>
         <div class="wrap">
-
+          <div class="page-header">
+            <h2><small>This plot gives the browser and os shares of the requests</small></h2>
+          </div>
         </div>
       </div>  <!-- end tab-pane -->
 
       <div class="tab-pane" id="requestRate">
         <!--Traffic  Page  Traffic  Page   Traffic  Page   Traffic  Page   Traffic  Page   Traffic  Page-->
-        <div class="dropdown year_text">
-          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            Year
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu year" aria-labelledby="dropdownMenu1">
-            <script id=blogTemplate type=tuts/template>
-            <li><a href="#">{{Year}}</a></li>
-            </script>
-          </ul>
-        </div>
+        <h2>Request Rates</h2>
+        <small>Traffic rates of different types of requests in given time are plotted here</small>
+        <div class="pull-right">
+          <div class="dropdown year_text">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Year
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu year" aria-labelledby="dropdownMenu1">
+              <script id=blogTemplate type=tuts/template>
+              <li><a href="#">{{Year}}</a></li>
+              </script>
+            </ul>
+          </div>
 
-        <div class="dropdown month_text">
-          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            Month
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu months" aria-labelledby="dropdownMenu1">
-            <li><a href="#" value=01>January</a></li>
-            <li><a href="#" value=02>February</a></li>
-            <li><a href="#" value=03>March</a></li>
-            <li><a href="#" value=04>April</a></li>
-            <li><a href="#" value=05>May</a></li>
-            <li><a href="#" value=06>June</a></li>
-            <li><a href="#" value=07>July</a></li>
-            <li><a href="#" value=08>August</a></li>
-            <li><a href="#" value=09>September</a></li>
-            <li><a href="#" value=10>October</a></li>
-            <li><a href="#" value=11>November</a></li>
-            <li><a href="#" value=12>December</a></li>
-          </ul>
-        </div>
+          <div class="dropdown month_text">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Month
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu months" aria-labelledby="dropdownMenu1">
+              <li><a href="#" value=01>January</a></li>
+              <li><a href="#" value=02>February</a></li>
+              <li><a href="#" value=03>March</a></li>
+              <li><a href="#" value=04>April</a></li>
+              <li><a href="#" value=05>May</a></li>
+              <li><a href="#" value=06>June</a></li>
+              <li><a href="#" value=07>July</a></li>
+              <li><a href="#" value=08>August</a></li>
+              <li><a href="#" value=09>September</a></li>
+              <li><a href="#" value=10>October</a></li>
+              <li><a href="#" value=11>November</a></li>
+              <li><a href="#" value=12>December</a></li>
+            </ul>
+          </div>
 
-        <a href="" class="btn btn-link" id="clear_filters">Clear Filters</a>
+          <a href="" class="btn btn-link" id="clear_filters">Clear Filters</a>
+        </div>
         <!-- <div class="population-plot"></div> -->
         <!-- <div class="pp-plot"></div> -->
         <div><g></g></div>
-        <div class="traffic"></div>
+        <div class="traffic well"></div>
         <!--Traffic  Page  Traffic  Page   Traffic  Page   Traffic  Page   Traffic  Page   Traffic  Page-->
       </div><!-- end tab-pane -->
 
@@ -179,10 +185,8 @@
 <script src="js/day_traffic_page1.js"></script>
 
 <!--log listing page scripts-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="js/logListingScript.js"></script>
 
-<script src="D3/js/d3.min.js"></script>
 <script src="D3/js/d3-legend.js"></script>
 <script src="D3/js/d3.tip.js"></script>
 <script src="D3/js/agentAnalytics.js"></script>

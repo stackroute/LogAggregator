@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var svg = d3.select(".wrap").append("svg").attr("width",600).attr("height",400);
+  var svg = d3.select(".wrap").append("div").attr("class", "well").append("svg").attr("width",600).attr("height",400);
   var g = svg.append("g").attr("id","donut");
   color = d3.scale.category10();
 
