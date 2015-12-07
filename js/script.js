@@ -21,6 +21,10 @@ $(document).ready(function() {
 
     var nestKey = element.attr("value");
     d3.json("sampledata/agentData.json", function (error, data) {
+    data = JSON.stringify(data);
+    data = data.replace(/none/g, "unknown");
+    data = JSON.parse(data);
+    console.log(data);
 
     d3.select("#donut").html="";
     d3.select(".color-legend").html="";

@@ -164,6 +164,11 @@ table, td, tr{
   background: white;
 }
 
+.page-header {
+  margin: 0px;
+  text-align: center;
+}
+
 /*Buttons nxt*/
 /*#prev{
   float: left;
