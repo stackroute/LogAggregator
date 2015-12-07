@@ -79,6 +79,7 @@ $('.year a').on('click',function(e){
       $('.month_text button').attr("disabled","yes");
     }
     else{
+      $('.month_text button').html("Month"+" <span class='caret'></span>");
       var month_days;
       if(month_selected==1 || month_selected==3 || month_selected==5 || month_selected==7 ||
         month_selected==8 || month_selected==10 || month_selected==12){
