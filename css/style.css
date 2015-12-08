@@ -212,6 +212,9 @@ padding: 10px;
   padding-top: 10px;
   padding-left: 0px;
 }
+.disableClick{
+  pointer-events:none;
+}
 
 .axis path,
 .axis line {
