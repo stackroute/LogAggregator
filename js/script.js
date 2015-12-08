@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var svg = d3.select(".wrap").append("svg").attr("width",600).attr("height",400);
+  var svg = d3.select(".wrap").append("div").attr("class", "well").append("svg").attr("width",600).attr("height",400);
   var g = svg.append("g").attr("id","donut");
   color = d3.scale.category10();
 
@@ -21,6 +21,10 @@ $(document).ready(function() {
 
     var nestKey = element.attr("value");
     d3.json("sampledata/agentData.json", function (error, data) {
+    data = JSON.stringify(data);
+    data = data.replace(/none/g, "unknown");
+    data = JSON.parse(data);
+    console.log(data);
 
     d3.select("#donut").html="";
     d3.select(".color-legend").html="";

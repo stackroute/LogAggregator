@@ -11,7 +11,7 @@
 }
 #main-tab .tab-content{
   width: 100% !important;
-  height: 900px;
+  height: auto;
   overflow: hidden;
   border:1px solid #e3e3e3;
   border-top: none;
@@ -45,18 +45,28 @@
 #agentAnalytics .criteriaGroup {
   width: 28%;
   height: 100%;
-  border-right: 1px solid lightgrey;
 }
 
 .wrap {
-  width: 78%;
+  width: 72%;
   float: right;
   height: 100%;
+  border-left: 1px solid lightgrey;
+}
+
+.wrap .page-header {
+  margin: 0px;
+  text-align: center;
+}
+
+.wrap .well {
+  margin: 20px;
 }
 
 .wrap svg{
   display: block;
   margin: auto;
+  margin: 15px auto;
 }
 
 .nav li.active a{
@@ -104,7 +114,7 @@
     border-radius: 0px;
     border: 0px;
     border-bottom: 2px solid lightgrey;
-    border: 0.5px solid red;
+    border: 0.5px solid white;
     height: 50px;
     width: 100%;
     margin-left: 0;
@@ -142,9 +152,6 @@ table, td, tr{
    text-align: center;
    width: 820px;
 }
-.logcontainer tr, td {
-  width: 280px !important;
-}
 .Mytable td{
   padding: 5px;
 }
@@ -155,6 +162,11 @@ table, td, tr{
   margin-left: 318px;
   margin-top: 20px;
   background: white;
+}
+
+.page-header {
+  margin: 0px;
+  text-align: center;
 }
 
 /*Buttons nxt*/
@@ -170,7 +182,21 @@ table, td, tr{
 
 /*----------------------------------------------logListing Stylesheet end------------------------------------------------------------*/
 
-/* Traffic Page *******************************************************************************************/
+/************************************************Traffic Page Stylesheet ********************************************************************/
+#requestRate {
+  min-height: 400px;
+}
+
+.tab-pane h2 {
+  display: inline-block;
+  padding-left: 2%;
+}
+
+.tab-pane small{
+  display: inline-block;
+  color: grey;
+}
+
 .dropdown.month_text,.dropdown.year_text,.crossMonthFilter{
 float: left;
 padding: 10px;
@@ -195,11 +221,11 @@ shape-rendering: crispEdges;
 }
 
 .traffic{
-  width: 800px;
-  height: 600px;
+  width: 900px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 60px;
+  text-align: center;
 }
 
 .traffic no_data{
