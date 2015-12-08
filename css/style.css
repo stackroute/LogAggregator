@@ -12,7 +12,7 @@
 #main-tab .tab-content{
   width: 100% !important;
   height: 900px;
-  overflow: hidden;
+  /*overflow: hidden;*/
   border:1px solid #e3e3e3;
   border-top: none;
 }
@@ -43,13 +43,13 @@
 }
 
 #agentAnalytics .criteriaGroup {
-  width: 28%;
+  width: 20%;
   height: 100%;
   border-right: 1px solid lightgrey;
 }
 
 .wrap {
-  width: 72%;
+  width: 80%;
   float: right;
   height: 100%;
 }
@@ -104,12 +104,12 @@
     border-radius: 0px;
     border: 0px;
     border-bottom: 2px solid lightgrey;
-    border: 0.5px solid white;
+    border: 0.5px solid #e3e3e3;
     height: 50px;
     width: 100%;
     margin-left: 0;
     padding: 6px 12px;
-    overflow:visible;
+    /*overflow:visible;*/
     white-space: normal;
     margin-top: -0.5px;
     color: #333;
@@ -132,15 +132,24 @@
   margin-top: 0px;
   width: 72%;
   float: left;
-  height: 600px;
+  height: 800px;
+  overflow: scroll;
 }
-.Mytable tr{
-  width: 50px;
+.Mytable td{
+  /*width: 50px;*/
+  height:70px !important;
+
 }
 table, td, tr{
    border: 1px solid #e3e3e3;
    text-align: center;
-   width: 820px;
+   width: 920px;
+
+
+
+}
+.logcontainer tr, td {
+  width: 280px !important;
 }
 .Mytable td{
   padding: 5px;
@@ -168,14 +177,10 @@ table, td, tr{
 /*----------------------------------------------logListing Stylesheet end------------------------------------------------------------*/
 
 /* Traffic Page *******************************************************************************************/
-.dropdown.month_text,.dropdown.year_text{
-float: left;
-padding: 10px;
-}
-
-#clear_filters{
-  padding: 10px;
-  padding-top: 15px;
+.dropdown.months{
+  width: 50px;
+  margin: auto;
+  margin-top: 20px;
 }
 
 .axis path,
@@ -186,11 +191,10 @@ shape-rendering: crispEdges;
 }
 
 .traffic{
-  width: 800px;
-  height: 600px;
+  width: 700px;
+  height: 500px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 60px;
 }
 
 .traffic no_data{

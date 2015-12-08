@@ -82,9 +82,9 @@
                         drawTable(data);
                         $('#nav').html('');
                         $('#personDataTable').after('<div id="nav"></div>');
-                        var rowsShown = 4;
+                        var rowsShown = 100;
                         var rowsTotal =  no_of_rows_all;
-                     
+
                         drawRowDynamic(data,rowsTotal);
                     }
                     if($path==data[0].path)
@@ -95,11 +95,8 @@
                         drawTable(data);
                         $('#nav').html('');
                         $('#personDataTable').after('<div id="nav"></div>');
-                        var rowsShown = 4;
+                        var rowsShown = 100;
                         var rowsTotal =  no_of_rows;
-                       
-
-                        
 		 drawRowDynamic(data,rowsTotal);
 
                       loop=0;
@@ -114,10 +111,10 @@
 
       function drawHeader(data){
 
-            $(".header").html('');
+            $("#personDataTable").html('');
             no_of_rows = 0;
-            var row = $("<tr />");
-            $(".header").append(row);
+            var row = $("<tr  />");
+            $("#personDataTable").append(row);
 
             delete data[0].path;
             delete data[0].host;

@@ -6,7 +6,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "350300406",
+        "size": "350.30 MB",
         "referer": "-",
         "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko",
         "time": {
@@ -20,7 +20,7 @@
         "method": "HEAD",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "0",
+        "size": "0 B",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -34,7 +34,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "385600192",
+        "size": "385.60 MB",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -48,7 +48,7 @@
         "method": "HEAD",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "0",
+        "size": "0 B",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -62,7 +62,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "350300406",
+        "size": "350.30 MB",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -76,7 +76,7 @@
         "method": "HEAD",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "0",
+        "size": "0 B",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -90,7 +90,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "350300406",
+        "size": "350.30 MB",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -104,7 +104,7 @@
         "method": "HEAD",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "0",
+        "size": "0 B",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -118,7 +118,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "350300406",
+        "size": "350.30 MB",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -132,7 +132,7 @@
         "method": "HEAD",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "0",
+        "size": "0 B",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -146,7 +146,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "350300406",
+        "size": "350.30 MB",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -160,7 +160,7 @@
         "method": "HEAD",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "0",
+        "size": "0 B",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -174,7 +174,7 @@
         "method": "HEAD",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "0",
+        "size": "0 B",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -188,7 +188,7 @@
         "method": "HEAD",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "0",
+        "size": "0 B",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -202,7 +202,7 @@
         "method": "HEAD",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "0",
+        "size": "0 B",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -216,7 +216,7 @@
         "method": "HEAD",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "0",
+        "size": "0 B",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -230,7 +230,7 @@
         "method": "HEAD",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "0",
+        "size": "0 B",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -244,7 +244,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "350300406",
+        "size": "350.30 MB",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -258,7 +258,7 @@
         "method": "HEAD",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "0",
+        "size": "0 B",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -272,7 +272,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "350300406",
+        "size": "350.30 MB",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -286,7 +286,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "350300406",
+        "size": "350.30 MB",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -300,7 +300,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "350300406",
+        "size": "350.30 MB",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -314,7 +314,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "350300406",
+        "size": "350.30 MB",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -328,7 +328,7 @@
         "method": "HEAD",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "0",
+        "size": "0 B",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -342,7 +342,7 @@
         "method": "HEAD",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "0",
+        "size": "0 B",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -356,7 +356,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "350300406",
+        "size": "350.30 MB",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -370,7 +370,7 @@
         "method": "HEAD",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "0",
+        "size": "0 B",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -384,7 +384,7 @@
         "method": "HEAD",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "0",
+        "size": "0 B",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -398,7 +398,7 @@
         "method": "HEAD",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "0",
+        "size": "0 B",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -412,7 +412,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "350300406",
+        "size": "350.30 MB",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -426,7 +426,7 @@
         "method": "HEAD",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "0",
+        "size": "0 B",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -440,7 +440,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "350300406",
+        "size": "350.30 MB",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -454,7 +454,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "350300406",
+        "size": "350.30 MB",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -468,7 +468,7 @@
         "method": "HEAD",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "0",
+        "size": "0 B",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -482,7 +482,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "350300406",
+        "size": "350.30 MB",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -496,7 +496,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "350300406",
+        "size": "350.30 MB",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -510,7 +510,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "350300406",
+        "size": "350.30 MB",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -524,7 +524,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "350300406",
+        "size": "350.30 MB",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -538,7 +538,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "350300406",
+        "size": "350.30 MB",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -552,7 +552,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "350300406",
+        "size": "350.30 MB",
         "referer": "-",
         "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
         "time": {
@@ -566,7 +566,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "206",
-        "size": "1",
+        "size": "1 B",
         "referer": "-",
         "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
         "time": {
@@ -580,7 +580,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "2508017",
+        "size": "2.51 MB",
         "referer": "-",
         "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
         "time": {
@@ -594,7 +594,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "350300406",
+        "size": "350.30 MB",
         "referer": "-",
         "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
         "time": {
@@ -608,7 +608,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "206",
-        "size": "350296573",
+        "size": "350.30 MB",
         "referer": "-",
         "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
         "time": {
@@ -622,7 +622,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "206",
-        "size": "1",
+        "size": "1 B",
         "referer": "-",
         "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
         "time": {
@@ -636,7 +636,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "206",
-        "size": "350297749",
+        "size": "350.30 MB",
         "referer": "-",
         "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
         "time": {
@@ -650,7 +650,7 @@
         "method": "HEAD",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "0",
+        "size": "0 B",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -664,7 +664,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "345809551",
+        "size": "345.81 MB",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -678,7 +678,7 @@
         "method": "HEAD",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "0",
+        "size": "0 B",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -692,7 +692,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "416",
-        "size": "212",
+        "size": "212 B",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -706,7 +706,7 @@
         "method": "HEAD",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "0",
+        "size": "0 B",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -720,7 +720,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "345809551",
+        "size": "345.81 MB",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -734,7 +734,7 @@
         "method": "HEAD",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "0",
+        "size": "0 B",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -748,7 +748,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "345809551",
+        "size": "345.81 MB",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -762,7 +762,7 @@
         "method": "HEAD",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "0",
+        "size": "0 B",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -776,7 +776,7 @@
         "method": "HEAD",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "0",
+        "size": "0 B",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -790,7 +790,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "345809551",
+        "size": "345.81 MB",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -804,7 +804,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "345809551",
+        "size": "345.81 MB",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -818,7 +818,7 @@
         "method": "HEAD",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "0",
+        "size": "0 B",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -832,7 +832,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "345809551",
+        "size": "345.81 MB",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -846,7 +846,7 @@
         "method": "HEAD",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "0",
+        "size": "0 B",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
@@ -860,7 +860,7 @@
         "method": "GET",
         "path": "/vagrant/boxes/stackroute-html.box",
         "code": "200",
-        "size": "345809551",
+        "size": "345.81 MB",
         "referer": "-",
         "agent": "Vagrant/1.7.4",
         "time": {
