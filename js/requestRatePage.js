@@ -72,7 +72,7 @@ var yearPlotting=function(){
       d3.select('.traffic')
       .html('');
       d3.select('.traffic')
-      .append('no_data')
+      .append('noData')
       .html('No Data Available for Selected Year');
       $('.month_text button').html("Month"+" <span class='caret'></span>");
       $('.month_text button').attr("disabled","yes");
@@ -168,7 +168,7 @@ var monthPlotting = function(month_selected){
       d3.select('.traffic')
       .html('');
       d3.select('.traffic')
-      .append('no_data')
+      .append('noData')
       .html('No Data Available for Selected Month');
     }
     else{
@@ -229,7 +229,7 @@ var analysis=function(data){
   .y(function(d) { return y(d.count); });
 
 
-  d3.select('g')
+  d3.select('noData')
   .html('');
 
   d3.select('.traffic')
@@ -296,12 +296,14 @@ var analysis=function(data){
   .style("stroke", function(d) { return color(d.REQUEST); });
 
 
+  $('svg').attr("width",width+220);
+
   var legend = svg.selectAll(".legend")
   .data(color.domain().slice())
   .enter()
   .append("g")
   .attr("class", "legend")
-  .attr("transform", function(d, i) { return "translate(23," + i * 25 + ")"; });
+  .attr("transform", function(d, i) { return "translate(80," + i * 25 + ")"; });
 
   legend.append("rect")
   .attr("x", width - 18)
