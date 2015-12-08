@@ -3,7 +3,7 @@
       var no_of_rows = 0,
       no_of_rows_all = 0;
 
-      $("div.logcontainer").append($("<tr><td><button id='All'> All </button></td></br>"));
+      $("div.logcontainer").append($("<tr><td><button id='All'> Most Visited </button></td></br>"));
 
       for(var i=0; i<10; i++){
 

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var svg = d3.select(".wrap").append("svg").attr("width",600).attr("height",400);
+  var svg = d3.select(".wrap").append("div").attr("class", "well").append("svg").attr("width",600).attr("height",400);
   var g = svg.append("g").attr("id","donut");
   color = d3.scale.category10();
 
@@ -21,6 +21,9 @@ $(document).ready(function() {
 
     var nestKey = element.attr("value");
     d3.json("sampledata/agentData.json", function (error, data) {
+    data = JSON.stringify(data);
+    data = data.replace(/none/g, "others");
+    data = JSON.parse(data);
 
     d3.select("#donut").html="";
     d3.select(".color-legend").html="";
@@ -46,15 +49,16 @@ $(document).ready(function() {
 
   $('.criteriaPane').on("click", function(e) {
     render( $(this) );
-    $('.criteriaPane').css("border-left","0");
-    $(this).css("border-left", "4px solid blue");
+    $('.criteriaPane').attr("class", "btn btn-default criteriaPane");
+    $('.criteriaPane').addClass("noBorder");
+    $(this).addClass("withBorder");
     e.preventDefault();
   });
 
   var i=0;
   $('.tab2').on("click", function(e) {
     if(i==0) {
-      $("#browserShare").css("border-left", "4px solid blue");
+      $("#browserShare").addClass("withBorder");
       render( $("#browserShare"));
       i++;
     }

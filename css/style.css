@@ -11,8 +11,13 @@
 }
 #main-tab .tab-content{
   width: 100% !important;
+<<<<<<< HEAD
   height: 900px;
   /*overflow: hidden;*/
+=======
+  height: auto;
+  overflow: hidden;
+>>>>>>> a1544759b0a54280071b3754c46e67f8962e1fc1
   border:1px solid #e3e3e3;
   border-top: none;
 }
@@ -45,18 +50,28 @@
 #agentAnalytics .criteriaGroup {
   width: 20%;
   height: 100%;
-  border-right: 1px solid lightgrey;
 }
 
 .wrap {
   width: 80%;
   float: right;
   height: 100%;
+  border-left: 1px solid lightgrey;
+}
+
+.wrap .page-header {
+  margin: 0px;
+  text-align: center;
+}
+
+.wrap .well {
+  margin: 20px;
 }
 
 .wrap svg{
   display: block;
   margin: auto;
+  margin: 15px auto;
 }
 
 .nav li.active a{
@@ -94,9 +109,13 @@
   left: 0;
 }
 
+.noBorder {
+  border-left: 0px !important;
+}
 
-
-
+.withBorder {
+  border-left : 4px solid blue !important;
+}
 
 
 /*---------------------------------------log listing page stylesheet------------------------------------------------*/
@@ -108,7 +127,8 @@
     height: 50px;
     width: 100%;
     margin-left: 0;
-    padding: 6px 12px;
+    text-align: left;
+    padding-left: 6px;
     /*overflow:visible;*/
     white-space: normal;
     margin-top: -0.5px;
@@ -121,38 +141,53 @@
 }
 .logcontainer{
   margin-top: 0px;
-  font-size: 1em;
+  font-size: 0.833em;
   font-family: sans-serif;
   padding: 0;
   line-height: 40px;
   float: left;
   width:28%;
+
 }
 .Mytable{
   margin-top: 0px;
-  width: 72%;
+  width: 71%;
   float: left;
-  height: 800px;
+  height: 600px;
   overflow: scroll;
+  margin-right: 0px;
+  text-align: center;
+}
+table{
+  width: 1000;
+}
+.mouseover {
+  background-color:lightgrey;
+}
+.mouseout {
+background-color:white;}
+.siblings{
+  border-left-color:black;border-left-width: 0px;
 }
 .Mytable td{
   /*width: 50px;*/
-  height:70px !important;
-
+  height:auto;
+  font-size: 12px;
+  width: auto;
 }
-table, td, tr{
+.Mytable td:nth-child(5){
+  max-width: 200px;
+}
+.Mytable th{
+  text-transform:  capitalize;
+  height: 50px;
+}
+td, tr, th{
    border: 1px solid #e3e3e3;
    text-align: center;
-   width: 920px;
-
-
-
 }
-.logcontainer tr, td {
-  width: 280px !important;
-}
-.Mytable td{
-  padding: 5px;
+.Mytable td,th{
+  padding: 2px;
 }
 
 .header {
@@ -161,6 +196,11 @@ table, td, tr{
   margin-left: 318px;
   margin-top: 20px;
   background: white;
+}
+
+.page-header {
+  margin: 0px;
+  text-align: center;
 }
 
 /*Buttons nxt*/
@@ -176,11 +216,43 @@ table, td, tr{
 
 /*----------------------------------------------logListing Stylesheet end------------------------------------------------------------*/
 
+<<<<<<< HEAD
 /* Traffic Page *******************************************************************************************/
 .dropdown.months{
   width: 50px;
   margin: auto;
   margin-top: 20px;
+=======
+/************************************************Traffic Page Stylesheet ********************************************************************/
+#requestRate {
+  min-height: 400px;
+}
+
+.tab-pane h2 {
+  display: inline-block;
+  padding-left: 2%;
+}
+
+.tab-pane small{
+  display: inline-block;
+  color: grey;
+}
+
+.dropdown.month_text,.dropdown.year_text,.crossMonthFilter{
+float: left;
+padding: 10px;
+}
+.dropdown.month_text{
+  padding-right: 0px;
+}
+#clear_filters,.crossMonthFilter{
+  padding: 10px;
+  padding-top: 18px;
+}
+.crossMonthFilter{
+  padding-top: 10px;
+  padding-left: 0px;
+>>>>>>> a1544759b0a54280071b3754c46e67f8962e1fc1
 }
 
 .axis path,
@@ -191,10 +263,18 @@ shape-rendering: crispEdges;
 }
 
 .traffic{
+<<<<<<< HEAD
   width: 700px;
   height: 500px;
   margin-left: auto;
   margin-right: auto;
+=======
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  text-align: center;
+>>>>>>> a1544759b0a54280071b3754c46e67f8962e1fc1
 }
 
 .traffic no_data{
