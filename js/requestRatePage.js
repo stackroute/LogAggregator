@@ -74,9 +74,16 @@ var yearPlotting=function(){
       d3.select('.traffic')
       .append('no_data')
       .html('No Data Available for Selected Year');
+      $('.month_text button').html("Month"+" <span class='caret'></span>");
       $('.month_text button').attr("disabled","yes");
+      if(year_selected==year){
       $('#clear_filters').attr("disabled","yes")
                          .addClass('disableClick');
+      }
+      else{
+        $('#clear_filters').removeAttr("disabled")
+                           .removeClass('disableClick');
+      }
       $('.crossMonthFilter a').attr("disabled","yes")
                               .addClass('disableClick');
     }
