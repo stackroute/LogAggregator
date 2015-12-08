@@ -104,9 +104,13 @@
   left: 0;
 }
 
+.noBorder {
+  border-left: 0px !important;
+}
 
-
-
+.withBorder {
+  border-left : 4px solid blue !important;
+}
 
 
 /*---------------------------------------log listing page stylesheet------------------------------------------------*/
