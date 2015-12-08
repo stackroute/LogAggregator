@@ -1,7 +1,7 @@
 
 var year=(new Date()).getFullYear();
 var years=[];
-for(i=0;i<7;i++){
+for(i=0;i<config.noOfYears;i++){
   var obj={};
   obj['year']=year-i;
   years.push(obj);
