@@ -1,7 +1,7 @@
 
 var year=(new Date()).getFullYear();
 var years=[];
-for(i=0;i<7;i++){
+for(i=0;i<config.noOfYears;i++){
   var obj={};
   obj['year']=year-i;
   years.push(obj);
@@ -72,11 +72,20 @@ var yearPlotting=function(){
       d3.select('.traffic')
       .html('');
       d3.select('.traffic')
-      .append('no_data')
+      .append('noData')
       .html('No Data Available for Selected Year');
+      $('.month_text button').html("Month"+" <span class='caret'></span>");
       $('.month_text button').attr("disabled","yes");
-      $('#clear_filters').attr("disabled","yes");
-      $('.crossMonthFilter a').attr("disabled","yes");
+      if(year_selected==year){
+      $('#clear_filters').attr("disabled","yes")
+                         .addClass('disableClick');
+      }
+      else{
+        $('#clear_filters').removeAttr("disabled")
+                           .removeClass('disableClick');
+      }
+      $('.crossMonthFilter a').attr("disabled","yes")
+                              .addClass('disableClick');
     }
     else{
       $('.month_text button').removeAttr("disabled");
@@ -105,17 +114,26 @@ var yearPlotting=function(){
         }
       }
       data=newdata;
+      if(year_selected!=year){
+      $('#clear_filters').removeAttr("disabled")
+                         .removeClass('disableClick');
+       }
+       else{
+         $('#clear_filters').attr("disabled","yes")
+                            .addClass('disableClick');
+       }
       analysis(data);
     }
   });
 }
+
 $('.year a').on('click',function(e){
-  $('#clear_filters').removeAttr("disabled");
-  margin.bottom=100;
-  year_selected=parseInt($(this).text());
-  yearPlotting(year_selected);
-  e.preventDefault();
+   margin.bottom=100;
+   year_selected=parseInt($(this).text());
+   yearPlotting(year_selected);
+   e.preventDefault();
 });
+
 
 /**** Year Change Traffic End ***********************************************************************/
 var monthPlotting = function(month_selected){
@@ -150,7 +168,7 @@ var monthPlotting = function(month_selected){
       d3.select('.traffic')
       .html('');
       d3.select('.traffic')
-      .append('no_data')
+      .append('noData')
       .html('No Data Available for Selected Month');
     }
     else{
@@ -188,7 +206,10 @@ $('.months a').on('click',function(e){
   margin.bottom=29;
   month_selected=($(this).attr('value'));
   monthPlotting(month_selected);
-  $('.crossMonthFilter a').removeAttr("disabled");
+  $('#clear_filters').removeAttr("disabled")
+                     .removeClass('disableClick');
+ $('.crossMonthFilter a').removeAttr("disabled")
+                    .removeClass('disableClick');
   e.preventDefault();
 });
 
@@ -208,7 +229,7 @@ var analysis=function(data){
   .y(function(d) { return y(d.count); });
 
 
-  d3.select('g')
+  d3.select('noData')
   .html('');
 
   d3.select('.traffic')
@@ -275,12 +296,14 @@ var analysis=function(data){
   .style("stroke", function(d) { return color(d.REQUEST); });
 
 
+  $('svg').attr("width",width+220);
+
   var legend = svg.selectAll(".legend")
   .data(color.domain().slice())
   .enter()
   .append("g")
   .attr("class", "legend")
-  .attr("transform", function(d, i) { return "translate(23," + i * 25 + ")"; });
+  .attr("transform", function(d, i) { return "translate(80," + i * 25 + ")"; });
 
   legend.append("rect")
   .attr("x", width - 18)
@@ -307,8 +330,13 @@ $('a#clear_filters').on('click',function(e){
   $(".traffic").html('');
   month_selected=(new Date()).getMonth();
   year_selected=year;
-  yearPlotting(year_selected);
   e.preventDefault();
+  $('.crossMonthFilter a').attr("disabled","yes")
+                          .addClass('disableClick');
+  $('.a#clear_filters').attr("disabled","yes")
+                          .addClass('disableClick');
+   margin.bottom=100;
+  yearPlotting(year_selected);
 });
 //**************************Clear All Filters End***************************************//////////////////////
 
@@ -317,8 +345,13 @@ $('a#clear_filters').on('click',function(e){
 $('.crossMonthFilter a').on('click',function(e){
   $(".traffic").html('');
   year_selected=year;
-  yearPlotting(year_selected);
   e.preventDefault();
+  $('.crossMonthFilter a').attr("disabled","yes")
+                          .addClass('disableClick');
+  $('.a#clear_filters').attr("disabled","yes")
+                          .addClass('disableClick');
+   margin.bottom=100;
+  yearPlotting(year_selected);
 });
 
 //**************************Cross Month Filters End***************************************//////////////////////
