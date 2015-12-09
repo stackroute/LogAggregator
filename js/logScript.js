@@ -83,7 +83,7 @@
 
       $('div.logcontainer').on('mouseover','button',function() {
 
-            $(this).addClass('mouseover');
+            $(this).removeClass('mouseout').addClass('mouseover');
       }); //hover event for button
 
 
@@ -91,6 +91,7 @@
 
           $(this).addClass('mouseout');
       });//mouseout event for button
+
 
 
       $('div.logcontainer').on('click','button',function(){
