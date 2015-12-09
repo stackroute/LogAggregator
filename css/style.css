@@ -11,13 +11,13 @@
 }
 #main-tab .tab-content{
   width: 100% !important;
-<<<<<<< HEAD
+
   height: 900px;
   /*overflow: hidden;*/
-=======
+
   height: auto;
   overflow: hidden;
->>>>>>> a1544759b0a54280071b3754c46e67f8962e1fc1
+
   border:1px solid #e3e3e3;
   border-top: none;
 }
