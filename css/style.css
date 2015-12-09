@@ -118,7 +118,7 @@
 }
 
 
-/*---------------------------------------log listing page stylesheet------------------------------------------------*/
+/*--------------------------------------- listing page stylesheet------------------------------------------------*/
 .logButtonStyle{
     border-radius: 0px;
     border: 0px;
@@ -141,17 +141,18 @@
 }
 .logcontainer{
   margin-top: 0px;
-  font-size: 0.833em;
+  font-size: 0.83em;
   font-family: sans-serif;
   padding: 0;
   line-height: 40px;
   float: left;
   width:28%;
+  text-align: center;
 
 }
 .Mytable{
   margin-top: 0px;
-  width: 71%;
+  width: 72%;
   float: left;
   height: 600px;
   overflow: scroll;
@@ -166,9 +167,16 @@ table{
 }
 .mouseout {
 background-color:white;}
-.siblings{
-  border-left-color:black;border-left-width: 0px;
-}
+
+
+.clickedbutton{
+    border-left-color:blue;
+    border-left-width: 4px;
+    border-left-style: solid;
+  }
+  .active1 {
+    color:lightblue;
+  }
 .Mytable td{
   /*width: 50px;*/
   height:auto;
@@ -196,6 +204,11 @@ td, tr, th{
   margin-left: 318px;
   margin-top: 20px;
   background: white;
+
+}
+.pos {
+  display: table-row !important;
+  opacity: 1 !important;
 }
 
 .page-header {

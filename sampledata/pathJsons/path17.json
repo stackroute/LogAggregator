@@ -1,0 +1,142 @@
+[
+    {
+        "remote": "172.23.238.77",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/niit-html.box",
+        "code": "200",
+        "size": "10.86 MB",
+        "referer": "-",
+        "agent": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0",
+        "time": {
+            "$date": 1446122941000
+        }
+    },
+    {
+        "remote": "172.23.238.77",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/niit-html.box",
+        "code": "200",
+        "size": "97.32 MB",
+        "referer": "http://172.23.238.13/vagrant/",
+        "agent": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0",
+        "time": {
+            "$date": 1446123047000
+        }
+    },
+    {
+        "remote": "172.23.238.77",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/niit-html.box",
+        "code": "206",
+        "size": "83.89 MB",
+        "referer": "http://172.23.238.13/vagrant/",
+        "agent": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0",
+        "time": {
+            "$date": 1446123047000
+        }
+    },
+    {
+        "remote": "172.23.238.77",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/niit-html.box",
+        "code": "206",
+        "size": "10.18 MB",
+        "referer": "http://172.23.238.13/vagrant/",
+        "agent": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0",
+        "time": {
+            "$date": 1446123059000
+        }
+    },
+    {
+        "remote": "172.23.238.77",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/niit-html.box",
+        "code": "206",
+        "size": "75.14 MB",
+        "referer": "http://172.23.238.13/vagrant/",
+        "agent": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0",
+        "time": {
+            "$date": 1446123061000
+        }
+    },
+    {
+        "remote": "172.23.238.77",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/niit-html.box",
+        "code": "206",
+        "size": "10.35 MB",
+        "referer": "http://172.23.238.13/vagrant/",
+        "agent": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0",
+        "time": {
+            "$date": 1446123063000
+        }
+    },
+    {
+        "remote": "172.23.238.77",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/niit-html.box",
+        "code": "206",
+        "size": "3.98 MB",
+        "referer": "http://172.23.238.13/vagrant/",
+        "agent": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0",
+        "time": {
+            "$date": 1446123063000
+        }
+    },
+    {
+        "remote": "172.23.238.77",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/niit-html.box",
+        "code": "206",
+        "size": "1.27 MB",
+        "referer": "http://172.23.238.13/vagrant/",
+        "agent": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0",
+        "time": {
+            "$date": 1446123063000
+        }
+    },
+    {
+        "remote": "172.23.238.77",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/niit-html.box",
+        "code": "206",
+        "size": "1.44 MB",
+        "referer": "http://172.23.238.13/vagrant/",
+        "agent": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0",
+        "time": {
+            "$date": 1446123065000
+        }
+    },
+    {
+        "remote": "172.23.238.77",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/vagrant/boxes/niit-html.box",
+        "code": "206",
+        "size": "68.85 MB",
+        "referer": "http://172.23.238.13/vagrant/",
+        "agent": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0",
+        "time": {
+            "$date": 1446123065000
+        }
+    }
+]

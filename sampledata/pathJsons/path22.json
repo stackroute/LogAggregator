@@ -1,0 +1,30 @@
+[
+    {
+        "remote": "172.23.238.143",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "404",
+        "size": "200 B",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.10240",
+        "time": {
+            "$date": 1445271903000
+        }
+    },
+    {
+        "remote": "172.23.238.143",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/Setup/Windows/vagrant_1.7.4.msi",
+        "code": "404",
+        "size": "200 B",
+        "referer": "http://172.23.238.13/software/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.10240",
+        "time": {
+            "$date": 1445271942000
+        }
+    }
+]
