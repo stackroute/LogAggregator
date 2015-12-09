@@ -12,6 +12,7 @@
 
 
       $(document).ready(function(){
+        $('#All').addClass('clickedbutton');
           alldata();
           })
 
