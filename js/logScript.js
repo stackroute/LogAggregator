@@ -8,43 +8,49 @@
       var no_of_paths=10,
       paths_selected=[];
 
-      $("div.logcontainer").append($("<tr><td><button id='All'> Most Visited </button></td></br>"));
+      $("div.logcontainer").append($("<tr><td><button id='All'> Top Ten Most Visited Paths </button></td></br>"));
 
 
       $(document).ready(function(){
+          alldata();
+          })
 
-            $('div.logcontainer').on('click','button',function(){
+      $('div.logcontainer').on('click','button',function(){
 
-              var clicked = $(this),
-              id = clicked.attr('id');
-              if(id=="All") {
+          var clicked = $(this),
+          id = clicked.attr('id');
 
-                    $.ajax
-                    ({
-                      dataType : "json",
-                      url : "sampledata/pathJsons/pathall.json",
-                      success : function(data){
-                        drawHeader(data,"All");
-                        drawTable(data,"All");
+          if(id=="All") {
+            alldata();
+          }//if
+      })//click
 
-                        //pagenation call
-                        $('#nav').html('');
-                        $('#personDataTable').after('<div id="nav"></div>');
-                        var rowsTotal =  no_of_rows_all;
-                        drawRowDynamic(data,rowsTotal);
-                      }
-                    });
 
-              }//check if
-          })//click
 
-      })
+      function alldata() {
 
+              $.ajax
+              ({
+                  dataType : "json",
+                  url : "sampledata/pathJsons/pathall.json",
+                  success : function(data){
+                    drawHeader(data,"All");
+                    drawTable(data,"All");
+
+                    //pagenation call
+                    $('#nav').html('');
+                    $('#personDataTable').after('<div id="nav"></div>');
+                    var rowsTotal =  no_of_rows_all;
+                    drawRowDynamic(data,rowsTotal);
+                  }
+              });
+
+      }//alldata fn
 
     //initialising no_of_paths  from config file
 
-          no_of_paths = config.paths;
-          
+      no_of_paths = config.paths;
+
 
 
       //storing the paths a/c to config file
@@ -53,13 +59,13 @@
         dataType : "json",
         url : "sampledata/paths.json",
         success : function(data) {
-              for(var i=0; i<no_of_paths; i++)
-              {
-                //storing paths into an array
-                  paths_selected.push({"path": data.arr[i]["path"],
-                  "count": data.arr[i]["count"]});
-              }
-             var paths= $(document).trigger('pathArray', paths_selected);
+                for(var i=0; i<no_of_paths; i++)
+                {
+                  //storing paths into an array
+                    paths_selected.push({"path": data.arr[i]["path"],
+                    "count": data.arr[i]["count"]});
+                }
+               var paths= $(document).trigger('pathArray', paths_selected);
         }//success fn
     });
 
@@ -68,7 +74,7 @@
 
         for(var j =0 ; j<paths_selected.length; j++)
         {
-          $("div.logcontainer").append($('<tr><td><button id = '+ paths_selected[j]["path"] + ' > ' + paths_selected[j]["path"] + ' <span >' + paths_selected[j]["count"] + '</span></button></td>'));
+          $("div.logcontainer").append($('<tr><td><button id = '+ paths_selected[j]["path"] + ' > ' + paths_selected[j]["path"] + ' <span >' + '('+ paths_selected[j]["count"] + ')'+'</span></button></td>'));
           $("div.logcontainer tr button").addClass("logButtonStyle");
         }
     });
@@ -104,6 +110,8 @@
                    //got the path so fetch corresponding json file
                        var pos_found = i+1;
                        //ajax request to the clicked path json
+                       if(pos_found > 7)
+                       document.location.href='#';
                        $.ajax
                        ({
                          dataType : "json",
@@ -187,7 +195,6 @@
                     .attr("title",rowData[key]));
               }
                 else{
-
                     if(key=="_id")
                     row.append($("<td>" + rowData[key]["$oid"] + "</td>"));
                     else {

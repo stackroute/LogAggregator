@@ -147,7 +147,7 @@
   line-height: 40px;
   float: left;
   width:28%;
-  text-align: center;
+  text-align: justify;
 
 }
 .Mytable{
@@ -158,9 +158,15 @@
   overflow: scroll;
   margin-right: 0px;
   text-align: center;
+  border-top: 1px solid lightgrey;
 }
 table{
   width: 1000;
+  border:0px;
+  width:100%;
+}
+span{
+  color:blue;
 }
 .mouseover {
   background-color:lightgrey;
