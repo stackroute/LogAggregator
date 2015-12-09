@@ -229,14 +229,12 @@ td, tr, th{
 
 /*----------------------------------------------logListing Stylesheet end------------------------------------------------------------*/
 
-<<<<<<< HEAD
 /* Traffic Page *******************************************************************************************/
 .dropdown.months{
   width: 50px;
   margin: auto;
   margin-top: 20px;
-=======
-/************************************************Traffic Page Stylesheet ********************************************************************/
+}
 #requestRate {
   min-height: 400px;
 }
@@ -265,7 +263,6 @@ padding: 10px;
 .crossMonthFilter{
   padding-top: 10px;
   padding-left: 0px;
->>>>>>> a1544759b0a54280071b3754c46e67f8962e1fc1
 }
 .disableClick{
   pointer-events:none;
@@ -279,18 +276,15 @@ shape-rendering: crispEdges;
 }
 
 .traffic{
-<<<<<<< HEAD
   width: 700px;
   height: 500px;
   margin-left: auto;
   margin-right: auto;
-=======
   width: 900px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 60px;
   text-align: center;
->>>>>>> a1544759b0a54280071b3754c46e67f8962e1fc1
 }
 
 .traffic no_data{
