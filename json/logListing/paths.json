@@ -1,0 +1,154 @@
+{
+    "arr": [
+        {
+            "path": "/software/Setup/Windows/vagrant_1.7.4.msi",
+            "count": 408,
+            "fixed_pos": 1
+        },
+        {
+            "path": "/favicon.ico",
+            "count": 199,
+            "fixed_pos": 2
+        },
+        {
+            "path": "/software/",
+            "count": 177,
+            "fixed_pos": 3
+        },
+        {
+            "path": "/software/Setup/Windows/VirtualBox-4.3.30-101610-Win.exe",
+            "count": 94,
+            "fixed_pos": 4
+        },
+        {
+            "path": "/vagrant/boxes/trusty-server-cloudimg-i386-vagrant-disk1.box",
+            "count": 81,
+            "fixed_pos": 5
+        },
+        {
+            "path": "/software",
+            "count": 72,
+            "fixed_pos": 6
+        },
+        {
+            "path": "/software/Setup/Windows/winscp575setup.exe",
+            "count": 70,
+            "fixed_pos": 7
+        },
+        {
+            "path": "/vagrant/boxes/stackroute-html.box",
+            "count": 62,
+            "fixed_pos": 8
+        },
+        {
+            "path": "/software/Setup/Windows/AtomSetup.exe",
+            "count": 53,
+            "fixed_pos": 9
+        },
+        {
+            "path": "/software/Setup/Windows/Git-2.6.1-64-bit.exe",
+            "count": 52,
+            "fixed_pos": 10
+        },
+        {
+            "path": "/vagrant/boxes/stackroute-barebones-node.box",
+            "count": 50,
+            "fixed_pos": 11
+        },
+        {
+            "path": "/software/Setup/Windows/spsetup128.exe",
+            "count": 44,
+            "fixed_pos": 12
+        },
+        {
+            "path": "/",
+            "count": 33,
+            "fixed_pos": 13
+        },
+        {
+            "path": "/software/Setup/Windows/AtomSetup",
+            "count": 17,
+            "fixed_pos": 14
+        },
+        {
+            "path": "/software/Setup/Windows/Bootstrap/file-1.zip",
+            "count": 11,
+            "fixed_pos": 15
+        },
+        {
+            "path": "/software/Setup/Windows/Sublime%20Text%202.0.2%20Setup-Windows%20Portable%20Version.exe",
+            "count": 11,
+            "fixed_pos": 16
+        },
+        {
+            "path": "/vagrant/boxes/niit-html.box",
+            "count": 10,
+            "fixed_pos": 17
+        },
+        {
+            "path": "/software/Setup/Windows/Sublime%20Text%202.0.2%20x64%20Setup-64Bit.exe",
+            "count": 10,
+            "fixed_pos": 18
+        },
+        {
+            "path": "/software/Setup/Windows/Git-2.6.1-32-bit.exe",
+            "count": 9,
+            "fixed_pos": 19
+        },
+        {
+            "path": "/browserconfig.xml",
+            "count": 3,
+            "fixed_pos": 20
+        },
+        {
+            "path": "/softwares",
+            "count": 3,
+            "fixed_pos": 21
+        },
+        {
+            "path": "/Setup/Windows/vagrant_1.7.4.msi",
+            "count": 2,
+            "fixed_pos": 22
+        },
+        {
+            "path": "/student",
+            "count": 1,
+            "fixed_pos": 23
+        },
+        {
+            "path": "/vagrant/",
+            "count": 1,
+            "fixed_pos": 24
+        },
+        {
+            "path": "/doftware",
+            "count": 1,
+            "fixed_pos": 25
+        },
+        {
+            "path": "/software/Setup/Bootstrap/file-1.zip",
+            "count": 1,
+            "fixed_pos": 26
+        },
+        {
+            "path": "/vagrant/boxes",
+            "count": 1,
+            "fixed_pos": 27
+        },
+        {
+            "path": "/vagrant/boxes/",
+            "count": 1,
+            "fixed_pos": 28
+        },
+        {
+            "path": "/softwraes",
+            "count": 1,
+            "fixed_pos": 29
+        },
+        {
+            "path": "/Setup/Windows/spsetup128.exe",
+            "count": 1,
+            "fixed_pos": 30
+        }
+    ]
+}

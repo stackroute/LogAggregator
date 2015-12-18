@@ -1,0 +1,44 @@
+[
+    {
+        "remote": "172.23.238.214",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/browserconfig.xml",
+        "code": "404",
+        "size": "142 B",
+        "referer": "-",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; rv:11.0) like Gecko",
+        "time": {
+            "$date": 1447847406000
+        }
+    },
+    {
+        "remote": "172.23.238.233",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/browserconfig.xml",
+        "code": "404",
+        "size": "142 B",
+        "referer": "-",
+        "agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; rv:11.0) like Gecko",
+        "time": {
+            "$date": 1447859687000
+        }
+    },
+    {
+        "remote": "172.23.238.143",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/browserconfig.xml",
+        "code": "404",
+        "size": "200 B",
+        "referer": "-",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.10240",
+        "time": {
+            "$date": 1445354159000
+        }
+    }
+]

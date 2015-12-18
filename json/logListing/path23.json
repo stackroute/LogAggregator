@@ -1,0 +1,16 @@
+[
+    {
+        "remote": "172.23.238.78",
+        "host": "-",
+        "user": "-",
+        "method": "GET",
+        "path": "/student",
+        "code": "404",
+        "size": "142 B",
+        "referer": "-",
+        "agent": "Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko",
+        "time": {
+            "$date": 1446051878000
+        }
+    }
+]
