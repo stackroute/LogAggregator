@@ -4,7 +4,7 @@ This application aggregates the logs from different sources and represents them 
 
 1. To run the application clone the repository from [LogAggregator](https://github.com/stackroute/LogAggregator.git)
 2. Please install [vagrant](http://www.vagrantup.com/downloads) and also install [OracleVMVirtualBox](https://www.virtualbox.org/wiki/Downloads)
-3. Please open the command prompt and navigate to the cloned repository and type in ```vagrant up``` to set up the vagrant machine
+3. Please open the GIT Bash and navigate to the cloned repository and type in ```vagrant up``` to set up the vagrant machine
 4. Then type in ```vagrant ssh``` to open the vagrant machine
 5. Now go to the folder vagrant of the root using ```cd /vagrant```
 6. To install the dependencies use ```npm install```
