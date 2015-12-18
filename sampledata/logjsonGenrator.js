@@ -4,12 +4,12 @@ var obj,
     datas,
     paths = [];
     datas = JSON.parse(fs.readFileSync("paths.json", 'utf8'));
-    for(var i=0; i<30; i++){
+    for(var i=0; i<datas.arr.length; i++){
       paths[i] = datas.arr[i].path;
     }
 
 obj = JSON.parse(fs.readFileSync('server.logs.json', 'utf8'));
-    for(var j=0; j<30; j++)
+    for(var j=0; j<datas.arr.length; j++)
     {     var temp = paths[j];
           var array = [];
           for(var i=0; i<obj.length; i++)

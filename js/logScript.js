@@ -64,7 +64,8 @@
                 {
                   //storing paths into an array
                     paths_selected.push({"path": data.arr[i]["path"],
-                    "count": data.arr[i]["count"]});
+                    "count": data.arr[i]["count"],
+                    "fixedpos":data.arr[i]["fixedpos"]});
                 }
                var paths= $(document).trigger('pathArray', paths_selected);
         }//success fn
@@ -110,7 +111,7 @@
                  if(id === paths_selected[i].path)
                  {
                    //got the path so fetch corresponding json file
-                       var pos_found = i+1;
+                       var pos_found = paths_selected[i].fixedpos ;
                        //ajax request to the clicked path json
                        if(pos_found > 7)
                        document.location.href='#';

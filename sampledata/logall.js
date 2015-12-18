@@ -32,7 +32,7 @@ console.log(obj[0].path);
 
            }
 
-      fs.writeFile('pathJsons/all.json', JSON.stringify(obj, null, 4), function(err) {
+      fs.writeFile('pathJsons/pathall.json', JSON.stringify(obj, null, 4), function(err) {
 
         if(err) {
           console.log(err);
