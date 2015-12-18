@@ -21,7 +21,6 @@ $(document).ready(function() {
 
     var nestKey = element.attr("value");
     $.get("json/userAgent/", function (data, status) {
-    console.log(data)
     data = data.replace(/none/g, "others");
     data = JSON.parse(data);
 
