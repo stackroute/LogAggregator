@@ -31,7 +31,7 @@
 
 
       function alldata() {
-        console.log("in all data");
+        
               href="All";
               $.get("json/logListing/"+href,function(data){
                     data = JSON.parse(data);
@@ -44,7 +44,7 @@
                     var rowsTotal =  no_of_rows_all;
                     drawRowDynamic(data,rowsTotal);
 
-              });
+              });//ajax req
 
       }//alldata fn
 

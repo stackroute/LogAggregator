@@ -8,7 +8,6 @@ router.get('/:href', function(req, res  ) {
 
    var filename = "path"+href+".json";
    var file = fs.readFileSync('json/logListing/'+filename, 'utf-8');
-   //var obj =  JSON.parse(file);
    res.send(file);
 
 });
