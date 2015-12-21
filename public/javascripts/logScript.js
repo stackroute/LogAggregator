@@ -186,8 +186,15 @@
                     {title="Safari";}
                 else if (temp.indexOf("Trident")!= -1)
                     {title="IE";}
+                else if (temp.indexOf("Vagrant")!= -1)
+                    {title="Others";}
+                else if (temp.indexOf("Opr")!= -1)
+                     {title="Opera";}
+                else if (temp.indexOf("-")!= -1)
+                    {title="Others";}
                 else
-                    {title="Mozilla";}
+                      {title="Mozilla";}
+
 
                 row.append($("<td><abbr>" + title + "</abbr></td>")
                     .attr("title",rowData[key]));
