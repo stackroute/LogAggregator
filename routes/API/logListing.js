@@ -2,11 +2,11 @@ var express = require('express');
 var router = express.Router();
 var fs = require("fs");
 
-router.get('/:href', function(req, res  ) {
+router.get('/:pathId', function(req, res  ) {
 
-   var href = req.params.href;
+   var pathId = req.params.pathId;
 
-   var filename = "path"+href+".json";
+   var filename = "path"+pathId+".json";
    var file = fs.readFileSync('json/logListing/'+filename, 'utf-8');
    res.send(file);
 
