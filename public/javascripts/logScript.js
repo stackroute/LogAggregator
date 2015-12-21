@@ -21,6 +21,8 @@
           var clicked = $(this),
           id = clicked.attr('id');
 
+
+
           if(id=="All") {
             alldata();
           }//if
@@ -29,9 +31,10 @@
 
 
       function alldata() {
-
-              $.get("json/logListing/All",function(data1) {
-                    data = JSON.parse(data1);
+        console.log("in all data");
+              href="All";
+              $.get("json/logListing/"+href,function(data){
+                    data = JSON.parse(data);
                     drawHeader(data,"All");
                     drawTable(data,"All");
 
@@ -52,20 +55,19 @@
 
 
       //storing the paths a/c to config file
-      $.get("json/logListing", function(data1) {
-          
-          data = JSON.parse(data1);
-
+      $.get("json/logListing/",function(data) {
+        data = JSON.parse(data);
                 for(var i=0; i<no_of_paths; i++)
                 {
                   //storing paths into an array
+
                     paths_selected.push({"path": data.arr[i]["path"],
                     "count": data.arr[i]["count"],
                     "fixed_pos" : data.arr[i]["fixed_pos"]});
                 }
                var paths= $(document).trigger('pathArray', paths_selected);
-        });//success fn
 
+    });
 
     //Displaying the paths in the document
     $(document).on('pathArray', function(e, arry){// arry is just the first item why???
@@ -93,7 +95,6 @@
 
       $('div.logcontainer').on('click','button',function(){
 
-
           $(this).parent().parent().siblings().children().children().removeClass('clickedbutton');
 
           $(this).addClass('clickedbutton');
@@ -102,9 +103,8 @@
            $('tbody').remove();
 
            var clicked = $(this),
-           href = clicked.attr('href');
-
            id = clicked.attr('id');
+           href = clicked.attr('href');
            for(i = 0; i<paths_selected.length; i++)
            {
                  if(id === paths_selected[i].path)
@@ -114,8 +114,8 @@
                        //ajax request to the clicked path json
                        if(pos_found > 7)
                        document.location.href='#';
-                       $.get("json/logListing/"+href,function(data1){
-                           data = JSON.parse(data1);
+                       $.get("json/logListing/"+href,function(data){
+                          data = JSON.parse(data);
                            drawHeader(data,id);
                            drawTable(data,id);
                            //pagenation call

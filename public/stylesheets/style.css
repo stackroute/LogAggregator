@@ -193,7 +193,7 @@ background-color:white;}
   width: auto;
 }
 .Mytable td:nth-child(5){
-  max-width: 200px;
+  max-width: 255px;
 }
 .Mytable th{
   text-transform:  capitalize;
