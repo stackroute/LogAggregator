@@ -8,13 +8,10 @@ var logSchema = new Schema({
   method : String,
   path : String,
   code : Number,
-  size : Number,
+  size : String,
   referer : String,
   agent : String,
-  time : {
-    "$date" : Number,
-  }
+  time : Date
 },{collection: "serverhits"})
 
 mongoose.model('logs', logSchema);
-console.log("Schema log loaded");

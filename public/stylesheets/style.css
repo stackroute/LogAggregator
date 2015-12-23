@@ -79,6 +79,10 @@
   background-color: lightblue !important;
 }
 
+.filters .dropdown {
+  display : inline-block;
+}
+
 
 /*tooltip styling*/
 .d3-tip {
