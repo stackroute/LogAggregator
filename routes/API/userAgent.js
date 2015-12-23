@@ -26,7 +26,7 @@ router.get('/:year/:month', function(req, res, next) {
           browser = ["OPR", "Chrome", "Firefox", "Trident", "Edge", "Safari"],
           browserNames = ["Opera", "Google Chrome", "Mozilla Firefox", "Internet Explorer", "Microsoft Edge", "Safari"],
           os = ["Windows NT 6.1", "Macintosh", "Windows NT 10.0", "Windows NT 6.2", "Windows NT 6.3"],
-          osNames = ["Windows 7", "Macintosh", "Windows 10", "Windows 8", "Windows 8.1"],
+          osNames = ["Windows 7", "Macintosh", "Windows 10", "Windows 8", "Windows 8.1"];
 
       for(var j = 0, browLen = browser.length; j < browLen; j++) {
         if(agent.indexOf(browser[j], 0) != -1) {
