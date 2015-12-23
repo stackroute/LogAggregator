@@ -300,7 +300,7 @@ var analysis=function(data){
   .style("stroke", function(d) { return color(d.REQUEST); });
 
 
-  $('svg').attr("width",width+220);
+  $('.traffic svg').attr("width",width+220);
 
   var legend = svg.selectAll(".legend")
   .data(color.domain().slice())
