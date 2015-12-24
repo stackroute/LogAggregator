@@ -48,9 +48,11 @@ function numberOfDays(year,month){
 }
 /**** Year Change Traffic ***********************************************************************/
 
-var yearPlotting=function(){
+var yearPlotting=function(year_selected){
 //  d3.json("../json/trafficRateDayWise.json",function(json){
-    $.get("json/trafficRate/", function (json, status) {
+
+    $.get("json/trafficRate/"+year_selected+"/0", function (json, status) {
+
     var dates=json[0];
     var data=json[1].plot;
     var dataNest = d3.nest()
@@ -130,7 +132,7 @@ var yearPlotting=function(){
 
 $('.year a').on('click',function(e){
    margin.bottom=100;
-   year_selected=parseInt($(this).text());
+  var year_selected=parseInt($(this).text());
    yearPlotting(year_selected);
    e.preventDefault();
 });
@@ -139,7 +141,9 @@ $('.year a').on('click',function(e){
 /**** Year Change Traffic End ***********************************************************************/
 var monthPlotting = function(month_selected){
 //  d3.json("../json/trafficRateDayWise.json",function(json){
-     $.get("json/trafficRate/", function (json, status) {
+     var year_selected=year;
+     $.get("json/trafficRate/"+year_selected+"/"+month_selected, function (json, status) {
+
     var dates=json[0];
     var data=json[1].plot;
     if(year_selected){
@@ -147,7 +151,9 @@ var monthPlotting = function(month_selected){
       .key(function(d) {return parseInt(String(d.date).substring(0,4));})
       .entries(data);
     }
-    data=dataNest1[0].values;
+    // console.log(data.length);
+    if(data.length != 0)
+      data=dataNest1[0].values;
     var dataNest = d3.nest()
     .key(function(d) {return parseInt(String(d.date).substring(5,7));})
     .entries(data);
