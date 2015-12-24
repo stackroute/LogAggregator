@@ -5,22 +5,17 @@ var router = express.Router();
 
 
 router.get('/:pathId/:pgno', function(req, res  ) {
-console.log("in req");
         temp = req.params.pathId;
-        console.log("temp is "+temp);
         pgno = req.params.pgno;
-        console.log("page no "+pgno);
         limit=100;
         var counts = 0;
         skip = pgno > 1 ? ((pgno-1) * limit) : 0;
         if(temp!="All"){
-            console.log("in path req");
               newtemp = temp.split('^').join('/');
               var paths = "/" + newtemp;
 
 
            count = log.count({path:paths},function(er,c){
-            console.log("count is "+c);
 
               counts=c;
               log.find({path:paths},'remote host path user method code size referer agent time',{skip:skip,limit:limit}, function(err,serverhits) {
@@ -30,14 +25,11 @@ console.log("in req");
                   res.json(arr);
               });
           });
-          //console.log("count "+ count);
 
         }//close if
 
         else {
-          console.log("in all req");
           count = log.count({},function(er,c){
-           console.log("count is "+c);
 
              counts=c;
              log.find({},'remote host path user method code size referer agent time',{skip:skip,limit:limit}, function(err,serverhits) {
@@ -60,7 +52,6 @@ router.get('/', function(req, res  ) {
 
     log.find({},'remote host path user method code size referer agent time', function(err,serverhits) {
 
-        //  console.log(serverhits);
           var obj = serverhits;
           final = {
            arr : []
@@ -94,7 +85,6 @@ router.get('/', function(req, res  ) {
 
                }
                else {
-                     //  console.log(p[i].count);
                        var k = index(value,p);
                        p[k].count +=  1;
                }
@@ -107,7 +97,7 @@ router.get('/', function(req, res  ) {
                 });
 
 
-        //console.log(final)
+
          var paths = JSON.stringify(final, null, 4);
 
          res.json(paths);

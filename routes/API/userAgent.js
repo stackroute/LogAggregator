@@ -4,11 +4,7 @@ var log = require('mongoose').model('logs');
 var express = require('express');
 var router = express.Router();
 
-<<<<<<< HEAD
-router.get('/', function(req, res, next) {
 
-  log.find({}, function(err, serverHits) {
-=======
 router.get('/:year/:month', function(req, res, next) {
   var year = req.params.year;
   var month = req.params.month;
@@ -21,9 +17,7 @@ router.get('/:year/:month', function(req, res, next) {
     toDate = new Date(year, parseInt(month));
   }
   log.find({time : {"$gte": fromDate, "$lt": toDate}}, 'agent', function(err, serverHits) {
->>>>>>> a1fff285fcdb623130532234d4adac2a19ebc2f8
     var reqData = [];
-  // console.log(serverHits);
 
     for(var i = 0, len = serverHits.length; i < len ; i++) {
       var user = {
