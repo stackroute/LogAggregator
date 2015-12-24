@@ -13,13 +13,8 @@
 
       $(document).ready(function(){
         $('#All').addClass('clickedbutton');
-          $.get("json/logListing/All/1",function(data){
-            console.log("on load");
-
-              alldata();
-          });
-
-        });
+        alldata();
+      });
 
       $('div.logcontainer').on('click','button',function(){
 
@@ -35,11 +30,9 @@
 
 
       function alldata(){
-            console.log("inside all script");
               href="/All";
               $.get("json/logListing"+href+"/1",function(data){
                   count = data[1].count;
-                  console.log("count "+data[1].count);
 
                     drawHeader(data[0],"All");
                     drawTable(data[0],"All");
@@ -124,9 +117,7 @@
                       newhref = "/"+temp.split('/').join('^');
 
                        $.get("json/logListing"+newhref+"/1", function(data){
-                         console.log(data);
                           var count=data[1].count;
-                         console.log("count "+count);
 
                            drawHeader(data[0],id);
                            drawTable(data[0],id);
@@ -179,7 +170,7 @@
 
              var row = $("<tr />")
              $("#personDataTable").append(row); //this will append tr element to table...
-             var objdate = new Date(parseInt(rowData.time));
+             var objdate = new Date(rowData.time);
 
              var path = rowData.path;
              delete rowData.time;
@@ -246,10 +237,9 @@
 
      function drawRowDynamic(data, rowsTotal,path,id){
               rowsShown= 100;
-              console.log("rowsTotal "+rowsTotal);
           var numPages = Math.ceil(rowsTotal/rowsShown);
 
-          console.log("numpages= "+numPages);
+
           for(i = 0;i < numPages;i++) {
                   var pageNum = i + 1;
                   $('#nav').append('<a href="#" rel="'+i+'">'+pageNum+'</a> ');
@@ -264,7 +254,7 @@
               $('#nav a').removeClass('active');
               $(this).addClass('active');
               var currPage = parseInt($(this).attr('rel')) +1;
-              console.log("current page "+currPage);
+
               $.get("json/logListing"+path+"/"+currPage, function(data){
 
 
