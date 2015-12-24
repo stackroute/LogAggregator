@@ -51,7 +51,6 @@ function numberOfDays(year,month){
 var yearPlotting=function(){
 //  d3.json("../json/trafficRateDayWise.json",function(json){
     $.get("json/trafficRate/", function (json, status) {
-      json=JSON.parse(json);
     var dates=json[0];
     var data=json[1].plot;
     var dataNest = d3.nest()
@@ -141,7 +140,6 @@ $('.year a').on('click',function(e){
 var monthPlotting = function(month_selected){
 //  d3.json("../json/trafficRateDayWise.json",function(json){
      $.get("json/trafficRate/", function (json, status) {
-      json=JSON.parse(json);
     var dates=json[0];
     var data=json[1].plot;
     if(year_selected){

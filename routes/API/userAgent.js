@@ -18,8 +18,8 @@ router.get('/:year/:month', function(req, res, next) {
 
     for(var i = 0, len = serverHits.length; i < len ; i++) {
       var user = {
-        browser : "none",
-        os : "none",
+        browser : "Others",
+        os : "Others",
       };
 
       var agent = serverHits[i]["agent"],

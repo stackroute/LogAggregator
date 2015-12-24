@@ -58,11 +58,11 @@
   float: right;
   height: 100%;
   border-left: 1px solid lightgrey;
+  text-align: center;
 }
 
 .wrap .page-header {
   margin: 0px;
-  text-align: center;
 }
 
 .wrap .well {

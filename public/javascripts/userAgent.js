@@ -15,21 +15,18 @@ $(document).ready(function() {
                   .shapeHeight(18)
                   .labelOffset(4)
                   .orient("vertical");
-
+  $(".wrap .well").prepend("<nodata></nodata>")
 
   var render = function( element ) {
     var nestKey = element.attr("value");
     $.get("json/userAgent/"+$('#yearDropDown')[0].getAttribute('value')+"/"+$('#monthDropDown')[0].getAttribute('value'), function (data, status) {
-    console.log(data);
+    d3.select(".wrap .well nodata").html("")
     if(data.length==0) {
-      console.log("no data recieved");
       d3.select("#donut").html("");
       d3.select(".color-legend").html("");
+      d3.select(".wrap .well nodata").html("No data Available")
       return;
     }
-    data = JSON.stringify(data);
-    data = data.replace(/none/g, "others");
-    data = JSON.parse(data);
 
     d3.select("#donut").html="";
     d3.select(".color-legend").html="";
