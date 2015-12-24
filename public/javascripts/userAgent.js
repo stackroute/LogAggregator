@@ -15,37 +15,71 @@ $(document).ready(function() {
                   .shapeHeight(18)
                   .labelOffset(4)
                   .orient("vertical");
-
+  $(".wrap .well").prepend("<nodata></nodata>")
 
   var render = function( element ) {
-
     var nestKey = element.attr("value");
-    $.get("json/userAgent/", function (data, status) {
-    data = JSON.stringify(data);
-    data = data.replace(/none/g, "others");
-    data = JSON.parse(data);
+    $.get("json/userAgent/"+$('#yearDropDown')[0].getAttribute('value')+"/"+$('#monthDropDown')[0].getAttribute('value'), function (data, status) {
+    d3.select(".wrap .well nodata").html("")
+    if(data.length==0) {
+      d3.select("#donut").html("");
+      d3.select(".color-legend").html("");
+      d3.select(".wrap .well nodata").html("No data Available")
+      return;
+    }
 
     d3.select("#donut").html="";
     d3.select(".color-legend").html="";
+
+    if(nestKey == "browser") {
+      domainNames = ["Opera", "Google Chrome", "Mozilla Firefox", "Internet Explorer", "Microsoft Edge", "Safari"];
+    } else if(nestKey == "os") {
+      domainNames = ["Windows 7", "Macintosh", "Windows 10", "Windows 8", "Windows 8.1"]
+    } else {
+      return;
+    }
 
     var nestedData = d3.nest()
                       .key(function(d) { return d[nestKey]; })
                       .entries(data);
 
-      color.domain(nestedData.map(function (data) {
-          return data.key;
-      }));
+      color.domain(domainNames);
       Donut3D.draw("donut", agentData(), 200, 200, 170, 140, 30, 0.4);
 
       colorLegendG.call(colorLegend);
 
       function agentData() {
         return nestedData.map(function(d, i){
-          return {label:d.key, value:d.values.length, color:color.range()[i]};
+          return {label:d.key, value:d.values.length, color:color(d.key)};
         });
       }
     })
   };
+  var thisYear = (new Date).getFullYear();
+  $('#yearDropDown').attr('value', thisYear)
+                    .html(thisYear+" <span class='caret'></span>")
+
+  var string = "";
+  for(var k=0; k<config.noOfYears; k++) {
+    string = string + "<li><a href='#' value='"+thisYear+"'>"+thisYear+"</a></li> ";
+    thisYear = thisYear - 1;
+  }
+  $('#agentAnalytics .filters .yearSelect').html(string);
+
+  $('.yearSelect a').on("click", function(e) {
+    $('#yearDropDown').html(this.getAttribute('value') +" <span class='caret'></span>")
+                      .attr('value', this.getAttribute('value'));
+    $('#monthDropDown').html('month <span class="caret"></span>')
+                      .attr('value', '0');
+    render($('.withBorder'));
+    e.preventDefault();
+  });
+
+  $('.monthSelect a').on("click", function(e) {
+    $('#monthDropDown').html(this.innerHTML +" <span class='caret'></span>")
+                      .attr('value', this.getAttribute('value'));
+    render($('.withBorder'));
+  });
 
   $('.criteriaPane').on("click", function(e) {
     render( $(this) );

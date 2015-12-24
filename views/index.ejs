@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Document</title>
+  <title>LogAggregator</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
 
@@ -131,7 +131,36 @@
         </div>
         <div class="wrap">
           <div class="page-header">
-            <h2><small>This plot gives the browser and os shares of the requests</small></h2>
+            <h2><small>This plot gives the browser and os shares of the requests from</small></h2>
+            <div class="filters">
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" value="0" id="yearDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+                </button>
+                <ul class="dropdown-menu yearSelect" aria-labelledby="yearDropDown">
+
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" value="0" id="monthDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  month <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu monthSelect" aria-labelledby="monthDropDown">
+                  <li><a href="#" value=1>January</a></li>
+                  <li><a href="#" value=2>February</a></li>
+                  <li><a href="#" value=3>March</a></li>
+                  <li><a href="#" value=4>April</a></li>
+                  <li><a href="#" value=5>May</a></li>
+                  <li><a href="#" value=6>June</a></li>
+                  <li><a href="#" value=7>July</a></li>
+                  <li><a href="#" value=8>August</a></li>
+                  <li><a href="#" value=9>September</a></li>
+                  <li><a href="#" value=10>October</a></li>
+                  <li><a href="#" value=11>November</a></li>
+                  <li><a href="#" value=12>December</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>  <!-- end tab-pane -->
