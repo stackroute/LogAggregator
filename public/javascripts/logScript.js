@@ -13,36 +13,42 @@
 
       $(document).ready(function(){
         $('#All').addClass('clickedbutton');
-          alldata();
-          })
+          $.get("json/logListing/All/1",function(data){
+            console.log("on load");
+
+              alldata();
+          });
+
+        });
 
       $('div.logcontainer').on('click','button',function(){
 
           var clicked = $(this),
           id = clicked.attr('id');
 
-
-
           if(id=="All") {
             alldata();
           }//if
+
       })//click
 
 
 
-      function alldata() {
-        
-              href="All";
-              $.get("json/logListing/"+href,function(data){
-                    data = JSON.parse(data);
-                    drawHeader(data,"All");
-                    drawTable(data,"All");
+      function alldata(){
+            console.log("inside all script");
+              href="/All";
+              $.get("json/logListing"+href+"/1",function(data){
+                  count = data[1].count;
+                  console.log("count "+data[1].count);
+
+                    drawHeader(data[0],"All");
+                    drawTable(data[0],"All");
 
                     //pagenation call
                     $('#nav').html('');
                     $('#personDataTable').after('<div id="nav"></div>');
-                    var rowsTotal =  no_of_rows_all;
-                    drawRowDynamic(data,rowsTotal);
+                    var rowsTotal =  count;
+                    drawRowDynamic(data,rowsTotal,href,'/All');
 
               });//ajax req
 
@@ -57,13 +63,14 @@
       //storing the paths a/c to config file
       $.get("json/logListing/",function(data) {
         data = JSON.parse(data);
+
                 for(var i=0; i<no_of_paths; i++)
                 {
                   //storing paths into an array
 
                     paths_selected.push({"path": data.arr[i]["path"],
-                    "count": data.arr[i]["count"],
-                    "fixed_pos" : data.arr[i]["fixed_pos"]});
+                    "count": data.arr[i]["count"]
+                    });
                 }
                var paths= $(document).trigger('pathArray', paths_selected);
 
@@ -74,7 +81,7 @@
 
         for(var j =0 ; j<paths_selected.length; j++)
         {
-          $("div.logcontainer").append($('<tr><td><button id = '+ paths_selected[j]["path"] + ' href = '+ paths_selected[j]["fixed_pos"] + ' > ' + paths_selected[j]["path"] + ' <span >' + '('+ paths_selected[j]["count"] + ')'+'</span></button></td>'));
+          $("div.logcontainer").append($('<tr><td><button id = '+ paths_selected[j]["path"] + ' href = '+ paths_selected[j]["path"] + ' > ' + paths_selected[j]["path"] + ' <span >' + '('+ paths_selected[j]["count"] + ')'+'</span></button></td>'));
           $("div.logcontainer tr button").addClass("logButtonStyle");
         }
     });
@@ -104,31 +111,36 @@
 
            var clicked = $(this),
            id = clicked.attr('id');
-           href = clicked.attr('href');
-           for(i = 0; i<paths_selected.length; i++)
-           {
-                 if(id === paths_selected[i].path)
-                 {
+           if(id!="All"){
+
+                        href = clicked.attr('href');
+
                    //got the path so fetch corresponding json file
                        var pos_found = i+1;
                        //ajax request to the clicked path json
                        if(pos_found > 7)
                        document.location.href='#';
-                       $.get("json/logListing/"+href,function(data){
-                          data = JSON.parse(data);
-                           drawHeader(data,id);
-                           drawTable(data,id);
+                      temp =  href.substring(1);
+                      newhref = "/"+temp.split('/').join('^');
+
+                       $.get("json/logListing"+newhref+"/1", function(data){
+                         console.log(data);
+                          var count=data[1].count;
+                         console.log("count "+count);
+
+                           drawHeader(data[0],id);
+                           drawTable(data[0],id);
                            //pagenation call
                            $('#nav').html('');
                            $('#personDataTable').after('<div id="nav"></div>');
 
-                           var rowsTotal =  no_of_rows;
-                           drawRowDynamic(data,rowsTotal);
+                           var rowsTotal =  count;
+                           drawRowDynamic(data,rowsTotal,newhref,id);
 
                        });
 
-                 }//if end
-           }//for end
+            }//close if
+
 
          });//click end
 
@@ -143,8 +155,10 @@
             $("#personDataTable").append(row);
             if(id!="All"){
             delete data[0].path;
-            delete data[0].host;
-            delete data[0].user;
+            delete data[0]._id;
+            }
+            else {
+              delete data[0]._id;
             }
 
             for(key in data[0]){
@@ -165,82 +179,110 @@
 
              var row = $("<tr />")
              $("#personDataTable").append(row); //this will append tr element to table...
-             var objdate = new Date(parseInt(rowData.time.$date));
+             var objdate = new Date(parseInt(rowData.time));
+
              var path = rowData.path;
              delete rowData.time;
             if(id!="All"){
-
-            delete rowData.path;
-            delete rowData.host;
-            delete rowData.user;}
+                delete rowData.path;
+                delete rowData._id; }
+            else {
+                delete rowData._id;
+            }
 
             for(key in rowData){
 
-              if(key === "agent") {
-                //checking for browser names
-                var temp = rowData[key],
-                    title;
-                if(temp.indexOf("Chrome") != -1)
-                    {title="Chrome";}
-                else if (temp.indexOf("Safari")!= -1)
-                    {title="Safari";}
-                else if (temp.indexOf("Trident")!= -1)
-                    {title="IE";}
-                else if (temp.indexOf("Vagrant")!= -1)
-                    {title="Others";}
-                else if (temp.indexOf("Opr")!= -1)
-                     {title="Opera";}
-                else if (temp.indexOf("-")!= -1)
-                    {title="Others";}
-                else
-                      {title="Mozilla";}
+                if(key === "agent") {
+                  //checking for browser names
+                  var temp = rowData[key],
+                      title;
+                  if(temp.indexOf("Chrome") != -1)
+                      {title="Chrome";}
+                  else if (temp.indexOf("Safari")!= -1)
+                      {title="Safari";}
+                  else if (temp.indexOf("Trident")!= -1)
+                      {title="IE";}
+                  else if (temp.indexOf("Vagrant")!= -1)
+                      {title="Others";}
+                  else if (temp.indexOf("Opr")!= -1)
+                       {title="Opera";}
+                  else if (temp.indexOf("-")!= -1)
+                      {title="Others";}
+                  else
+                        {title="Mozilla";}
 
 
-                row.append($("<td><abbr>" + title + "</abbr></td>")
-                    .attr("title",rowData[key]));
-              }
-                else{
-                    if(key=="_id")
-                    row.append($("<td>" + rowData[key]["$oid"] + "</td>"));
-                    else {
-                      row.append($("<td>" + rowData[key] + "</td>"));
+                  row.append($("<td><abbr>" + title + "</abbr></td>")
+                      .attr("title",rowData[key]));
                 }
-            }
-          }//close if for agent
+
+                else if(key=="size") {
+                    //changing size to mb or kb
+                      rowData.size=parseInt(rowData.size)/8;
+                      if(rowData.size>1000 && rowData.size<1000000)
+                          {rowData.size = parseFloat(rowData.size)/1000;
+                           rowData.size = (rowData.size).toFixed(2)+ " KB" ;}
+
+                      else if (rowData.size<1000 ) {
+                           rowData.size = rowData.size + " B" ;}
+
+                      else if (rowData.size>1000000 ) {
+                         rowData.size = parseFloat(rowData.size)/1000000;
+                         rowData.size = (rowData.size).toFixed(2)+ " MB" ;
+                       }
+
+                       row.append($("<td>" + rowData[key] + "</td>"));
+               }//else for size key
+
+                else {
+                    row.append($("<td>" + rowData[key] + "</td>"));
+                }
+
+          }//close  for key in rowData
             row.append($("<td>" + String(objdate).substring(0, 25) + "</td>"));
             no_of_rows ++;
             no_of_rows_all++;
      }//end draw row
 
-     function drawRowDynamic(data, rowsTotal){
+     function drawRowDynamic(data, rowsTotal,path,id){
               rowsShown= 100;
+              console.log("rowsTotal "+rowsTotal);
+          var numPages = Math.ceil(rowsTotal/rowsShown);
 
-          var numPages = rowsTotal/rowsShown;
-
+          console.log("numpages= "+numPages);
           for(i = 0;i < numPages;i++) {
                   var pageNum = i + 1;
                   $('#nav').append('<a href="#" rel="'+i+'">'+pageNum+'</a> ');
           }
 
-          $('#personDataTable tbody tr').hide();
-          $('#personDataTable tbody tr').slice(0, rowsShown).show();
+          // $('#personDataTable tbody tr').hide();
+          // $('#personDataTable tbody tr').slice(0, rowsShown).show();
           $('#nav a:first').addClass('active');
-          $('#rowsshowing').remove();
+          //$('#rowsshowing').remove();
           $('#nav a').bind('click', function(){
-
 
               $('#nav a').removeClass('active');
               $(this).addClass('active');
-              var currPage = $(this).attr('rel');
-              var startItem = currPage * rowsShown;
-              var endItem = startItem + rowsShown;
-               dispPages =($('#personDataTable tbody tr').slice(startItem, endItem)).length;
+              var currPage = parseInt($(this).attr('rel')) +1;
+              console.log("current page "+currPage);
+              $.get("json/logListing"+path+"/"+currPage, function(data){
 
-                $('#rowsshowing').remove();
-              $('#nav').append('<span id="rowsshowing">('+  dispPages +'/'+ rowsTotal+') </span>')
 
-              $('#personDataTable tbody tr').css('opacity','0.0').hide().slice(startItem, endItem).
-                      css('display','table-row').animate({opacity:1}, 300);
+                    drawHeader(data[0],id);
+                    drawTable(data[0],id);
+
+
+              });
+
+              // var startItem = currPage * rowsShown;
+              // var endItem = startItem + rowsShown;
+              //  dispPages =($('#personDataTable tbody tr').slice(startItem, endItem)).length;
+
+              //  $('#rowsshowing').remove();
+            //  $('#nav').append('<span id="rowsshowing">('+  dispPages +'/'+ rowsTotal+') </span>')
+
+              // $('#personDataTable tbody tr').css('opacity','0.0').hide().slice(startItem, endItem).
+              //         css('display','table-row').animate({opacity:1}, 300);
 
 
 

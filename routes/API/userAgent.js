@@ -1,10 +1,14 @@
+
+
 var log = require('mongoose').model('logs');
 var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req, res, next) {
+
   log.find({}, function(err, serverHits) {
     var reqData = [];
+  // console.log(serverHits);
 
     for(var i = 0, len = serverHits.length; i < len ; i++) {
       var user = {

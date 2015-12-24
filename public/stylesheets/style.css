@@ -150,14 +150,14 @@
   width:28%;
   text-align: justify;
   overflow:scroll;
-  height:600px;
+  height:300px;
 
 }
 .Mytable{
   margin-top: 0px;
   width: 72%;
   float: left;
-  height: 600px;
+  height: 300px;
   overflow: scroll;
   margin-right: 0px;
   text-align: center;
@@ -188,7 +188,7 @@ background-color:white;}
   }
 .Mytable td{
   /*width: 50px;*/
-  height:auto;
+
   font-size: 12px;
   width: auto;
 }
@@ -215,6 +215,7 @@ td, tr, th{
   background: white;
 
 }
+
 .pos {
   display: table-row !important;
   opacity: 1 !important;
