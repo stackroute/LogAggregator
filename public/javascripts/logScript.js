@@ -114,7 +114,7 @@
                        if(pos_found > 7)
                        document.location.href='#';
                       temp =  href.substring(1);
-                      newhref = "/"+temp.split('/').join('^');
+                      newhref = "/"+encodeURIComponent(temp);
 
                        $.get("json/logListing"+newhref+"/1", function(data){
                           var count=data[1].count;

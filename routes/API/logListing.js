@@ -11,7 +11,7 @@ router.get('/:pathId/:pgno', function(req, res  ) {
         var counts = 0;
         skip = pgno > 1 ? ((pgno-1) * limit) : 0;
         if(temp!="All"){
-              newtemp = temp.split('^').join('/');
+              newtemp = decodeURIComponent(temp);
               var paths = "/" + newtemp;
 
 
