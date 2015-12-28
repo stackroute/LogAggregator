@@ -5,6 +5,7 @@ module.exports = function() {
   var db = mongoose.connect(dbName);
 
   require('./models/log.server.model');
+  require('./models/log.config.model');
 
   return db;
 }

@@ -1,4 +1,4 @@
-var log = require('mongoose').model('logs');
+var Log = require('mongoose').model('Logs');
 var express = require('express');
 var router = express.Router();
 
@@ -18,7 +18,7 @@ router.get('/:pathId/:pgno', function(req, res  ) {
            count = log.count({path:paths},function(er,c){
 
               counts=c;
-              log.find({path:paths},'remote host path user method code size referer agent time',{skip:skip,limit:limit}, function(err,serverhits) {
+              Log.find({path:paths},'remote host path user method code size referer agent time',{skip:skip,limit:limit}, function(err,serverhits) {
                   var arr=[];
                   arr.push(serverhits);
                   arr.push({"count":counts});
@@ -32,7 +32,7 @@ router.get('/:pathId/:pgno', function(req, res  ) {
           count = log.count({},function(er,c){
 
              counts=c;
-             log.find({},'remote host path user method code size referer agent time',{skip:skip,limit:limit}, function(err,serverhits) {
+             Log.find({},'remote host path user method code size referer agent time',{skip:skip,limit:limit}, function(err,serverhits) {
                  var arr=[];
                  arr.push(serverhits);
                  arr.push({"count":counts});
@@ -50,7 +50,7 @@ router.get('/', function(req, res  ) {
 
 
 
-    log.find({},'remote host path user method code size referer agent time', function(err,serverhits) {
+    Log.find({},'remote host path user method code size referer agent time', function(err,serverhits) {
 
           var obj = serverhits;
           final = {

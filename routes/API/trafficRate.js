@@ -1,7 +1,7 @@
 var express = require('express');
 var path = require('path');
 var router = express.Router();
-var log = require('mongoose').model('logs');
+var Log = require('mongoose').model('Logs');
 var plotData=[];
 var finalData=[];
 var plotdata=[];
@@ -21,7 +21,7 @@ router.get('/:year/:month', function(req, res, next) {
     toDate = new Date(year, parseInt(month));
   }
 
-    log.find({time : {"$gte": fromDate, "$lt": toDate}}, 'method time', function(err, serverHits) {
+    Log.find({time : {"$gte": fromDate, "$lt": toDate}}, 'method time', function(err, serverHits) {
         var result=serverHits;
     for(i in result){
      var obj={};
@@ -78,7 +78,6 @@ router.get('/:year/:month', function(req, res, next) {
    var obj={};
    obj.plot=plotdata;
    finalData.push(obj);
-   //console.log("done reading");
    res.json(finalData);
 
 

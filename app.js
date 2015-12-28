@@ -1,5 +1,7 @@
 var mongoose = require('./mongoose');
 var db = mongoose();
+//Loading  global config variable
+require('./configLoad')
 
 var express = require('express');
 var path = require('path');

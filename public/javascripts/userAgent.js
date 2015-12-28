@@ -19,7 +19,7 @@ $(document).ready(function() {
 
   var render = function( element ) {
     var nestKey = element.attr("value");
-    $.get("json/userAgent/"+$('#yearDropDown')[0].getAttribute('value')+"/"+$('#monthDropDown')[0].getAttribute('value'), function (data, status) {
+    $.get("json/userAgent/"+nestKey+"/"+$('#yearDropDown')[0].getAttribute('value')+"/"+$('#monthDropDown')[0].getAttribute('value'), function (data, status) {
     d3.select(".wrap .well nodata").html("")
     if(data.length==0) {
       d3.select("#donut").html("");
@@ -39,19 +39,18 @@ $(document).ready(function() {
       return;
     }
 
-    var nestedData = d3.nest()
-                      .key(function(d) { return d[nestKey]; })
-                      .entries(data);
-
       color.domain(domainNames);
       Donut3D.draw("donut", agentData(), 200, 200, 170, 140, 30, 0.4);
 
       colorLegendG.call(colorLegend);
 
       function agentData() {
-        return nestedData.map(function(d, i){
-          return {label:d.key, value:d.values.length, color:color(d.key)};
-        });
+        var result = [];
+        var keys = Object.keys(data);
+        for(var i=0, len = keys.length; i < len; i++) {
+          result.push({label:keys[i], value:data[keys[i]], color:color(keys[i])})
+        }
+        return result;
       }
     })
   };

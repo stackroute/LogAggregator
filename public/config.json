@@ -1,6 +1,16 @@
 [
   {
     "noOfYears" : "7",
-    "paths" : "30"
+    "paths" : "30",
+    "userAgentFilters" : {
+      "browser" : {
+        "types" : ["OPR", "Chrome", "Firefox", "Trident", "Edge", "Safari"],
+        "names" : ["Opera", "Google Chrome", "Mozilla Firefox", "Internet Explorer", "Microsoft Edge", "Safari"]
+      },
+      "os" : {
+        "types" : ["Windows NT 6.1", "Macintosh", "Windows NT 10.0", "Windows NT 6.2", "Windows NT 6.3"],
+        "names" : ["Windows 7", "Macintosh", "Windows 10", "Windows 8", "Windows 8.1"]
+      }
+    }
   }
 ]
