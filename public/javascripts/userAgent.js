@@ -31,13 +31,7 @@ $(document).ready(function() {
     d3.select("#donut").html="";
     d3.select(".color-legend").html="";
 
-    if(nestKey == "browser") {
-      domainNames = ["Opera", "Google Chrome", "Mozilla Firefox", "Internet Explorer", "Microsoft Edge", "Safari"];
-    } else if(nestKey == "os") {
-      domainNames = ["Windows 7", "Macintosh", "Windows 10", "Windows 8", "Windows 8.1"]
-    } else {
-      return;
-    }
+    domainNames = config.userAgentFilters[nestKey].names;
 
       color.domain(domainNames);
       Donut3D.draw("donut", agentData(), 200, 200, 170, 140, 30, 0.4);

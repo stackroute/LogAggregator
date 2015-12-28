@@ -1,4 +1,5 @@
 var request = new XMLHttpRequest();
-request.open("GET", "../config.json", false);
+request.open("GET", "/config", false);
 request.send(null)
-config = JSON.parse(request.responseText)[0];
+config = JSON.parse(request.responseText);
+console.log(config);
