@@ -2,6 +2,7 @@
   {
     "noOfYears" : "7",
     "paths" : "30",
+    "listingLimit" : "100",
     "userAgentFilters" : {
       "browser" : {
         "types" : ["OPR", "Chrome", "Firefox", "Trident", "Edge", "Safari"],

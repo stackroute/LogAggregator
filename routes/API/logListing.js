@@ -7,7 +7,7 @@ var router = express.Router();
 router.get('/:pathId/:pgno', function(req, res  ) {
         temp = req.params.pathId;
         pgno = req.params.pgno;
-        limit=100;
+        limit=config.listingLimit;
         var counts = 0;
         skip = pgno > 1 ? ((pgno-1) * limit) : 0;
         if(temp!="All"){

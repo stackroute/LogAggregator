@@ -4,6 +4,7 @@ var Schema =  mongoose.Schema;
 var logConfigSchema = new Schema({
   noOfYears : Number,
   paths : Number,
+  listingLimit : Number,
   userAgentFilters : {
     browser : {
       types : [String],
