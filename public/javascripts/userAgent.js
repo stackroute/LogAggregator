@@ -22,6 +22,8 @@ $(document).ready(function() {
     $.get("json/userAgent/"+nestKey+"/"+$('#yearDropDown')[0].getAttribute('value')+"/"+$('#monthDropDown')[0].getAttribute('value'), function (data, status) {
     d3.select(".wrap .well nodata").html("")
     if($.isEmptyObject(data)) {
+      if($('#monthDropDown')[0].getAttribute('value') == 0)
+        $('#monthDropDown').prop('disabled', true);
       d3.select("#donut").html("");
       d3.select(".color-legend").html("");
       d3.select(".wrap .well nodata").html("No data Available")
@@ -66,6 +68,7 @@ $(document).ready(function() {
                       .attr('value', this.getAttribute('value'));
     $('#monthDropDown').html('month <span class="caret"></span>')
                       .attr('value', '0');
+    $('#monthDropDown').prop('disabled', false);
     render($('.withBorder'));
     e.preventDefault();
   });

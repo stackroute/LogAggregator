@@ -43,7 +43,6 @@ router.get('/:year/:month', function(req, res, next) {
 
   finalData.push(dates);
   finalData.push(accumulator);
-  console.log(finalData);
   res.json(finalData);
 });
 });

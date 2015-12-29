@@ -62,22 +62,6 @@ var yearPlotting=function(year_selected){
     {
       temp.push(tempdata[keys[i]]);
     }
-    //console.log(temp);
-    //data=temp;
-    // var dataNest = d3.nest()
-    // .key(function(d) {return parseInt(String(d.date).substring(0,5));})
-    // .entries(data);
-    // var newdata;
-    //
-    // for(i in dataNest)
-    // {
-    //   if(dataNest[i].key==year_selected){
-    //     newdata=dataNest[i].values;
-    //   }
-    // }
-    // data=newdata;
-    // // console.log(json);
-    // // console.log(data);
     newdata=temp;
     $(".dropdown.year_text button").html(year_selected+"  <span class='caret'></span>");
     var check=0;
@@ -165,31 +149,7 @@ var monthPlotting = function(month_selected){
     {
       temp.push(tempdata[keys[i]]);
     }
-  //  console.log(temp);
     data=temp;
-  //  console.log(data);
-
-    // if(year_selected){
-    //   var dataNest1 = d3.nest()
-    //   .key(function(d) {return parseInt(String(d.date).substring(0,4));})
-    //   .entries(data);
-    // }
-    // // console.log(data.length);
-    // if(data.length != 0)
-    //   data=dataNest1[0].values;
-    // var dataNest = d3.nest()
-    // .key(function(d) {return parseInt(String(d.date).substring(5,7));})
-    // .entries(data);
-    // var newdata;
-    // for(i in dataNest)
-    // {
-    //   if(dataNest[i].key==month_selected){
-    //     newdata=dataNest[i].values;
-    //   }
-    // }
-    // data=newdata;
-  //  newdata=data;
-    //console.log(data);
     var months = [ "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December" ];
     $(".dropdown.month_text button").html(months[parseInt(month_selected)-1]+"  <span class='caret'></span>");
