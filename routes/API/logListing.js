@@ -15,7 +15,7 @@ router.get('/:pathId/:pgno', function(req, res  ) {
               var paths = "/" + newtemp;
 
 
-           count = log.count({path:paths},function(er,c){
+           count = Log.count({path:paths},function(er,c){
 
               counts=c;
               Log.find({path:paths},'remote host path user method code size referer agent time',{skip:skip,limit:limit}, function(err,serverhits) {
@@ -29,7 +29,7 @@ router.get('/:pathId/:pgno', function(req, res  ) {
         }//close if
 
         else {
-          count = log.count({},function(er,c){
+          count = Log.count({},function(er,c){
 
              counts=c;
              Log.find({},'remote host path user method code size referer agent time',{skip:skip,limit:limit}, function(err,serverhits) {
