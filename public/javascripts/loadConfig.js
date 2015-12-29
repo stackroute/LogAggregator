@@ -1,5 +1,5 @@
-var request = new XMLHttpRequest();
-request.open("GET", "/config", false);
-request.send(null)
-config = JSON.parse(request.responseText);
-console.log(config);
+$.ajaxSetup({async:false});
+$.get("/config", function(data, status) {
+  config = data;
+});
+$.ajaxSetup({async:true});
