@@ -21,7 +21,7 @@ $(document).ready(function() {
     var nestKey = element.attr("value");
     $.get("json/userAgent/"+nestKey+"/"+$('#yearDropDown')[0].getAttribute('value')+"/"+$('#monthDropDown')[0].getAttribute('value'), function (data, status) {
     d3.select(".wrap .well nodata").html("")
-    if(data.length==0) {
+    if($.isEmptyObject(data)) {
       d3.select("#donut").html("");
       d3.select(".color-legend").html("");
       d3.select(".wrap .well nodata").html("No data Available")
