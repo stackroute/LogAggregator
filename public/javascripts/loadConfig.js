@@ -1,5 +1,7 @@
-$.ajaxSetup({async:false});
-$.get("/config", function(data, status) {
-  config = data;
+$.ajax({
+  url: "/config",
+  success: function(result) {
+    config = result;
+  },
+  async: false
 });
-$.ajaxSetup({async:true});
