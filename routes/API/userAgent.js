@@ -22,9 +22,9 @@ router.get('/:showBy/:year/:month', function(req, res, next) {
     var reqData = [];
 
     var getFilter = function (agent) {
-      for(var i = 0, len = config.userAgentFilters[showBy].types.length; i < len; i++) {
-        if(agent.indexOf(config.userAgentFilters[showBy]["types"][i], 0) != -1) {
-          return config.userAgentFilters[showBy]["names"][i];
+      for(var i = 0, len = config.userAgentFilters[showBy].length; i < len; i++) {
+        if(agent.indexOf(config.userAgentFilters[showBy][i]["types"], 0) != -1) {
+          return config.userAgentFilters[showBy][i]["names"];
         }
       }
       return "Others"
@@ -37,7 +37,7 @@ router.get('/:showBy/:year/:month', function(req, res, next) {
           response[filter] = 0;
       response[filter]+=1;
     }
-    // console.log(response);
+    console.log(response);
     res.json(response)
   });
 }
