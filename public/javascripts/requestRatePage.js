@@ -54,24 +54,35 @@ var yearPlotting=function(year_selected){
     $.get("json/trafficRate/"+year_selected+"/0", function (json, status) {
 
     var dates=json[0];
-    var data=json[1].plot;
-    var dataNest = d3.nest()
-    .key(function(d) {return parseInt(String(d.date).substring(0,5));})
-    .entries(data);
-    var newdata;
+    var tempdata=json[1];
 
-    for(i in dataNest)
+    var temp=[];
+    var keys=Object.keys(tempdata);
+    for(i=0;i<keys.length;i++)
     {
-      if(dataNest[i].key==year_selected){
-        newdata=dataNest[i].values;
-      }
+      temp.push(tempdata[keys[i]]);
     }
-    data=newdata;
-
+    //console.log(temp);
+    //data=temp;
+    // var dataNest = d3.nest()
+    // .key(function(d) {return parseInt(String(d.date).substring(0,5));})
+    // .entries(data);
+    // var newdata;
+    //
+    // for(i in dataNest)
+    // {
+    //   if(dataNest[i].key==year_selected){
+    //     newdata=dataNest[i].values;
+    //   }
+    // }
+    // data=newdata;
+    // // console.log(json);
+    // // console.log(data);
+    newdata=temp;
     $(".dropdown.year_text button").html(year_selected+"  <span class='caret'></span>");
     var check=0;
 
-    if(!data){
+    if(newdata.length==0){
       d3.select('.traffic')
       .html('');
       d3.select('.traffic')
@@ -90,6 +101,7 @@ var yearPlotting=function(year_selected){
       $('.crossMonthFilter a').attr("disabled","yes")
                               .addClass('disableClick');
     }
+
     else{
       $('.month_text button').removeAttr("disabled");
       $('.month_text button').html("Month"+" <span class='caret'></span>");
@@ -145,26 +157,39 @@ var monthPlotting = function(month_selected){
      $.get("json/trafficRate/"+year_selected+"/"+month_selected, function (json, status) {
 
     var dates=json[0];
-    var data=json[1].plot;
-    if(year_selected){
-      var dataNest1 = d3.nest()
-      .key(function(d) {return parseInt(String(d.date).substring(0,4));})
-      .entries(data);
-    }
-    // console.log(data.length);
-    if(data.length != 0)
-      data=dataNest1[0].values;
-    var dataNest = d3.nest()
-    .key(function(d) {return parseInt(String(d.date).substring(5,7));})
-    .entries(data);
-    var newdata;
-    for(i in dataNest)
+    var tempdata=json[1];
+
+    var temp=[];
+    var keys=Object.keys(tempdata);
+    for(i=0;i<keys.length;i++)
     {
-      if(dataNest[i].key==month_selected){
-        newdata=dataNest[i].values;
-      }
+      temp.push(tempdata[keys[i]]);
     }
-    data=newdata;
+  //  console.log(temp);
+    data=temp;
+  //  console.log(data);
+
+    // if(year_selected){
+    //   var dataNest1 = d3.nest()
+    //   .key(function(d) {return parseInt(String(d.date).substring(0,4));})
+    //   .entries(data);
+    // }
+    // // console.log(data.length);
+    // if(data.length != 0)
+    //   data=dataNest1[0].values;
+    // var dataNest = d3.nest()
+    // .key(function(d) {return parseInt(String(d.date).substring(5,7));})
+    // .entries(data);
+    // var newdata;
+    // for(i in dataNest)
+    // {
+    //   if(dataNest[i].key==month_selected){
+    //     newdata=dataNest[i].values;
+    //   }
+    // }
+    // data=newdata;
+  //  newdata=data;
+    //console.log(data);
     var months = [ "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December" ];
     $(".dropdown.month_text button").html(months[parseInt(month_selected)-1]+"  <span class='caret'></span>");
@@ -172,7 +197,7 @@ var monthPlotting = function(month_selected){
     var check=0;
 
 
-    if(!data){
+    if(data.length==0){
       d3.select('.traffic')
       .html('');
       d3.select('.traffic')
@@ -180,6 +205,7 @@ var monthPlotting = function(month_selected){
       .html('No Data Available for Selected Month');
     }
     else{
+      newdata=data;
       var month_days;
       var parts = newdata[0].date.split('-');
       var year=parts[0];
