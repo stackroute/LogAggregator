@@ -1,6 +1,5 @@
 var Config = require('mongoose').model('Config');
-config = {}
+config = {};
 Config.find({},{'_id': 0},function(err, data) {
   config = data[0];
-  console.log(config.userAgentFilters);
 });

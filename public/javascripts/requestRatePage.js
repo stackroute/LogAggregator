@@ -45,58 +45,130 @@ function numberOfDays(year,month){
 }
 /**** Year Change Traffic ***********************************************************************/
 
-var yearPlotting=function(year_selected){
-
-    $.get("json/trafficRate/"+year_selected+"/0", function (json, status) {
+var Plotting=function(year_selected,month_selected){
+  $.get("json/trafficRate/"+year_selected+"/"+month_selected, function (json, status) {
 
     var dates=json[0];
     var tempdata=json[1];
-
     var newdata=[];
     var keys=Object.keys(tempdata);
     for(i=0;i<keys.length;i++)
     {
       newdata.push(tempdata[keys[i]]);
     }
+
     $(".dropdown.year_text button").html(year_selected+"  <span class='caret'></span>");
-    var check=0;
-
-    if(newdata.length==0){
-      d3.select('.traffic')
-      .html('');
-      d3.select('.traffic')
-      .append('noData')
-      .html('No Data Available for Selected Year');
-      $('.month_text button').html("Month"+" <span class='caret'></span>");
-      $('.month_text button').attr("disabled","yes");
-      if(year_selected==year){
-      $('#clear_filters').attr("disabled","yes")
-                         .addClass('disableClick');
+    if(month_selected===0)  //year plotting
+    {
+      if(newdata.length==0)
+      {
+        d3.select('.traffic')
+        .html('');
+        d3.select('.traffic')
+        .append('noData')
+        .html('No Data Available for Selected Year');
+        $('.month_text button').html("Month"+" <span class='caret'></span>");
+        $('.month_text button').attr("disabled","yes");
+        if(year_selected==year)
+        {
+          $('#clear_filters').attr("disabled","yes")
+          .addClass('disableClick');
+        }
+        else
+        {
+          $('#clear_filters').removeAttr("disabled")
+          .removeClass('disableClick');
+        }
+        $('.crossMonthFilter a').attr("disabled","yes")
+        .addClass('disableClick');
       }
-      else{
-        $('#clear_filters').removeAttr("disabled")
-                           .removeClass('disableClick');
-      }
-      $('.crossMonthFilter a').attr("disabled","yes")
-                              .addClass('disableClick');
-    }
 
-    else{
-      $('.month_text button').removeAttr("disabled");
-      $('.month_text button').html("Month"+" <span class='caret'></span>");
-      var month_days;
+      else
+      {
+        $('.month_text button').removeAttr("disabled");
+        $('.month_text button').html("Month"+" <span class='caret'></span>");
+        var month_days;
 
-      for(i=1;i<13;i++){
-        month_days=numberOfDays(year_selected,i-1)
-        for(j=0;j<month_days;j++){
-          if(i<10){var month='0'+i;}
-          else{month=i;}
-          if(j<9){
-            date_created=year_selected+'-'+ month +'-'+ '0' + (j+1);
-          }else{
-            date_created=year_selected+'-'+ month +'-'+ (j+1);
+        for(i=1;i<13;i++)
+        {
+          month_days=numberOfDays(year_selected,i-1)
+          for(j=0;j<month_days;j++)
+          {
+            if(i<10)
+            {
+              var month='0'+i;
+            }
+            else
+            {
+              month=i;
+            }
+            if(j<9)
+            {
+              date_created=year_selected+'-'+ month +'-'+ '0' + (j+1);
+            }
+            else
+            {
+              date_created=year_selected+'-'+ month +'-'+ (j+1);
+            }
+
+            if(!dates[date_created])
+            {
+              var obj={};
+              obj.date=date_created;
+              obj.GET=0;
+              obj.POST=0;
+              obj.OPTIONS=0;
+              obj.HEAD=0;
+              newdata.push(obj);
+            }
           }
-          if(!dates[date_created]){
+        }
+        if(year_selected!=year)
+        {
+          $('#clear_filters').removeAttr("disabled")
+          .removeClass('disableClick');
+        }
+        else
+        {
+          $('#clear_filters').attr("disabled","yes")
+          .addClass('disableClick');
+        }
+        analysis(newdata);
+      }
+    }
+    else //month plotting
+    {
+      var months = [ "January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November", "December" ];
+      $(".dropdown.month_text button").html(months[parseInt(month_selected)-1]+"  <span class='caret'></span>");
+      if(newdata.length==0)
+      {
+        d3.select('.traffic')
+        .html('');
+        d3.select('.traffic')
+        .append('noData')
+        .html('No Data Available for Selected Month');
+      }
+      else
+      {
+        var month_days;
+        var parts = newdata[0].date.split('-');
+        var year=parts[0];
+        var month=parts[1];
+        var date_created;
+        month_days=numberOfDays(year_selected,month_selected);
+        for(i=0;i<month_days;i++)
+        {
+          flag=0;
+          if(i<9)
+          {
+            date_created=year+'-'+ month +'-'+ '0' + (i+1);
+          }
+          else
+          {
+            date_created=year+'-'+ month +'-'+ (i+1);
+          }
+          if(!dates[date_created])
+          {
             var obj={};
             obj.date=date_created;
             obj.GET=0;
@@ -106,92 +178,29 @@ var yearPlotting=function(year_selected){
             newdata.push(obj);
           }
         }
+        analysis(newdata);
       }
-      if(year_selected!=year){
-      $('#clear_filters').removeAttr("disabled")
-                         .removeClass('disableClick');
-       }
-       else{
-         $('#clear_filters').attr("disabled","yes")
-                            .addClass('disableClick');
-       }
-      analysis(newdata);
     }
   });
 }
+
 
 $('.year a').on('click',function(e){
-   margin.bottom=100;
+  margin.bottom=100;
   var year_selected=parseInt($(this).text());
-   yearPlotting(year_selected);
-   e.preventDefault();
+  Plotting(year_selected,0);
+  e.preventDefault();
 });
-
-
-/**** Year Change Traffic End ***********************************************************************/
-var monthPlotting = function(month_selected){
-     var year_selected=year;
-     $.get("json/trafficRate/"+year_selected+"/"+month_selected, function (json, status) {
-
-    var dates=json[0];
-    var tempdata=json[1];
-    var newdata=[];
-    var keys=Object.keys(tempdata);
-    for(i=0;i<keys.length;i++)
-    {
-      newdata.push(tempdata[keys[i]]);
-    }
-    var months = [ "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December" ];
-    $(".dropdown.month_text button").html(months[parseInt(month_selected)-1]+"  <span class='caret'></span>");
-    $(".dropdown.year_text button").html(year_selected+"  <span class='caret'></span>");
-    var check=0;
-    if(newdata.length==0)
-    {
-      d3.select('.traffic')
-      .html('');
-      d3.select('.traffic')
-      .append('noData')
-      .html('No Data Available for Selected Month');
-    }
-    else
-    {
-      var month_days;
-      var parts = newdata[0].date.split('-');
-      var year=parts[0];
-      var month=parts[1];
-      var date_created;
-      month_days=numberOfDays(year_selected,month_selected);
-      for(i=0;i<month_days;i++){
-        flag=0;
-        if(i<9){
-          date_created=year+'-'+ month +'-'+ '0' + (i+1);
-        }else{
-          date_created=year+'-'+ month +'-'+ (i+1);
-        }
-        if(!dates[date_created]){
-          var obj={};
-          obj.date=date_created;
-          obj.GET=0;
-          obj.POST=0;
-          obj.OPTIONS=0;
-          obj.HEAD=0;
-          newdata.push(obj);
-        }
-      }
-      analysis(newdata);
-    }
-  });
-}
 
 $('.months a').on('click',function(e){
   margin.bottom=29;
+  year_selected=year;
   month_selected=($(this).attr('value'));
-  monthPlotting(month_selected);
+  Plotting(year_selected,month_selected);
   $('#clear_filters').removeAttr("disabled")
-                     .removeClass('disableClick');
- $('.crossMonthFilter a').removeAttr("disabled")
-                    .removeClass('disableClick');
+  .removeClass('disableClick');
+  $('.crossMonthFilter a').removeAttr("disabled")
+  .removeClass('disableClick');
   e.preventDefault();
 });
 
@@ -305,7 +314,7 @@ var analysis=function(data){
 
 month_selected=(new Date()).getMonth(),
 year_selected=year;
-monthPlotting(month_selected+1);
+Plotting(year_selected,month_selected+1);
 
 //**************************Clear All Filters***************************************//////////////////////
 $('a#clear_filters').on('click',function(e){
@@ -314,11 +323,11 @@ $('a#clear_filters').on('click',function(e){
   year_selected=year;
   e.preventDefault();
   $('.crossMonthFilter a').attr("disabled","yes")
-                          .addClass('disableClick');
+  .addClass('disableClick');
   $('.a#clear_filters').attr("disabled","yes")
-                          .addClass('disableClick');
-   margin.bottom=100;
-  yearPlotting(year_selected);
+  .addClass('disableClick');
+  margin.bottom=100;
+  Plotting(year_selected,0);
 });
 //**************************Clear All Filters End***************************************//////////////////////
 
@@ -329,11 +338,11 @@ $('.crossMonthFilter a').on('click',function(e){
   year_selected=year;
   e.preventDefault();
   $('.crossMonthFilter a').attr("disabled","yes")
-                          .addClass('disableClick');
+  .addClass('disableClick');
   $('.a#clear_filters').attr("disabled","yes")
-                          .addClass('disableClick');
-   margin.bottom=100;
-  yearPlotting(year_selected);
+  .addClass('disableClick');
+  margin.bottom=100;
+  Plotting(year_selected,0);
 });
 
 //**************************Cross Month Filters End***************************************//////////////////////
