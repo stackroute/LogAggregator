@@ -187,14 +187,13 @@ var Plotting=function(year_selected,month_selected){
 
 $('.year a').on('click',function(e){
   margin.bottom=100;
-  var year_selected=parseInt($(this).text());
+  year_selected=parseInt($(this).text());
   Plotting(year_selected,0);
   e.preventDefault();
 });
 
 $('.months a').on('click',function(e){
   margin.bottom=29;
-  year_selected=year;
   month_selected=($(this).attr('value'));
   Plotting(year_selected,month_selected);
   $('#clear_filters').removeAttr("disabled")
