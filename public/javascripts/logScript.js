@@ -6,8 +6,8 @@
 
       //getting no. of paths to be displayed from config file
       var no_of_paths=10,
-      paths_selected=[];
-
+      paths_selected = [];
+            
       $("div.logcontainer").append($("<tr><td><button id='All' href='All'> Top Ten Most Visited Paths </button></td></br>"));
 
 
