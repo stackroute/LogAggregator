@@ -1,5 +1,7 @@
 var mongoose = require('./mongoose');
 var db = mongoose();
+//Loading  global config variable
+require('./configLoad')
 
 var express = require('express');
 var path = require('path');
@@ -12,7 +14,7 @@ var routes = require('./routes/index');
 
 
 
-
+var configRoute = require('./routes/config');
 var userAgent = require('./routes/API/userAgent');
 var logListing = require('./routes/API/logListing');
 var trafficRate = require('./routes/API/trafficRate');
@@ -32,6 +34,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/config', configRoute);
 app.use('/', routes);
 
 app.use('/json/userAgent', userAgent);

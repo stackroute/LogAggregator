@@ -154,14 +154,18 @@
   width:28%;
   text-align: justify;
   overflow:scroll;
-  height:600px;
+
+
+  height:500px;
+
 
 }
 .Mytable{
   margin-top: 0px;
   width: 72%;
   float: left;
-  height: 600px;
+
+  height: 500px;
   overflow: scroll;
   margin-right: 0px;
   text-align: center;

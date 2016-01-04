@@ -14,4 +14,4 @@ var logSchema = new Schema({
   time : Date
 },{collection: "serverhits"})
 
-mongoose.model('logs', logSchema);
+mongoose.model('Logs', logSchema);

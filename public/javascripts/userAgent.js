@@ -19,9 +19,11 @@ $(document).ready(function() {
 
   var render = function( element ) {
     var nestKey = element.attr("value");
-    $.get("json/userAgent/"+$('#yearDropDown')[0].getAttribute('value')+"/"+$('#monthDropDown')[0].getAttribute('value'), function (data, status) {
+    $.get("json/userAgent/"+nestKey+"/"+$('#yearDropDown')[0].getAttribute('value')+"/"+$('#monthDropDown')[0].getAttribute('value'), function (data, status) {
     d3.select(".wrap .well nodata").html("")
-    if(data.length==0) {
+    if($.isEmptyObject(data)) {
+      if($('#monthDropDown')[0].getAttribute('value') == 0)
+        $('#monthDropDown').prop('disabled', true);
       d3.select("#donut").html("");
       d3.select(".color-legend").html("");
       d3.select(".wrap .well nodata").html("No data Available")
@@ -30,28 +32,23 @@ $(document).ready(function() {
 
     d3.select("#donut").html="";
     d3.select(".color-legend").html="";
+    var domainNames = [];
 
-    if(nestKey == "browser") {
-      domainNames = ["Opera", "Google Chrome", "Mozilla Firefox", "Internet Explorer", "Microsoft Edge", "Safari"];
-    } else if(nestKey == "os") {
-      domainNames = ["Windows 7", "Macintosh", "Windows 10", "Windows 8", "Windows 8.1"]
-    } else {
-      return;
+    for(var k=0,filterLen = config.userAgentFilters[nestKey].length; k < filterLen; k++) {
+      domainNames.push(config.userAgentFilters[nestKey][k].names)
     }
-
-    var nestedData = d3.nest()
-                      .key(function(d) { return d[nestKey]; })
-                      .entries(data);
-
       color.domain(domainNames);
       Donut3D.draw("donut", agentData(), 200, 200, 170, 140, 30, 0.4);
 
       colorLegendG.call(colorLegend);
 
       function agentData() {
-        return nestedData.map(function(d, i){
-          return {label:d.key, value:d.values.length, color:color(d.key)};
-        });
+        var result = [];
+        var keys = Object.keys(data);
+        for(var i=0, len = keys.length; i < len; i++) {
+          result.push({label:keys[i], value:data[keys[i]], color:color(keys[i])})
+        }
+        return result;
       }
     })
   };
@@ -71,6 +68,7 @@ $(document).ready(function() {
                       .attr('value', this.getAttribute('value'));
     $('#monthDropDown').html('month <span class="caret"></span>')
                       .attr('value', '0');
+    $('#monthDropDown').prop('disabled', false);
     render($('.withBorder'));
     e.preventDefault();
   });

@@ -1,11 +1,7 @@
 var express = require('express');
 var path = require('path');
 var router = express.Router();
-var log = require('mongoose').model('logs');
-var plotData=[];
-var finalData=[];
-var plotdata=[];
-var dates={};
+var Log = require('mongoose').model('Logs');
 
 /* GET home page. */
 router.get('/:year/:month', function(req, res, next) {
@@ -20,69 +16,34 @@ router.get('/:year/:month', function(req, res, next) {
     fromDate = new Date(year, parseInt(month)-1);
     toDate = new Date(year, parseInt(month));
   }
+  var finalData=[];
+  var accumulator={};
+  var dates={};
+  Log.find({time : {"$gte": fromDate, "$lt": toDate}}, 'method time', function(err, serverHits) {
+    for(i in serverHits)
+    {
+      var obj={};
+      day_date = (serverHits[i].time).toISOString().substring(0,10);
+      if(dates[day_date])
+      {
+        accumulator[day_date][serverHits[i].method]+=1;
+      }
+      else
+      {
+        dates[day_date]=1;
+        obj.date=day_date;
+        obj.GET=0;
+        obj.POST=0;
+        obj.OPTIONS=0;
+        obj.HEAD=0;
+        obj[serverHits[i].method]=1;
+        accumulator[day_date]=obj;
+      }
+    }
 
-    log.find({time : {"$gte": fromDate, "$lt": toDate}}, 'method time', function(err, serverHits) {
-        var result=serverHits;
-    for(i in result){
-     var obj={};
-     obj.method=result[i].method;
-     // obj.date=(new Date(parseInt(result[i].time.$date))+" ").substring(4,15);
-     // obj.time=(new Date(parseInt(result[i].time.$date))+" ").substring(16,24);
-     obj.date=result[i].time.getDate();
-     obj.month=result[i].time.getMonth()+1;
-     obj.year=result[i].time.getFullYear();
-     obj.hour=result[i].time.getHours();
-     obj.minutes=result[i].time.getMinutes();
-     obj.seconds=result[i].time.getSeconds();
-
-     plotData.push(obj);
-
-   }
-
-   result=plotData;
-   var flag;
-
-   for(i in result){
-     var obj={};
-
-     if(result[i].date<10)
-     {
-     var day_date =result[i].year+'-' + (result[i].month) + '-' +'0'+result[i].date;
-   }else{
-     var day_date =result[i].year+'-' + (result[i].month) + '-'+result[i].date;
-   }
-     dates[day_date]=1;
-     flag=0;
-     for(k=0;k<plotdata.length;k++)
-     {
-       if(String(day_date).substring(0,10)===String(plotdata[k].date).substring(0,10)){
-         if((plotdata[k])[result[i].method]){
-         (plotdata[k])[result[i].method]=(plotdata[k])[result[i].method]+1;
-       }else{
-         (plotdata[k])[result[i].method]=1;
-       }
-         flag=1;
-       }
-     }
-       if(flag!=1){
-         obj.date=day_date;
-         obj.GET=0;
-         obj.POST=0;
-         obj.OPTIONS=0;
-         obj.HEAD=0;
-         obj[result[i].method]=1;
-         plotdata.push(obj);
-       }
-   }
-   finalData.push(dates);
-   var obj={};
-   obj.plot=plotdata;
-   finalData.push(obj);
-   //console.log("done reading");
-   res.json(finalData);
-
-
+  finalData.push(dates);
+  finalData.push(accumulator);
+  res.json(finalData);
 });
 });
-
 module.exports = router;

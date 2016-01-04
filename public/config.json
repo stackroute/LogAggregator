@@ -1,6 +1,58 @@
 [
   {
     "noOfYears" : "7",
-    "paths" : "30"
+    "paths" : "30",
+    "listingLimit" : "100",
+    "userAgentFilters" : {
+      "browser" : [
+          {
+            "types" : "OPR",
+            "names" : "Opera"
+          },
+          {
+            "types" : "Chrome",
+            "names" : "Google Chrome"
+          },
+          {
+            "types" : "Firefox",
+            "names" : "Mozilla Firefox"
+          },
+          {
+            "types" : "Trident",
+            "names" : "Internet Explorer"
+          },
+          {
+            "types" : "Edge",
+            "names" : "Microsoft Edge"
+          },
+          {
+            "types" : "Safari",
+            "names" : "Safari"
+          }
+        ],
+      "os" : [
+          {
+            "types" : "Windows NT 6.1",
+            "names" : "Windows 7"
+          },
+          {
+            "types" : "Macintosh",
+            "names" : "Macintosh"
+          },
+          {
+            "types" : "Windows NT 10.0",
+            "names" : "Windows 10"
+          },
+          {
+            "types" : "Windows NT 6.2",
+            "names" : "Windows 8"
+          },
+          {
+            "types" : "Windows NT 6.3",
+            "names" : "Windows 8.1"
+          }
+        ]
+      }
+    }
   }
 ]

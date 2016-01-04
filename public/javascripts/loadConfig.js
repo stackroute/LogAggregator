@@ -1,4 +1,7 @@
-var request = new XMLHttpRequest();
-request.open("GET", "../config.json", false);
-request.send(null)
-config = JSON.parse(request.responseText)[0];
+$.ajax({
+  url: "/config",
+  success: function(result) {
+    config = result;
+  },
+  async: false
+});
