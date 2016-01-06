@@ -19,24 +19,27 @@ router.get('/:pathId/:pgno', function(req, res  ) {
 
               counts=c;
               Log.find({path:paths},'remote host path user method code size referer agent time',{skip:skip,limit:limit}, function(err,serverhits) {
-                  var arr=[];
-                  arr.push(serverhits);
-                  arr.push({"count":counts});
-                  res.json(arr);
+                  var arr={"collection_data":serverhits,
+                            "count": counts};
+
+
+                  res.send(arr);
               });
           });
 
         }//close if
 
         else {
+          console.log("in method");
           count = Log.count({},function(er,c){
 
              counts=c;
              Log.find({},'remote host path user method code size referer agent time',{skip:skip,limit:limit}, function(err,serverhits) {
-                 var arr=[];
-                 arr.push(serverhits);
-                 arr.push({"count":counts});
-                 res.json(arr);
+               var arr={"collection_data":serverhits,
+                         "count": counts};
+                        
+
+                 res.send(arr);
              });
          });
 

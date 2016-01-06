@@ -32,16 +32,18 @@
       function alldata(){
               href="/All";
               $.get("json/logListing"+href+"/1",function(data){
-                  count = data[1].count;
+              //  console.log(data);
+                //console.log(data.count);
+                   count = data.count;
 
-                    drawHeader(data[0],"All");
-                    drawTable(data[0],"All");
+                   drawHeader(data.collection_data,"All");
+                   drawTable(data.collection_data,"All");
 
                     //pagenation call
                     $('#nav').html('');
                     $('#personDataTable').after('<div id="nav"></div>');
-                    var rowsTotal =  count;
-                    drawRowDynamic(data,rowsTotal,href,'/All');
+                     var rowsTotal =  count;
+                     drawRowDynamic(data,rowsTotal,href,'/All');
 
               });//ajax req
 
@@ -117,10 +119,10 @@
                       newhref = "/"+encodeURIComponent(temp);
 
                        $.get("json/logListing"+newhref+"/1", function(data){
-                          var count=data[1].count;
+                          var count=data.count;
 
-                           drawHeader(data[0],id);
-                           drawTable(data[0],id);
+                           drawHeader(data.collection_data,id);
+                           drawTable(data.collection_data,id);
                            //pagenation call
                            $('#nav').html('');
                            $('#personDataTable').after('<div id="nav"></div>');
@@ -138,7 +140,7 @@
 
 
       function drawHeader(data,id){
-
+        
             $("#personDataTable").html('');
             no_of_rows = 0;
             var row = $("<tr class='pos' />");
@@ -258,8 +260,8 @@
               $.get("json/logListing"+path+"/"+currPage, function(data){
 
 
-                    drawHeader(data[0],id);
-                    drawTable(data[0],id);
+                    drawHeader(data.collection_data,id);
+                    drawTable(data.collection_data,id);
 
 
               });
