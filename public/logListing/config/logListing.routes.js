@@ -1,8 +1,8 @@
-angular.module('userAgent').config(['$routeProvider',
+angular.module('logListing').config(['$routeProvider',
   function($routeProvider) {
     $routeProvider
     .when('/', {
-      templateUrl: 'userAgent/views/userAgent.view.html'
+      templateUrl: 'logListing/views/logListing.view.html'
     })
     .otherwise({
       redirectTo: '/'
