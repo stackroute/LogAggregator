@@ -1,17 +1,10 @@
-angular.module('logListing')
-  .factory('pathsArray',function($http,$log){
+angular.module('logListing',[])
+  .factory('pathsArray',function(){
+        console.log("in listing services");
 
-      return {
+        return "hello service";
 
-          load:function(){
 
-              data = $http.get('/json/logListing/');
-              $log.log(data);
-
-          }
-
-            return data;
-      }
 
 
   });

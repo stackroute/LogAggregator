@@ -2,13 +2,15 @@ angular.module('logAggregator').config(['$routeProvider',
   function($routeProvider) {
     $routeProvider
     .when('/', {
-      templateUrl: 'js/nginx/logListing/views/logListing.view.html'
+      templateUrl: 'js/nginx/logListing/views/logListing.view.html',
+      controller : 'js/nginx/logListing/controllers/logListing.controller.js'
     })
     .when('/userAgent', {
       templateUrl: 'js/nginx/userAgent/views/userAgent.view.html'
     })
     .when('/logListing', {
-      templateUrl: 'js/nginx/logListing/views/logListing.view.html'
+      templateUrl: 'js/nginx/logListing/views/logListing.view.html',
+      controller : 'js/nginx/logListing/controllers/logListing.controller.js'
     })
     .when('/trafficRate', {
       templateUrl: 'js/nginx/trafficRate/views/trafficRate.view.html'
@@ -16,5 +18,8 @@ angular.module('logAggregator').config(['$routeProvider',
     .otherwise({
       redirectTo: '/'
     });
+
+    console.log("in LA routes");
   }
+
 ]);

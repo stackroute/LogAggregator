@@ -1,8 +1,8 @@
 angular.module('logListing')
 
     .controller('pathsControl', ['$scope',
-      function($scope,'pathsArray') {
-
+      function($scope) {
+            console.log("in listing  controller");
             pathsArray.load().success(function(data){
                     var no_of_paths=10,
                     no_of_paths = config.paths;
@@ -21,12 +21,6 @@ angular.module('logListing')
 
           $scope.paths= paths_selected;
 
-      };
+      }//close fn
 
-    ]);
-
-    .controller('tableControl', ['$scope',
-      function($scope) {
-        $scope.name = 'MEAN Application';
-      }
     ]);

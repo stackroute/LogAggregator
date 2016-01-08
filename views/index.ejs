@@ -13,7 +13,7 @@
   <script src="js/lib/d3/d3.min.js"></script>
   <script src=""></script>
 </head>
-<body>
+<body >
   <!--nav bar start -->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -101,14 +101,15 @@
         <li class="tab2"><a href="#agentAnalytics" data-toggle="tab">User Agent</a></li>
         <li class="tab3"><a href="#requestRate" data-toggle="tab">Request Rate</a></li>
       </ul>
-      <div class="tab-content">
-        <div class="tab-pane active" id="logListing">
+      <div class="tab-content" ng-app="logListing">
+        <div class="tab-pane active" id="logListing" ng-controller="pathsControl">
           <div class="page-header">
             <h2><small>Listing of all requests based on path</small></h2>
           </div>
+          <ng-view> </ng-view>
           <div class="header"></div>
 
-              <div class="logcontainer"></div>
+              <div class="logcontainer" ></div>
               <div class="Mytable">
                 <table id='personDataTable'> </table>
               </div>
@@ -190,8 +191,16 @@
 <!-- <script type="text/javascript" src="/userAgent/controllers/userAgent.controller.js"></script> -->
 
 
+
+
 <script type="text/javascript" src="/js/application.js"></script>
 <script type="text/javascript" src="/js/logAggregator.routes.js"></script>
+<script type="text/javascript" src="/js/logAggregator.controller.js"></script>
+<script type="text/javascript" src="/js/nginx/logListing/logListing.module.js">   </script>
+<script type="text/javascript" src="/js/nginx/logListing/services/logServices.js">   </script>
+<script type="text/javascript" src="/js/nginx/logListing/config/logListing.routes.js">   </script>
+
+ <script type="text/javascript" src="/js/nginx/logListing/controllers/logListing.controller.js">   </script>
 
 </body>
 </html>
