@@ -1,5 +1,7 @@
-angular.module('logAggregator').controller('ExampleController', ['$scope',
-  function($scope) {
-    $scope.name = 'MEAN Application';
+angular.module('logAggregator').controller('appController', ['$scope','$http'
+  function($scope,$http) {
+    $http.get('/config').success(function(data){
+      console.log(data);
+    });
   }
 ]);
