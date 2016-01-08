@@ -3,7 +3,10 @@
 /**
  * Module dependencies.
  */
+<<<<<<< HEAD
 
+=======
+>>>>>>> e5002a529a7d427382280a767220315430b6ded4
 var app = require('../app');
 var debug = require('debug')('LogAggregatorExpress:server');
 var http = require('http');

@@ -1,4 +1,4 @@
-angular.module('logListing')
+angular.module('logAggregator').controller('ExampleController', ['$scope',
 
     .controller('pathsControl', ['$scope',
       function($scope) {
