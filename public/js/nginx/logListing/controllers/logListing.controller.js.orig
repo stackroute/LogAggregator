@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 angular.module('logAggregator').controller('ExampleController', ['$scope',
+  function($scope) {
+    $scope.name = 'MEAN Application';
+  }
+]);
+=======
+angular.module('logListing')
 
     .controller('pathsControl', ['$scope',
       function($scope,'pathsArray') {
@@ -30,3 +37,4 @@ angular.module('logAggregator').controller('ExampleController', ['$scope',
         $scope.name = 'MEAN Application';
       }
     ]);
+>>>>>>> e5002a529a7d427382280a767220315430b6ded4
