@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html xmlns:ng="http://angularjs.org" ng-app='logAggregator' ng-controller='appController'>
+<html xmlns:ng="http://angularjs.org"  ng-controller='mainController'>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>LogAggregator</title>
+  <title>{{config.paths}}</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="js/lib/bootstrap/dist/css/bootstrap.min.css">
 
@@ -192,6 +192,9 @@
 
 <script type="text/javascript" src="/js/application.js"></script>
 <script type="text/javascript" src="/js/logAggregator.routes.js"></script>
+<script src="/js/logAggregator.controller.js"></script>
+<script src="/js/logAggregator.service.js"></script>
+
 
 </body>
 </html>
