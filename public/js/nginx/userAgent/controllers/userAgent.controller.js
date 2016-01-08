@@ -1,5 +1,6 @@
 angular.module('logAggregator').controller('userAgentController', ['$scope', 'getAgentData',
   function($scope, getAgentData) {
+    console.log("this is user agent controller");
 
     var thisYear = (new Date).getFullYear();
     $('#yearDropDown').attr('value', thisYear)

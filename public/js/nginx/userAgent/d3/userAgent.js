@@ -31,9 +31,9 @@
     d3.select(".color-legend").html="";
     var domainNames = [];
 
-    // for(var k=0,filterLen = config.userAgentFilters[nestKey].length; k < filterLen; k++) {
-    //   domainNames.push(config.userAgentFilters[nestKey][k].names)
-    // }
+    for(var k=0,filterLen = config.userAgentFilters[nestKey].length; k < filterLen; k++) {
+      domainNames.push(config.userAgentFilters[nestKey][k].names)
+    }
       color.domain(domainNames);
       Donut3D.draw("donut", agentData(), 200, 200, 170, 140, 30, 0.4);
 

@@ -8,6 +8,6 @@ mainApplicationModule.config(['$locationProvider',
   }
 ]);
 
-// angular.element(document).ready(function() {
-//   angular.bootstrap(document, [mainApplicationModuleName]);
-// });
+angular.element(document).ready(function() {
+  angular.bootstrap(document, [mainApplicationModuleName]);
+});
