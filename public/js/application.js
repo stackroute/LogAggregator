@@ -1,6 +1,6 @@
 var mainApplicationModuleName = 'logAggregator';
 
-var mainApplicationModule = angular.module(mainApplicationModuleName, ['ngRoute']);
+var mainApplicationModule = angular.module(mainApplicationModuleName, ['ngRoute','logListing']);
 
 mainApplicationModule.config(['$locationProvider',
   function($locationProvider) {
