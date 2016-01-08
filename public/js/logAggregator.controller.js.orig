@@ -1,7 +1,13 @@
+<<<<<<< HEAD
+angular.module('logAggregator').controller('ExampleController', ['$scope',
+  function($scope) {
+    
+=======
 angular.module('logAggregator').controller('appController', ['$scope','$http'
   function($scope,$http) {
     $http.get('/config').success(function(data){
       console.log(data);
     });
+>>>>>>> e5002a529a7d427382280a767220315430b6ded4
   }
 ]);
