@@ -1,8 +1,8 @@
-angular.module('userAgent').factory('getAgentData', [$scope,
-  function($scope) {
-    var year = $scope.agentYear;
-    var month = $scope.agentMonth;
-    var criteria = $scope.criteria;
+angular.module('logAggregator').factory('getAgentData', ['$http',
+  function($http) {
+    // var year = $scope.agentYear;
+    // var month = $scope.agentMonth;
+    // var criteria = $scope.criteria;
     var handleSuccess = function(response) {
       return response.data;
     }
@@ -11,7 +11,7 @@ angular.module('userAgent').factory('getAgentData', [$scope,
     }
     var request = $http({
       method: "get",
-      url: "json/userAgent/"+criteria+"/2015/0",
+      url: "json/userAgent/os/2015/0",
     });
     return( request.then( handleSuccess, handleError ) );
   }

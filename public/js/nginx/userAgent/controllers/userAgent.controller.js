@@ -19,8 +19,10 @@ angular.module('logAggregator').controller('userAgentController', ['$scope', 'ge
       $scope.agentCriteria = criteria;
       var year = $scope.agentYear;
       var month = $scope.agentMonth;
+      console.log("hi");
       var data = getAgentData;
-      render(criteria, data, year, month);
+      console.log(data);
+      render(criteria, data);
       $('.criteriaPane').attr("class", "btn btn-default criteriaPane");
       $('.criteriaPane').addClass("noBorder");
       var elementId = "#"+criteria+"Share";

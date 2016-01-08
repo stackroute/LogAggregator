@@ -1,4 +1,3 @@
-$(document).ready(function() {
   var svg = d3.select(".wrap").append("div").attr("class", "well").append("svg").attr("width",600).attr("height",400);
   var g = svg.append("g").attr("id","donut");
   color = d3.scale.category10();
@@ -17,10 +16,8 @@ $(document).ready(function() {
                   .orient("vertical");
   $(".wrap .well").prepend("<nodata></nodata>")
 
-  var render = function( element ) {
-    var nestKey = element.attr("value");
-    $.get("json/userAgent/"+nestKey+"/"+$('#yearDropDown')[0].getAttribute('value')+"/"+$('#monthDropDown')[0].getAttribute('value'), function (data, status) {
-    d3.select(".wrap .well nodata").html("")
+  var render = function(nestKey, data) {
+    d3.select(".wrap .well nodata").html("");
     if($.isEmptyObject(data)) {
       if($('#monthDropDown')[0].getAttribute('value') == 0)
         $('#monthDropDown').prop('disabled', true);
@@ -34,9 +31,9 @@ $(document).ready(function() {
     d3.select(".color-legend").html="";
     var domainNames = [];
 
-    for(var k=0,filterLen = config.userAgentFilters[nestKey].length; k < filterLen; k++) {
-      domainNames.push(config.userAgentFilters[nestKey][k].names)
-    }
+    // for(var k=0,filterLen = config.userAgentFilters[nestKey].length; k < filterLen; k++) {
+    //   domainNames.push(config.userAgentFilters[nestKey][k].names)
+    // }
       color.domain(domainNames);
       Donut3D.draw("donut", agentData(), 200, 200, 170, 140, 30, 0.4);
 
@@ -50,8 +47,7 @@ $(document).ready(function() {
         }
         return result;
       }
-    })
-  };
+    };
   // var thisYear = (new Date).getFullYear();
   // $('#yearDropDown').attr('value', thisYear)
   //                   .html(thisYear+" <span class='caret'></span>")
@@ -95,4 +91,3 @@ $(document).ready(function() {
   //     i++;
   //   }
   // });
-});
