@@ -102,7 +102,7 @@
         <li class="tab3"><a href="#requestRate" data-toggle="tab">Request Rate</a></li>
       </ul>
       <div class="tab-content">
-        <div class="tab-pane active" id="logListing">
+        <div class="tab-pane" id="logListing">
           <div class="page-header">
             <h2><small>Listing of all requests based on path</small></h2>
           </div>
@@ -114,9 +114,7 @@
               </div>
         </div><!-- end tab-pane -->
 
-
-
-      <div class="tab-pane" id="agentAnalytics" ng-view="">
+      <div class="tab-pane active" id="!/agentAnalytics" ng-view>
 
       </div>  <!-- end tab-pane -->
 
@@ -192,6 +190,9 @@
 
 <script type="text/javascript" src="/js/application.js"></script>
 <script type="text/javascript" src="/js/logAggregator.routes.js"></script>
+<!-- <script type="text/javascript" src="/js/nginx/logAggregator.controller.js"></script> -->
+<script type="text/javascript" src="/js/nginx/userAgent/userAgent.module.js"></script>
+<script type="text/javascript" src="/js/logAggregator.controller.js"></script>
 
 </body>
 </html>
