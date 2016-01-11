@@ -1,40 +1,33 @@
 <div class="btn-group-vertical criteriaGroup" role="group" aria-label="...">
-  <button type="button" class="btn btn-default criteriaPane" value=browser id="browserShare" ng-click="renderData('browser')">Browser Share</button>
-  <button type="button" class="btn btn-default criteriaPane" value=os id="osShare" ng-click="renderData('os')">OS Share</button>
+  <button type="button" ng-class="{btn: true, 'btn-default':true, 'criteriaPane':true, 'withBorder': (agentCriteria == 'browser')}" value=browser id="browserShare" ng-click="renderData('browser')">Browser Share</button>
+  <button type="button" ng-class="{btn: true, 'btn-default':true, 'criteriaPane':true, 'withBorder': (agentCriteria == 'os')}" value=os id="osShare" ng-click="renderData('os')">OS Share</button>
 </div>
 <div class="wrap">
   <div class="page-header">
     <h2><small>This plot gives the browser and os shares of the requests from</small></h2>
     <div class="filters">
       <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" ng-bind="agentYear" type="button" id="yearDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-
+        <button class="btn btn-default dropdown-toggle" type="button" id="yearDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          {{agentYear}} <span class="caret"></span>
         </button>
         <ul class="dropdown-menu yearSelect" aria-labelledby="yearDropDown">
           <li ng-repeat="year in yearsToShow">
-            <a href='#' ng-click="updateAgentYear()">{{year}}</a>
+            <a href='' ng-click="updateAgentYear(year)">{{year}}</a>
           </li>
         </ul>
       </div>
       <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" type="button" value="0" id="monthDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          month <span class="caret"></span>
+        <button class="btn btn-default dropdown-toggle" ng-disabled="!agentData" type="button" value="0" id="monthDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          {{agentMonthName}} <span class="caret"></span>
         </button>
         <ul class="dropdown-menu monthSelect" aria-labelledby="monthDropDown">
-          <li><a href="#" value=1>January</a></li>
-          <li><a href="#" value=2>February</a></li>
-          <li><a href="#" value=3>March</a></li>
-          <li><a href="#" value=4>April</a></li>
-          <li><a href="#" value=5>May</a></li>
-          <li><a href="#" value=6>June</a></li>
-          <li><a href="#" value=7>July</a></li>
-          <li><a href="#" value=8>August</a></li>
-          <li><a href="#" value=9>September</a></li>
-          <li><a href="#" value=10>October</a></li>
-          <li><a href="#" value=11>November</a></li>
-          <li><a href="#" value=12>December</a></li>
+          <li ng-repeat='month in months'>
+            <a ng-href='' ng-click='updateAgentMonth(month)'>{{month.name}}</a>
+          </li>
         </ul>
       </div>
     </div>
   </div>
 </div>
+<script src="/js/nginx/userAgent/d3/agentAnalytics.js" ></script>
+<script src="/js/nginx/userAgent/d3/userAgent.js" ></script>

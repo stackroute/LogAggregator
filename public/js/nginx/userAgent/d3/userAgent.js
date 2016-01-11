@@ -18,9 +18,8 @@
 
   var render = function(nestKey, data) {
     d3.select(".wrap .well nodata").html("");
+    console.log($.isEmptyObject(data));
     if($.isEmptyObject(data)) {
-      if($('#monthDropDown')[0].getAttribute('value') == 0)
-        $('#monthDropDown').prop('disabled', true);
       d3.select("#donut").html("");
       d3.select(".color-legend").html("");
       d3.select(".wrap .well nodata").html("No data Available")
@@ -31,8 +30,13 @@
     d3.select(".color-legend").html="";
     var domainNames = [];
 
-    for(var k=0,filterLen = config.userAgentFilters[nestKey].length; k < filterLen; k++) {
-      domainNames.push(config.userAgentFilters[nestKey][k].names)
+    // for(var k=0,filterLen = config.userAgentFilters[nestKey].length; k < filterLen; k++) {
+    //   domainNames.push(config.userAgentFilters[nestKey][k].names)
+    // }
+    if(nestKey == "browser") {
+      domainNames = ["Opera", "Google Chrome", "Mozilla Firefox", "Internet Explorer", "Microsoft Edge", "Safari"];
+    } else {
+      domainNames = ["Windows 7", "Macintosh", "Windows 10", "Windows 8", "Windows 8.1"];
     }
       color.domain(domainNames);
       Donut3D.draw("donut", agentData(), 200, 200, 170, 140, 30, 0.4);
@@ -45,6 +49,7 @@
         for(var i=0, len = keys.length; i < len; i++) {
           result.push({label:keys[i], value:data[keys[i]], color:color(keys[i])})
         }
+        console.log(result);
         return result;
       }
     };

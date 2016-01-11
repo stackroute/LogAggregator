@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:ng="http://angularjs.org" ng-app="logAggregator" ng-controller='mainController'>
+<html xmlns:ng="http://angularjs.org" ng-controller='mainController'>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -98,11 +98,11 @@
     <div class="tabbable" id="main-tab">
       <ul class="nav nav-tabs">
         <li class="active tab1"><a ng-href="#logListing" data-toggle="tab">Log Listing</a></li>
-        <li class="tab2"><a ng-href="#userAgent" data-toggle="tab">User Agent</a></li>
+        <li class="tab2"><a ng-href="#agentAnalytics" data-toggle="tab">User Agent</a></li>
         <li class="tab3"><a ng-href="#trafficRate" data-toggle="tab">Request Rate</a></li>
       </ul>
       <div class="tab-content">
-        <div class="tab-pane " id="logListing">
+        <div class="tab-pane active" id="logListing" >
           <div class="page-header">
             <h2><small>Listing of all requests based on path</small></h2>
           </div>
@@ -116,11 +116,11 @@
 
 
 
-        <div class="tab-pane active" id="userAgent" ng-view="">
+        <div class="tab-pane" id="agentAnalytics" ng-view="">
 
         </div>  <!-- end tab-pane -->
 
-        <div class="tab-pane" id="trafficRate" ng-view="">
+        <div class="tab-pane" id="trafficRate">
 
         </div><!-- end tab-content -->
       </div><!-- end tabbable -->
@@ -141,21 +141,20 @@
     <script type="text/javascript" src="/js/lib/angular/angular.js"></script>
     <script type="text/javascript" src="/js/lib/angular-route/angular-route.js"></script>
 
-    <!-- <script type="text/javascript" src="/userAgent/userAgent.module.js"></script> -->
-    <!-- <script type="text/javascript" src="/userAgent/controllers/userAgent.controller.js"></script> -->
-
 
     <script type="text/javascript" src="/js/application.js"></script>
-<script src="/js/logAggregator.service.js"></script>
-    <script src="/js/nginx/userAgent/d3/agentAnalytics.js" ></script>
-    <script src="/js/nginx/userAgent/d3/userAgent.js" ></script>
+
     <script type="text/javascript" src="/js/nginx/userAgent/services/userAgent.service.js"></script>
     <script type="text/javascript" src="/js/nginx/trafficRate/services/trafficRate.service.js"></script>
     <script type="text/javascript" src="/js/nginx/userAgent/controllers/userAgent.controller.js"></script>
     <script type="text/javascript" src="/js/nginx/trafficRate/controllers/trafficRate.controller.js"></script>
+
+
     <script type="text/javascript" src="/js/logAggregator.routes.js"></script>
-    <script src="/js/logAggregator.controller.js"></script>
     <script src="/js/logAggregator.service.js"></script>
+    <script src="/js/logAggregator.controller.js"></script>
+
+
 
 
 
