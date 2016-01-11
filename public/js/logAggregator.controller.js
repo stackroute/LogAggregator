@@ -2,7 +2,7 @@ angular.module('logAggregator').controller('mainController', ['$scope','loadConf
   function($scope,loadConfig) {
     loadConfig.getdata(function(data){
       $scope.config=data;
-      console.log(data);
+      //console.log(data);
     });
 }
 ]);
