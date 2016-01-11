@@ -1,10 +1,14 @@
-angular.module('logAggregator').controller('userAgentController', ['$scope', 'agentDataService',
-  function($scope, agentDataService) {
+angular.module('logAggregator').controller('userAgentController', ['$scope', '$window', 'agentDataService',
+  function($scope, $window, agentDataService) {
 
     var thisYear = (new Date).getFullYear();
 
     $scope.agentYear = thisYear;
-    $scope.yearsToShow = [2016, 2015, 2014, 2013, 2012];
+    var years = [];
+    for(var i = parseInt(thisYear); i > thisYear - $scope.config.noOfYears; i--) {
+      years.push(i);
+    }
+    $scope.yearsToShow = years;
     $scope.agentMonth = 0;
     $scope.agentMonthName="Month";
     $scope.agentData = {};
@@ -51,5 +55,6 @@ angular.module('logAggregator').controller('userAgentController', ['$scope', 'ag
     $scope.checkIfDisable = function(){
       return (Object.keys($scope.agentData).length == 0 && $scope.agentMonth == 0)
     }
+    $window.config = $scope.config;
   }
 ]);
