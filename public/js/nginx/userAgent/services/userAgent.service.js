@@ -1,18 +1,16 @@
-angular.module('logAggregator').factory('getAgentData', ['$http',
+angular.module('logAggregator').factory('getAgentData',
   function($http) {
-    // var year = $scope.agentYear;
-    // var month = $scope.agentMonth;
-    // var criteria = $scope.criteria;
-    var handleSuccess = function(response) {
-      return response.data;
+    return {
+      getAgentData: function(handleSuccess, handleError, criteria) {
+          var request = $http({
+            method: "get",
+            url: "json/userAgent/os/2015/0",
+          });
+          request.then( function() {
+            handleSuccess(criteria);
+            handleError(criteria)
+          });
+        }
     }
-    var handleError = function(response) {
-      return {};
-    }
-    var request = $http({
-      method: "get",
-      url: "json/userAgent/os/2015/0",
-    });
-    return( request.then( handleSuccess, handleError ) );
   }
-]);
+);

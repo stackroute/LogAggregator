@@ -7,11 +7,13 @@
     <h2><small>This plot gives the browser and os shares of the requests from</small></h2>
     <div class="filters">
       <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" type="button" value="0" id="yearDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        <button class="btn btn-default dropdown-toggle" ng-bind="agentYear" type="button" id="yearDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 
         </button>
         <ul class="dropdown-menu yearSelect" aria-labelledby="yearDropDown">
-
+          <li ng-repeat="year in yearsToShow">
+            <a href='#' ng-click="updateAgentYear()">{{year}}</a>
+          </li>
         </ul>
       </div>
       <div class="dropdown">
