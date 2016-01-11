@@ -17,7 +17,7 @@
         </ul>
       </div>
       <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" ng-disabled="!agentData" type="button" value="0" id="monthDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        <button class="btn btn-default dropdown-toggle" ng-disabled="checkIfDisable()" type="button" value="0" id="monthDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
           {{agentMonthName}} <span class="caret"></span>
         </button>
         <ul class="dropdown-menu monthSelect" aria-labelledby="monthDropDown">

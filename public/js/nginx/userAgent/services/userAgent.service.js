@@ -6,8 +6,6 @@ angular.module('logAggregator').factory('agentDataService',
             method: "get",
             url: "json/userAgent/"+criteria+"/"+year+"/"+month,
           });
-          console.log("json/userAgent/"+criteria+"/"+year+"/"+month);
-          console.log(criteria);
           request.then( function(data) {
             handleSuccess(data, criteria);
           }, function(data) {

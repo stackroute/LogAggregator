@@ -7,6 +7,7 @@ angular.module('logAggregator').controller('userAgentController', ['$scope', 'ag
     $scope.yearsToShow = [2016, 2015, 2014, 2013, 2012];
     $scope.agentMonth = 0;
     $scope.agentMonthName="Month";
+    $scope.agentData = {};
     var months=[{name:'January',value:1},{name:'February',value:2},{name:'March',value:3},
                 {name:'April',value:4},{name:'May',value:5},{name:'June',value:6},
                 {name:'July',value:7},{name:'August',value:8},{name:'September',value:9},
@@ -20,7 +21,7 @@ angular.module('logAggregator').controller('userAgentController', ['$scope', 'ag
     };
 
     var handleError = function(response, criteria) {
-      $scope.agentData = null;
+      $scope.agentData = {};
       render(criteria, $scope.agentData);
     }
 
@@ -31,7 +32,6 @@ angular.module('logAggregator').controller('userAgentController', ['$scope', 'ag
       $scope.agentCriteria = criteria;
       var year = $scope.agentYear;
       var month = $scope.agentMonth;
-      console.log(criteria);
       agentDataService.getAgentData(handleSuccess, handleError, criteria, year, month);
     }
 
@@ -39,7 +39,6 @@ angular.module('logAggregator').controller('userAgentController', ['$scope', 'ag
       $scope.agentYear = year;
       $scope.agentMonth = 0;
       $scope.agentMonthName='Month';
-      console.log($scope.agentData);
       agentDataService.getAgentData(handleSuccess, handleError, $scope.agentCriteria, year, $scope.agentMonth);
     }
 
@@ -49,6 +48,8 @@ angular.module('logAggregator').controller('userAgentController', ['$scope', 'ag
       agentDataService.getAgentData(handleSuccess, handleError, $scope.agentCriteria, $scope.agentYear, $scope.agentMonth);
     }
 
-
+    $scope.checkIfDisable = function(){
+      return (Object.keys($scope.agentData).length == 0 && $scope.agentMonth == 0)
+    }
   }
 ]);
