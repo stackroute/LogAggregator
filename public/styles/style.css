@@ -36,11 +36,11 @@
   background-color: #F8F8F8;
 }
 
-#agentAnalytics {
+.tab-pane {
   height: 100%;
 }
 
-#agentAnalytics .criteriaPane {
+.tab-pane .criteriaPane {
   border-radius: 0px;
   border: 0px;
   border-bottom: 2px solid lightgrey;
@@ -48,7 +48,7 @@
   font-size: 0.83em;
 }
 
-#agentAnalytics .criteriaGroup {
+.tab-pane .criteriaGroup {
   width: 20%;
   height: 100%;
 }

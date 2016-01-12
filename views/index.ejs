@@ -97,67 +97,42 @@
   <div class="container-fluid">
     <div class="tabbable" id="main-tab">
       <ul class="nav nav-tabs">
-        <li class="active tab1"><a ng-href="#logListing" data-toggle="tab">Log Listing</a></li>
-        <li class="tab2"><a ng-href="#agentAnalytics" data-toggle="tab">User Agent</a></li>
-        <li class="tab3"><a ng-href="#trafficRate" data-toggle="tab">Request Rate</a></li>
+        <li class="active tab1"><a ng-href="#logListing" >Log Listing</a></li>
+        <li class="tab2"><a ng-href="#agentAnalytics" >User Agent</a></li>
+        <li class="tab3"><a ng-href="#trafficRate" >Request Rate</a></li>
       </ul>
-      <div class="tab-content">
-        <div class="tab-pane active" id="logListing" >
-          <div class="page-header">
-            <h2><small>Listing of all requests based on path</small></h2>
-          </div>
-          <div class="header"></div>
+      <div class="tab-pane" ng-view="">
 
-          <div class="logcontainer"></div>
-          <div class="Mytable">
-            <table id='personDataTable'> </table>
-          </div>
-        </div><!-- end tab-pane -->
-
-
-
-        <div class="tab-pane" id="agentAnalytics" ng-view="">
-
-        </div>  <!-- end tab-pane -->
-
-        <div class="tab-pane" id="trafficRate">
-
-        </div><!-- end tab-content -->
-      </div><!-- end tabbable -->
+      </div>  <!-- end tab-pane -->
     </div>
   </div>
 
+  <!-- All Javascript at the bottom of the page for faster page loading -->
+
+  <script src="js/lib/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script src="js/lib/d3-legend/d3-legend.min.js"></script>
+  <script src="js/lib/d3-tip/index.js"></script>
+
+  <script type="text/javascript" src="/js/lib/angular/angular.js"></script>
+  <script type="text/javascript" src="/js/lib/angular-route/angular-route.js"></script>
 
 
-    <!-- All Javascript at the bottom of the page for faster page loading -->
-
-    <script src="js/lib/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <script src="js/lib/d3-legend/d3-legend.min.js"></script>
-    <script src="js/lib/d3-tip/index.js"></script>
-
-    <script type="text/javascript" src="/js/lib/angular/angular.js"></script>
-    <script type="text/javascript" src="/js/lib/angular-route/angular-route.js"></script>
+  <script type="text/javascript" src="/js/application.js"></script>
 
 
-    <script type="text/javascript" src="/js/application.js"></script>
-
-    <script type="text/javascript" src="/js/nginx/userAgent/services/userAgent.service.js"></script>
-    <script type="text/javascript" src="/js/nginx/trafficRate/services/trafficRate.service.js"></script>
-    <script type="text/javascript" src="/js/nginx/userAgent/controllers/userAgent.controller.js"></script>
-    <script type="text/javascript" src="/js/nginx/trafficRate/controllers/trafficRate.controller.js"></script>
+  <script type="text/javascript" src="/js/nginx/userAgent/services/userAgent.service.js"></script>
+  <script type="text/javascript" src="/js/nginx/trafficRate/services/trafficRate.service.js"></script>
+  <script type="text/javascript" src="/js/nginx/userAgent/controllers/userAgent.controller.js"></script>
+  <script type="text/javascript" src="/js/nginx/trafficRate/controllers/trafficRate.controller.js"></script>
 
 
-    <script type="text/javascript" src="/js/logAggregator.routes.js"></script>
-    <script src="/js/logAggregator.service.js"></script>
-    <script src="/js/logAggregator.controller.js"></script>
+  <script type="text/javascript" src="/js/logAggregator.routes.js"></script>
+  <script type="text/javascript" src="/js/logAggregator.service.js"></script>
+  <script type="text/javascript" src="/js/logAggregator.controller.js"></script>
 
 
-
-
-
-
-  </body>
-  </html>
+</body>
+</html>

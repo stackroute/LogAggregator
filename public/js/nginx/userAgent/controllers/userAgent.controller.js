@@ -1,5 +1,5 @@
-angular.module('logAggregator').controller('userAgentController', ['$scope', '$window', 'agentDataService',
-  function($scope, $window, agentDataService) {
+angular.module('logAggregator').controller('userAgentController', ['$scope', 'agentDataService',
+  function($scope, agentDataService) {
 
     var thisYear = (new Date).getFullYear();
 
@@ -55,6 +55,5 @@ angular.module('logAggregator').controller('userAgentController', ['$scope', '$w
     $scope.checkIfDisable = function(){
       return (Object.keys($scope.agentData).length == 0 && $scope.agentMonth == 0)
     }
-    $window.config = $scope.config;
   }
 ]);
