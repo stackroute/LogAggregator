@@ -2,7 +2,7 @@
   <button type="button" ng-class="{btn: true, 'btn-default':true, 'criteriaPane':true, 'withBorder': (agentCriteria == 'browser')}" value=browser id="browserShare" ng-click="renderData('browser')">Browser Share</button>
   <button type="button" ng-class="{btn: true, 'btn-default':true, 'criteriaPane':true, 'withBorder': (agentCriteria == 'os')}" value=os id="osShare" ng-click="renderData('os')">OS Share</button>
 </div>
-<div class="wrap">
+<div class="wrap" ng-init = "tab = 'agentAnalytics'">
   <div class="page-header">
     <h2><small>This plot gives the browser and os shares of the requests from</small></h2>
     <div class="filters">
