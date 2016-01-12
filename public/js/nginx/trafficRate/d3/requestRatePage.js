@@ -3,6 +3,7 @@ width = 800 - margin.left - margin.right,
 height = 340 - margin.top - margin.bottom;
 
 var parseDate = d3.time.format("%d-%b-%y").parse;
+var monthSelection;
 
 var x = d3.time.scale()
 .range([0, width]);
@@ -29,6 +30,8 @@ function numberOfDays(year,month){
 /**** Year Change Traffic ***********************************************************************/
 
 var Plotting=function(json,year_selected,month_selected){
+
+    monthSelection = month_selected;
     var dates=json[0];
     var tempdata=json[1];
     var newdata=[];
@@ -176,7 +179,12 @@ var analysis=function(data){
     };
   });
 
-  x.domain(d3.extent(data, function(d) { return d.date; }));
+   x.domain([new Date(data[0].date), d3.time.day.offset(new Date(data[data.length-1].date),0)]);
+   xAxis.tickFormat(d3.time.format('%B %d'))
+        .outerTickSize(0);
+ if(monthSelection!=0){
+   xAxis.tickFormat(d3.time.format('%d'));
+ }
   y.domain([
     d3.min(methods, function(c) { return d3.min(c.values, function(v) { return v.count; }); }),
     d3.max(methods, function(c) { return d3.max(c.values, function(v) { return v.count; }); })

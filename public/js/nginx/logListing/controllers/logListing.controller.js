@@ -31,11 +31,13 @@ angular.module('logAggregator')
                                   }
 
                   });
-
+                  $scope.currentpage = 1;
               };//close click event
               $scope.pathClickEvent("All");
+              
 
               $scope.pagenoClickEvent = function(pgno){
+
                     $scope.currentpage = pgno;
                     logService.dispObj(currentpath,pgno).then(function(response){
                         $scope.clickedObj=response.data.collection_data;

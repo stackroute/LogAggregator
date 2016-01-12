@@ -13,7 +13,7 @@
     <tr ng-repeat="obj in paths_selected">
       <td>
         <button ng-click= 'pathClickEvent(obj)' class="logButtonStyle" ng-class="{btn: true, 'btn-default':true,'withBorder': (obj.path == currentpath )}" ng-class="{'mouseover':hovering}" ng-mouseenter="hovering=true" ng-mouseleave="hovering=false">
-          {{obj.path}} <span> {{obj.count}}</span>
+          {{obj.path}} <span> ({{obj.count}})</span>
         </button>
       </td>
     </tr>
