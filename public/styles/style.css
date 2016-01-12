@@ -128,6 +128,10 @@
   text-align: justify;
   overflow:scroll;
   height:500px;
+
+}
+.logcontainer table{
+  border-collapse:inherit;
 }
 .Mytable{
   margin-top: 0px;
