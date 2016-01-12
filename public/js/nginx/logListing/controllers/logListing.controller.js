@@ -9,8 +9,6 @@ angular.module('logAggregator')
           logService.disparray().then(function(response){
 
                     data =  response.data;
-                    data =  JSON.parse(JSON.parse(response.data));
-                    //console.log(data.arr);
                     $scope.paths_selected = data.arr;
 
              });//close then
