@@ -1,7 +1,7 @@
 angular.module('logAggregator')
 
-  .controller('logController', ['$scope','logService',function($scope,logService) {
-
+  .controller('logController', ['$scope', '$rootScope', 'logService',function($scope, $rootScope, logService) {
+          $rootScope.tab = 'logListing';
           $scope.paths_selected = [];
           currentpath = {};
           count=0;
