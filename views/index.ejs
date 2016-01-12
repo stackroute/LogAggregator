@@ -97,27 +97,17 @@
   <div class="container-fluid">
     <div class="tabbable" id="main-tab">
       <ul class="nav nav-tabs">
-
-        <li class="active tab1"><a ng-href="#!/logListing" data-toggle="tab">Log Listing</a></li>
-        <li class="tab2"><a ng-href="#agentAnalytics" data-toggle="tab">User Agent</a></li>
-        <li class="tab3"><a ng-href="#requestRate" data-toggle="tab">Request Rate</a></li>
+        <li class="active tab1"><a ng-href="#logListing" >Log Listing</a></li>
+        <li class="tab2"><a ng-href="#agentAnalytics" >User Agent</a></li>
+        <li class="tab3"><a ng-href="#trafficRate" >Request Rate</a></li>
       </ul>
+      <div class="tab-pane" ng-view="">
+
+      </div>  <!-- end tab-pane -->
+    </div>
+  </div>
 
 
-
-      <div class="tab-content">
-          <div class="tab-pane" id="!/logListing" ng-view>   </div><!-- end tab-pane -->
-
-          <div class="tab-pane active" id="!/agentAnalytics" ng-view>
-
-          </div>  <!-- end tab-pane -->
-
-        <div class="tab-pane" id="requestRate">
-        <!--Traffic  Page  Traffic  Page   Traffic  Page   Traffic  Page   Traffic  Page   Traffic  Page-->
-
-        </div><!-- end tab-pane -->
-
-    </div><!-- end tab-content -->
   </div><!-- end tabbable -->
 </div>
 
@@ -144,16 +134,8 @@
 <script type="text/javascript" src="/js/application.js"></script>
 <script type="text/javascript" src="/js/logAggregator.routes.js"></script>
 <script type="text/javascript" src="/js/logAggregator.controller.js"></script>
-=======
-        <li class="active tab1"><a ng-href="#logListing" >Log Listing</a></li>
-        <li class="tab2"><a ng-href="#agentAnalytics" >User Agent</a></li>
-        <li class="tab3"><a ng-href="#trafficRate" >Request Rate</a></li>
-      </ul>
-      <div class="tab-pane" ng-view="">
 
-      </div>  <!-- end tab-pane -->
-    </div>
-  </div>
+
 
   <!-- All Javascript at the bottom of the page for faster page loading -->
 
