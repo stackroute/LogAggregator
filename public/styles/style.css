@@ -26,17 +26,17 @@
 .tab-content {
   background-color: #F8F8F8;
 }
-#agentAnalytics {
+.tab-pane {
   height: 100%;
 }
-#agentAnalytics .criteriaPane {
+.tab-pane .criteriaPane {
   border-radius: 0px;
   border: 0px;
   border-bottom: 2px solid lightgrey;
   height: 50px;
   font-size: 0.83em;
 }
-#agentAnalytics .criteriaGroup {
+.tab-pane .criteriaGroup {
   width: 20%;
   height: 100%;
 }
@@ -198,6 +198,9 @@ td, tr, th{
 /*----------------------------------------------logListing Stylesheet end------------------------------------------------------------*/
 
 /* Traffic Page *******************************************************************************************/
+.dropdown{
+  margin-top:10px;
+}
 .dropdown.months{
   width: 50px;
   margin: auto;
@@ -223,11 +226,15 @@ td, tr, th{
 }
 #clear_filters,.crossMonthFilter{
   padding: 10px;
-  padding-top: 18px;
+  padding-top: 25px;
 }
 .crossMonthFilter{
-  padding-top: 10px;
+  padding-top: 18px;
   padding-left: 0px;
+}
+#clear_filters:hover{
+  color:#660066;
+  text-decoration: none;
 }
 .disableClick{
   pointer-events:none;
