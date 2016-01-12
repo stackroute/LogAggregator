@@ -23,3 +23,15 @@ angular.module('logAggregator').config(['$routeProvider',
   }
 
 ]);
+
+
+  // .run(function($rootScope, $location) {
+  //   var path = $location.path();
+  //   console.log($location);
+  //   if(path == '/')
+  //     $rootScope.tab = "logListing";
+  //   else
+  //     $rootScope.tab = path.substring(1, path.length);
+  //   console.log($rootScope.tab);
+  // })
+  

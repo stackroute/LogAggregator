@@ -1,8 +1,8 @@
-angular.module('logAggregator').controller('userAgentController', ['$scope', 'agentDataService',
-  function($scope, agentDataService) {
+angular.module('logAggregator').controller('userAgentController', ['$scope', '$rootScope', 'agentDataService',
+  function($scope, $rootScope, agentDataService) {
 
     var thisYear = (new Date).getFullYear();
-
+    $rootScope.tab = 'agentAnalytics';
     $scope.agentYear = thisYear;
     var years = [];
     for(var i = parseInt(thisYear); i > thisYear - $scope.config.noOfYears; i--) {
