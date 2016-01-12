@@ -1,9 +1,9 @@
-angular.module('logAggregator').controller('appController', ['$scope','$http',
-  function($scope,$http) {
-    console.log("in app ctrl");
+angular.module('logAggregator').controller('mainController', ['$scope', '$window', 'loadConfig',
+  function($scope, $window, loadConfig) {
+    loadConfig.getdata(function(data){
+      $scope.config=data;
+      $window.config = $scope.config;
 
-    $http.get('/config').success(function(data){
-      console.log(data);
     });
   }
 ]);

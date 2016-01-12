@@ -1,31 +1,59 @@
-angular.module('logAggregator').controller('userAgentController', ['$scope', 'getAgentData',
-  function($scope, getAgentData) {
+angular.module('logAggregator').controller('userAgentController', ['$scope', 'agentDataService',
+  function($scope, agentDataService) {
 
     var thisYear = (new Date).getFullYear();
-    $('#yearDropDown').attr('value', thisYear)
-                      .html(thisYear+" <span class='caret'></span>")
-    $scope.agentYear = thisYear;
 
-    var string = "";
-    ///change the number of years from 6 to take from config file
-    for(var k=0; k<6; k++) {
-      string = string + "<li><a href='#' value='"+thisYear+"'>"+thisYear+"</a></li> ";
-      thisYear = thisYear - 1;
+    $scope.agentYear = thisYear;
+    var years = [];
+    for(var i = parseInt(thisYear); i > thisYear - $scope.config.noOfYears; i--) {
+      years.push(i);
     }
-    $('#agentAnalytics .filters .yearSelect').html(string);
+    $scope.yearsToShow = years;
     $scope.agentMonth = 0;
+    $scope.agentMonthName="Month";
+    $scope.agentData = {};
+    var months=[{name:'January',value:1},{name:'February',value:2},{name:'March',value:3},
+                {name:'April',value:4},{name:'May',value:5},{name:'June',value:6},
+                {name:'July',value:7},{name:'August',value:8},{name:'September',value:9},
+                {name:'October',value:10},{name:'November',value:11},{name:'December',value:'12'}
+              ];
+    $scope.months = months;
+
+    var handleSuccess = function(response, criteria) {
+      $scope.agentData = response.data;
+      render(criteria, $scope.agentData);
+    };
+
+    var handleError = function(response, criteria) {
+      $scope.agentData = {};
+      render(criteria, $scope.agentData);
+    }
+
+    $scope.agentCriteria = 'browser';
+    agentDataService.getAgentData(handleSuccess, handleError, $scope.agentCriteria, $scope.agentYear, $scope.agentMonth);
 
     $scope.renderData = function(criteria) {
       $scope.agentCriteria = criteria;
       var year = $scope.agentYear;
       var month = $scope.agentMonth;
-      var data = getAgentData;
-      render(criteria, data, year, month);
-      $('.criteriaPane').attr("class", "btn btn-default criteriaPane");
-      $('.criteriaPane').addClass("noBorder");
-      var elementId = "#"+criteria+"Share";
-      $(elementId).addClass("withBorder");
-      e.preventDefault();
+      agentDataService.getAgentData(handleSuccess, handleError, criteria, year, month);
+    }
+
+    $scope.updateAgentYear = function(year) {
+      $scope.agentYear = year;
+      $scope.agentMonth = 0;
+      $scope.agentMonthName='Month';
+      agentDataService.getAgentData(handleSuccess, handleError, $scope.agentCriteria, year, $scope.agentMonth);
+    }
+
+    $scope.updateAgentMonth=function(month){
+      $scope.agentMonth=month.value;
+      $scope.agentMonthName=month.name;
+      agentDataService.getAgentData(handleSuccess, handleError, $scope.agentCriteria, $scope.agentYear, $scope.agentMonth);
+    }
+
+    $scope.checkIfDisable = function(){
+      return (Object.keys($scope.agentData).length == 0 && $scope.agentMonth == 0)
     }
   }
 ]);
