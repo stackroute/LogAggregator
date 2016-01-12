@@ -210,9 +210,6 @@ td, tr, th{
 /*----------------------------------------------logListing Stylesheet end------------------------------------------------------------*/
 
 /* Traffic Page *******************************************************************************************/
-.dropdown{
-  margin-top:10px;
-}
 .dropdown.months{
   width: 50px;
   margin: auto;
@@ -235,6 +232,7 @@ td, tr, th{
 .dropdown.month_text,.dropdown.year_text,.crossMonthFilter{
   float: left;
   padding: 10px;
+  margin-top: 10px
 }
 .dropdown.month_text{
   padding-right: 0px;
@@ -244,7 +242,7 @@ td, tr, th{
   padding-top: 25px;
 }
 .crossMonthFilter{
-  padding-top: 18px;
+  padding-top: 10px;
   padding-left: 0px;
 }
 #clear_filters:hover{

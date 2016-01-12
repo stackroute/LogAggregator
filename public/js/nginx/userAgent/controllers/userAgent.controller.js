@@ -12,9 +12,6 @@ angular.module('logAggregator').controller('userAgentController', ['$scope', 'ag
     $scope.agentMonth = 0;
     $scope.agentMonthName="Month";
     $scope.agentData = {};
-    // console.log($scope.config);
-    // var months=$scope.config.months;
-    // $scope.months = months;
 
     var handleSuccess = function(response, criteria) {
       $scope.agentData = response.data;
@@ -45,7 +42,7 @@ angular.module('logAggregator').controller('userAgentController', ['$scope', 'ag
 
     $scope.updateAgentMonth=function(month){
       $scope.agentMonth=month.value;
-      $scope.agentMonthName=month.name;
+      $scope.agentMonthName=month.month;
       agentDataService.getAgentData(handleSuccess, handleError, $scope.agentCriteria, $scope.agentYear, $scope.agentMonth);
     }
 
