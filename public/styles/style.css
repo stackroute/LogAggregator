@@ -222,7 +222,13 @@ td, tr, th{
   background: white;
 
 }
-
+.pageno{
+  color:black;
+}
+.currentpage{
+  color:white;
+  background-color: blue;
+}
 .pos {
   display: table-row !important;
   opacity: 1 !important;
