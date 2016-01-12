@@ -8,8 +8,9 @@ angular.module('logAggregator')
 
           logService.disparray().then(function(response){
 
-                    data =  JSON.parse(JSON.parse(response.data));
-                    //console.log(data.arr);
+                    data =  response.data;
+                    data =  (response.data);
+
                     $scope.paths_selected = data.arr;
 
              });//close then
@@ -39,6 +40,9 @@ angular.module('logAggregator')
                         $scope.clickedObj=response.data.collection_data;
                     });
               }
+
+
+              $scope.pathClickEvent('All');
 
 
 

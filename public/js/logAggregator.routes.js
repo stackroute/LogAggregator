@@ -13,15 +13,13 @@ angular.module('logAggregator').config(['$routeProvider',
       templateUrl: 'js/nginx/logListing/views/logListing.view.html',
       controller : 'logController'
     })
-    .when('/trafficRate', {
+    .when('/requestRate', {
       templateUrl: 'js/nginx/trafficRate/views/trafficRate.view.html',
       controller: 'trafficRateController'
     })
     .otherwise({
       redirectTo: '/'
     });
-
-    console.log("in LA routes");
   }
 
 ]);

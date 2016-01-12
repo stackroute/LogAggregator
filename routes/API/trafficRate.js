@@ -44,6 +44,7 @@ router.get('/:year/:month', function(req, res, next) {
   finalData.push(dates);
   finalData.push(accumulator);
   res.json(finalData);
+
 });
 });
 module.exports = router;

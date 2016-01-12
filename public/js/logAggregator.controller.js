@@ -3,7 +3,6 @@ angular.module('logAggregator').controller('mainController', ['$scope', '$window
     loadConfig.getdata(function(data){
       $scope.config=data;
       $window.config = $scope.config;
-
     });
   }
 ]);

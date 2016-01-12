@@ -3,43 +3,32 @@
 {
   padding:13px 15px;
 }
-
 /* Navbar styling end */
 #main-tab{
   margin-top: 100px;
-
 }
 #main-tab .tab-content{
   width: 100% !important;
-
   height: 900px;
-  /*overflow: hidden;*/
-
   height: auto;
   overflow: hidden;
-
   border:1px solid #e3e3e3;
   border-top: none;
 }
 #main-tab  .nav-tabs li {
   width:33.3333333333333%;
   text-align: center;
-
 }
 #main-tab  .nav-tabs li a{
-    color:black;
-    font-size: 14px;
+  color:black;
+  font-size: 14px;
 }
-
-
 .tab-content {
   background-color: #F8F8F8;
 }
-
 .tab-pane {
   height: 100%;
 }
-
 .tab-pane .criteriaPane {
   border-radius: 0px;
   border: 0px;
@@ -47,12 +36,10 @@
   height: 50px;
   font-size: 0.83em;
 }
-
 .tab-pane .criteriaGroup {
   width: 20%;
   height: 100%;
 }
-
 .wrap {
   width: 80%;
   float: right;
@@ -60,29 +47,23 @@
   border-left: 1px solid lightgrey;
   text-align: center;
 }
-
 .wrap .page-header {
   margin: 0px;
 }
-
 .wrap .well {
   margin: 20px;
 }
-
 .wrap svg{
   display: block;
   margin: auto;
   margin: 15px auto;
 }
-
 .nav li.active a{
   background-color: lightblue !important;
 }
-
 .filters .dropdown {
   display : inline-block;
 }
-
 
 /*tooltip styling*/
 .d3-tip {
@@ -93,7 +74,6 @@
   color: #fff;
   border-radius: 2px;
 }
-
 /* Creates a small triangle extender for the tooltip */
 .d3-tip:after {
   box-sizing: border-box;
@@ -106,41 +86,34 @@
   position: absolute;
   text-align: center;
 }
-
 /* Style northward tooltips differently */
 .d3-tip.n:after {
   margin: -1px 0 0 0;
   top: 100%;
   left: 0;
 }
-
 .noBorder {
   border-left: 0px !important;
 }
-
 .withBorder {
   border-left : 4px solid blue !important;
 }
 
-
 /*--------------------------------------- listing page stylesheet------------------------------------------------*/
 .logButtonStyle{
-    border-radius: 0px;
-
-    border-bottom: 2px solid lightgrey;
-    border: 0.5px solid #e3e3e3;
-    height: 50px;
-    width: 100%;
-    margin-left: 0;
-    text-align: left;
-    /*padding-left: 6px;*/
-    /*overflow:visible;*/
-    white-space: normal;
-    margin-top: -0.5px;
-    color: #333;
-  background-color: white;
+  border-radius: 0px;
+  border: 0px;
+  border-bottom: 2px solid lightgrey;
+  border: 0.5px solid #e3e3e3;
+  height: 50px;
+  width: 100%;
+  margin-left: 0;
+  text-align: left;
+  white-space: normal;
+  margin-top: -0.5px;
+  color: #333;
+  background-color: #fff;
 }
-
 .buttonClicked{
   color: blue;
 }
@@ -154,16 +127,12 @@
   width:28%;
   text-align: justify;
   overflow:scroll;
-
   height:500px;
-
-
 }
 .Mytable{
   margin-top: 0px;
   width: 72%;
   float: left;
-
   height: 500px;
   overflow: scroll;
   margin-right: 0px;
@@ -179,23 +148,20 @@ span{
   color:blue;
 }
 .mouseover {
-  background-color:lightgray;
+  background-color:lightgrey;
 }
-
-
-
-
+.mouseout {
+  background-color:white;
+}
 .clickedbutton{
-    border-left-color:blue;
-    border-left-width: 4px;
-    border-left-style: solid;
-  }
-  .active1 {
-    color:lightblue;
-  }
+  border-left-color:blue;
+  border-left-width: 4px;
+  border-left-style: solid;
+}
+.active1 {
+  color:lightblue;
+}
 .Mytable td{
-  /*width: 50px;*/
-
   font-size: 12px;
   width: auto;
 }
@@ -207,20 +173,18 @@ span{
   height: 50px;
 }
 td, tr, th{
-   border: 1px solid #e3e3e3;
-   text-align: center;
+  border: 1px solid #e3e3e3;
+  text-align: center;
 }
 .Mytable td,th{
   padding: 2px;
 }
-
 .header {
   font-size: 14px;
   font-style: none;
   margin-left: 318px;
   margin-top: 20px;
   background: white;
-
 }
 .pageno{
   color:black;
@@ -246,6 +210,9 @@ td, tr, th{
 /*----------------------------------------------logListing Stylesheet end------------------------------------------------------------*/
 
 /* Traffic Page *******************************************************************************************/
+.dropdown{
+  margin-top:10px;
+}
 .dropdown.months{
   width: 50px;
   margin: auto;
@@ -266,19 +233,23 @@ td, tr, th{
 }
 
 .dropdown.month_text,.dropdown.year_text,.crossMonthFilter{
-float: left;
-padding: 10px;
+  float: left;
+  padding: 10px;
 }
 .dropdown.month_text{
   padding-right: 0px;
 }
 #clear_filters,.crossMonthFilter{
   padding: 10px;
-  padding-top: 18px;
+  padding-top: 25px;
 }
 .crossMonthFilter{
-  padding-top: 10px;
+  padding-top: 18px;
   padding-left: 0px;
+}
+#clear_filters:hover{
+  color:#660066;
+  text-decoration: none;
 }
 .disableClick{
   pointer-events:none;
@@ -286,9 +257,9 @@ padding: 10px;
 
 .axis path,
 .axis line {
-fill: none;
-stroke: #000;
-shape-rendering: crispEdges;
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
 }
 
 .traffic{
@@ -299,7 +270,7 @@ shape-rendering: crispEdges;
   width: 900px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 60px;
+  margin-top: 40px;
   text-align: center;
 }
 
@@ -308,9 +279,9 @@ shape-rendering: crispEdges;
 }
 
 .line {
-fill: none;
-stroke: steelblue;
-stroke-width: 1.5px;
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
 }
 
 /* Traffic Page End*******************************************************************************************/
