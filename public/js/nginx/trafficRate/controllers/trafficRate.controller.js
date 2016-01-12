@@ -1,5 +1,6 @@
-angular.module('logAggregator').controller('trafficRateController', ['$scope','getTrafficData',
-function($scope , getTrafficData) {
+angular.module('logAggregator').controller('trafficRateController', ['$scope', '$rootScope', 'getTrafficData',
+function($scope, $rootScope, getTrafficData) {
+  $rootScope.tab = 'requestRate';
   var years=[];
   var months=$scope.config.months;
 
