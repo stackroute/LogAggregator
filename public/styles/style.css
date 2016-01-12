@@ -186,14 +186,33 @@ td, tr, th{
   margin-top: 20px;
   background: white;
 }
+.pageno{
+  color:black;
+}
+.currentpage{
+  color:white;
+  background-color: blue;
+}
 .pos {
   display: table-row !important;
   opacity: 1 !important;
 }
+
 .page-header {
   margin: 0px;
   text-align: center;
 }
+
+/*Buttons nxt*/
+/*#prev{
+  float: left;
+}
+
+.prev_next{
+  visibility: hidden;
+  margin-left: 800px;
+  margin-bottom: 20px;
+}*/
 
 /*----------------------------------------------logListing Stylesheet end------------------------------------------------------------*/
 
@@ -209,14 +228,17 @@ td, tr, th{
 #requestRate {
   min-height: 400px;
 }
+
 .tab-pane h2 {
   display: inline-block;
   padding-left: 2%;
 }
+
 .tab-pane small{
   display: inline-block;
   color: grey;
 }
+
 .dropdown.month_text,.dropdown.year_text,.crossMonthFilter{
   float: left;
   padding: 10px;
@@ -239,12 +261,14 @@ td, tr, th{
 .disableClick{
   pointer-events:none;
 }
+
 .axis path,
 .axis line {
   fill: none;
   stroke: #000;
   shape-rendering: crispEdges;
 }
+
 .traffic{
   width: 700px;
   height: 500px;
@@ -256,9 +280,11 @@ td, tr, th{
   margin-top: 40px;
   text-align: center;
 }
+
 .traffic no_data{
   font-size: 20px;
 }
+
 .line {
   fill: none;
   stroke: steelblue;

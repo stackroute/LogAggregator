@@ -2,7 +2,7 @@ var mainApp = angular.module("logAggregator");
 mainApp.factory('logService',function($http){
 
           var data={};
-          var service = {
+    var service = {
           disparray: function(){
                         var promise = $http(
                                           {method:'GET', url:"/json/logListing/"}
@@ -11,32 +11,35 @@ mainApp.factory('logService',function($http){
 
 
                                               });
-                            return promise;
-                        },//close disparray
+                        return promise;
+          },//close disparray
 
-            dispObj: function(path,pgno){
-                  if(path!="All"){
-                    if(path.indexOf("%")!=-1)
-                    path = path.replace('%','/');
+          dispObj: function(path,pgno){
 
-                    temp =  (path!='/') ? path.substring(1):path;
-                    path = (path!='/') ? ('/'+encodeURIComponent(temp)):path;
+                if(path!="All"){
+                  if(path.indexOf("%")!=-1)
+                  path = path.replace('%','/');
 
-                    }
-                  else {
-                      path="/All"
-                  }    //console.log(path);
+                  temp =  (path!='/') ? path.substring(1):path;
+                  path = (path!='/') ? ('/'+encodeURIComponent(temp)):path;
 
-                      pageno = (pgno != "1") ? pgno:"1";
-                      var promise = $http(
-                                            {method:'GET', url:"/json/logListing"+path+"/"+pageno}
-                                          )
-                                      .success(function (data, status, headers, config) {
-                                              });
-                    return promise;
+                  }
+                else {
+                    path="/All"
+                }
 
-            }//close dispObj
+                pageno = (pgno != "1") ? pgno:"1";
+                var promise = $http(
+                                      {method:'GET', url:"/json/logListing"+path+"/"+pageno}
+                                    )
+                                .success(function (data, status, headers, config) {
+                                        });
 
-          }
+                return promise;
+
+          }//close dispObj
+
+    }//close service
           return service;
+
 });
