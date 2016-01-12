@@ -3,7 +3,7 @@
   <div class="pull-right">
     <div class="dropdown year_text">
       <button   class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-       <span ng-bind="yearSelected"></span>
+       <span class="changeColour" ng-bind="yearSelected"></span>
         <span class="caret"></span>
       </button>
       <ul class="dropdown-menu year" aria-labelledby="dropdownMenu1">
@@ -17,7 +17,7 @@
 
     <div class="dropdown month_text">
       <button  ng-disabled="monthMenu" class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-         <span ng-bind="monthSelected"></span>
+         <span class="changeColour" ng-bind="monthSelected"></span>
         <span class="caret"></span>
       </button>
       <ul class="dropdown-menu months" aria-labelledby="dropdownMenu1">
@@ -25,8 +25,8 @@
       </ul>
     </div>
     <div  class="crossMonthFilter"><a href ng-disabled="monthSwitch" ng-click="monthFilter()" class="btn btn-link"><img src="images/crossCircle.png" alt="cross circle"></a></div>
-    <a href ng-disabled="clearSwitch" ng-click="clearFilters()" class="btn btn-link" id="clear_filters">Clear All Filters</a>
-  </div>
+    <a href ng-disabled="clearSwitch" ng-click="clearFilters()" class="btn btn-link" id="clear_filters">Clear All</a>
+</div>
 </div>
 
 <div><g></g></div>
