@@ -1,56 +1,7 @@
 angular.module('logAggregator').controller('trafficRateController', ['$scope','getTrafficData',
 function($scope , getTrafficData) {
   var years=[];
-  var months=[
-    {
-      month:'January',
-      value:01
-    },
-    {
-      month:'February',
-      value:02
-    },
-    {
-      month:'March',
-      value:03
-    },
-    {
-      month:'April',
-      value:04
-    },
-    {
-      month:'May',
-      value:05
-    },
-    {
-      month:'June',
-      value:06
-    },
-    {
-      month:'July',
-      value:07
-    },
-    {
-      month:'August',
-      value:08
-    },
-    {
-      month:'September',
-      value:09
-    },
-    {
-      month:'October',
-      value:10
-    },
-    {
-      month:'November',
-      value:11
-    },
-    {
-      month:'December',
-      value:12
-    }
-  ];
+  var months=$scope.config.months;
 
   var currentYear = (new Date).getFullYear();
   var currentMonth = (new Date).getMonth()+1;

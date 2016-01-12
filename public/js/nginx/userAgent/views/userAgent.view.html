@@ -21,8 +21,8 @@
           {{agentMonthName}} <span class="caret"></span>
         </button>
         <ul class="dropdown-menu monthSelect" aria-labelledby="monthDropDown">
-          <li ng-repeat='month in months'>
-            <a ng-href='' ng-click='updateAgentMonth(month)'>{{month.name}}</a>
+          <li ng-repeat='month in config.months'>
+            <a ng-href='' ng-click='updateAgentMonth(month)'>{{month.month}}</a>
           </li>
         </ul>
       </div>

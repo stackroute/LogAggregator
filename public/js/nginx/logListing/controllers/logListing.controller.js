@@ -9,7 +9,8 @@ angular.module('logAggregator')
           logService.disparray().then(function(response){
 
                     data =  response.data;
-                    data =  (response.data);
+
+
 
                     $scope.paths_selected = data.arr;
 
