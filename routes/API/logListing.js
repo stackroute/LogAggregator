@@ -5,15 +5,19 @@ var router = express.Router();
 
 
 router.get('/:pathId/:pgno', function(req, res  ) {
+
         temp = req.params.pathId;
         pgno = req.params.pgno;
         limit=config.listingLimit;
         var counts = 0;
         skip = pgno > 1 ? ((pgno-1) * limit) : 0;
         if(temp!="All"){
+          if(typeof temp==undefined)
+          paths="/";
+          else{
               newtemp = decodeURIComponent(temp);
               var paths = "/" + newtemp;
-
+            }//else
 
            count = Log.count({path:paths},function(er,c){
 
@@ -35,11 +39,11 @@ router.get('/:pathId/:pgno', function(req, res  ) {
 
              counts=c;
              Log.find({},'remote host path user method code size referer agent time',{skip:skip,limit:limit}, function(err,serverhits) {
-               var arr={"collection_data":serverhits,
+               var obj={"collection_data":serverhits,
                          "count": counts};
-                        
 
-                 res.send(arr);
+
+                 res.send(obj);
              });
          });
 
@@ -101,9 +105,9 @@ router.get('/', function(req, res  ) {
 
 
 
-         var paths = JSON.stringify(final, null, 4);
+         //var paths = JSON.stringify(final, null, 4);
 
-         res.json(paths);
+         res.json(final);
 
     });
 

@@ -3,7 +3,7 @@ angular.module('logAggregator').config(['$routeProvider',
     $routeProvider
     .when('/', {
       templateUrl: 'js/nginx/logListing/views/logListing.view.html',
-      controller : 'js/nginx/logListing/controllers/logListing.controller.js'
+      controller : 'logController'
     })
     .when('/userAgent', {
       templateUrl: 'js/nginx/userAgent/views/userAgent.view.html',
@@ -11,7 +11,7 @@ angular.module('logAggregator').config(['$routeProvider',
     })
     .when('/logListing', {
       templateUrl: 'js/nginx/logListing/views/logListing.view.html',
-      controller : 'js/nginx/logListing/controllers/logListing.controller.js'
+      controller : 'logController'
     })
     .when('/trafficRate', {
       templateUrl: 'js/nginx/trafficRate/views/trafficRate.view.html'

@@ -126,7 +126,7 @@
 /*--------------------------------------- listing page stylesheet------------------------------------------------*/
 .logButtonStyle{
     border-radius: 0px;
-    border: 0px;
+
     border-bottom: 2px solid lightgrey;
     border: 0.5px solid #e3e3e3;
     height: 50px;
@@ -138,7 +138,7 @@
     white-space: normal;
     margin-top: -0.5px;
     color: #333;
-    background-color: #fff;
+  background-color: white;
 }
 
 .buttonClicked{
@@ -154,7 +154,6 @@
   width:28%;
   text-align: justify;
   overflow:scroll;
-
 
   height:500px;
 
@@ -180,10 +179,10 @@ span{
   color:blue;
 }
 .mouseover {
-  background-color:lightgrey;
+  background-color:lightgray;
 }
-.mouseout {
-background-color:white;}
+
+
 
 
 .clickedbutton{

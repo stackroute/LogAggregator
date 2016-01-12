@@ -1,8 +1,8 @@
 var mainApplicationModuleName = 'logAggregator';
 
 
-var mainApplicationModule = angular.module(mainApplicationModuleName, ['ngRoute','logListing']);
-console.log("main module created");
+var mainApplicationModule = angular.module(mainApplicationModuleName, ['ngRoute']);
+console.log("application-main module created");
 
 mainApplicationModule.config(['$locationProvider',
   function($locationProvider) {

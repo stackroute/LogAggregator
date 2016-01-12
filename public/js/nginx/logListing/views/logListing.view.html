@@ -1,8 +1,45 @@
-<div class="logcontainer" ng-controller="pathControl">
-  <tr ng-repeat="pathname in paths">  <td> {{pathname}} </td>   </tr>
-  <ng-view> </ng-view>
+<div class="page-header">
+  <h2><small> Listing of all requests based on path </small></h2>
 </div>
 
-<div class="Mytable" ng-controller="tableControl">
-  <ng-view> </ng-view>
+<div class="logcontainer" >
+<table>
+  <tr >
+    <td>
+        <button ng-click= 'pathClickEvent("All")' class="logButtonStyle"  ng-class="{'mouseover':hovering}" ng-mouseenter="hovering=true" ng-mouseleave="hovering=false"> Most Visited Path
+    </td>
+  </tr>
+  <tr ng-repeat="obj in paths_selected">
+     <td>
+       <button ng-click= 'pathClickEvent(obj)' class="logButtonStyle"  ng-class="{'mouseover':hovering}" ng-mouseenter="hovering=true" ng-mouseleave="hovering=false">
+             {{obj.path}} <span> {{obj.count}}</span>
+      </button>
+     </td>
+   </tr>
+
+</table>
+</div>
+
+
+<div class="Mytable" >
+    <table >
+      <tr ng-model="clickedObj[0]">
+      <td ng-repeat ="(key,value) in clickedObj[0]"ng-if="(view=='path')&&($index!=0)&&($index!=5)&&($index!=3)&&($index!=10)">        {{ key| uppercase}}
+      </td>
+      <td ng-repeat ="(key,value) in clickedObj[0]" ng-if="(view=='All')&&($index!=0)&&($index!=3)&&($index!=10)"> {{ key| uppercase}}
+      </td>
+    </tr>
+      <tr ng-repeat="obj in clickedObj">
+          <td ng-repeat ="(key,value) in obj" ng-if="(key=='agent')" title= {{value}}> <abbr> {{value | agentFilter }} </abbr> </td>
+          <td ng-repeat ="(key,value) in obj" ng-if="(view=='path')&&($index!=0)&&($index!=5)&&($index!=3)&&($index!=10)&&(key!='size')&&(key!='time')&&(key!='agent')"> {{value}} </td>
+          <td ng-repeat ="(key,value) in obj" ng-if="(view=='All')&&($index!=0)&&($index!=3)&&($index!=10)&&(key!='size')&&(key!='time')&&(key!='agent')"> {{value}} </td>
+          <td ng-repeat ="(key,value) in obj" ng-if="(key=='size')" > {{value | sizeFilter }} </td>
+          <td ng-repeat ="(key,value) in obj" ng-if="(key=='time')" > {{value| date:'d-MMMM-yyyy HH:mm:ss'}} </td>
+
+      </tr>
+    </table>
+
+    <div id="nav">
+      <span ng-if="(numPages>1)" ng-repeat="pg in getPgs(numPages) track by $index"> <button ng-click= 'pagenoClickEvent(($index+1))'> {{$index+1}} </a> </span>
+    </div>
 </div>
