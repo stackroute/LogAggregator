@@ -240,10 +240,10 @@ td, tr, th{
 }
 #clear_filters,.crossMonthFilter{
   padding: 10px;
-  padding-top: 25px;
+  padding-top: 26px;
 }
 .crossMonthFilter{
-  padding-top: 10px;
+  padding-top: 9px;
   padding-left: 0px;
 }
 #clear_filters:hover{
