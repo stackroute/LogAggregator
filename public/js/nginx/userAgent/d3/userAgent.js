@@ -19,8 +19,6 @@
   var render = function(nestKey, data) {
     d3.select(".wrap .well nodata").html("");
     if($.isEmptyObject(data)) {
-      if($('#monthDropDown')[0].getAttribute('value') == 0)
-        $('#monthDropDown').prop('disabled', true);
       d3.select("#donut").html("");
       d3.select(".color-legend").html("");
       d3.select(".wrap .well nodata").html("No data Available")
@@ -34,6 +32,7 @@
     for(var k=0,filterLen = config.userAgentFilters[nestKey].length; k < filterLen; k++) {
       domainNames.push(config.userAgentFilters[nestKey][k].names)
     }
+
       color.domain(domainNames);
       Donut3D.draw("donut", agentData(), 200, 200, 170, 140, 30, 0.4);
 
@@ -48,46 +47,3 @@
         return result;
       }
     };
-  // var thisYear = (new Date).getFullYear();
-  // $('#yearDropDown').attr('value', thisYear)
-  //                   .html(thisYear+" <span class='caret'></span>")
-  //
-  // var string = "";
-  // for(var k=0; k<config.noOfYears; k++) {
-  //   string = string + "<li><a href='#' value='"+thisYear+"'>"+thisYear+"</a></li> ";
-  //   thisYear = thisYear - 1;
-  // }
-  // $('#agentAnalytics .filters .yearSelect').html(string);
-  //
-  // $('.yearSelect a').on("click", function(e) {
-  //   $('#yearDropDown').html(this.getAttribute('value') +" <span class='caret'></span>")
-  //                     .attr('value', this.getAttribute('value'));
-  //   $('#monthDropDown').html('month <span class="caret"></span>')
-  //                     .attr('value', '0');
-  //   $('#monthDropDown').prop('disabled', false);
-  //   render($('.withBorder'));
-  //   e.preventDefault();
-  // });
-  //
-  // $('.monthSelect a').on("click", function(e) {
-  //   $('#monthDropDown').html(this.innerHTML +" <span class='caret'></span>")
-  //                     .attr('value', this.getAttribute('value'));
-  //   render($('.withBorder'));
-  // });
-  //
-  // $('.criteriaPane').on("click", function(e) {
-  //   render( $(this) );
-  //   $('.criteriaPane').attr("class", "btn btn-default criteriaPane");
-  //   $('.criteriaPane').addClass("noBorder");
-  //   $(this).addClass("withBorder");
-  //   e.preventDefault();
-  // });
-  //
-  // var i=0;
-  // $('.tab2').on("click", function(e) {
-  //   if(i==0) {
-  //     $("#browserShare").addClass("withBorder");
-  //     render( $("#browserShare"));
-  //     i++;
-  //   }
-  // });

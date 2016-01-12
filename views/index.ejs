@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:ng="http://angularjs.org" ng-app="logAggregator" ng-controller='mainController'>
+<html xmlns:ng="http://angularjs.org" ng-controller='mainController'>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="styles/style.css">
 
   <script src="js/lib/d3/d3.min.js"></script>
-  <script src=""></script>
 </head>
 <body>
   <!--nav bar start -->
@@ -102,7 +101,7 @@
         <li class="tab3"><a ng-href="#requestRate" data-toggle="tab">Request Rate</a></li>
       </ul>
       <div class="tab-content">
-        <div class="tab-pane " id="logListing">
+        <div class="tab-pane" id="logListing" >
           <div class="page-header">
             <h2><small>Listing of all requests based on path</small></h2>
           </div>
@@ -146,19 +145,13 @@
 
 
     <script type="text/javascript" src="/js/application.js"></script>
-<script src="/js/logAggregator.service.js"></script>
-    <script src="/js/nginx/userAgent/d3/agentAnalytics.js" ></script>
-    <script src="/js/nginx/userAgent/d3/userAgent.js" ></script>
-    <script src="/js/nginx/trafficRate/d3/requestRatePage.js" ></script>
     <script type="text/javascript" src="/js/nginx/userAgent/services/userAgent.service.js"></script>
     <script type="text/javascript" src="/js/nginx/trafficRate/services/trafficRate.service.js"></script>
     <script type="text/javascript" src="/js/nginx/userAgent/controllers/userAgent.controller.js"></script>
     <script type="text/javascript" src="/js/nginx/trafficRate/controllers/trafficRate.controller.js"></script>
     <script type="text/javascript" src="/js/logAggregator.routes.js"></script>
-    <script src="/js/logAggregator.controller.js"></script>
     <script src="/js/logAggregator.service.js"></script>
-
-
+    <script src="/js/logAggregator.controller.js"></script>
 
 
   </body>
