@@ -239,16 +239,9 @@ td, tr, th{
   text-align: center;
 }
 
-/*Buttons nxt*/
-/*#prev{
-  float: left;
+.headings{
+  font-weight: bolder;
 }
-
-.prev_next{
-  visibility: hidden;
-  margin-left: 800px;
-  margin-bottom: 20px;
-}*/
 
 /*----------------------------------------------logListing Stylesheet end------------------------------------------------------------*/
 
