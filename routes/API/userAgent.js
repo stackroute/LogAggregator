@@ -37,7 +37,6 @@ router.get('/:showBy/:year/:month', function(req, res, next) {
           response[filter] = 0;
       response[filter]+=1;
     }
-    // console.log(response);
     res.json(response)
   });
 }

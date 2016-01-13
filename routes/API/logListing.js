@@ -36,7 +36,6 @@ router.get('/:pathId/:pgno', function(req, res  ) {
         }//close if
 
         else {
-          console.log("in method");
           count = Log.count({},function(er,c){
 
              counts=c;
