@@ -170,6 +170,9 @@ span{
   font-size: 12px;
   width: auto;
 }
+.Mytable td:nth-child(7){
+  max-width: 80px;
+}
 .Mytable td:nth-child(5){
   max-width: 255px;
 }
