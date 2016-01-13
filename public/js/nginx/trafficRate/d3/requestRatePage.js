@@ -1,4 +1,4 @@
-var margin = {top: 20, right: 20, bottom: 30, left: 50},
+var margin = {top: 20, right: 20, bottom: 30, left: 70},
 width = 800 - margin.left - margin.right,
 height = 340 - margin.top - margin.bottom;
 
@@ -162,7 +162,7 @@ var analysis=function(data){
   .attr("width", width + margin.left + margin.right)
   .attr("height", height + margin.top + margin.bottom)
   .append("g")
-  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+  .attr("transform", "translate(" + margin.left+ "," + margin.top + ")");
 
   color.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
 
