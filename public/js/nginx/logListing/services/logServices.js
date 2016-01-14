@@ -1,45 +1,34 @@
 var mainApp = angular.module("logAggregator");
 mainApp.factory('logService',function($http){
 
-          var data={};
-    var service = {
-          disparray: function(){
-                        var promise = $http(
-                                          {method:'GET', url:"/json/logListing/"}
-                                        )
-                                    .success(function (data, status, headers, config) {
+    return {
+        getPath_count: function(){
+            var promise = $http({method: 'GET',
+                                  url: "/json/logListing/"
+                                });
 
+            return promise;
+        },//close getPath_count
 
-                                              });
-                        return promise;
-          },//close disparray
+        getPathData: function(path,pgno){
+            if(path!="All"){
+              temp =  (path != '/') ? path.substring(1):path;
+              path = (path != '/') ? ('/'+encodeURIComponent(temp)):path;
+              console.log(path);
+            }
+            else {
+              path = "/All"
+            }
 
-          dispObj: function(path,pgno){
+            pageno = (pgno != "1") ? pgno:"1";
+            var promise = $http({method: 'GET',
+                                url: "/json/logListing"+path+"/"+pageno
+                              });
+            return promise;
 
-                if(path!="All"){
-                  if(path.indexOf("%")!=-1)
-                  path = path.replace('%','/');
-
-                  temp =  (path!='/') ? path.substring(1):path;
-                  path = (path!='/') ? ('/'+encodeURIComponent(temp)):path;
-
-                  }
-                else {
-                    path="/All"
-                }
-
-                pageno = (pgno != "1") ? pgno:"1";
-                var promise = $http(
-                                      {method:'GET', url:"/json/logListing"+path+"/"+pageno}
-                                    )
-                                .success(function (data, status, headers, config) {
-                                        });
-
-                return promise;
-
-          }//close dispObj
-
-    }//close service
-          return service;
-
+        }//close getPathData
+    }//close return
 });
+
+// if(path.indexOf("%")!=-1)
+// path = path.replace(/%/g , "$");

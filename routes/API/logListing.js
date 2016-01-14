@@ -5,20 +5,43 @@ var router = express.Router();
 
 
 router.get('/:pathId/:pgno', function(req, res  ) {
-
+    console.log("rooooooooooooooooooo");
         temp = req.params.pathId;
         pgno = req.params.pgno;
         limit=config.listingLimit;
         var counts = 0;
         skip = pgno > 1 ? ((pgno-1) * limit) : 0;
-        if(temp!="All"){
-          if(typeof temp==undefined)
+        if(temp=="All"){
+          //if(typeof temp==undefined)
           paths="/";
-          else{
-              newtemp = decodeURIComponent(temp);
-              var paths = "/" + newtemp;
-            }//else
+           //data for all
+            count = Log.count({},function(er,c){
 
+               counts=c;
+               Log.find({},'remote host path user method code size referer agent time',{skip:skip,limit:limit}, function(err,serverhits) {
+                 var obj={"collection_data":serverhits,
+                           "count": counts};
+                           (obj.collection_data).sort(function(a, b) {
+                               return (b.time-a.time);
+                          });
+
+                   res.send(obj);
+               });
+           });
+
+
+       }//close if
+          else{
+
+              newtemp = decodeURIComponent(temp);
+              // newtemp = newtemp.replace(/$/g , "%");
+              // if(newtemp.indexOf(newtemp.length-1)=='%')
+              // console.log("-------------> "+newtemp.indexOf(newtemp.length-1));
+              // newtemp = newtemp.replace(newtemp.indexOf(newtemp.length-1),'');
+              var paths = "/" + newtemp;
+
+            //else
+console.log("n----> " +paths);
            count = Log.count({path:paths},function(er,c){
 
               counts=c;
@@ -33,25 +56,9 @@ router.get('/:pathId/:pgno', function(req, res  ) {
               });
           });
 
-        }//close if
+        }//close else
 
-        else {
-          console.log("in method");
-          count = Log.count({},function(er,c){
 
-             counts=c;
-             Log.find({},'remote host path user method code size referer agent time',{skip:skip,limit:limit}, function(err,serverhits) {
-               var obj={"collection_data":serverhits,
-                         "count": counts};
-                         (obj.collection_data).sort(function(a, b) {
-                             return (b.time-a.time);
-                        });
-
-                 res.send(obj);
-             });
-         });
-
-        }
 
 });//pathid get req
 
