@@ -3,14 +3,17 @@ angular.module('logAggregator')
     function($scope, $rootScope, logService){
 
         $rootScope.tab = 'logListing';
+        $scope.showLogProgress = true;
         logService.getPath_count().then(function(response){
             data =  response.data;
             $scope.Path_Count = data.arr;//path_count data
+            $scope.showLogProgress = false;
         });//close then
 
         $scope.pathClickEvent = function(obj){
             currentpath = (obj == "All") ? "All": obj.path;
             $scope.currentpath =  currentpath;
+            $scope.showLogProgress = true;
             logService.getPathData(currentpath,1).then(function(response){
 
                 count = response.data.count;

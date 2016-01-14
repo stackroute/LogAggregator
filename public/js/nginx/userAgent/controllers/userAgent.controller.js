@@ -17,6 +17,7 @@ angular.module('logAggregator').controller('userAgentController', ['$scope', '$r
     var handleSuccess = function(response, criteria) {
       $scope.agentData = response.data;
       // render(criteria, $scope.agentData);
+      // $location
      $scope.showAgentProgress=false;
     };
 

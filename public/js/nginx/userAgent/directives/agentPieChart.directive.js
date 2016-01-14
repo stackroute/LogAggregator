@@ -11,7 +11,7 @@ angular.module('logAggregator').directive('agentPieChart', function() {
       var data = scope.data;
       var well = d3.select(element[0]);
       var svg = well.append("svg").attr("width",600).attr("height",400);
-      var g = svg.append("g").attr("id","donut");
+      var g = svg.append("g").attr("id","donut").attr("ng-hide", "showAgentProgress");
       color = d3.scale.category10();
 
       var colorLegendG = svg.append("g")
@@ -26,7 +26,8 @@ angular.module('logAggregator').directive('agentPieChart', function() {
                       .shapeHeight(18)
                       .labelOffset(4)
                       .orient("vertical");
-      $(".wrap .well agent-pie-chart").prepend("<nodata></nodata>");
+      angular.element( document.querySelector(".wrap .well agent-pie-chart")).prepend("<nodata ng-hide='showAgentProgress'></nodata>");
+      // $(".wrap .well agent-pie-chart").prepend($compile("<nodata ng-hide='showAgentProgress'></nodata>"));
       scope.$watch('data', function (data, oldVal) {
         var render = function(nestKey, data, userAgentFilters) {
           d3.select(".wrap .well nodata").html("");
