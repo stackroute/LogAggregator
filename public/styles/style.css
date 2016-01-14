@@ -140,10 +140,14 @@
 .logcontainer table{
   border-collapse:inherit;
 }
+<<<<<<< HEAD
 .Mytable{
   /*background-image: url("../svg/default.svg");
   background-repeat: no-repeat;
   background-position: center;*/
+=======
+.PathDataTable{
+>>>>>>> 2b316590c993eddfafd507eb2b84e128198b870e
   margin-top: 0px;
   width: 72%;
   float: left;
@@ -175,17 +179,18 @@ span{
 .active1 {
   color:lightblue;
 }
-.Mytable td{
+.PathDataTable td{
   font-size: 12px;
   width: auto;
 }
-.Mytable td:nth-child(7){
+
+.PathDataTable td:nth-child(7){
   min-width: 80px;
 }
-.Mytable td:nth-child(5){
+.PathDataTable td:nth-child(5){
   max-width: 255px;
 }
-.Mytable th{
+.PathDataTable th{
   text-transform:  capitalize;
   height: 50px;
 }
@@ -193,7 +198,7 @@ td, tr, th{
   border: 1px solid #e3e3e3;
   text-align: center;
 }
-.Mytable td,th{
+.PathDataTable td,th{
   padding: 2px;
 }
 .header {
