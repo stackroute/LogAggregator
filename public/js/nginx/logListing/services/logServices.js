@@ -22,7 +22,7 @@ mainApp.factory('logService',function($http){
 
                   temp =  (path!='/') ? path.substring(1):path;
                   path = (path!='/') ? ('/'+encodeURIComponent(temp)):path;
-
+                  console.log(path);
                   }
                 else {
                     path="/All"
