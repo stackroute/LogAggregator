@@ -65,6 +65,9 @@
 .filters .dropdown {
   display : inline-block;
 }
+.AgentProgressIcon{
+  margin-top: 13px;
+}
 
 /*tooltip styling*/
 .d3-tip {
@@ -119,6 +122,9 @@
   color: blue;
 }
 .logcontainer{
+  background-image: url("../svg/default.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   margin-top: 0px;
   font-size: 0.83em;
   font-family: sans-serif;
@@ -134,7 +140,8 @@
 .logcontainer table{
   border-collapse:inherit;
 }
-.Mytable{
+
+.PathDataTable{
   margin-top: 0px;
   width: 72%;
   float: left;
@@ -166,17 +173,18 @@ span{
 .active1 {
   color:lightblue;
 }
-.Mytable td{
+.PathDataTable td{
   font-size: 12px;
   width: auto;
 }
-.Mytable td:nth-child(7){
+
+.PathDataTable td:nth-child(7){
   min-width: 80px;
 }
-.Mytable td:nth-child(5){
+.PathDataTable td:nth-child(5){
   max-width: 255px;
 }
-.Mytable th{
+.PathDataTable th{
   text-transform:  capitalize;
   height: 50px;
 }
@@ -184,7 +192,7 @@ td, tr, th{
   border: 1px solid #e3e3e3;
   text-align: center;
 }
-.Mytable td,th{
+.PathDataTable td,th{
   padding: 2px;
 }
 .header {
@@ -235,7 +243,7 @@ td, tr, th{
 
 .tab-pane h2 {
   display: inline-block;
-  padding-left: 3%;
+  padding-left: 4%;
 }
 
 .tab-pane small{
@@ -277,6 +285,9 @@ td, tr, th{
 }
 
 .traffic{
+  /*background-image: url("../svg/default.svg") !important;
+  background-repeat: no-repeat;
+  background-position: center;*/
   width: 700px;
   height: 500px;
   margin-left: auto;
@@ -284,14 +295,20 @@ td, tr, th{
   width: 900px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
+  margin-top: 25px;
   text-align: center;
 }
 
 .traffic no_data{
   font-size: 20px;
 }
-
+.load{
+  height: 50px;
+}
+.trafficProgressIcon{
+  margin-left: 640px;
+  margin-top: 10px;
+}
 .line {
   fill: none;
   stroke: steelblue;

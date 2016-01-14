@@ -8,7 +8,6 @@ var monthSelection;
 var x = d3.time.scale()
 .range([0, width]);
 
-
 var y = d3.scale.linear()
 .range([height, 0]);
 
@@ -24,27 +23,27 @@ var yAxis = d3.svg.axis()
 .orient("left");
 
 function numberOfDays(year,month){
-  var d=new Date(year,month,0);
+  var d = new Date(year,month,0);
   return d.getDate();
 }
 /**** Year Change Traffic ***********************************************************************/
 
-var Plotting=function(json,year_selected,month_selected){
+var Plotting = function(json,year_selected,month_selected){
 
     monthSelection = month_selected;
-    var dates=json[0];
-    var tempdata=json[1];
-    var newdata=[];
-    var keys=Object.keys(tempdata);
-    for(i=0;i<keys.length;i++)
+    var dates = json[0];
+    var tempdata = json[1];
+    var newdata = [];
+    var keys = Object.keys(tempdata);
+    for(i=0; i<keys.length; i++)
     {
       newdata.push(tempdata[keys[i]]);
     }
 
-    if(month_selected===0)  //year plotting
+    if(month_selected === 0)  //year plotting
     {
-      margin.bottom=100;
-      if(newdata.length==0)
+      margin.bottom = 100;
+      if(newdata.length == 0)
       {
         d3.select('.traffic')
         .html('');
@@ -56,36 +55,36 @@ var Plotting=function(json,year_selected,month_selected){
       else
       {
         var month_days;
-        for(i=1;i<13;i++)
+        for(i=1; i<13; i++)
         {
-          month_days=numberOfDays(year_selected,i-1)
-          for(j=0;j<month_days;j++)
+          month_days = numberOfDays(year_selected,i-1)
+          for(j=0; j<month_days; j++)
           {
             if(i<10)
             {
-              var month='0'+i;
+              var month='0' + i;
             }
             else
             {
-              month=i;
+              month = i;
             }
             if(j<9)
             {
-              date_created=year_selected+'-'+ month +'-'+ '0' + (j+1);
+              date_created = year_selected+ '-' + month + '-' + '0' + (j+1);
             }
             else
             {
-              date_created=year_selected+'-'+ month +'-'+ (j+1);
+              date_created = year_selected+ '-' + month + '-' + (j+1);
             }
 
             if(!dates[date_created])
             {
-              var obj={};
-              obj.date=date_created;
-              obj.GET=0;
-              obj.POST=0;
-              obj.OPTIONS=0;
-              obj.HEAD=0;
+              var obj = {};
+              obj.date = date_created;
+              obj.GET = 0;
+              obj.POST = 0;
+              obj.OPTIONS = 0;
+              obj.HEAD = 0;
               newdata.push(obj);
             }
           }
@@ -95,7 +94,7 @@ var Plotting=function(json,year_selected,month_selected){
     }
     else //month plotting
     {
-      if(newdata.length==0)
+      if(newdata.length == 0)
       {
         d3.select('.traffic')
         .html('');
@@ -107,29 +106,29 @@ var Plotting=function(json,year_selected,month_selected){
       {
         var month_days;
         var parts = newdata[0].date.split('-');
-        var year=parts[0];
-        var month=parts[1];
+        var year = parts[0];
+        var month = parts[1];
         var date_created;
-        month_days=numberOfDays(year_selected,month_selected);
-        for(i=0;i<month_days;i++)
+        month_days = numberOfDays(year_selected,month_selected);
+        for(i=0; i<month_days; i++)
         {
-          flag=0;
+          flag = 0;
           if(i<9)
           {
-            date_created=year+'-'+ month +'-'+ '0' + (i+1);
+            date_created = year+ '-' + month + '-' + '0' + (i+1);
           }
           else
           {
-            date_created=year+'-'+ month +'-'+ (i+1);
+            date_created = year+ '-' + month + '-' + (i+1);
           }
           if(!dates[date_created])
           {
-            var obj={};
-            obj.date=date_created;
-            obj.GET=0;
-            obj.POST=0;
-            obj.OPTIONS=0;
-            obj.HEAD=0;
+            var obj = {};
+            obj.date = date_created;
+            obj.GET = 0;
+            obj.POST = 0;
+            obj.OPTIONS = 0;
+            obj.HEAD = 0;
             newdata.push(obj);
           }
         }
@@ -143,7 +142,7 @@ var analysis=function(data){
 
   data.forEach(function(d) {
     var parts = (d.date).split('-');
-    d.date= new Date(parts[0], parts[1]-1, parts[2]);
+    d.date = new Date(parts[0], parts[1]-1, parts[2]);
   });
 
   var line = d3.svg.line()
@@ -182,7 +181,7 @@ var analysis=function(data){
    x.domain([new Date(data[0].date), d3.time.day.offset(new Date(data[data.length-1].date),0)]);
    xAxis.tickFormat(d3.time.format('%B %d'))
         .outerTickSize(0);
- if(monthSelection!=0){
+ if(monthSelection != 0){
    xAxis.tickFormat(d3.time.format('%d'));
  }
   y.domain([
