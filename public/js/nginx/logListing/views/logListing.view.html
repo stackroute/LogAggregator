@@ -3,6 +3,7 @@
 </div>
 
 <div class="logcontainer" >
+
   <table>
     <tr >
       <td>
@@ -22,7 +23,7 @@
 </div>
 
 
-<div class="Mytable" >
+<div class="Mytable">
     <table >
       <tr ng-model="clickedObj[0]">
         <td ng-repeat ="(key,value) in clickedObj[0]"ng-if="(view=='path')&&($index!=0)&&($index!=5)&&($index!=3)&&($index!=10)"class="headings">        {{ key| uppercase}}
@@ -39,7 +40,6 @@
 
       </tr>
     </table>
-
 
     <div>
       <span ng-if="(numPages>1)" ng-repeat="pg in getPgs(numPages) track by $index"> <button  class="pageno" ng-class="{'currentpage': ( currentpage==($index+1) )}" ng-click= 'pagenoClickEvent(($index+1))'> {{$index+1}} </button>

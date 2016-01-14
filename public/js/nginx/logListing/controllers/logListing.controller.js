@@ -34,7 +34,7 @@ angular.module('logAggregator')
                   $scope.currentpage = 1;
               };//close click event
               $scope.pathClickEvent("All");
-              
+              //$scope.showLogProgress = false;
 
               $scope.pagenoClickEvent = function(pgno){
 
@@ -46,7 +46,7 @@ angular.module('logAggregator')
 
 
               $scope.pathClickEvent('All');
-
+            //  $scope.showLogProgress = false;
 
 
     }//close fn

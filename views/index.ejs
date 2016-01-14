@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>LogAggregator </title>
 
-  <link rel='stylesheet' href='styles/loadingBar.css' type='text/css' media='all' />
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="js/lib/bootstrap/dist/css/bootstrap.min.css">
 
@@ -103,7 +102,7 @@
         <li ng-class="{active: (tab == 'requestRate')}"><a ng-href="#requestRate" ng-click="tab='requestRate'">Request Rate</a></li>
       </ul>
       <div class="tab-pane" ng-view="">
-
+           <img src="svg/default.svg" alt="">
       </div>  <!-- end tab-pane -->
     </div>
   </div>
@@ -125,7 +124,6 @@
 
   <script type="text/javascript" src="/js/lib/angular/angular.js"></script>
   <script type="text/javascript" src="/js/lib/angular-route/angular-route.js"></script>
-  <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.7.1/loading-bar.min.js'></script>
 
 
   <script type="text/javascript" src="/js/application.js"></script>
