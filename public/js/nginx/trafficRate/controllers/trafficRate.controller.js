@@ -96,3 +96,18 @@ function($scope, $rootScope, getTrafficData) {
   }
 }
 ]);
+
+//**********************************************adding directive************************************************
+
+// angular.module('logAggregator').directive('ngRightClick', function($parse) {
+//     return function(scope, element, attrs) {
+//         var fn = $parse(attrs.ngRightClick);
+//         element.bind('contextmenu', function(event) {
+//             scope.$apply(function() {
+//               console.log("inside directive");
+//                 event.preventDefault();
+//                 fn(scope, {$event:event});
+//             });
+//         });
+//     };
+// });

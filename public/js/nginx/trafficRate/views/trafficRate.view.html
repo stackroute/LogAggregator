@@ -1,6 +1,6 @@
 <div class="page-header">
   <h2><small>Traffic rates of different types of requests in given time are plotted here</small></h2>
-  <div class="pull-right">
+  <div class="filters pull-right">
     <div class="dropdown year_text">
       <button   class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
        <span class="changeColour" ng-bind="yearSelected"></span>
@@ -16,7 +16,7 @@
     </div>
 
     <div class="dropdown month_text">
-      <button  ng-disabled="monthMenu" class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      <button  ng-disabled="monthMenu" class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
          <span class="changeColour" ng-bind="monthSelected"></span>
         <span class="caret"></span>
       </button>
@@ -25,7 +25,7 @@
       </ul>
     </div>
     <div  class="crossMonthFilter"><a href ng-disabled="monthSwitch" ng-click="monthFilter()" class="btn btn-link"><img src="images/crossCircle.png" alt="cross circle"></a></div>
-    <a href ng-disabled="clearSwitch" ng-click="clearFilters()" class="btn btn-link" id="clear_filters">Clear All</a>
+    <a href ng-disabled="clearSwitch" ng-click="clearFilters()"  ng-right-click="decrement()" class="btn btn-link" id="clear_filters" >Clear All</a>
 </div>
 </div>
 
