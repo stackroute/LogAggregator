@@ -1,4 +1,4 @@
-angular.module('logAggregator').directive('agentPieChart', function($compile) {
+angular.module('logAggregator').directive('agentPieChart', ['$compile', function($compile) {
   return {
     restrict : 'E',
     replace : false,
@@ -203,4 +203,4 @@ angular.module('logAggregator').directive('agentPieChart', function($compile) {
       }();
     }
   };
-});
+}]);
