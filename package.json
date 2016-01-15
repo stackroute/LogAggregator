@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "postinstall": "bower install",
+    "prestart": "npm install",
       "start": "node ./bin/www"
   },
   "dependencies": {
@@ -13,6 +15,7 @@
     "express": "~4.13.1",
     "mongoose": "~3.8.15",
     "morgan": "~1.6.1",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "socket.io" : "~1.4.3"
   }
 }
