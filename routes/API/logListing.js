@@ -28,8 +28,14 @@ router.get('/:pathId/:pgno', function(req, res) {
 /*----------Response for particular path data----------------------------------------------*/
 
      else{
+        if(temp != "$"){
         newtemp = decodeURIComponent(temp);
+        newtemp = newtemp.replace(/ /g , "%20");
         var paths = "/" + newtemp;
+        }
+        else {
+        paths = "/";
+        }
         Log.count({path:paths},function(er,c){
             counts = c;
         });
@@ -69,10 +75,10 @@ router.get('/', function(req, res  ) {
             var value = obj[i].path;
             if(index(value,p) === "null")
              {
-                   p.push( {
-                     "path" : obj[i].path,
-                     "count" : 1
-                   });
+                 p.push( {
+                   "path" : obj[i].path,
+                   "count" : 1
+                 });
              }
              else {
                      var k = index(value,p);

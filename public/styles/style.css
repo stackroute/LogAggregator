@@ -140,14 +140,9 @@
 .logcontainer table{
   border-collapse:inherit;
 }
-<<<<<<< HEAD
-.Mytable{
-  /*background-image: url("../svg/default.svg");
-  background-repeat: no-repeat;
-  background-position: center;*/
-=======
+
 .PathDataTable{
->>>>>>> 2b316590c993eddfafd507eb2b84e128198b870e
+
   margin-top: 0px;
   width: 72%;
   float: left;
@@ -200,13 +195,6 @@ td, tr, th{
 }
 .PathDataTable td,th{
   padding: 2px;
-}
-.header {
-  font-size: 14px;
-  font-style: none;
-  margin-left: 318px;
-  margin-top: 20px;
-  background: white;
 }
 .pageno{
   color:black;
