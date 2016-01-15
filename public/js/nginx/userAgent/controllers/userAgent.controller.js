@@ -12,21 +12,26 @@ angular.module('logAggregator').controller('userAgentController', ['$scope', '$r
     $scope.agentMonth = 0;
     $scope.agentMonthName="Month";
     $scope.agentData = {};
+    $scope.showAgentProgress=true;
 
     var handleSuccess = function(response, criteria) {
       $scope.agentData = response.data;
-      render(criteria, $scope.agentData);
+      // render(criteria, $scope.agentData);
+      // $location
+     $scope.showAgentProgress=false;
     };
 
     var handleError = function(response, criteria) {
       $scope.agentData = {};
-      render(criteria, $scope.agentData);
+      // render(criteria, $scope.agentData);
+      $scope.showAgentProgress=false;
     }
 
     $scope.agentCriteria = 'browser';
     agentDataService.getAgentData(handleSuccess, handleError, $scope.agentCriteria, $scope.agentYear, $scope.agentMonth);
 
     $scope.renderData = function(criteria) {
+      $scope.showAgentProgress=true;
       $scope.agentCriteria = criteria;
       var year = $scope.agentYear;
       var month = $scope.agentMonth;
@@ -34,6 +39,7 @@ angular.module('logAggregator').controller('userAgentController', ['$scope', '$r
     }
 
     $scope.updateAgentYear = function(year) {
+      $scope.showAgentProgress=true;
       $scope.agentYear = year;
       $scope.agentMonth = 0;
       $scope.agentMonthName='Month';
@@ -41,6 +47,7 @@ angular.module('logAggregator').controller('userAgentController', ['$scope', '$r
     }
 
     $scope.updateAgentMonth=function(month){
+      $scope.showAgentProgress=true;
       $scope.agentMonth=month.value;
       $scope.agentMonthName=month.month;
       agentDataService.getAgentData(handleSuccess, handleError, $scope.agentCriteria, $scope.agentYear, $scope.agentMonth);

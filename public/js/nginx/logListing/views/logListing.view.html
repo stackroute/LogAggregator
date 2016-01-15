@@ -5,8 +5,9 @@
 <!-- **Displaying all paths **********************************************************  -->
 
 <div class="logcontainer" >
+<img class="LogProgressIcon" ng-show="showLogProgress" src="svg/cube.svg" alt="progress">
  <table>
-    <tr>
+    <tr ng-hide="showLogProgress">
       <td>
         <button ng-class = "{btn: true,'withBorder': (view == 'All'), 'btn-default': true , 'mouseover':hovering } "ng-click = 'pathClickEvent("All")' class = "logButtonStyle" ng-mouseenter = "hovering = true" ng-mouseleave = "hovering = false">
             Most Visited Paths
@@ -29,6 +30,7 @@
  <!-- **Displaying data for selected path *************************************************  -->
 
 <div class="PathDataTable" >
+  <img class="LogProgressIcon" ng-show="showLogProgress" src="svg/cube.svg" alt="progress">
   <table >
     <tr ng-model = "clickedPath[0]">
       <td ng-repeat = "(key,value) in clickedPath[0]" class = "headings" ng-if = "(view == 'path') && ($index != 0) && ($index != 5) && ($index != 3) && ($index != 10)">

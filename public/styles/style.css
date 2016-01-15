@@ -65,6 +65,9 @@
 .filters .dropdown {
   display : inline-block;
 }
+.AgentProgressIcon{
+  margin-top: 13px;
+}
 
 /*tooltip styling*/
 .d3-tip {
@@ -129,11 +132,11 @@
   text-align: justify;
   overflow:scroll;
   height:500px;
-
 }
 .logcontainer table{
   border-collapse:inherit;
 }
+
 .PathDataTable{
   margin-top: 0px;
   width: 72%;
@@ -219,6 +222,12 @@ td, tr, th{
 /*----------------------------------------------logListing Stylesheet end------------------------------------------------------------*/
 
 /* Traffic Page *******************************************************************************************/
+.LogProgressIcon {
+  margin: auto;
+  display: block;
+  margin-top: 150px;
+}
+
 .changeColour{
   color: #2c2c2c;
 }
@@ -236,7 +245,7 @@ td, tr, th{
 
 .tab-pane h2 {
   display: inline-block;
-  padding-left: 3%;
+  padding-left: 4%;
 }
 
 .tab-pane small{
@@ -278,6 +287,9 @@ td, tr, th{
 }
 
 .traffic{
+  /*background-image: url("../svg/default.svg") !important;
+  background-repeat: no-repeat;
+  background-position: center;*/
   width: 700px;
   height: 500px;
   margin-left: auto;
@@ -285,14 +297,20 @@ td, tr, th{
   width: 900px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
+  margin-top: 25px;
   text-align: center;
 }
 
 .traffic no_data{
   font-size: 20px;
 }
-
+.load{
+  height: 50px;
+}
+.trafficProgressIcon{
+  margin-left: 640px;
+  margin-top: 10px;
+}
 .line {
   fill: none;
   stroke: steelblue;
