@@ -1,13 +1,13 @@
 angular.module('logAggregator').controller('trafficRateController', ['$scope', '$rootScope', 'getTrafficData',
 function($scope, $rootScope, getTrafficData) {
   $rootScope.tab = 'requestRate';
-  var years=[];
+  var years = [];
   var months = $scope.config.months;
   var currentYear = (new Date).getFullYear();
   var currentMonth = (new Date).getMonth() + 1;
   years.push(currentYear);
   var Year = currentYear;
-  for(var i=0; i<$scope.config.noOfYears; i++)
+  for(var i = 0; i<$scope.config.noOfYears; i++)
   {
     Year = Year - 1;
     years.push(Year);
@@ -20,15 +20,18 @@ function($scope, $rootScope, getTrafficData) {
   $scope.monthMenu = false;
   $scope.clearSwitch = false;
   $scope.showProgress = true;
+  $scope.monthValue = months[currentMonth-1].value;
+  $scope.trafficData = [{}, {}];
 
   getTrafficData.getData(currentYear,currentMonth).then(function(response){
     var data = response.data;
-    if(Object.keys(data[1]).length == 0)
+    $scope.trafficData = data;
+    if (Object.keys(data[1]).length == 0)
     {
       $scope.monthMenu = true;
       $scope.monthSwitch = true;
     }
-    Plotting(data,currentYear,currentMonth);
+    //Plotting(data,currentYear,currentMonth);
     $scope.clearSwitch = true;
     $scope.showProgress = false;
   });
@@ -36,15 +39,17 @@ function($scope, $rootScope, getTrafficData) {
   $scope.renderYearTraffic = function(year) {
     $scope.yearSelected = year;
     $scope.monthSelected = "Month";
+    $scope.monthValue=0;
     month = 0;
     $scope.showProgress = true;
     getTrafficData.getData(year,month).then(function(response){
       var data = response.data;
+      $scope.trafficData=data;
       if(Object.keys(data[1]).length == 0)
       {
         $scope.monthSwitch = true;
         $scope.monthMenu = true;
-        Plotting(data, year, 0);
+      //  Plotting(data, year, 0);
         $scope.clearSwitch = false;
         $scope.showProgress = false;
       }
@@ -52,7 +57,7 @@ function($scope, $rootScope, getTrafficData) {
       {
         $scope.monthMenu = false;
         $scope.clearSwitch = false;
-        Plotting(data, year, 0);
+      //  Plotting(data, year, 0);
         $scope.showProgress = false;
       }
     });
@@ -61,28 +66,32 @@ function($scope, $rootScope, getTrafficData) {
   $scope.renderMonthTraffic = function(month,monthValue) {
     year = $scope.yearSelected;
     $scope.monthSelected = month;
+    $scope.monthValue=monthValue;
     $scope.showProgress = true;
     getTrafficData.getData(year,monthValue).then(function(response){
       var data = response.data;
+      $scope.trafficData=data;
       $scope.monthSwitch = false;
       if(year == currentYear && month == currentMonth)
       {
         $scope.clearSwitch = false;
         $scope.monthSwitch = true;
       }
-      Plotting(data,year,monthValue);
+      //Plotting(data,year,monthValue);
       $scope.showProgress = false;
     });
   }
 
   $scope.monthFilter = function() {
     $scope.monthSelected = "Month";
+    $scope.monthValue=0;
     $scope.showProgress = true;
     getTrafficData.getData($scope.yearSelected,0).then(function(response){
       var data = response.data;
+      $scope.trafficData=data;
       $scope.monthSwitch = true;
       $scope.clearSwitch = false;
-      Plotting(data,$scope.yearSelected,0);
+    //  Plotting(data,$scope.yearSelected,0);
       $scope.showProgress = false;
     });
   }
@@ -90,16 +99,18 @@ function($scope, $rootScope, getTrafficData) {
   $scope.clearFilters = function() {
     $scope.yearSelected = currentYear;
     $scope.monthSelected = months[currentMonth-1].month;
+    $scope.monthValue = months[currentMonth-1].value;
     $scope.showProgress = true;
     getTrafficData.getData(currentYear,currentMonth).then(function(response){
       var data = response.data;
+      $scope.trafficData=data;
       if(Object.keys(data[1]).length == 0)
       {
         $scope.monthMenu = true;
         $scope.monthSwitch = true;
       }
       $scope.clearSwitch = true;
-      Plotting(data,currentYear,currentMonth);
+      //Plotting(data,currentYear,currentMonth);
       $scope.showProgress = false;
     });
   }

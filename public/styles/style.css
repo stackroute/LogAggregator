@@ -140,14 +140,8 @@
 .logcontainer table{
   border-collapse:inherit;
 }
-<<<<<<< HEAD
-.Mytable{
-  /*background-image: url("../svg/default.svg");
-  background-repeat: no-repeat;
-  background-position: center;*/
-=======
+
 .PathDataTable{
->>>>>>> 2b316590c993eddfafd507eb2b84e128198b870e
   margin-top: 0px;
   width: 72%;
   float: left;
@@ -157,6 +151,7 @@
   text-align: center;
   border-top: 1px solid lightgrey;
 }
+
 table{
   width: 1000;
   border:0px;
