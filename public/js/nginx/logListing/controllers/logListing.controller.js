@@ -11,9 +11,9 @@ angular.module('logAggregator')
         });//close then
 
         $scope.pathClickEvent = function(obj){
+            $scope.showLogDataProgress = true;
             currentpath = (obj == "All") ? "All": obj.path;
             $scope.currentpath =  currentpath;
-            $scope.showLogProgress = true;
             logService.getPathData(currentpath,1).then(function(response){
 
                 count = response.data.count;
@@ -23,16 +23,23 @@ angular.module('logAggregator')
                 $scope.getPgs = function(num){
                     return new Array(num);
                 }
+                $scope.$watch('showLogProgress', function() {
+                  if(!$scope.showLogProgress)
+                    $scope.showLogDataProgress = $scope.showLogProgress;
+                });
             });
             $scope.currentpage = 1;
         };//close pathclick event
 
         $scope.pathClickEvent("All");
 
+
         $scope.pagenoClickEvent = function(pgno){
+          $scope.showLogDataProgress = true;
             $scope.currentpage = pgno;
             logService.getPathData(currentpath,pgno).then(function(response){
                 $scope.clickedPath = response.data.collection_data;
+                $scope.showLogDataProgress = false;
             });
         }//close pagenoClickEventlick event
 

@@ -16,14 +16,11 @@ angular.module('logAggregator').controller('userAgentController', ['$scope', '$r
 
     var handleSuccess = function(response, criteria) {
       $scope.agentData = response.data;
-      // render(criteria, $scope.agentData);
-      // $location
-     $scope.showAgentProgress=false;
+      $scope.showAgentProgress=false;
     };
 
     var handleError = function(response, criteria) {
       $scope.agentData = {};
-      // render(criteria, $scope.agentData);
       $scope.showAgentProgress=false;
     }
 

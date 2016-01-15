@@ -1,6 +1,6 @@
 var mainApp = angular.module("logAggregator");
 mainApp.factory('logService',function($http){
-  
+
     return {
         getPath_count: function(){
             var promise = $http({method: 'GET',
@@ -29,6 +29,3 @@ mainApp.factory('logService',function($http){
         }//close getPathData
     }//close return
 });
-
-// if(path.indexOf("%")!=-1)
-// path = path.replace(/%/g , "$");

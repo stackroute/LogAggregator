@@ -1,11 +1,12 @@
-angular.module('logAggregator').directive('agentPieChart', function() {
+angular.module('logAggregator').directive('agentPieChart', function($compile) {
   return {
     restrict : 'E',
     replace : false,
     scope : {
       data : '=',
       criteria : '=',
-      userAgentFilters : '='
+      userAgentFilters : '=',
+      showAgentProgress : '='
     },
     link : function(scope, element, attrs) {
       var data = scope.data;
@@ -16,8 +17,11 @@ angular.module('logAggregator').directive('agentPieChart', function() {
 
       var colorLegendG = svg.append("g")
                   .attr("class", "color-legend")
+                  .attr("ng-hide", "showAgentProgress")
                   .attr("transform", "translate(470, 120)")
                   .style("font-size", "16px");
+
+      $compile(element.find('svg'))(scope);
 
       var colorLegend = d3.legend.color()
                       .scale(color)
@@ -26,8 +30,8 @@ angular.module('logAggregator').directive('agentPieChart', function() {
                       .shapeHeight(18)
                       .labelOffset(4)
                       .orient("vertical");
-      angular.element( document.querySelector(".wrap .well agent-pie-chart")).prepend("<nodata ng-hide='showAgentProgress'></nodata>");
-      // $(".wrap .well agent-pie-chart").prepend($compile("<nodata ng-hide='showAgentProgress'></nodata>"));
+      $(".wrap .well agent-pie-chart").prepend($compile("<nodata ng-hide='showAgentProgress'></nodata>")(scope));
+
       scope.$watch('data', function (data, oldVal) {
         var render = function(nestKey, data, userAgentFilters) {
           d3.select(".wrap .well nodata").html("");
@@ -61,6 +65,7 @@ angular.module('logAggregator').directive('agentPieChart', function() {
         };
         render(scope.criteria, data, scope.userAgentFilters);
       });
+
       !function(){
       	var Donut3D={};
         var tip = d3.tip()
@@ -196,7 +201,6 @@ angular.module('logAggregator').directive('agentPieChart', function() {
 
       	this.Donut3D = Donut3D;
       }();
-
     }
   };
 });
