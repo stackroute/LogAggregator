@@ -28,8 +28,8 @@
       </div>
     </div>
   </div>
-  <img class="AgentProgressIcon" ng-show="showAgentProgress" src="svg/cube.svg" alt="progress">
-  <!-- {{showAgentProgress}} -->
+  <div class="well">
+    <img class="AgentProgressIcon" ng-show="showAgentProgress" src="svg/cube.svg" alt="progress">
+    <agent-pie-chart data="agentData" show-agent-progress="showAgentProgress" criteria="agentCriteria" user-agent-filters="config.userAgentFilters"></agent-pie-chart>
+  </div>
 </div>
-<script src="/js/nginx/userAgent/d3/agentAnalytics.js" ></script>
-<script src="/js/nginx/userAgent/d3/userAgent.js" ></script>

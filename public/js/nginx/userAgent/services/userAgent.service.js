@@ -1,4 +1,4 @@
-angular.module('logAggregator').factory('agentDataService',
+angular.module('logAggregator').factory('agentDataService', ['$http',
   function($http) {
     return {
       getAgentData: function(handleSuccess, handleError, criteria, year, month) {
@@ -10,8 +10,9 @@ angular.module('logAggregator').factory('agentDataService',
             handleSuccess(data, criteria);
           }, function(data) {
             handleError(data, criteria);
-          } );
-        }
+          }
+        );
+      }
     }
   }
-);
+]);

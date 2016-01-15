@@ -122,9 +122,6 @@
   color: blue;
 }
 .logcontainer{
-  background-image: url("../svg/default.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   margin-top: 0px;
   font-size: 0.83em;
   font-family: sans-serif;
@@ -135,14 +132,12 @@
   text-align: justify;
   overflow:scroll;
   height:500px;
-
 }
 .logcontainer table{
   border-collapse:inherit;
 }
 
 .PathDataTable{
-
   margin-top: 0px;
   width: 72%;
   float: left;
@@ -220,6 +215,12 @@ td, tr, th{
 /*----------------------------------------------logListing Stylesheet end------------------------------------------------------------*/
 
 /* Traffic Page *******************************************************************************************/
+.LogProgressIcon {
+  margin: auto;
+  display: block;
+  margin-top: 150px;
+}
+
 .changeColour{
   color: #2c2c2c;
 }
