@@ -193,13 +193,6 @@ td, tr, th{
 .PathDataTable td,th{
   padding: 2px;
 }
-.header {
-  font-size: 14px;
-  font-style: none;
-  margin-left: 318px;
-  margin-top: 20px;
-  background: white;
-}
 .pageno{
   color:black;
 }
