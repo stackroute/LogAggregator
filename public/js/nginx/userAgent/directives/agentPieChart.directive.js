@@ -37,7 +37,7 @@ angular.module('logAggregator').directive('agentPieChart', ['$compile', function
           return;
         var render = function(nestKey, data, userAgentFilters) {
           d3.select(".wrap .well nodata").html("");
-          if($.isEmptyObject(data)) {
+          if(angular.equals({}, data)) {
             d3.select("#donut").html("");
             d3.select(".color-legend").html("");
             d3.select(".wrap .well nodata").html("No data Available");
