@@ -1,6 +1,5 @@
-angular.module('logAggregator').controller('userAgentController', ['$scope', '$rootScope', 'agentDataService',
-  function($scope, $rootScope, agentDataService) {
-
+angular.module('logAggregator').controller('userAgentController', ['$scope', '$rootScope', 'agentDataService', '$interval',
+  function($scope, $rootScope, agentDataService, $interval) {
     var thisYear = (new Date).getFullYear();
     $rootScope.tab = 'agentAnalytics';
     $scope.agentYear = thisYear;
@@ -10,47 +9,50 @@ angular.module('logAggregator').controller('userAgentController', ['$scope', '$r
     }
     $scope.yearsToShow = years;
     $scope.agentMonth = 0;
-    $scope.agentMonthName="Month";
+    $scope.agentMonthName = "Month";
     $scope.agentData = {};
-    $scope.showAgentProgress=true;
+    $scope.showAgentProgress = true;
 
     var handleSuccess = function(response, criteria) {
       $scope.agentData = response.data;
-      // render(criteria, $scope.agentData);
-      // $location
-     $scope.showAgentProgress=false;
+      $scope.showAgentProgress = false;
     };
 
     var handleError = function(response, criteria) {
       $scope.agentData = {};
-      // render(criteria, $scope.agentData);
-      $scope.showAgentProgress=false;
+      $scope.showAgentProgress = false;
     }
 
+    var onComplete =
+    $interval(function() {
+      agentDataService.getAgentData(handleSuccess, handleError, onComplete, $scope.agentCriteria, $scope.agentYear, $scope.agentMonth);
+      console.log("refreshing");
+    }, 1000);
+
     $scope.agentCriteria = 'browser';
-    agentDataService.getAgentData(handleSuccess, handleError, $scope.agentCriteria, $scope.agentYear, $scope.agentMonth);
+    agentDataService.getAgentData(handleSuccess, handleError, onComplete, $scope.agentCriteria, $scope.agentYear, $scope.agentMonth);
 
     $scope.renderData = function(criteria) {
-      $scope.showAgentProgress=true;
+      $scope.showAgentProgress = true;
       $scope.agentCriteria = criteria;
       var year = $scope.agentYear;
       var month = $scope.agentMonth;
-      agentDataService.getAgentData(handleSuccess, handleError, criteria, year, month);
+      agentDataService.getAgentData(handleSuccess, handleError, onComplete, criteria, year, month);
     }
 
     $scope.updateAgentYear = function(year) {
-      $scope.showAgentProgress=true;
+      $scope.showAgentProgress = true;
       $scope.agentYear = year;
       $scope.agentMonth = 0;
-      $scope.agentMonthName='Month';
-      agentDataService.getAgentData(handleSuccess, handleError, $scope.agentCriteria, year, $scope.agentMonth);
+      $scope.agentMonthName = 'Month';
+      agentDataService.getAgentData(handleSuccess, handleError, onComplete, $scope.agentCriteria, year, $scope.agentMonth);
     }
 
     $scope.updateAgentMonth=function(month){
-      $scope.showAgentProgress=true;
-      $scope.agentMonth=month.value;
-      $scope.agentMonthName=month.month;
-      agentDataService.getAgentData(handleSuccess, handleError, $scope.agentCriteria, $scope.agentYear, $scope.agentMonth);
+      $scope.showAgentProgress = true;
+      $scope.agentMonth = month.value;
+      $scope.agentMonthName = month.month;
+      agentDataService.getAgentData(handleSuccess, handleError, onComplete, $scope.agentCriteria, $scope.agentYear, $scope.agentMonth);
     }
 
     $scope.checkIfDisable = function(){

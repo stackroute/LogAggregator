@@ -30,5 +30,4 @@
 </div>
 <div><g></g></div>
 <div class="load"><img class="trafficProgressIcon" ng-show="showProgress" src="svg/cube.svg" alt="progress"></div>
-<div class="traffic well"></div>
-<script src="/js/nginx/trafficRate/d3/requestRatePage.js" ></script>
+<div class="traffic well"> <traffic-rate-directive data="trafficData" year="yearSelected" month="monthValue" ></traffic-rate-directive></div>

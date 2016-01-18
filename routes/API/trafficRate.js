@@ -23,7 +23,7 @@ router.get('/:year/:month', function(req, res, next) {
     for(i in serverHits)
     {
       var obj = {};
-      day_date = (serverHits[i].time).toISOString().substring(0,10);
+      day_date = (serverHits[i].time).toISOString().substring(0, 10);
       if(dates[day_date])
       {
         accumulator[day_date][serverHits[i].method]+= 1;
@@ -41,10 +41,9 @@ router.get('/:year/:month', function(req, res, next) {
       }
     }
 
-  finalData.push(dates);
-  finalData.push(accumulator);
-  res.json(finalData);
-
-});
+    finalData.push(dates);
+    finalData.push(accumulator);
+    res.json(finalData);
+  });
 });
 module.exports = router;
