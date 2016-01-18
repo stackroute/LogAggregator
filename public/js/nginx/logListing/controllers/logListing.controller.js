@@ -28,18 +28,18 @@ function($scope, $rootScope, logService, $interval) {
     currentpath = (obj == "All") ? "All": obj.path;
     $scope.currentpath =  currentpath;
     logService.getPathData(currentpath,1).then(function(response) {
-      count = response.data.count;
-      $scope.view = (obj == "All") ? "All":"path";
-      $scope.clickedPath = response.data.collection_data;
-      $scope.no_of_pgs = (parseInt(count/100) + 1) ;
-      $scope.getPgs = function(num){
-        return new Array(num);
-      };
-      $scope.$watch('showLogProgress', function() {
-        if(!$scope.showLogProgress)
-          $scope.showLogDataProgress = $scope.showLogProgress;
+        count = response.data.count;
+        $scope.view = (obj == "All") ? "All":"path";
+        $scope.clickedPath = response.data.collection_data;
+        $scope.no_of_pgs = (parseInt(count/100) + 1) ;
+        $scope.getPgs = function(num){
+          return new Array(num);
+        };
+        $scope.$watch('showLogProgress', function() {
+          if(!$scope.showLogProgress)
+            $scope.showLogDataProgress = $scope.showLogProgress;
+        });
       });
-    });
     $scope.currentpage = 1;
   };//close pathclick event
 
