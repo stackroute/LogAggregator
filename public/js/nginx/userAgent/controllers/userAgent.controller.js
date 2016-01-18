@@ -25,8 +25,12 @@ angular.module('logAggregator').controller('userAgentController', ['$scope', '$r
 
     var onComplete =
     $interval(function() {
-      agentDataService.getAgentData(handleSuccess, handleError, onComplete, $scope.agentCriteria, $scope.agentYear, $scope.agentMonth);
-      console.log("refreshing");
+      if($rootScope.tab == 'agentAnalytics') {
+        agentDataService.getAgentData(handleSuccess, handleError, onComplete, $scope.agentCriteria, $scope.agentYear, $scope.agentMonth);
+        console.log("refreshing");
+      } else {
+        $interval.cancel(onComplete);
+      }
     }, 1000);
 
     $scope.agentCriteria = 'browser';

@@ -4,12 +4,17 @@ function($scope, $rootScope, logService, $interval) {
   $scope.showLogProgress = true;
   var onComplete =
   $interval(function(){
-    logService.getPath_count().then(function(response) {
-      data =  response.data;
-      $scope.Path_Count = data.arr;//path_count data
-      $scope.showLogProgress = false;
-      console.log("refreshing");
-    });  //close then
+      if($rootScope.tab == 'logListing') {
+        logService.getPath_count().then(function(response) {
+          data =  response.data;
+          $scope.Path_Count = data.arr;//path_count data
+          $scope.showLogProgress = false;
+          console.log("refreshing");
+        });  //close then
+      }
+      else {
+       $interval.cancel(onComplete);
+      }
   },1000);
 
   logService.getPath_count().then(function(response) {

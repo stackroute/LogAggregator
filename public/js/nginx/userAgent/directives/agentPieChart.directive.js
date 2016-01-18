@@ -33,6 +33,8 @@ angular.module('logAggregator').directive('agentPieChart', ['$compile', function
       $(".wrap .well agent-pie-chart").prepend($compile("<nodata ng-hide='showAgentProgress'></nodata>")(scope));
 
       scope.$watch('data', function (data, oldVal) {
+        if(angular.equals(data, oldVal))
+          return;
         var render = function(nestKey, data, userAgentFilters) {
           d3.select(".wrap .well nodata").html("");
           if($.isEmptyObject(data)) {
@@ -50,6 +52,7 @@ angular.module('logAggregator').directive('agentPieChart', ['$compile', function
 
           color.domain(domainNames);
 
+          console.log("rendering ***************************");
           Donut3D.draw("donut", agentData(), 200, 200, 170, 140, 30, 0.4);
 
           colorLegendG.call(colorLegend);
