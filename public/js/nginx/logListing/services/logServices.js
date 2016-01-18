@@ -1,14 +1,15 @@
 angular.module("logAggregator").factory('logService', function($http) {
   return {
-    getPath_count : function(){
+    getPath_count : function(onComplete){
       var promise = $http({
         method: 'GET',
-        url: "/json/logListing/"
+        url: "/json/logListing/",
+        complete: onComplete
       });
       return promise;
     },//close getPath_count
 
-    getPathData: function(path,pgno){
+    getPathData: function(path,pgno,onComplete){
        if(path != "All" && path != "/"){
           temp =   path.substring(1);
           path =  '/'+encodeURIComponent(temp);
@@ -21,7 +22,8 @@ angular.module("logAggregator").factory('logService', function($http) {
         }
         pageno = (pgno != "1") ? pgno:"1";
         var promise = $http({method: 'GET',
-                            url: "/json/logListing"+path+"/"+pageno
+                            url: "/json/logListing"+path+"/"+pageno,
+                            complete : onComplete
                           });
         return promise;
 
