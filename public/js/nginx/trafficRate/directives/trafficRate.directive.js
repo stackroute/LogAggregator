@@ -44,6 +44,16 @@ angular.module('logAggregator').directive('trafficRateDirective', function() {
         json = scope.data;
         monthSelection = month_selected;
         var dates = json[0];
+
+        if(dates==2){
+          d3.select('serverdown')
+            .html('');
+          d3.select('serverdown')
+            .html('Something went wrong! We are trying to get you back.');
+        }
+        else{
+        d3.select('serverdown')
+          .html('');
         var tempdata = json[1];
         var newdata = [];
         var keys = Object.keys(tempdata);
@@ -129,6 +139,7 @@ angular.module('logAggregator').directive('trafficRateDirective', function() {
             }
           }
         }
+
 
     /*************************************** Final Analysis Part ********************************************/
 
@@ -237,7 +248,25 @@ angular.module('logAggregator').directive('trafficRateDirective', function() {
           .style("text-anchor", "end")
           .text(function(d) { return d.REQUEST; });
         } // analysis ends
+      }
       });
     }
   }
 });
+//
+// angular.module('logAggregator').directive('a', function() {
+//     return {
+//         restrict: 'E',
+//         scope: {
+//           check: '=ngDisabled',
+//         },
+//         link: function(scope, elem, attrs) {
+//           //  console.log(attrs);
+//             if(attrs.ngClick &&  scope.check){
+//                 elem.on('click', function(e){
+//                     e.preventDefault();
+//                 });
+//             }
+//         }
+//    };
+// });

@@ -7,6 +7,7 @@ module.exports = function() {
 
   require('./models/log.server.model');
   require('./models/log.config.model');
+  require('./models/log.user.model');
 
   return db;
 }

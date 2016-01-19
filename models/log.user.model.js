@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var crypto = require('crypto'),
+var crypto = require('crypto');
 var Schema =  mongoose.Schema;
 
 var LogUserSchema = new Schema({
@@ -49,7 +49,6 @@ LogUserSchema.pre('save', function(next) {
     this.hash = new Buffer(crypto.randomBytes(16).toString('base64'), 'base64');
     this.password = this.hashPassword(this.password);
   }
-
   next();
 });
 

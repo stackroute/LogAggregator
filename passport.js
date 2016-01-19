@@ -15,5 +15,6 @@ module.exports = function() {
       done(err, user);
     });
   });
-  require('.localAuth.js')();
+  require('./localAuth.js')();
+  return passport;
 };
