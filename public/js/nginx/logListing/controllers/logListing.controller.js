@@ -2,26 +2,24 @@ angular.module('logAggregator').controller('logController', ['$scope', '$rootSco
 function($scope, $rootScope, logService, $interval) {
   $rootScope.tab = 'logListing';
   $scope.showLogProgress = true;
+  logService.getPath_count().then(function(response) {
+    $scope.Path_Count = response.data.arr;
+  });
   var onComplete =
   $interval(function(){
       if($rootScope.tab == 'logListing') {
         logService.getPath_count().then(function(response) {
-          data =  response.data;
-          $scope.Path_Count = data.arr;//path_count data
+          if(!angular.equals($scope.Path_Count, response.data.arr)) {
+            data =  response.data;
+            $scope.Path_Count = data.arr;//path_count data
+          }
           $scope.showLogProgress = false;
-          console.log("refreshing");
         });  //close then
       }
       else {
        $interval.cancel(onComplete);
       }
-  },1000);
-
-  logService.getPath_count().then(function(response) {
-    data =  response.data;
-    $scope.Path_Count = data.arr;//path_count data
-    $scope.showLogProgress = false;
-  });  //close then
+  },10000);
 
   $scope.pathClickEvent = function(obj) {
     $scope.showLogDataProgress = true;

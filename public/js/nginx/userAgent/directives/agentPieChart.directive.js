@@ -33,16 +33,19 @@ angular.module('logAggregator').directive('agentPieChart', ['$compile', function
       $(".wrap .well agent-pie-chart").prepend($compile("<nodata ng-hide='showAgentProgress'></nodata>")(scope));
 
       scope.$watch('data', function (data, oldVal) {
+        d3.select(".wrap .well nodata").html("");
+        if(angular.equals({}, data)) {
+          d3.select("#donut").html("");
+          d3.select(".color-legend").html("");
+          d3.select(".wrap .well nodata").html("No data Available");
+          return;
+        } else if(data == undefined) {
+          d3.select(".wrap .well nodata").html("Something went wrong. Please wait while we connect to our servers");
+          return;
+        }
         if(angular.equals(data, oldVal))
           return;
         var render = function(nestKey, data, userAgentFilters) {
-          d3.select(".wrap .well nodata").html("");
-          if($.isEmptyObject(data)) {
-            d3.select("#donut").html("");
-            d3.select(".color-legend").html("");
-            d3.select(".wrap .well nodata").html("No data Available");
-            return;
-          }
           d3.select("#donut").html="";
           d3.select(".color-legend").html="";
           var domainNames = [];
