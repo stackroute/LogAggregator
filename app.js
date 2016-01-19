@@ -4,6 +4,7 @@ var db = mongoose();
 require('./configLoad')
 
 var express = require('express');
+var passport = require('./passport');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -21,6 +22,7 @@ var trafficRate = require('./routes/API/trafficRate');
 
 
 var app = express();
+var passport = passport();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -28,9 +30,23 @@ app.set('view engine', 'ejs');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+if (process.env.NODE_ENV === 'development') {
+  app.use(morgan('dev'));
+} else if (process.env.NODE_ENV === 'production') {
+  app.use(compress());
+}
+
+app.use(methodOverride());
+app.use(session({
+  saveUninitialized: true,
+  resave: true,
+  secret: config.sessionSecret
+}));
+app.use(passport.initialize());
+app.use(passport.session());
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
