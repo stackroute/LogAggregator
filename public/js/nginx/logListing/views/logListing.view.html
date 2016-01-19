@@ -9,14 +9,14 @@
  <table ng-hide="showLogProgress">
     <tr>
       <td>
-        <button ng-class = "{btn: true,'withBorder': (view == 'All'), 'btn-default': true , 'mouseover':hovering } "ng-click = 'pathClickEvent("All")' class = "logButtonStyle" ng-mouseenter = "hovering = true" ng-mouseleave = "hovering = false">
+        <button ng-class = "{btn: true,'withBorder': (view == 'All'), 'btn-default': true , 'OnMouseEnter':hover} "ng-click = 'pathClickEvent("All")' class = "logButtonStyle" ng-mouseenter = "hover = true" ng-mouseleave = "hover = false">
             Most Visited Paths
         </button>
       </td>
     </tr>
     <tr ng-repeat="obj in Path_Count">
       <td>
-        <button ng-click= 'pathClickEvent(obj)' class = "logButtonStyle" ng-class = "{btn: true, 'btn-default':true, 'withBorder': (obj.path == currentpath ), 'mouseover': hovering}" ng-mouseenter = "hovering = true" ng-mouseleave = "hovering = false">
+        <button ng-click= 'pathClickEvent(obj)' class = "logButtonStyle" ng-class = "{btn: true, 'btn-default':true, 'withBorder': (obj.path == currentpath ), 'OnMouseEnter': hovered}" ng-mouseenter = "hovered = true" ng-mouseleave = "hovered = false">
             {{obj.path}}
               <span>
                  ({{obj.count}})

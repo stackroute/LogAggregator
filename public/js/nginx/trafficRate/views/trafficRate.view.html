@@ -24,10 +24,15 @@
         <li ng-repeat="month in months"><a ng-href="" ng-click="renderMonthTraffic(month.month,month.value)">{{month.month}}</a></li>
       </ul>
     </div>
-    <div  class="crossMonthFilter"><a href ng-disabled="monthSwitch" ng-click="monthFilter()" class="btn btn-link"><img src="images/crossCircle.png" alt="cross circle"></a></div>
-    <a href ng-disabled="clearSwitch" ng-click="clearFilters()"  ng-right-click="decrement()" class="btn btn-link" id="clear_filters" >Clear All</a>
+    <div  class="crossMonthFilter">
+      <a  ng-disabled="monthSwitch" ng-click="monthFilter()" class="btn btn-link">
+        <img src="images/crossCircle.png" alt="cross circle">
+      </a>
+    </div>
+    <a  ng-disabled="clearSwitch" ng-click="clearFilters()"  ng-right-click="decrement()" class="btn btn-link" id="clear_filters" >Clear All</a>
 </div>
 </div>
 <div><g></g></div>
 <div class="load"><img class="trafficProgressIcon" ng-show="showProgress" src="svg/cube.svg" alt="progress"></div>
-<div class="traffic well"> <traffic-rate-directive data="trafficData" year="yearSelected" month="monthValue" ></traffic-rate-directive></div>
+<serverdown></serverdown>
+<div class="traffic well"> <traffic-rate-directive data="trafficData" year="yearSelected" month="monthValue"></traffic-rate-directive></div>
