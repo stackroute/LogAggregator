@@ -42,6 +42,9 @@ angular.module('logAggregator').directive('agentPieChart', ['$compile', function
             d3.select(".color-legend").html("");
             d3.select(".wrap .well nodata").html("No data Available");
             return;
+          } else if(data == undefined) {
+            d3.select(".wrap .well nodata").html("Something went wrong. Please wait while we connect to our servers");
+            return;
           }
           d3.select("#donut").html="";
           d3.select(".color-legend").html="";
