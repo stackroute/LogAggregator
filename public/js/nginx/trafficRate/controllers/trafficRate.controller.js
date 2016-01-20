@@ -36,10 +36,11 @@ function($scope, $rootScope, getTrafficData, $interval) {
       }
       );
     } else {
-      $interval.cancel(onComplete());
+      $interval.cancel(onComplete);
     }
   }, $scope.config.refreshInterval);
-  };
+};
+
 
   getTrafficData.getData(currentYear, currentMonth,onComplete).then(function(response) {
     var data = response.data;
