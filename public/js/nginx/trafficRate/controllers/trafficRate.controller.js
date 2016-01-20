@@ -23,22 +23,27 @@ function($scope, $rootScope, getTrafficData, $interval) {
   $scope.monthValue = months[currentMonth-1].value;
   // $scope.trafficData = [{}, {}];
   var onComplete=function(){
-  $interval(function() {
-    if($rootScope.tab == 'requestRate') {
-      getTrafficData.getData($scope.yearSelected, $scope.monthValue).then(
-        function(response) {
-        var data = response.data;
-        $scope.trafficData = data;
-      },function(error){
-        var data = [2];
-        $scope.trafficData = data;
+    var tabListener = $rootScope.$watch("tab", function() {
+      if($rootScope.tab != 'requestRate') {
+        $interval.cancel(off);
+        tabListener();
       }
-      );
-    } else {
-      $interval.cancel(onComplete);
-    }
-  }, $scope.config.refreshInterval);
-  };
+    });
+    var off = $interval(function() {
+      if($rootScope.tab == 'requestRate') {
+        getTrafficData.getData($scope.yearSelected, $scope.monthValue).then(
+          function(response) {
+          var data = response.data;
+          $scope.trafficData = data;
+        },function(error){
+          var data = [2];
+          $scope.trafficData = data;
+        }
+        );
+      }
+    }, $scope.config.refreshInterval);
+};
+
 
   getTrafficData.getData(currentYear, currentMonth,onComplete).then(function(response) {
     var data = response.data;
@@ -52,6 +57,7 @@ function($scope, $rootScope, getTrafficData, $interval) {
   },function(error){
     var data = [2];
     $scope.trafficData = data;
+    $scope.showProgress = false;
     console.log("error");}
   );
 
@@ -79,6 +85,7 @@ function($scope, $rootScope, getTrafficData, $interval) {
     },function(error){
       var data = [2];
       $scope.trafficData = data;
+      $scope.showProgress = false;
       console.log("error");}
     );
   }
@@ -97,12 +104,13 @@ function($scope, $rootScope, getTrafficData, $interval) {
       }
       else{
       $scope.monthSwitch=false;
-        $scope.clearSwitch=false;
+      $scope.clearSwitch=false;
       $scope.showProgress = false;
      }
    },function(error){
      var data = [2];
      $scope.trafficData = data;
+      $scope.showProgress = false;
      console.log("error");}
    );
   }
@@ -123,6 +131,7 @@ function($scope, $rootScope, getTrafficData, $interval) {
     },function(error){
       var data = [2];
       $scope.trafficData = data;
+      $scope.showProgress = false;
       console.log("error");}
     );
   }
@@ -150,6 +159,7 @@ function($scope, $rootScope, getTrafficData, $interval) {
     },function(error){
       var data = [2];
       $scope.trafficData = data;
+      $scope.showProgress = false;
       console.log("error");}
     );
   }
