@@ -12,6 +12,12 @@ function($scope, $rootScope, logService, $interval) {
           if(!angular.equals($scope.Path_Count, response.data.arr)) {
             data =  response.data;
             $scope.Path_Count = data.arr;//path_count data
+            console.log($scope.currentpage);
+            if($scope.currentpage == '1' && $scope.currentpath == 'All') {
+              $scope.pathClickEvent($scope.currentpath, $scope.currentpage);
+            } else if($scope.currentpage == '1'){
+              $scope.pathClickEvent({path : $scope.currentpath}, $scope.currentpage);
+            }
           }
           $scope.showLogProgress = false;
         });  //close then
@@ -27,11 +33,11 @@ function($scope, $rootScope, logService, $interval) {
     $scope.showLogProgress = false;
   });//close then
 
-  $scope.pathClickEvent = function(obj) {
+  $scope.pathClickEvent = function(obj, currentpage) {
     $scope.showLogDataProgress = true;
     currentpath = (obj == "All") ? "All": obj.path;
     $scope.currentpath =  currentpath;
-    logService.getPathData(currentpath,1).then(function(response) {
+    logService.getPathData(currentpath, currentpage).then(function(response) {
         count = response.data.count;
         $scope.view = (obj == "All") ? "All":"path";
         $scope.clickedPath = response.data.collection_data;
@@ -44,7 +50,8 @@ function($scope, $rootScope, logService, $interval) {
             $scope.showLogDataProgress = $scope.showLogProgress;
         });
       });
-    $scope.currentpage = 1;
+      if(!currentpage)
+        $scope.currentpage = 1;
   };//close pathclick event
 
   $scope.pathClickEvent("All");
