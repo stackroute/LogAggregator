@@ -23,6 +23,7 @@ var LogUserSchema = new Schema({
       }, 'Password should be longer'
     ]
   },
+  type : String,
   hash : String,
   provider: {
     type: String,

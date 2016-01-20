@@ -36,7 +36,9 @@ router.get('/', function(req, res) {
 
 router.post('/', function(req, res) {
   if (!req.user) {
+    console.log(req);
     var user = new User(req.body);
+    user.type = 'user';
     var message = null;
 
     user.provider = 'local';
