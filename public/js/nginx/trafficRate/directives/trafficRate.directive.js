@@ -191,7 +191,7 @@ angular.module('logAggregator').directive('trafficRateDirective', function() {
           }
           y.domain([
             d3.min(methods, function(c) { return d3.min(c.values, function(v) { return v.count; }); }),
-            d3.max(methods, function(c) { return d3.max(c.values, function(v) { return v.count; }) * 1.1; })
+            d3.max(methods, function(c) { return (d3.max(c.values, function(v) { return v.count; }))*1.1; })
           ]);
           svg.append("g")
           .attr("class","x axis")

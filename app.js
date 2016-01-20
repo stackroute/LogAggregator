@@ -48,7 +48,6 @@ app.use(session({
   resave: true,
   secret: 'secret'
 }));
-// console.log(passport());
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(logger('dev'));
