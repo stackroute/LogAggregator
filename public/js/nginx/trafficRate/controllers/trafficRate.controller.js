@@ -23,9 +23,25 @@ function($scope, $rootScope, getTrafficData, $interval) {
   $scope.monthValue = months[currentMonth-1].value;
   $scope.trafficData = [{}, {}];
 
+  var onComplete=function(){
+  $interval(function() {
+    if($rootScope.tab == 'requestRate') {
+      getTrafficData.getData($scope.yearSelected, $scope.monthValue).then(
+        function(response) {
+        var data = response.data;
+        $scope.trafficData = data;
+      },function(error){
+        var data = [2];
+        $scope.trafficData = data;
+      }
+      );
+    } else {
+      $interval.cancel(onComplete());
+    }
+  }, $scope.config.refreshInterval);
+  };
 
-
-  getTrafficData.getData(currentYear, currentMonth).then(function(response) {
+  getTrafficData.getData(currentYear, currentMonth,onComplete).then(function(response) {
     var data = response.data;
     $scope.trafficData = data;
     if (Object.keys(data[1]).length == 0) {
@@ -41,30 +57,13 @@ function($scope, $rootScope, getTrafficData, $interval) {
   );
 
 
-  var onComplete=
-  $interval(function() {
-    if($rootScope.tab == 'requestRate') {
-      getTrafficData.getData($scope.yearSelected, $scope.monthValue,onComplete).then(
-        function(response) {
-        var data = response.data;
-        $scope.trafficData = data;
-      },function(error){
-        var data = [2];
-        $scope.trafficData = data;
-      }
-      );
-    } else {
-      $interval.cancel(onComplete);
-    }
-  }, 1000);
-
   $scope.renderYearTraffic = function(year) {
     $scope.yearSelected = year;
     $scope.monthSelected = "Month";
     $scope.monthValue=0;
     month = 0;
     $scope.showProgress = true;
-    getTrafficData.getData(year, month,onComplete).then(function(response) {
+    getTrafficData.getData(year, month).then(function(response) {
       var data = response.data;
       $scope.trafficData = data;
       if (Object.keys(data[1]).length == 0) {
@@ -86,7 +85,7 @@ function($scope, $rootScope, getTrafficData, $interval) {
     $scope.monthSelected = month;
     $scope.monthValue=monthValue;
     $scope.showProgress = true;
-    getTrafficData.getData(year, monthValue,onComplete).then(function(response) {
+    getTrafficData.getData(year, monthValue).then(function(response) {
       var data = response.data;
       $scope.trafficData = data;
       if (year == currentYear && month == currentMonth)
@@ -108,7 +107,7 @@ function($scope, $rootScope, getTrafficData, $interval) {
     $scope.monthSelected = "Month";
     $scope.monthValue = 0;
     $scope.showProgress = true;
-    getTrafficData.getData($scope.yearSelected, 0,onComplete).then( function(response) {
+    getTrafficData.getData($scope.yearSelected, 0).then( function(response) {
       var data = response.data;
       $scope.trafficData = data;
       $scope.monthSwitch = true;
@@ -125,7 +124,7 @@ function($scope, $rootScope, getTrafficData, $interval) {
     $scope.monthSelected = months[currentMonth-1].month;
     $scope.monthValue = months[currentMonth-1].value;
     $scope.showProgress = true;
-    getTrafficData.getData(currentYear, currentMonth,onComplete).then( function(response) {
+    getTrafficData.getData(currentYear, currentMonth).then( function(response) {
       var data = response.data;
       $scope.trafficData = data;
       if (Object.keys(data[1]).length == 0)
