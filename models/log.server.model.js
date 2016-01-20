@@ -12,6 +12,6 @@ var logSchema = new Schema({
   referer : String,
   agent : String,
   time : Date
-},{collection: "logs"})
+},{collection: "logs"})//changed from serverhits
 
 mongoose.model('Logs', logSchema);
