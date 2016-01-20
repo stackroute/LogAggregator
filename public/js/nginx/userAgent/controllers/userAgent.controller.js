@@ -19,29 +19,29 @@ angular.module('logAggregator').controller('userAgentController', ['$scope', '$r
     };
 
     var handleError = function(response, criteria) {
-      $scope.agentData = {};
+      $scope.agentData = undefined;
       $scope.showAgentProgress = false;
     }
 
-    var onComplete =
-    $interval(function() {
-      if($rootScope.tab == 'agentAnalytics') {
-        agentDataService.getAgentData(handleSuccess, handleError, onComplete, $scope.agentCriteria, $scope.agentYear, $scope.agentMonth);
-        console.log("refreshing");
-      } else {
-        $interval.cancel(onComplete);
-      }
-    }, 1000);
+    var onComplete =function() {
+      $interval(function() {
+        if($rootScope.tab == 'agentAnalytics') {
+          agentDataService.getAgentData(handleSuccess, handleError, $scope.agentCriteria, $scope.agentYear, $scope.agentMonth);
+        } else {
+          $interval.cancel(onComplete());
+        }
+      }, 1000);
+    };
 
     $scope.agentCriteria = 'browser';
-    agentDataService.getAgentData(handleSuccess, handleError, onComplete, $scope.agentCriteria, $scope.agentYear, $scope.agentMonth);
+    agentDataService.getAgentData(handleSuccess, handleError, $scope.agentCriteria, $scope.agentYear, $scope.agentMonth, onComplete);
 
     $scope.renderData = function(criteria) {
       $scope.showAgentProgress = true;
       $scope.agentCriteria = criteria;
       var year = $scope.agentYear;
       var month = $scope.agentMonth;
-      agentDataService.getAgentData(handleSuccess, handleError, onComplete, criteria, year, month);
+      agentDataService.getAgentData(handleSuccess, handleError, criteria, year, month);
     }
 
     $scope.updateAgentYear = function(year) {
@@ -49,18 +49,19 @@ angular.module('logAggregator').controller('userAgentController', ['$scope', '$r
       $scope.agentYear = year;
       $scope.agentMonth = 0;
       $scope.agentMonthName = 'Month';
-      agentDataService.getAgentData(handleSuccess, handleError, onComplete, $scope.agentCriteria, year, $scope.agentMonth);
+      agentDataService.getAgentData(handleSuccess, handleError, $scope.agentCriteria, year, $scope.agentMonth);
     }
 
     $scope.updateAgentMonth=function(month){
       $scope.showAgentProgress = true;
       $scope.agentMonth = month.value;
       $scope.agentMonthName = month.month;
-      agentDataService.getAgentData(handleSuccess, handleError, onComplete, $scope.agentCriteria, $scope.agentYear, $scope.agentMonth);
+      agentDataService.getAgentData(handleSuccess, handleError, $scope.agentCriteria, $scope.agentYear, $scope.agentMonth);
     }
 
     $scope.checkIfDisable = function(){
-      return (Object.keys($scope.agentData).length == 0 && $scope.agentMonth == 0)
+      if($scope.agentData)
+        return (Object.keys($scope.agentData).length == 0 && $scope.agentMonth == 0)
     }
   }
 ]);

@@ -9,14 +9,14 @@
  <table ng-hide="showLogProgress">
     <tr>
       <td>
-        <button ng-class = "{btn: true,'withBorder': (view == 'All'), 'btn-default': true , 'mouseover':hovering } "ng-click = 'pathClickEvent("All")' class = "logButtonStyle" ng-mouseenter = "hovering = true" ng-mouseleave = "hovering = false">
+        <button ng-class = "{btn: true,'withBorder': (view == 'All'), 'btn-default': true , 'OnMouseEnter':hover} "ng-click = 'pathClickEvent("All")' class = "logButtonStyle" ng-mouseenter = "hover = true" ng-mouseleave = "hover = false">
             Most Visited Paths
         </button>
       </td>
     </tr>
     <tr ng-repeat="obj in Path_Count">
       <td>
-        <button ng-click= 'pathClickEvent(obj)' class = "logButtonStyle" ng-class = "{btn: true, 'btn-default':true, 'withBorder': (obj.path == currentpath ), 'mouseover': hovering}" ng-mouseenter = "hovering = true" ng-mouseleave = "hovering = false">
+        <button ng-click= 'pathClickEvent(obj)' class = "logButtonStyle" ng-class = "{btn: true, 'btn-default':true, 'withBorder': (obj.path == currentpath ), 'OnMouseEnter': hovered}" ng-mouseenter = "hovered = true" ng-mouseleave = "hovered = false">
             {{obj.path}}
               <span>
                  ({{obj.count}})
@@ -33,30 +33,18 @@
   <img class="LogProgressIcon" ng-show="showLogDataProgress" src="svg/cube.svg" alt="progress">
   <table ng-hide="showLogDataProgress">
     <tr ng-model = "clickedPath[0]">
-      <td ng-repeat = "(key,value) in clickedPath[0]" class = "headings" ng-if = "(view == 'path') && ($index != 0) && ($index != 5) && ($index != 3) && ($index != 10)">
-          {{ key| uppercase }}
-      </td>
-      <td ng-repeat = "(key,value) in clickedPath[0]" ng-if = "(view == 'All') && ($index != 0) && ($index != 3) && ($index != 10)" class = "headings">
-         {{ key| uppercase}}
-      </td>
-    </tr>
+      <td ng-repeat = "(key, value) in clickedPath[0]" class="headings" ng-if="(key=='agent')||(key=='code')||(key=='method')||(key=='agent')||(key=='referer')||(key=='remote')||(key=='size')||(key=='time')||(key=='path')&&(view=='All')"> {{key | uppercase}} </td>
+   </tr>
 
     <tr ng-repeat = "obj in clickedPath">
-      <td ng-repeat = "(key,value) in obj" ng-if = "(key == 'agent')" title= {{value}}>
-         <abbr> {{value | agentFilter }} </abbr>
-      </td>
-      <td ng-repeat = "(key,value) in obj" ng-if="(view=='path') && ($index != 0) && ($index != 5) && ($index != 3) && ($index != 10) && (key != 'size') && (key != 'time') && (key != 'agent')">
-         {{value}}
-      </td>
-      <td ng-repeat = "(key,value) in obj" ng-if = "(view == 'All') && ($index != 0) && ($index != 3) && ($index != 10) && (key != 'size') && (key != 'time') && (key != 'agent')">
-         {{value}}
-      </td>
-      <td ng-repeat = "(key,value) in obj" ng-if = "(key == 'size')" >
-         {{ value | sizeFilter }}
-      </td>
-      <td ng-repeat = "(key,value) in obj" ng-if = "(key == 'time')" >
-         {{ value | date : 'd-MMMM-yyyy HH:mm:ss'}}
-      </td>
+      <td title = {{obj.agent}}> <abbr> {{ obj.agent | agentFilter }} </abbr>   </td>
+      <td > {{ obj.code}}   </td>
+      <td > {{ obj.method}}   </td>
+      <td ng-if="(view =='All')" > {{ obj.path}}   </td>
+      <td > {{ obj.referer}}   </td>
+      <td > {{ obj.remote}}   </td>
+      <td > {{ obj.size | sizeFilter }}   </td>
+      <td> {{ obj.time | date : 'd-MMMM-yyyy HH:mm:ss'}}    </td>
     </tr>
 
   </table>
