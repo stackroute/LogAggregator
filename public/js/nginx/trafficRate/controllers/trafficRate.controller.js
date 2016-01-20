@@ -56,7 +56,7 @@ function($scope, $rootScope, getTrafficData, $interval) {
     } else {
       $interval.cancel(onComplete);
     }
-  }, 1000);
+  }, refreshInterval);
 
   $scope.renderYearTraffic = function(year) {
     $scope.yearSelected = year;

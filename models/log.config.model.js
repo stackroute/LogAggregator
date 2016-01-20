@@ -14,7 +14,8 @@ var LogConfigSchema = new Schema({
       types : String,
       names : String
     }]
-  }
+  },
+  refreshInterval: Number
 },{collection: "log_config"})
 
 mongoose.model('Config', LogConfigSchema);
