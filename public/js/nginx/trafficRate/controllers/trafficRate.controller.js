@@ -54,7 +54,7 @@ function($scope, $rootScope, getTrafficData, $interval) {
       }
       );
     } else {
-      $interval.cancel(onComplete);
+      $interval.cancel(onComplete());
     }
   }, refreshInterval);
 
