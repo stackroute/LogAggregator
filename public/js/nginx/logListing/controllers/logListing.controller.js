@@ -19,7 +19,13 @@ function($scope, $rootScope, logService, $interval) {
       else {
        $interval.cancel(onComplete);
       }
-  },10000);
+  },5000);
+
+  logService.getPath_count().then(function(response) {
+    data =  response.data;
+    $scope.Path_Count = data.arr;//path_count data
+    $scope.showLogProgress = false;
+  });//close then
 
   $scope.pathClickEvent = function(obj) {
     $scope.showLogDataProgress = true;
