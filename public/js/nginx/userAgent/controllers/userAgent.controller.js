@@ -24,13 +24,18 @@ angular.module('logAggregator').controller('userAgentController', ['$scope', '$r
     }
 
     var onComplete =function() {
-      $interval(function() {
+      var tabListener = $rootScope.$watch("tab", function() {
+        if($rootScope.tab != 'agentAnalytics') {
+          $interval.cancel(off);
+          tabListener();
+        }
+      });
+      var off = $interval(function() {
         if($rootScope.tab == 'agentAnalytics') {
           agentDataService.getAgentData(handleSuccess, handleError, $scope.agentCriteria, $scope.agentYear, $scope.agentMonth);
-        } else {
-          $interval.cancel(onComplete());
         }
       }, $scope.config.refreshInterval);
+
     };
 
     $scope.agentCriteria = 'browser';
