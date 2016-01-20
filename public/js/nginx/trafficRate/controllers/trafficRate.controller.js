@@ -21,7 +21,7 @@ function($scope, $rootScope, getTrafficData, $interval) {
   $scope.clearSwitch = false;
   $scope.showProgress = true;
   $scope.monthValue = months[currentMonth-1].value;
-  $scope.trafficData = [{}, {}];
+  // $scope.trafficData = [{}, {}];
 
   var onComplete=function(){
   $interval(function() {
@@ -77,7 +77,11 @@ function($scope, $rootScope, getTrafficData, $interval) {
         $scope.clearSwitch = false;
         $scope.showProgress = false;
       }
-    });
+    },function(error){
+      var data = [2];
+      $scope.trafficData = data;
+      console.log("error");}
+    );
   }
 
   $scope.renderMonthTraffic = function(month, monthValue) {
@@ -97,7 +101,11 @@ function($scope, $rootScope, getTrafficData, $interval) {
         $scope.clearSwitch=false;
       $scope.showProgress = false;
      }
-    });
+   },function(error){
+     var data = [2];
+     $scope.trafficData = data;
+     console.log("error");}
+   );
   }
 
   $scope.monthFilter = function() {
@@ -113,7 +121,11 @@ function($scope, $rootScope, getTrafficData, $interval) {
       $scope.monthSwitch = true;
       $scope.clearSwitch = false;
       $scope.showProgress = false;
-    });
+    },function(error){
+      var data = [2];
+      $scope.trafficData = data;
+      console.log("error");}
+    );
   }
 
   $scope.clearFilters = function() {
@@ -136,7 +148,11 @@ function($scope, $rootScope, getTrafficData, $interval) {
       $scope.monthSwitch = false;
       $scope.clearSwitch = true;
       $scope.showProgress = false;
-    });
+    },function(error){
+      var data = [2];
+      $scope.trafficData = data;
+      console.log("error");}
+    );
   }
 }
 ]);
