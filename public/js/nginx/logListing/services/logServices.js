@@ -29,5 +29,4 @@ angular.module("logAggregator").factory('logService', function($http) {
 
     }//close getPathData
 }//close return
-
 });

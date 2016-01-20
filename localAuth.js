@@ -7,6 +7,7 @@ module.exports = function() {
     User.findOne({
       username: username
     }, function(err, user) {
+      console.log('This is accessing db');
       if (err) {
         return done(err);
       }
@@ -16,6 +17,7 @@ module.exports = function() {
           message: 'Unknown user'
         });
       }
+
       if (!user.authenticate(password)) {
         return done(null, false, {
           message: 'Invalid password'

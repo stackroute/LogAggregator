@@ -21,9 +21,7 @@ function($scope, $rootScope, getTrafficData, $interval) {
   $scope.clearSwitch = false;
   $scope.showProgress = true;
   $scope.monthValue = months[currentMonth-1].value;
-  $scope.trafficData = [{}, {}];
-
-
+  // $scope.trafficData = [{}, {}];
 
   getTrafficData.getData(currentYear, currentMonth).then(function(response) {
     var data = response.data;
@@ -54,9 +52,9 @@ function($scope, $rootScope, getTrafficData, $interval) {
       }
       );
     } else {
-      $interval.cancel(onComplete);
+      $interval.cancel(onComplete());
     }
-  }, 1000);
+  }, $scope.config.refreshInterval);
 
   $scope.renderYearTraffic = function(year) {
     $scope.yearSelected = year;
