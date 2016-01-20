@@ -13,12 +13,11 @@ router.get('/', function(req, res) {
   }
 });
 
-router.post('/', function(req, res) {
+router.post('/',
   passport.authenticate('local', {
    successRedirect: '/',
    failureRedirect: '/signin',
    failureFlash: true
- });
-});
+}));
 
 module.exports = router;
