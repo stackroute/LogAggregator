@@ -30,7 +30,7 @@ angular.module('logAggregator').controller('userAgentController', ['$scope', '$r
         } else {
           $interval.cancel(onComplete());
         }
-      }, refreshInterval);
+      }, $scope.config.refreshInterval);
     };
 
     $scope.agentCriteria = 'browser';
