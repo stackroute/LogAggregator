@@ -396,13 +396,10 @@ serverdown{
     padding-left: 30px;
     margin-top: 30px;
     height: 50px;
+    font-weight: 300;
+    font-size: 17px;
 }
-/*.right-inner-addon i {
-    position: absolute;
-    right: 0px;
-    padding: 10px 12px;
-    pointer-events: none;
-}*/
+
 
 #create{
   padding-left: 10px;
