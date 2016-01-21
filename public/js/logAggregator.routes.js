@@ -2,8 +2,8 @@ angular.module('logAggregator').config(['$routeProvider',
   function($routeProvider) {
     $routeProvider
     .when('/', {
-      templateUrl : 'js/nginx/logListing/views/logListing.view.html',
-      controller : 'logController'
+      templateUrl : 'js/nginx/auth/views/auth.view.html',
+      controller : 'authController'
     })
     .when('/agentAnalytics', {
       templateUrl : 'js/nginx/userAgent/views/userAgent.view.html',
