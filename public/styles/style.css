@@ -320,23 +320,40 @@ serverdown{
 
 /* Traffic Page End*******************************************************************************************/
 
+#main-login-tab .tab-content{
+  width: 100% !important;
+  height: 900px;
+  height: auto;
+  overflow: hidden;
+  border:1px solid #e3e3e3;
+  border-top: none;
+}
+
+.mainpage{
+  padding-left: 0px;
+  padding-right: 0px;
+}
 .login-page{
-  width: 1350px;
+  width: 100%;
   background-color: #222;
+  /*background-color: white;*/
   color: #fff;
   height: 200px;
-  margin-top: -30px;
+  margin-top: -20px;
 }
 .login-page h1{
   font-weight: 600;
   font-size: 50px;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 42px;
+  padding-left: -7px;
 }
 .login-page p{
     font-weight: 500;
     font-size: 30px;
     text-align: center;
+    padding-top: 15px;
+    padding-left: -7px;
 }
 .login-main-tabs{
   height: 400px;
@@ -349,23 +366,25 @@ serverdown{
 }
 .login-tabbable input{
   width: 300px;
-  height: 40px;
   margin-top: 20px;
   margin-left: 100px;
-  padding-left:30px;
   border-radius: 8px;
 }
 .login-tabbable input:focus{
   border-radius: 8px;
 }
 .login-content a{
-  margin-left: 200px;
+  width: 30%;
+  display: block;
+  margin:auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 .login-tabs li a{
-  font-size: 30px;
+  font-size: 20px !important;
 }
 .login-tabs li {
-  width:50%;
+  width:50% !important;
   text-align: center;
 }
 
@@ -375,23 +394,20 @@ serverdown{
 }
 .left-inner-addon input {
     padding-left: 30px;
+    margin-top: 30px;
     height: 50px;
 }
-.left-inner-addon i {
-    padding: 10px 12px;
-    pointer-events: none;
-}
-
-.right-inner-addon {
-    position: relative;
-}
-.right-inner-addon input {
-    padding-right: 30px;
-    height: 50px;
-}
-.right-inner-addon i {
+/*.right-inner-addon i {
     position: absolute;
     right: 0px;
     padding: 10px 12px;
     pointer-events: none;
+}*/
+
+#create{
+  padding-left: 10px;
+}
+
+.homepage{
+  display: none;
 }
