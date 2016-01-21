@@ -5,7 +5,7 @@ require('./configLoad')
 
 var compress = require('compression');
 var express = require('express');
-var passport = require('./passport');
+var passport = require('passport');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -18,7 +18,7 @@ var flash = require('connect-flash');
 var routes = require('./routes/index');
 
 var configRoute = require('./routes/config');
-var authenticate = require('./routes/authenticate');
+var authenticate = require('./routes/authenticate')(passport);
 var userAgent = require('./routes/API/userAgent');
 var logListing = require('./routes/API/logListing');
 var trafficRate = require('./routes/API/trafficRate');
@@ -28,7 +28,7 @@ var trafficRate = require('./routes/API/trafficRate');
 // var signup = require('./routes/auth/signup')
 
 var app = express();
-var passport = passport();
+//var passport = passport();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -62,7 +62,8 @@ app.use('/config', configRoute);
 // app.use('/signin', signin);
 // app.use('/signout', signout);
 // app.use('/signup', signup);
-
+var initPassport = require('./passport-init');
+initPassport(passport);
 app.use('/', routes);
 app.use('/auth', authenticate);
 app.use('/json/userAgent', userAgent);

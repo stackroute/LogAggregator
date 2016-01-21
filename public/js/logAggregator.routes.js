@@ -3,11 +3,11 @@ angular.module('logAggregator').config(['$routeProvider',
     $routeProvider
     .when('/', {
       templateUrl : 'js/nginx/auth/views/auth.view.html',
-      controller : 'login'
+      controller : 'authController'
     })
     .when('/register', {
-      templateUrl : 'js/nginx/Authentication/views/register.view.html',
-      controller : 'register'
+      templateUrl : 'js/nginx/auth/views/register.view.html',
+      controller : 'authController'
     })
     .when('/agentAnalytics', {
       templateUrl : 'js/nginx/userAgent/views/userAgent.view.html',
