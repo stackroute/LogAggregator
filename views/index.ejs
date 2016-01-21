@@ -15,9 +15,13 @@
   <script src="js/lib/d3/d3.min.js"></script>
 </head>
 <body >
+  <div class="container-fluid mainpage">
+    <div class="tabbable" id="main-login-tab">
+      <div class="tab-pane" ng-view=""></div>
+    </div>
+  </div>
 
-  <div class="tab-pane" ng-view=" " ></div>
-  <div ng-class="">
+  <div class="homepage">
     <!--nav bar start -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
@@ -99,15 +103,15 @@
       </div>
     </nav><!-- Navbar End-->
 
-    <div class="container-fluid">
+    <div class="container-fluid ">
       <div class="tabbable" id="main-tab">
-        <ul class="nav nav-tabs">
+        <ul class="nav nav-tabs" >
           <li ng-class="{active: (tab == 'logListing')}"><a ng-href="#logListing" ng-click="tab='logListing'">Log Listing</a></li>
           <li ng-class="{active: (tab == 'agentAnalytics')}"><a ng-href="#agentAnalytics" ng-click="tab='agentAnalytics'">User Agent</a></li>
           <li ng-class="{active: (tab == 'requestRate')}"><a ng-href="#requestRate" ng-click="tab='requestRate'">Request Rate</a></li>
         </ul>
-         <div class="tab-pane" ng-view="">
-         </div>  <!-- end tab-pane -->
+        <div class="tab-pane" ng-view="">
+        </div>  <!-- end tab-pane -->
       </div>
     </div>
 
@@ -123,11 +127,12 @@
   <script src="js/lib/d3-legend/d3-legend.min.js"></script>
   <script src="js/lib/d3-tip/index.js"></script>
 
+  <script type="text/javascript" src="/js/lib/angular/angular.js"></script>
   <script type="text/javascript" src="/js/lib/angular-route/angular-route.js"></script>
 
   <script type="text/javascript" src="/js/application.js"></script>
   <script type="text/javascript" src="/js/logAggregator.controller.js"></script>
-
+  <script type="text/javascript" src="/js/nginx/auth/controllers/auth.controller.js"></script>
   <script type="text/javascript" src="/js/nginx/userAgent/directives/agentPieChart.directive.js"></script>
   <script type="text/javascript" src="/js/nginx/userAgent/services/userAgent.service.js"></script>
   <script type="text/javascript" src="/js/nginx/userAgent/controllers/userAgent.controller.js"></script>
