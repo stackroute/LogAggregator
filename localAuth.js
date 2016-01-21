@@ -7,7 +7,7 @@ module.exports = function() {
     User.findOne({
       username: username
     }, function(err, user) {
-      console.log('This is accessing db');
+      // console.log('This is accessing db');
       if (err) {
         return done(err);
       }
