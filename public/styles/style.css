@@ -352,7 +352,7 @@ serverdown{
   font-size: 50px;
   text-align: center;
   padding-top: 42px;
-  padding-left: -7px;
+  padding-left: -5px;
 }
 .login-page p{
     font-weight: 500;
@@ -371,7 +371,7 @@ serverdown{
 
 }
 .login-tabbable input{
-  width: 90%;
+  width: 91%;
   margin: auto;
   margin-top: 20px;
   border-radius: 5px;
@@ -402,7 +402,7 @@ serverdown{
     position: relative;
 }
 .left-inner-addon input {
-    padding-left: 30px;
+    padding-left: 5.7%;
     margin-top: 25px;
     height: 50px;
     font-weight: 300;
@@ -412,7 +412,8 @@ serverdown{
 
 #create{
   padding-left: 10px;
-  width: 40%;
+  padding-right: 10px;
+  width: 47%;
 }
 
 .homepage{
@@ -438,15 +439,15 @@ serverdown{
   position: absolute;
   font-size: 20px;
   top: 14px;
-  left: 42px;
+  left: 7.5%;
 }
 
 #tab1 .fa-user,.fa-lock{
-  left:125px;
+  left:23%;
 }
 
 #tab2 .fa-lock{
-  left: 42px;
+  left: 7.5%;
 }
 
 #fname,#lname{
