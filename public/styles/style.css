@@ -359,16 +359,19 @@ serverdown{
   height: 400px;
 }
 .login-tabbable{
-  width: 500px;
+  width: 40%;
   margin: auto;
   margin-top: 60px;
 
 }
 .login-tabbable input{
-  width: 300px;
+  width: 90%;
+  margin: auto;
   margin-top: 20px;
-  margin-left: 100px;
-  border-radius: 8px;
+  border-radius: 5px;
+}
+#tab1 input{
+  width: 60%;
 }
 .login-tabbable input:focus{
   border-radius: 8px;
@@ -394,7 +397,7 @@ serverdown{
 }
 .left-inner-addon input {
     padding-left: 30px;
-    margin-top: 30px;
+    margin-top: 25px;
     height: 50px;
     font-weight: 300;
     font-size: 16px;
@@ -403,8 +406,49 @@ serverdown{
 
 #create{
   padding-left: 10px;
+  width: 40%;
 }
 
 .homepage{
   display: none;
+}
+
+.left-inner-addon {
+  position: relative;
+  color: #aaa;
+  font-size: 16px;
+}
+
+.left-inner-addon input {
+  height: 50px;
+  background: #fcfcfc;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  text-indent: 14px;
+}
+
+.left-inner-addon .fa-user,.fa-lock,.fa-envelope,.fa-key {
+  color: #979faf;
+  position: absolute;
+  font-size: 20px;
+  top: 14px;
+  left: 42px;
+}
+
+#tab1 .fa-user,.fa-lock{
+  left:125px;
+}
+
+#tab2 .fa-lock{
+  left: 42px;
+}
+
+#fname,#lname{
+  display: inline;
+  width: 45%;
+  padding-left: 10px;
+}
+
+#fname{
+  margin-left: 5%;
 }
