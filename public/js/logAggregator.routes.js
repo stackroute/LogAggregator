@@ -5,6 +5,10 @@ angular.module('logAggregator').config(['$routeProvider',
       templateUrl : 'js/nginx/auth/views/auth.view.html',
       controller : 'authController'
     })
+    .when('/register', {
+      templateUrl : 'js/nginx/Authentication/views/register.view.html',
+      controller : 'register'
+    })
     .when('/agentAnalytics', {
       templateUrl : 'js/nginx/userAgent/views/userAgent.view.html',
       controller : 'userAgentController'
@@ -16,6 +20,10 @@ angular.module('logAggregator').config(['$routeProvider',
     .when('/requestRate', {
       templateUrl : 'js/nginx/trafficRate/views/trafficRate.view.html',
       controller : 'trafficRateController'
+    })
+    .when('/home', {
+      templateUrl : 'js/nginx/homepage.html',
+      controller : ''
     })
     .otherwise({
       redirectTo : '/'
