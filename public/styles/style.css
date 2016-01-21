@@ -339,8 +339,14 @@ serverdown{
   /*background-color: white;*/
   color: #fff;
   height: 200px;
-  margin-top: -20px;
+  margin-top: -100px;
 }
+
+.container-fluid{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .login-page h1{
   font-weight: 600;
   font-size: 50px;

@@ -55,7 +55,6 @@ angular.module('logAggregator').directive('agentPieChart', ['$compile', function
 
           color.domain(domainNames);
 
-          console.log("rendering ***************************");
           Donut3D.draw("donut", agentData(), 200, 200, 170, 140, 30, 0.4);
 
           colorLegendG.call(colorLegend);
