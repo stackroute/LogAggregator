@@ -320,34 +320,34 @@ serverdown{
 
 /* Traffic Page End*******************************************************************************************/
 
-.loginPage{
+.login-page{
   width: 1350px;
   background-color: #222;
   color: #fff;
   height: 200px;
   margin-top: -30px;
 }
-.loginPage h1{
+.login-page h1{
   font-weight: 600;
   font-size: 50px;
   text-align: center;
   padding-top: 30px;
 }
-.loginPage p{
+.login-page p{
     font-weight: 500;
     font-size: 30px;
     text-align: center;
 }
-.maintabs{
+.login-main-tabs{
   height: 400px;
 }
-.tabbable{
+.login-tabbable{
   width: 500px;
   margin: auto;
   margin-top: 60px;
 
 }
-.tabbable input{
+.login-tabbable input{
   width: 300px;
   height: 40px;
   margin-top: 20px;
@@ -355,16 +355,16 @@ serverdown{
   padding-left:30px;
   border-radius: 8px;
 }
-.tabbable input:focus{
+.login-tabbable input:focus{
   border-radius: 8px;
 }
-.tab-content a{
+.login-content a{
   margin-left: 200px;
 }
-.loginTabs li a{
+.login-tabs li a{
   font-size: 30px;
 }
-.loginTabs li {
+.login-tabs li {
   width:50%;
   text-align: center;
 }
@@ -375,6 +375,7 @@ serverdown{
 }
 .left-inner-addon input {
     padding-left: 30px;
+    height: 50px;
 }
 .left-inner-addon i {
     padding: 10px 12px;
@@ -386,6 +387,7 @@ serverdown{
 }
 .right-inner-addon input {
     padding-right: 30px;
+    height: 50px;
 }
 .right-inner-addon i {
     position: absolute;
