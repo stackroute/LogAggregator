@@ -4,5 +4,6 @@ angular.module('logAggregator').controller('mainController', ['$scope', '$window
         $scope.config = data;
         $window.config = $scope.config;
     });
+    $scope.showContent=false;
   }
 ]);

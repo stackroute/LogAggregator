@@ -22,9 +22,9 @@ var userAgent = require('./routes/API/userAgent');
 var logListing = require('./routes/API/logListing');
 var trafficRate = require('./routes/API/trafficRate');
 
-var signin = require('./routes/auth/signin');
-var signout = require('./routes/auth/signout');
-var signup = require('./routes/auth/signup')
+// var signin = require('./routes/auth/signin');
+// var signout = require('./routes/auth/signout');
+// var signup = require('./routes/auth/signup')
 
 var app = express();
 var passport = passport();
@@ -58,9 +58,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/config', configRoute);
 
-app.use('/signin', signin);
-app.use('/signout', signout);
-app.use('/signup', signup);
+// app.use('/signin', signin);
+// app.use('/signout', signout);
+// app.use('/signup', signup);
 
 app.use('/', routes);
 
