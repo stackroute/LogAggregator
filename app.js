@@ -18,6 +18,7 @@ var flash = require('connect-flash');
 var routes = require('./routes/index');
 
 var configRoute = require('./routes/config');
+var authenticate = require('./routes/authenticate');
 var userAgent = require('./routes/API/userAgent');
 var logListing = require('./routes/API/logListing');
 var trafficRate = require('./routes/API/trafficRate');
@@ -63,7 +64,7 @@ app.use('/config', configRoute);
 // app.use('/signup', signup);
 
 app.use('/', routes);
-
+app.use('/auth', authenticate);
 app.use('/json/userAgent', userAgent);
 app.use('/json/logListing', logListing);
 app.use('/json/trafficRate', trafficRate);

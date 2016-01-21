@@ -3,7 +3,7 @@ angular.module('logAggregator').config(['$routeProvider',
     $routeProvider
     .when('/', {
       templateUrl : 'js/nginx/Authentication/views/login.view.html',
-      //controller : 'login'
+      controller : 'login'
     })
     .when('/register', {
       templateUrl : 'js/nginx/Authentication/views/register.view.html',
