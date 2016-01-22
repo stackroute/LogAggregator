@@ -1,7 +1,10 @@
 /* Navbar styling start */
-.navbar-brand
+.navbar-brand,.navbar
 {
-  padding:13px 15px;
+  padding-left:15px;
+}
+.navbar-right{
+  margin-right: 0px;
 }
 /* Navbar styling end */
 #main-tab{
@@ -283,7 +286,6 @@ td, tr, th{
 
 .traffic{
   width: 700px;
-  height: 500px;
   margin-left: auto;
   margin-right: auto;
   width: 900px;

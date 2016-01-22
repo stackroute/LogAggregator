@@ -24,13 +24,14 @@
           placeholder="Enter Password" required />
         </div>
         <a ng-click="login(username,password)" class="btn btn-success btn-lg active login-button" role="button">Log In</a>
+        <center><h4>{{loginMessage}}</h4></center>
       </div><!-- end tab-pane -->
 
       <div class="tab-pane" id="tab2">
           <div class="left-inner-addon">
-          <input type="text" ng-model="firstName" id="fname" placeholder="First Name" class="form-control" required />
+          <input type="text" id="fname" ng-model="firstName" placeholder="First Name" class="form-control" required />
 
-            <input type="text" ng-model="lastName" id="lname" placeholder="Last Name" class="form-control" required />
+            <input type="text" id="lname" ng-model="lastName" placeholder="Last Name" class="form-control" required />
           </div>
           <div class="left-inner-addon ">
             <span class="fa fa-user"></span>
@@ -42,8 +43,7 @@
           </div>
           <div class="left-inner-addon ">
             <span class="fa fa-lock"></span>
-<input type="password" ng-model="password" placeholder="Password" class="form-control" required />
-
+    <input type="password" ng-model="password" placeholder="Password" class="form-control" required />
           </div>
           <div class="left-inner-addon ">
             <span class="fa fa-key"></span>
