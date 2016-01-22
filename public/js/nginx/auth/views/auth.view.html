@@ -28,9 +28,9 @@
 
       <div class="tab-pane" id="tab2">
           <div class="left-inner-addon">
-          <input type="text" ng-model="firstName" placeholder="First Name" class="form-control" required />
+          <input type="text" ng-model="firstName" id="fname" placeholder="First Name" class="form-control" required />
 
-            <input type="text" ng-model="lastName" placeholder="Last Name" class="form-control" required />
+            <input type="text" ng-model="lastName" id="lname" placeholder="Last Name" class="form-control" required />
           </div>
           <div class="left-inner-addon ">
             <span class="fa fa-user"></span>
@@ -50,9 +50,8 @@
 <input type="password" ng-model="confirmPassword"placeholder="Confirm Password" class="form-control" required />
           <span ng-bind="checkPassword"></a>
           </div>
- <a ng-click='register()' class="btn btn-primary btn-lg active sign-button" id="create" role="button">Create Account</a>
+ <a ng-click='register()' class="btn btn-success btn-lg active sign-button" id="create" role="button">Create Account</a>
 
-          
       </div><!-- end tab-pane -->
     </div><!-- end tab-content -->
   </div><!-- end tabbable -->
