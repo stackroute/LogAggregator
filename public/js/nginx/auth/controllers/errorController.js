@@ -3,7 +3,7 @@ function($scope,$cookies, $http, $rootScope, $location) {
 
   if($cokkies.get('login')=='true'){
     console.log("in errorhandler");
-    $location.path('/logListing');
+    $location.path('/errorhandler');
   }
   else {
     var result=document.getElementsByClassName('homepage');

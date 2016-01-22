@@ -2,6 +2,10 @@ angular.module('logAggregator').controller('authController', ['$scope','$cookies
 function($scope,$cookies, $http, $rootScope, $location) {
 
   $scope.error_message = '';
+  if($cookies.get('login')==='true'){
+    $location.path('/logListing');
+  }
+
   var result=document.getElementsByClassName('homepage');
   angular.element(result).css('display','none');
 
