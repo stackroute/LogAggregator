@@ -2,7 +2,6 @@ angular.module('logAggregator').controller('authController', ['$scope', '$http',
 function($scope, $http, $rootScope, $location) {
 
   $scope.error_message = '';
-
   $scope.login = function(username,password){
     $scope.user={
       username:username,
@@ -18,6 +17,7 @@ function($scope, $http, $rootScope, $location) {
       }
       else{
         $scope.error_message = response.data.message;
+        $rootScope.loginMessage="Invalid username or password";
       }
     });
   };
@@ -36,6 +36,7 @@ $scope.register = function(){
             if(data.state == 'success'){
               $rootScope.authenticated = true;
               $rootScope.current_user = data.user.username;
+              $rootScope.loginMessage="Sign up successfull. Please login to continue.";
               $location.path('/login');
             }
             else{
