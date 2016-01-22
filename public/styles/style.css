@@ -1,4 +1,8 @@
 /* Navbar styling start */
+.navbar-default{
+  background-color: #333;
+  color: #ffffff
+}
 .navbar-brand,.navbar
 {
   padding-left:15px;
@@ -6,6 +10,10 @@
 .navbar-right{
   margin-right: 0px;
 }
+.navbar-nav li a{
+  color: #ffffff !important;
+}
+
 /* Navbar styling end */
 #main-tab{
   margin-top: 100px;
@@ -23,8 +31,8 @@
   text-align: center;
 }
 #main-tab  .nav-tabs li a{
-  color:black;
-  font-size: 14px;
+  color:#fff;
+  font-size: 16px;
   padding-bottom: 17px;
 }
 .tab-content {
@@ -64,8 +72,12 @@
   margin: 15px auto;
 }
 .nav li.active a{
-  background-color: lightblue !important;
+  background-color:#337ab7 !important;
   padding-bottom: 18px;
+}
+.navbar-nav li.active a{
+  background-color: #38474e !important
+  color:#fff;
 }
 .filters .dropdown {
   display : inline-block;
