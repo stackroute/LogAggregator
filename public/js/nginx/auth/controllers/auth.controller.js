@@ -16,6 +16,8 @@ function($scope, $http, $rootScope, $location) {
       if(response.data.state == 'success'){
         $rootScope.authenticated = true;
         $rootScope.current_user = response.data.user.username;
+        var result=document.getElementsByClassName('homepage');
+        angular.element(result).css('display','block');
         $location.path('/logListing');
       }
       else{
