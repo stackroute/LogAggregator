@@ -23,14 +23,14 @@ var LogUserSchema = new Schema({
       }, 'Password should be longer'
     ]
   },
-  type : String,
-  hash : String,
-  provider: {
-    type: String,
-    required: 'Provider is required'
-  },
-  providerId: String,
-  providerData: {},
+  // type : String,
+   hash : String,
+  // provider: {
+  //   type: String,
+  //   required: 'Provider is required'
+  // },
+  // providerId: String,
+  // providerData: {},
   created: {
     type: Date,
     default: Date.now
@@ -45,19 +45,20 @@ LogUserSchema.virtual('fullName').get(function() {
   this.lastName = splitName[1] || '';
 });
 
-LogUserSchema.pre('save', function(next) {
-  if (this.password) {
-    this.hash = new Buffer(crypto.randomBytes(16).toString('base64'), 'base64');
-    this.password = this.hashPassword(this.password);
-  }
-  next();
-});
+// LogUserSchema.pre('save', function(next) {
+//   if (this.password) {
+//     this.hash = new Buffer(crypto.randomBytes(16).toString('base64'), 'base64');
+//     this.password = this.hashPassword(this.password);
+//   }
+//   next();
+// });
 
 LogUserSchema.methods.hashPassword = function(password) {
   return crypto.pbkdf2Sync(password, this.hash, 10000, 64).toString('base64');
 };
 
 LogUserSchema.methods.authenticate = function(password) {
+  console.log("inside log user model");
   return this.password === this.hashPassword(password);
 };
 
