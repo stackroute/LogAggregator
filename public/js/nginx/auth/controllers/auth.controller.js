@@ -40,7 +40,7 @@ $scope.register = function(){
             if(data.state == 'success'){
               $rootScope.authenticated = true;
               $rootScope.current_user = data.user.username;
-              $location.path('/');
+              $location.path('/login');
             }
             else{
               $scope.error_message = data.message;
@@ -53,5 +53,17 @@ $scope.register = function(){
         }
 
   };
+
+  $scope.signout=function(){
+    console.log("inside csignout");
+  var request=  $http.get('/auth/signout');
+  console.log("inside controller");
+
+  request.then(function(response){
+    var result=document.getElementsByClassName('homepage');
+    angular.element(result).css('display','none');
+    $location.path('/');
+  });
+  }
 
 }]);
