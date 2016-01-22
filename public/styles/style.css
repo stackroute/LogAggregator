@@ -1,4 +1,8 @@
 /* Navbar styling start */
+.navbar-default{
+  background-color: #333;
+  color: #ffffff;
+}
 .navbar-brand,.navbar
 {
   padding-left:15px;
@@ -6,6 +10,10 @@
 .navbar-right{
   margin-right: 0px;
 }
+.navbar-nav li a{
+  color: #ffffff !important;
+}
+
 /* Navbar styling end */
 #main-tab{
   margin-top: 100px;
@@ -23,8 +31,9 @@
   text-align: center;
 }
 #main-tab  .nav-tabs li a{
-  color:black;
-  font-size: 14px;
+  color:#337ab7;
+  font-size: 16px;
+  padding-bottom: 17px;
 }
 .tab-content {
   background-color: #F8F8F8;
@@ -63,7 +72,13 @@
   margin: 15px auto;
 }
 .nav li.active a{
-  background-color: lightblue !important;
+  color:#fff !important;
+  background-color:#337ab7 !important;
+  padding-bottom: 18px;
+}
+.navbar-nav li.active a{
+  background-color: #38474e !important;
+  color:#fff !important;
 }
 .filters .dropdown {
   display : inline-block;
@@ -289,6 +304,7 @@ td, tr, th{
   margin-left: auto;
   margin-right: auto;
   width: 900px;
+  min-height: 300px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 25px;
@@ -297,12 +313,13 @@ td, tr, th{
 
 .traffic no_data{
   font-size: 20px;
+  padding-top: 30px;
 }
 .load{
   height: 50px;
 }
 .trafficProgressIcon{
-  margin-left: 47%;
+  margin-left: 48%;
   margin-top: 10px;
 }
 .line {

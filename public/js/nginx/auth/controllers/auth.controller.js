@@ -5,6 +5,7 @@ function($scope,$cookies, $http, $rootScope, $location) {
   if($cookies.get('login')==='true'){
     $location.path('/logListing');
   }
+
   var result=document.getElementsByClassName('homepage');
   angular.element(result).css('display','none');
 
@@ -16,6 +17,7 @@ function($scope,$cookies, $http, $rootScope, $location) {
     $http.post('/auth/login', $scope.user).then(function(response){
       if(response.data.state == 'success'){
         $rootScope.authenticated = true;
+        $rootScope.loginMessage="";
         $rootScope.current_user = response.data.user.username;
         var result=document.getElementsByClassName('homepage');
         angular.element(result).css('display','block');
@@ -58,7 +60,5 @@ $scope.register = function(){
         }
 
   };
-
-
 
 }]);
