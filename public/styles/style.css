@@ -25,6 +25,7 @@
 #main-tab  .nav-tabs li a{
   color:black;
   font-size: 14px;
+  padding-bottom: 17px;
 }
 .tab-content {
   background-color: #F8F8F8;
@@ -64,6 +65,7 @@
 }
 .nav li.active a{
   background-color: lightblue !important;
+  padding-bottom: 18px;
 }
 .filters .dropdown {
   display : inline-block;
@@ -289,6 +291,7 @@ td, tr, th{
   margin-left: auto;
   margin-right: auto;
   width: 900px;
+  min-height: 300px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 25px;
@@ -297,12 +300,13 @@ td, tr, th{
 
 .traffic no_data{
   font-size: 20px;
+  padding-top: 30px;
 }
 .load{
   height: 50px;
 }
 .trafficProgressIcon{
-  margin-left: 47%;
+  margin-left: 48%;
   margin-top: 10px;
 }
 .line {

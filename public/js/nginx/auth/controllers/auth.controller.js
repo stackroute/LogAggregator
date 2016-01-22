@@ -10,6 +10,7 @@ function($scope, $http, $rootScope, $location) {
     $http.post('/auth/login', $scope.user).then(function(response){
       if(response.data.state == 'success'){
         $rootScope.authenticated = true;
+        $rootScope.loginMessage="";
         $rootScope.current_user = response.data.user.username;
         var result=document.getElementsByClassName('homepage');
         angular.element(result).css('display','block');
@@ -50,17 +51,18 @@ $scope.register = function(){
         }
 
   };
-
-  $scope.logout=function(){
-    console.log("inside csignout");
-  var request=  $http.get('/auth/signout');
-  console.log("inside controller");
-
-  request.then(function(response){
-    var result=document.getElementsByClassName('homepage');
-    angular.element(result).css('display','none');
-    $location.path('/');
-  });
-  }
+  //
+  // $scope.logout=function(){
+  //   console.log("inside signout");
+  // var request=  $http.get('/auth/signout');
+  // console.log("inside controller");
+  //
+  // request.then(function(response){
+  //   var result=document.getElementsByClassName('homepage');
+  //   angular.element(result).css('display','none');
+  //
+  //   $location.path('/');
+  // });
+  // }
 
 }]);

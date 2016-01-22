@@ -8,6 +8,7 @@ angular.module('logAggregator').controller('mainController', ['$scope','$rootSco
     $scope.showContent=false;
     $scope.logout=function(){
       console.log("inside csignout");
+      $rootScope.loginMessage="";
    $http.get('/auth/signout').then(function(response){
       var result=document.getElementsByClassName('homepage');
       angular.element(result).css('display','none');
