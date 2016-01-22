@@ -34,7 +34,7 @@ console.log("in authenticate");
 	//log out
 	router.get('/signout', function(req, res) {
 		req.logout();
-		res.redirect('/');
+		res.send({state:'logout',message:"Logged Out Successfully"});
 	});
 
 	return router;
