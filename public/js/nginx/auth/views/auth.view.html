@@ -13,43 +13,46 @@
         <div class="tab-pane active" id="tab1">
         <div class="left-inner-addon ">
           <span class="fa fa-user"></span>
-          <input type="text"
+          <input type="text" ng-model="username"
           class="form-control"
           placeholder="Username" required/>
         </div>
         <div class="left-inner-addon ">
           <span class="fa fa-lock"></span>
-          <input type="text"
+          <input type="password" ng-model="password"
           class="form-control"
           placeholder="Enter Password" required />
         </div>
-        <a href="#" class="btn btn-success btn-lg active login-button" role="button">Log In</a>
+        <a ng-click="login(username,password)" class="btn btn-success btn-lg active login-button" role="button">Log In</a>
       </div><!-- end tab-pane -->
 
       <div class="tab-pane" id="tab2">
           <div class="left-inner-addon">
-          <input type="text" placeholder="First Name" id="fname" class="form-control" required />
+          <input type="text" ng-model="firstName" placeholder="First Name" class="form-control" required />
 
-          <input type="text" placeholder="Last Name" id="lname" class="form-control" required />
+            <input type="text" ng-model="lastName" placeholder="Last Name" class="form-control" required />
           </div>
           <div class="left-inner-addon ">
             <span class="fa fa-user"></span>
-          <input type="text" placeholder="Username" class="form-control" required />
+           <input type="text" ng-model="username" placeholder="User Name" class="form-control" required />
           </div>
           <div class="left-inner-addon ">
             <span class="fa fa-envelope"></span>
-          <input type="email" placeholder="Email" class="form-control" required />
+ <input type="email" ng-model="email" placeholder="Email" class="form-control" required />
           </div>
           <div class="left-inner-addon ">
             <span class="fa fa-lock"></span>
-          <input type="password" placeholder="Password" class="form-control" required />
+<input type="password" ng-model="password" placeholder="Password" class="form-control" required />
+
           </div>
           <div class="left-inner-addon ">
             <span class="fa fa-key"></span>
-          <input type="password" placeholder="Confirm Password" class="form-control" required />
-        </div>
-          <a href="#" class="btn btn-success btn-lg active sign-button" id="create" role="button">Create Account</a>
+<input type="password" ng-model="confirmPassword"placeholder="Confirm Password" class="form-control" required />
+          <span ng-bind="checkPassword"></a>
+          </div>
+ <a ng-click='register()' class="btn btn-primary btn-lg active sign-button" id="create" role="button">Create Account</a>
 
+          
       </div><!-- end tab-pane -->
     </div><!-- end tab-content -->
   </div><!-- end tabbable -->
