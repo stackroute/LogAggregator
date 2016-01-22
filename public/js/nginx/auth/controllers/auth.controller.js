@@ -3,16 +3,12 @@ function($scope, $http, $rootScope, $location) {
 
   $scope.error_message = '';
 
-  console.log($scope.user);
-
   $scope.login = function(username,password){
-    console.log("--- "+username);
     $scope.user={
       username:username,
       password:password
     };
     $http.post('/auth/login', $scope.user).then(function(response){
-      console.log("successssssss");
       if(response.data.state == 'success'){
         $rootScope.authenticated = true;
         $rootScope.current_user = response.data.user.username;
