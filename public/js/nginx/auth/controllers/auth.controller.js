@@ -3,19 +3,17 @@ function($scope, $http, $rootScope, $location) {
 
   $scope.error_message = '';
 
-  console.log($scope.user);
-
   $scope.login = function(username,password){
-    console.log("--- "+username);
     $scope.user={
       username:username,
       password:password
     };
     $http.post('/auth/login', $scope.user).then(function(response){
-      console.log("successssssss");
       if(response.data.state == 'success'){
         $rootScope.authenticated = true;
         $rootScope.current_user = response.data.user.username;
+        var result=document.getElementsByClassName('homepage');
+        angular.element(result).css('display','block');
         $location.path('/logListing');
       }
       else{
@@ -38,7 +36,7 @@ $scope.register = function(){
             if(data.state == 'success'){
               $rootScope.authenticated = true;
               $rootScope.current_user = data.user.username;
-              $location.path('/');
+              $location.path('/login');
             }
             else{
               $scope.error_message = data.message;
@@ -51,5 +49,17 @@ $scope.register = function(){
         }
 
   };
+
+  $scope.signout=function(){
+    console.log("inside csignout");
+  var request=  $http.get('/auth/signout');
+  console.log("inside controller");
+
+  request.then(function(response){
+    var result=document.getElementsByClassName('homepage');
+    angular.element(result).css('display','none');
+    $location.path('/');
+  });
+  }
 
 }]);

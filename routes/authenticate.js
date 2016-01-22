@@ -8,8 +8,7 @@ console.log("in authenticate");
 
 
 	router.get('/success', function(req, res){
-		console.log("inside redirected success");
-		console.log(req.user+"user object is");
+
 		// res.send("success");
 		res.send({state: 'success', user: req.user ? req.user : null});
 	});
@@ -35,7 +34,7 @@ console.log("in authenticate");
 	//log out
 	router.get('/signout', function(req, res) {
 		req.logout();
-		res.redirect('/');
+		res.send({state:'logout',message:"Logged Out Successfully"});
 	});
 
 	return router;
