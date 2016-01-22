@@ -2,11 +2,9 @@ angular.module('logAggregator').controller('authController', ['$scope','$cookies
 function($scope,$cookies, $http, $rootScope, $location) {
 
   $scope.error_message = '';
-<<<<<<< HEAD
   var result=document.getElementsByClassName('homepage');
   angular.element(result).css('display','none');
-=======
->>>>>>> 6bc155f98c3d5320a1dcbc4851e6fd5cac735594
+
   $scope.login = function(username,password){
     $scope.user={
       username:username,
@@ -58,8 +56,5 @@ $scope.register = function(){
         }
 
   };
-  //
-  //
-  // }
 
 }]);

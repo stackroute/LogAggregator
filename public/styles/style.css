@@ -1,7 +1,7 @@
 /* Navbar styling start */
 .navbar-default{
   background-color: #333;
-  color: #ffffff
+  color: #ffffff;
 }
 .navbar-brand,.navbar
 {
@@ -31,7 +31,7 @@
   text-align: center;
 }
 #main-tab  .nav-tabs li a{
-  color:#fff;
+  color:#337ab7;
   font-size: 16px;
   padding-bottom: 17px;
 }
@@ -72,12 +72,13 @@
   margin: 15px auto;
 }
 .nav li.active a{
+  color:#fff !important;
   background-color:#337ab7 !important;
   padding-bottom: 18px;
 }
 .navbar-nav li.active a{
-  background-color: #38474e !important
-  color:#fff;
+  background-color: #38474e !important;
+  color:#fff !important;
 }
 .filters .dropdown {
   display : inline-block;
