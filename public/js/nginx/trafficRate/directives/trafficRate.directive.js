@@ -253,20 +253,3 @@ angular.module('logAggregator').directive('trafficRateDirective', function() {
     }
   }
 });
-//
-// angular.module('logAggregator').directive('a', function() {
-//     return {
-//         restrict: 'E',
-//         scope: {
-//           check: '=ngDisabled',
-//         },
-//         link: function(scope, elem, attrs) {
-//           //  console.log(attrs);
-//             if(attrs.ngClick &&  scope.check){
-//                 elem.on('click', function(e){
-//                     e.preventDefault();
-//                 });
-//             }
-//         }
-//    };
-// });
