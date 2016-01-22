@@ -24,6 +24,7 @@
           placeholder="Enter Password" required />
         </div>
         <a ng-click="login(username,password)" class="btn btn-success btn-lg active login-button" role="button">Log In</a>
+        <center><h4>{{loginMessage}}</h4></center>
       </div><!-- end tab-pane -->
 
       <div class="tab-pane" id="tab2">
@@ -42,16 +43,14 @@
           </div>
           <div class="left-inner-addon ">
             <span class="fa fa-lock"></span>
-<input type="password" ng-model="password" placeholder="Password" class="form-control" required />
-
+    <input type="password" ng-model="password" placeholder="Password" class="form-control" required />
           </div>
           <div class="left-inner-addon ">
             <span class="fa fa-key"></span>
 <input type="password" ng-model="confirmPassword"placeholder="Confirm Password" class="form-control" required />
           <span ng-bind="checkPassword"></a>
           </div>
- <a ng-click='register()' class="btn btn-primary btn-lg btn-success sign-button" id="create" role="button">Create Account</a>
-
+ <a ng-click='register()' class="btn btn-success btn-lg active sign-button" id="create" role="button">Create Account</a>
 
       </div><!-- end tab-pane -->
     </div><!-- end tab-content -->

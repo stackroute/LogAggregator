@@ -285,9 +285,6 @@ td, tr, th{
 }
 
 .traffic{
-  /*background-image: url("../svg/default.svg") !important;
-  background-repeat: no-repeat;
-  background-position: center;*/
   width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -305,7 +302,7 @@ td, tr, th{
   height: 50px;
 }
 .trafficProgressIcon{
-  margin-left: 640px;
+  margin-left: 47%;
   margin-top: 10px;
 }
 .line {
@@ -460,4 +457,46 @@ serverdown{
 
 #fname{
   margin-left: 5%;
+}
+
+********************************* meadia queries ********************************************************
+
+@media (max-width: 320px){
+
+}
+
+@media (max-width: 954px) {
+  .tab-pane h2 {
+    font-size: 23px;
+    font-weight: bold;
+  }
+  .tab-pane small{
+    color: grey;
+  }
+}
+
+@media (max-width: 820px) {
+  .tab-pane h2 {
+    font-size: 20px;
+    padding-left: 1%;
+  }
+  .filters{
+    float: none;
+  }
+}
+
+@media (max-width: 755px){
+  .tab-pane h2 {
+    display: none;
+  }
+  .filters{
+    float: left;
+  }
+}
+
+@media (min-width: 970px){
+  .tab-pane h2 {
+    padding-left: 2%;
+    font-size: 28px;
+  }
 }
