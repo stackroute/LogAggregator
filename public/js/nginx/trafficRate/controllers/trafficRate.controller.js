@@ -45,7 +45,7 @@ function($scope, $rootScope, getTrafficData, $interval) {
 };
 
 
-  getTrafficData.getData(currentYear, currentMonth,onComplete).then(function(response) {
+  getTrafficData.getData($scope.yearSelected, $scope.monthValue,onComplete).then(function(response) {
     var data = response.data;
     $scope.trafficData = data;
     if (Object.keys(data[1]).length == 0) {

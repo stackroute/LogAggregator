@@ -21,10 +21,6 @@ angular.module('logAggregator').config(['$routeProvider',
       templateUrl : 'js/nginx/trafficRate/views/trafficRate.view.html',
       controller : 'trafficRateController'
     })
-    .when('/home', {
-      templateUrl : 'js/nginx/homepage.html',
-      controller : ''
-    })
     .otherwise({
       redirectTo : '/'
     });
