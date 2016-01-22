@@ -1,8 +1,9 @@
-angular.module('logAggregator').controller('authController', ['$scope', '$http','$rootScope','$location',
-function($scope, $http, $rootScope, $location) {
+angular.module('logAggregator').controller('authController', ['$scope','$cookies' ,'$http','$rootScope','$location',
+function($scope,$cookies, $http, $rootScope, $location) {
 
   $scope.error_message = '';
-
+  var result=document.getElementsByClassName('homepage');
+  angular.element(result).css('display','none');
   $scope.login = function(username,password){
     $scope.user={
       username:username,
@@ -14,6 +15,8 @@ function($scope, $http, $rootScope, $location) {
         $rootScope.current_user = response.data.user.username;
         var result=document.getElementsByClassName('homepage');
         angular.element(result).css('display','block');
+        $cookies.put('login','true');
+        console.log("setting cookie value"+$cookies.get('login'));
         $location.path('/logListing');
       }
       else{
@@ -50,16 +53,6 @@ $scope.register = function(){
 
   };
 
-  $scope.logout=function(){
-    console.log("inside csignout");
-  var request=  $http.get('/auth/signout');
-  console.log("inside controller");
 
-  request.then(function(response){
-    var result=document.getElementsByClassName('homepage');
-    angular.element(result).css('display','none');
-    $location.path('/');
-  });
-  }
 
 }]);

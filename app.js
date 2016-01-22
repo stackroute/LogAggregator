@@ -47,7 +47,10 @@ app.use(methodOverride());
 app.use(session({
   saveUninitialized: true,
   resave: true,
-  secret: 'secret'
+  secret: 'secret',
+  cookie:{
+    login:false
+  }
 }));
 app.use(passport.initialize());
 app.use(passport.session());

@@ -1,5 +1,8 @@
-angular.module('logAggregator').controller('trafficRateController', ['$scope', '$rootScope', 'getTrafficData', '$interval',
-function($scope, $rootScope, getTrafficData, $interval) {
+angular.module('logAggregator').controller('trafficRateController', ['$scope','$cookies','$location', '$rootScope', 'getTrafficData', '$interval',
+function($scope,$cookies,$location, $rootScope, getTrafficData, $interval) {
+  if($cookies.get('login')==='true'){
+    var result=document.getElementsByClassName('homepage');
+    angular.element(result).css('display','block');
   $rootScope.tab = 'requestRate';
   var years = [];
   var months = $scope.config.months;
@@ -163,5 +166,9 @@ function($scope, $rootScope, getTrafficData, $interval) {
       console.log("error");}
     );
   }
+}
+else{
+  $location.path('/');
+}
 }
 ]);

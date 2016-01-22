@@ -22,7 +22,8 @@ angular.module('logAggregator').config(['$routeProvider',
       controller : 'trafficRateController'
     })
     .otherwise({
-      redirectTo : '/'
+      redirectTo : '/js/nginx/auth/views/error.view.html',
+      controller : 'errorHandlerController'
     });
   }
 ]);
