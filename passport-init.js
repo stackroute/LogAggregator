@@ -13,8 +13,12 @@ module.exports = function(passport){
 	});
 
 	passport.deserializeUser(function(id, done) {
+		console.log("Session id is"+id);
+		// console.log("request object is"+req.session);
 		User.findById(id, function(err, user) {
 			console.log('deserializing user:',user.username);
+			console.log("inside deserializeUser");
+
 			done(err, user);
 		});
 	});

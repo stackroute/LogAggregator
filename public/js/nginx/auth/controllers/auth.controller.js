@@ -1,7 +1,12 @@
-angular.module('logAggregator').controller('authController', ['$scope', '$http','$rootScope','$location',
-function($scope, $http, $rootScope, $location) {
+angular.module('logAggregator').controller('authController', ['$scope','$cookies' ,'$http','$rootScope','$location',
+function($scope,$cookies, $http, $rootScope, $location) {
 
   $scope.error_message = '';
+<<<<<<< HEAD
+  var result=document.getElementsByClassName('homepage');
+  angular.element(result).css('display','none');
+=======
+>>>>>>> 6bc155f98c3d5320a1dcbc4851e6fd5cac735594
   $scope.login = function(username,password){
     $scope.user={
       username:username,
@@ -14,6 +19,8 @@ function($scope, $http, $rootScope, $location) {
         $rootScope.current_user = response.data.user.username;
         var result=document.getElementsByClassName('homepage');
         angular.element(result).css('display','block');
+        $cookies.put('login','true');
+        console.log("setting cookie value"+$cookies.get('login'));
         $location.path('/logListing');
       }
       else{
@@ -52,17 +59,7 @@ $scope.register = function(){
 
   };
   //
-  // $scope.logout=function(){
-  //   console.log("inside signout");
-  // var request=  $http.get('/auth/signout');
-  // console.log("inside controller");
   //
-  // request.then(function(response){
-  //   var result=document.getElementsByClassName('homepage');
-  //   angular.element(result).css('display','none');
-  //
-  //   $location.path('/');
-  // });
   // }
 
 }]);
