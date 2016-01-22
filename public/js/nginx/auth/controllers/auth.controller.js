@@ -50,7 +50,7 @@ $scope.register = function(){
 
   };
 
-  $scope.signout=function(){
+  $scope.logout=function(){
     console.log("inside csignout");
   var request=  $http.get('/auth/signout');
   console.log("inside controller");
