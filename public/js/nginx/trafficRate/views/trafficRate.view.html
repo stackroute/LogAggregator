@@ -23,10 +23,9 @@
       <ul class="dropdown-menu months" aria-labelledby="dropdownMenu1">
         <li ng-repeat="month in months"><a ng-href="" ng-click="renderMonthTraffic(month.month,month.value)" ng-cloak>{{month.month}}</a></li>
       </ul>
-    </div>
-    <div  class="crossMonthFilter">
       <a  ng-disabled="monthSwitch" ng-click="monthFilter()" class="btn btn-link">
-        <img src="images/crossCircle.png" alt="cross circle">
+        <!-- <img src="images/crossCircle.png" alt="cross circle"> -->
+        <i class="fa fa-times"></i>
       </a>
     </div>
     <a  ng-disabled="clearSwitch" ng-click="clearFilters()"  ng-right-click="decrement()" class="btn btn-link" id="clear_filters" >Clear All</a>

@@ -13,7 +13,9 @@
 .navbar-nav li a{
   color: #ffffff !important;
 }
-
+.btn-success.active{
+  color:#fff !important;
+}
 /* Navbar styling end */
 #main-tab{
   margin-top: 100px;
@@ -31,8 +33,7 @@
   text-align: center;
 }
 #main-tab  .nav-tabs li a{
-  color:#337ab7;
-  font-size: 16px;
+  font-size: 22px;
   padding-bottom: 17px;
 }
 .tab-content {
@@ -242,7 +243,7 @@ td, tr, th{
 }
 
 .changeColour{
-  color: #2c2c2c;
+  color: grey;
 }
 #dropdownMenu2{
   width: 100px;
@@ -274,15 +275,18 @@ td, tr, th{
 .dropdown.month_text{
   padding-right: 0px;
 }
-#clear_filters,.crossMonthFilter{
+#clear_filters{
   padding: 26px 10px 10px 0px;
+  color: #333;
 }
-.crossMonthFilter{
+/*.crossMonthFilter{
   padding-top: 9px;
   padding-left: 0px;
-}
-.crossMonthFilter:hover{
-
+}*/
+.btn{
+   font-size: 18px !important;
+   color: grey !important;
+   font-weight: normal !important;
 }
 #clear_filters:hover{
   color:#660066;
@@ -474,6 +478,9 @@ serverdown{
 
 #fname{
   margin-left: 5%;
+}
+small{
+  font-size: 18px;
 }
 
 ********************************* meadia queries ********************************************************
