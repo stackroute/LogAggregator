@@ -49,7 +49,7 @@ angular.module('logAggregator').directive('trafficRateDirective', function() {
           d3.select('serverdown')
             .html('');
           d3.select('serverdown')
-            .html('Something went wrong! We are trying to get you back.');
+            .html('Something went wrong! Please wait while we connect to our servers');
         }
         else{
         d3.select('serverdown')

@@ -4,25 +4,25 @@
 </div>
 <div class="wrap" ng-init = "tab = 'agentAnalytics'">
   <div class="page-header">
-    <h2><small>This plot gives the browser and os shares of the requests from</small></h2>
+    <h2 class="agent-header"><small>This plot gives the Browser and OS shares of the requests</small></h2>
     <div class="filters">
       <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" type="button" id="yearDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        <button class="btn btn-default dropdown-toggle"  type="button" id="yearDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" ng-cloak>
           {{agentYear}} <span class="caret"></span>
         </button>
         <ul class="dropdown-menu yearSelect" aria-labelledby="yearDropDown">
           <li ng-repeat="year in yearsToShow">
-            <a href='' ng-click="updateAgentYear(year)">{{year}}</a>
+            <a href='' ng-click="updateAgentYear(year)" ng-cloak>{{year}}</a>
           </li>
         </ul>
       </div>
       <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" ng-disabled="checkIfDisable()" type="button" value="0" id="monthDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        <button class="btn btn-default dropdown-toggle" ng-disabled="checkIfDisable()" type="button" value="0" id="monthDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" ng-cloak>
           {{agentMonthName}} <span class="caret"></span>
         </button>
         <ul class="dropdown-menu monthSelect" aria-labelledby="monthDropDown">
           <li ng-repeat='month in config.months'>
-            <a ng-href='' ng-click='updateAgentMonth(month)'>{{month.month}}</a>
+            <a ng-href='' ng-click='updateAgentMonth(month)' ng-cloak>{{month.month}}</a>
           </li>
         </ul>
       </div>

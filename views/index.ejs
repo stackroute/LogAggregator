@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>LogAggregator </title>
   <script type="text/javascript" src="/js/lib/angular/angular.js"></script>
-
+  <script type="text/javascript" src="/js/lib/angular-route/angular-route.js"></script>
+  <script type="text/javascript" src="/js/lib/angular-cookies/angular-cookies.js"></script>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="js/lib/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
@@ -25,17 +26,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/#/"><img src="images/logo.png" alt="Logo" height="100%"></a>
+          <a class="navbar-brand logo" href="/#/">LogAggregator</a>
         </div>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
             <li class="active-nav" ng-class="{active: (tab == 'logListing')}"><a ng-href="#logListing" ng-click="tab='logListing'">Home <i class="fa fa-home fa-fw"></i></a>
             </li>
-
-            <li class="" ><a ng-href="#aboutus">About us</a></li>
+            <li><a ng-href="#aboutus">About us</a></li>
+            <li><a ng-href="#">nginx</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li class="" ><a ng-href="#changepassword">Change Password <i class="fa fa-unlock"></i></a></li>
+            <li class="" ><a ng-href="#changepassword" class="change-pass">Change Password <i class="fa fa-unlock"></i></a></li>
             <li class="" ><a class="btn btn-link" ng-click="logout()">Logout <i class="fa fa-power-off fa-fw"></i></a></li>
           </ul>
         </div>
@@ -70,13 +71,11 @@
   <script src="js/lib/d3-legend/d3-legend.min.js"></script>
   <script src="js/lib/d3-tip/index.js"></script>
 
-  <script type="text/javascript" src="/js/lib/angular/angular.js"></script>
-  <script type="text/javascript" src="/js/lib/angular-route/angular-route.js"></script>
-  <script type="text/javascript" src="/js/lib/angular-cookies/angular-cookies.js"></script>
 
 
   <script type="text/javascript" src="/js/application.js"></script>
   <script type="text/javascript" src="/js/logAggregator.controller.js"></script>
+  <script type="text/javascript" src="/js/nginx/auth/directives/auth.directive.js"></script>
   <script type="text/javascript" src="/js/nginx/auth/controllers/auth.controller.js"></script>
   <script type="text/javascript" src="/js/nginx/userAgent/directives/agentPieChart.directive.js"></script>
   <script type="text/javascript" src="/js/nginx/userAgent/services/userAgent.service.js"></script>
