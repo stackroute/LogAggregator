@@ -400,6 +400,9 @@ serverdown{
   padding-left: 0px;
   padding-right: 0px;
 }
+.login-main{
+  background-image: url("http://www.qhpress.org/quakerpages/qwhp/paper.gif");
+}
 .login-page{
   width: 100%;
   background-color: #222;
@@ -429,7 +432,8 @@ serverdown{
     padding-left: -7px;
 }
 .login-main-tabs{
-  height: 400px;
+  height: 600px;
+
 }
 .login-tabbable{
   width: 40%;
