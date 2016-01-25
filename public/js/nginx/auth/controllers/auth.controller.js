@@ -1,6 +1,6 @@
 angular.module('logAggregator').controller('authController', ['$scope','$cookies' ,'$http','$rootScope','$location',
 function($scope,$cookies, $http, $rootScope, $location) {
-  var EMAIL_REGEXP = /^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{3,5})$/;
+  var EMAIL_REGEXP = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
   var check = false;
   $scope.error_message = '';
   $scope.checkData="";
