@@ -23,6 +23,19 @@
 .btn-success.active{
   color:#fff !important;
 }
+
+.navbar-nav a.nginx {
+    border: 1px solid white;
+    background-color: white !important;
+    color: #333 !important;
+    padding-bottom: 17px;
+}
+
+.navbar-nav a.nginx:hover{
+    background-color: white !important;
+    color: #333 !important;
+}
+
 /* Navbar styling end */
 #main-tab{
   margin-top: 100px;
