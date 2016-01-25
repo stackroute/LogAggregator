@@ -3,7 +3,7 @@ function($scope,$cookies,$location, $rootScope, getTrafficData, $interval) {
   if($cookies.get('login')==='true'){
     var result=document.getElementsByClassName('homepage');
     angular.element(result).css('display','block');
-  $rootScope.tab = 'requestRate';
+  $scope.$parent.tab = 'requestRate';
   var years = [];
   var months = $scope.config.months;
   var currentYear = (new Date).getFullYear();

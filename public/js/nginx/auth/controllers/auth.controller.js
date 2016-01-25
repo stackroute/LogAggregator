@@ -21,6 +21,7 @@ function($scope,$cookies, $http, $rootScope, $location) {
         $rootScope.authenticated = true;
         $rootScope.loginMessage="";
         $rootScope.current_user = response.data.user.username;
+        $rootScope.tab = "logListing";
         var result=document.getElementsByClassName('homepage');
         angular.element(result).css('display','block');
         $cookies.put('login','true');
