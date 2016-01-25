@@ -32,11 +32,11 @@
           <ul class="nav navbar-nav">
             <li class="active-nav" ng-class="{active: (tab == 'logListing')}"><a ng-href="#logListing" ng-click="tab='logListing'">Home <i class="fa fa-home fa-fw"></i></a>
             </li>
-            <li><a ng-href="#aboutus">About us</a></li>
-            <li><a ng-href="#/" ng-click="tab='logListing'">nginx</a></li>
+            <li><a ng-click="aboutus()" class="btn btn-link">About us</a></li>
+            <li><a ng-href="#/" ng-click="tab='logListing'" class="nginx">nginx</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <!-- <li class="" ><a ng-href="#changePassword" class="change-pass">Change Password <i class="fa fa-unlock"></i></a></li> -->
+            <li class="" ><a ng-href="#changePassword" class="change-pass btn btn-link">Change Password <i class="fa fa-unlock"></i></a></li>
             <li class="" ><a class="btn btn-link" ng-click="logout()">Logout <i class="fa fa-power-off fa-fw"></i></a></li>
           </ul>
         </div>
@@ -46,7 +46,7 @@
 
     <div class="container-fluid ">
       <div class="tabbable" id="main-tab">
-        <div class="homepage">
+        <div class="homepage watchlist-tabs">
         <ul class="nav nav-tabs" >
           <li ng-class="{active: (tab == 'logListing')}"><a ng-href="#logListing" ng-click="tab='logListing'">Log Listing</a></li>
           <li ng-class="{active: (tab == 'agentAnalytics')}"><a ng-href="#agentAnalytics" ng-click="tab='agentAnalytics'">User Agent</a></li>
@@ -76,6 +76,7 @@
   <script type="text/javascript" src="/js/application.js"></script>
   <script type="text/javascript" src="/js/logAggregator.controller.js"></script>
   <script type="text/javascript" src="/js/nginx/auth/controllers/auth.controller.js"></script>
+  <script type="text/javascript" src="/js/nginx/auth/controllers/changePasswordController.js"></script>
   <script type="text/javascript" src="/js/nginx/userAgent/directives/agentPieChart.directive.js"></script>
   <script type="text/javascript" src="/js/nginx/userAgent/services/userAgent.service.js"></script>
   <script type="text/javascript" src="/js/nginx/userAgent/controllers/userAgent.controller.js"></script>
