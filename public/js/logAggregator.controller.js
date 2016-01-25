@@ -5,11 +5,17 @@ angular.module('logAggregator').controller('mainController', ['$scope','$cookies
         $scope.config = data;
         $window.config = $scope.config;
     });
-    $scope.changePasswordController=function(){
+    // $scope.changePasswordController=function(){
+    //
+    //   $location.path('/changePassword');
+    // }
+
+    $scope.aboutus=function(){
       var watchlist=document.getElementsByClassName('watchlist-tabs');
       angular.element(watchlist).css('display','none');
-      $location.path('/changePassword');
+      $location.path('/aboutus');
     }
+
     if($cookies.get('login')==='true'){
       var result=document.getElementsByClassName('homepage');
       angular.element(result).css('display','block');
