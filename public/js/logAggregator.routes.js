@@ -10,7 +10,8 @@ angular.module('logAggregator').config(['$routeProvider',
       controller : 'authController'
     })
     .when('/changePassword', {
-      redirectTo : 'js/nginx/auth/views/changePassword.view.html'
+      templateUrl : 'js/nginx/auth/views/changePassword.view.html',
+      controller : 'changePasswordController'
     })
     .when('/agentAnalytics', {
       templateUrl : 'js/nginx/userAgent/views/userAgent.view.html',

@@ -5,6 +5,11 @@ angular.module('logAggregator').controller('mainController', ['$scope','$cookies
         $scope.config = data;
         $window.config = $scope.config;
     });
+    $scope.changePasswordController=function(){
+      var watchlist=document.getElementsByClassName('watchlist-tabs');
+      angular.element(watchlist).css('display','none');
+      $location.path('/changePassword');
+    }
     if($cookies.get('login')==='true'){
       var result=document.getElementsByClassName('homepage');
       angular.element(result).css('display','block');
@@ -13,10 +18,8 @@ angular.module('logAggregator').controller('mainController', ['$scope','$cookies
     else{
     $cookies.put("login",'false');
   }
-    console.log("cookie inside mainController is"+$cookies.get('login'));
     $scope.showContent=false;
     $scope.logout=function(){
-      console.log("inside csignout");
       $rootScope.loginMessage="";
       $rootScope.checkData="";
    $http.get('/auth/signout').then(function(response){
