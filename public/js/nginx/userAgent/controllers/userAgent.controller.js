@@ -6,7 +6,7 @@ angular.module('logAggregator').controller('userAgentController', ['$scope', "$c
       var result=document.getElementsByClassName('homepage');
       angular.element(result).css('display','block');
     var thisYear = (new Date).getFullYear();
-    $rootScope.tab = 'agentAnalytics';
+    $scope.$parent.tab = 'agentAnalytics';
     $scope.agentYear = thisYear;
     var years = [];
     for(var i = parseInt(thisYear); i > thisYear - $scope.config.noOfYears; i--) {

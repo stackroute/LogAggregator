@@ -536,9 +536,73 @@ serverdown{
 .agent-header{
   padding-left: 0%;
 }
-/*h2 small{
-  font-size: 22px;
+
+***************************************** change password ***************************************************
+
+div.inner-addon{
+  display: none;
+}
+
+
+.update-password {
+    width: 400px;
+    margin: auto;
+    height: 200px;
+    background: blue;
+    padding-top: 30px;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+}
+.update-button{
+  margin: auto;
+}
+/*.update-password .fa-lock,.fa-key{
+  display: none;
 }*/
+
+.update-password:hover{
+  background-color: red;
+  width: 700px;
+  margin: auto;
+  padding-top: 30px;
+  height: 390px;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+div:hover .inner-addon{
+  display: block;
+  position: relative;
+  color: #aaa;
+  font-size: 16px;
+}
+.update-password:hover input{
+  width:40%;
+  height: 50px;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  padding-left: 22px;
+  background: #fcfcfc;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  text-indent: 14px;
+}
+.update-password:hover a{
+  width: 25%;
+  display: block;
+  margin:auto;
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+.update-password:hover .fa-lock{
+  display: block;
+  left: 31.5%;
+}
+.update-password:hover .fa-key{
+  display: block;
+  left: 31.5%;
+}
+
 ******************************************** validations ***********************************************
 
 h4.error{

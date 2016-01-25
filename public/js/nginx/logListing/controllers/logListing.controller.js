@@ -3,7 +3,7 @@ function($scope,$cookies,$location, $rootScope, logService, $interval) {
   if($cookies.get('login')==='true'){
     var result=document.getElementsByClassName('homepage');
     angular.element(result).css('display','block');
-  $rootScope.tab = 'logListing';
+  $scope.$parent.tab= 'logListing';
   $scope.showLogProgress = true;
   logService.getPath_count().then(function(response) {
     $scope.Path_Count = response.data.arr;
