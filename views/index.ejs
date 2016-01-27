@@ -4,17 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Tattva</title>
-  <script type="text/javascript" src="/js/lib/angular/angular.js"></script>
-  <script type="text/javascript" src="/js/lib/angular-route/angular-route.js"></script>
-  <script type="text/javascript" src="/js/lib/angular-cookies/angular-cookies.js"></script>
+
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="js/lib/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles/style.css">
+  <script type="text/javascript" src="/js/lib/angular/angular.js"></script>
+  <script type="text/javascript" src="/js/lib/angular-route/angular-route.js"></script>
+  <script type="text/javascript" src="/js/lib/angular-cookies/angular-cookies.js"></script>
+
   <script src="js/lib/d3/d3.min.js"></script>
 </head>
-<body >
+<body>
 
     <div class="homepage">
     <!--nav bar start -------->
@@ -36,7 +39,9 @@
             <li><a ng-href="#/" ng-click="tab='logListing'" class="nginx">nginx</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li class="" ><a ng-href="#changePassword" class="change-pass btn btn-link">Change Password <i class="fa fa-unlock"></i></a></li>
+            <li class="" >
+              <a ng-href="#changePassword" class="change-pass btn btn-link">
+              Change Password <i class="fa fa-unlock"></i></a></li>
             <li class="" ><a class="btn btn-link" ng-click="logout()">Logout <i class="fa fa-power-off fa-fw"></i></a></li>
           </ul>
         </div>
@@ -46,7 +51,7 @@
 
     <div class="container-fluid ">
       <div class="tabbable" id="main-tab">
-        <div class="homepage watchlist-tabs">
+        <div class="homepage watchlist-tabs ng-cloak">
         <ul class="nav nav-tabs" >
           <li ng-class="{active: (tab == 'logListing')}"><a ng-href="#logListing" ng-click="tab='logListing'">Log Listing</a></li>
           <li ng-class="{active: (tab == 'agentAnalytics')}"><a ng-href="#agentAnalytics" ng-click="tab='agentAnalytics'">User Agent</a></li>
@@ -57,10 +62,6 @@
         </div>  <!-- end tab-pane -->
       </div>
     </div>
-
-
-
-
 
   <!-- All Javascript at the bottom of the page for faster page loading -->
 
@@ -83,6 +84,7 @@
   <script src="/js/nginx/trafficRate/directives/trafficRate.directive.js" ></script>
   <script type="text/javascript" src="/js/nginx/trafficRate/services/trafficRate.service.js"></script>
   <script type="text/javascript" src="/js/nginx/trafficRate/controllers/trafficRate.controller.js"></script>
+  <script type="text/javascript" src="/js/nginx/auth/controllers/aboutusController.js"></script>
 
   <script type="text/javascript" src="/js/logAggregator.routes.js"></script>
   <script type="text/javascript" src="/js/logAggregator.service.js"></script>
