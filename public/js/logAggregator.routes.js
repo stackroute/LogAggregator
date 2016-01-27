@@ -9,6 +9,13 @@ angular.module('logAggregator').config(['$routeProvider',
       redirectTo : 'js/nginx/auth/views/auth.view.html',
       controller : 'authController'
     })
+    .when('/changePassword', {
+      templateUrl : 'js/nginx/auth/views/changePassword.view.html',
+      controller : 'changePasswordController'
+    })
+    .when('/aboutus', {
+      templateUrl : 'js/nginx/auth/views/aboutus.view.html'
+    })
     .when('/agentAnalytics', {
       templateUrl : 'js/nginx/userAgent/views/userAgent.view.html',
       controller : 'userAgentController'
@@ -21,8 +28,13 @@ angular.module('logAggregator').config(['$routeProvider',
       templateUrl : 'js/nginx/trafficRate/views/trafficRate.view.html',
       controller : 'trafficRateController'
     })
+    .when('/errorhandler', {
+      templateUrl : 'js/nginx/auth/views/error.view.html',
+      controller : 'errorHandlerController'
+    })
     .otherwise({
-      redirectTo : '/'
+      redirectTo : '/',
+      controller : 'errorHandlerController'
     });
   }
 ]);

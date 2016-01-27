@@ -1,12 +1,48 @@
 /* Navbar styling start */
+.navbar-default{
+  background-color: #333;
+  color: #ffffff;
+}
 .navbar-brand,.navbar
 {
   padding-left:15px;
 }
+.logo{
+  font-size: 21px;
+  padding-left: 6px !important;
+  color:#ffffff !important;
+  text-shadow: 2px 2px 2px #CC3300;
+}
 .navbar-right{
   margin-right: 0px;
 }
+.navbar-nav li a{
+  color: #ffffff !important;
+  font-size: 18px;
+}
+.btn-success.active{
+  color:#fff !important;
+}
+
+.navbar-nav a.nginx {
+    border: 1px solid white;
+    background-color: white !important;
+    color: #333 !important;
+    padding-bottom: 17px;
+}
+
+.navbar-nav a.nginx:hover{
+    background-color: white !important;
+    color: #333 !important;
+}
+
 /* Navbar styling end */
+/* About us page */
+.aboutus{
+  margin: auto; 
+}
+/* About us page styling end */
+
 #main-tab{
   margin-top: 100px;
 }
@@ -23,8 +59,12 @@
   text-align: center;
 }
 #main-tab  .nav-tabs li a{
-  color:black;
-  font-size: 14px;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+.change-pass{
+  font-size: 16px;
+  padding-top: 17px !important;
 }
 .tab-content {
   background-color: #F8F8F8;
@@ -63,7 +103,13 @@
   margin: 15px auto;
 }
 .nav li.active a{
-  background-color: lightblue !important;
+  color:#fff !important;
+  background-color:#337ab7 !important;
+  padding-bottom: 18px;
+}
+.navbar-nav li.active a{
+  background-color: #38474e !important;
+  color:#fff !important;
 }
 .filters .dropdown {
   display : inline-block;
@@ -133,9 +179,26 @@
   float: left;
   width:28%;
   text-align: justify;
-  overflow:scroll;
+  overflow-y:scroll;
   height:500px;
 }
+/*  scroll bar css */
+.logcontainer::-webkit-scrollbar {
+    width: 1.2em;
+    background-color: #F5F5F5;
+}
+
+.logcontainer::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3) !important;
+    border-radius: 8px;
+}
+
+.logcontainer::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 8px;
+  outline: 1px solid slategrey;
+}
+/*  scroll bar css ends*/
 
 .logcontainer table{
   border-collapse:inherit;
@@ -151,6 +214,25 @@
   text-align: center;
   border-top: 1px solid lightgrey;
 }
+
+/*  scroll bar css */
+.PathDataTable::-webkit-scrollbar {
+    width: 1.2em;
+    background-color: #F5F5F5;
+}
+
+.PathDataTable::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3) !important;
+    border-radius: 8px;
+}
+
+.PathDataTable::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 8px;
+}
+
+/*  scroll bar css ends*/
 
 table{
   width: 1000;
@@ -201,7 +283,7 @@ td, tr, th{
 }
 .currentpage{
   color:white;
-  background-color: blue;
+  background-color: #4CAF50;
 }
 .pos {
   display: table-row !important;
@@ -227,7 +309,7 @@ td, tr, th{
 }
 
 .changeColour{
-  color: #2c2c2c;
+  color: grey;
 }
 #dropdownMenu2{
   width: 100px;
@@ -243,11 +325,12 @@ td, tr, th{
 
 .tab-pane h2 {
   display: inline-block;
-  padding-left: 4%;
+  padding-left: 5%;
 }
 
 .tab-pane small{
   display: inline-block;
+  font-size: 22px;
   color: grey;
 }
 
@@ -259,15 +342,18 @@ td, tr, th{
 .dropdown.month_text{
   padding-right: 0px;
 }
-#clear_filters,.crossMonthFilter{
+#clear_filters{
   padding: 26px 10px 10px 0px;
+  color: #333;
 }
-.crossMonthFilter{
+/*.crossMonthFilter{
   padding-top: 9px;
   padding-left: 0px;
-}
-.crossMonthFilter:hover{
-
+}*/
+.btn{
+   font-size: 18px !important;
+   color: grey !important;
+   font-weight: normal !important;
 }
 #clear_filters:hover{
   color:#660066;
@@ -285,13 +371,11 @@ td, tr, th{
 }
 
 .traffic{
-  /*background-image: url("../svg/default.svg") !important;
-  background-repeat: no-repeat;
-  background-position: center;*/
   width: 700px;
   margin-left: auto;
   margin-right: auto;
   width: 900px;
+  min-height: 300px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 25px;
@@ -300,12 +384,13 @@ td, tr, th{
 
 .traffic no_data{
   font-size: 20px;
+  padding-top: 30px;
 }
 .load{
   height: 50px;
 }
 .trafficProgressIcon{
-  margin-left: 640px;
+  margin-left: 48%;
   margin-top: 10px;
 }
 .line {
@@ -334,6 +419,9 @@ serverdown{
 .mainpage{
   padding-left: 0px;
   padding-right: 0px;
+}
+.login-main{
+  background-image: url("http://www.qhpress.org/quakerpages/qwhp/paper.gif");
 }
 .login-page{
   width: 100%;
@@ -364,7 +452,8 @@ serverdown{
     padding-left: -7px;
 }
 .login-main-tabs{
-  height: 400px;
+  height: 600px;
+
 }
 .login-tabbable{
   width: 40%;
@@ -405,7 +494,7 @@ serverdown{
 }
 .left-inner-addon input {
     padding-left: 5.7%;
-    margin-top: 25px;
+    margin-top: 30px;
     height: 50px;
     font-weight: 300;
     font-size: 16px;
@@ -427,6 +516,9 @@ serverdown{
   color: #aaa;
   font-size: 16px;
 }
+.warning{
+   border:1px solid red !important;
+ }
 
 .left-inner-addon input {
   height: 50px;
@@ -460,4 +552,97 @@ serverdown{
 
 #fname{
   margin-left: 5%;
+}
+.agent-header{
+  padding-left: 0%;
+}
+
+***************************************** change password ***************************************************
+
+/*.update-password .fa-lock,.fa-key{
+  display: none;
+}*/
+.update-password{
+  background-color: red;
+  margin: auto;
+  margin-top: 200px;
+  padding-top: 30px;
+  height: 390px;
+}
+
+.update-password input{
+  width:50%;
+  height: 50px;
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+  padding-left: 24px;
+  background: #fcfcfc;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  text-indent: 14px;
+}
+.update-password a{
+  width: 30%;
+  display: block;
+  margin:auto;
+  font-size: 20px;
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+.update-password .fa-lock{
+  display: block;
+  left: 27%;
+}
+.update-password .fa-key{
+  display: block;
+  left: 27%;
+}
+.update-password{
+  border: 1px solid black;
+    width: 50%;
+    margin: auto;
+    margin-top: 180px;
+}
+******************************************** validations ***********************************************
+
+h4.error{
+  color: red;
+}
+
+********************************* meadia queries ********************************************************
+
+@media (max-width: 320px){
+
+}
+
+@media (max-width: 1060px) {
+  .tab-pane h2 {
+    font-weight: bold;
+    padding-left: 0%;
+  }
+  .tab-pane small{
+    font-size: 19px;
+    color: grey;
+  }
+}
+
+@media (max-width: 996px) {
+  .tab-pane h2 {
+    font-weight: bold;
+    padding-left: 0%;
+  }
+  .tab-pane small{
+    font-size: 18px;
+    color: grey;
+  }
+}
+
+@media (max-width: 900px){
+  .tab-pane h2 {
+    display: none;
+  }
+  .filters{
+    float: left;
+  }
 }

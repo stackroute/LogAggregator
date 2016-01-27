@@ -1,7 +1,12 @@
-angular.module('logAggregator').controller('userAgentController', ['$scope', '$rootScope', 'agentDataService', '$interval',
-  function($scope, $rootScope, agentDataService, $interval) {
+angular.module('logAggregator').controller('userAgentController', ['$scope', "$cookies",'$rootScope','$location','agentDataService', '$interval',
+  function($scope,$cookies, $rootScope,$location, agentDataService, $interval) {
+
+    if($cookies.get('login')==='true'){
+
+      var result=document.getElementsByClassName('homepage');
+      angular.element(result).css('display','block');
     var thisYear = (new Date).getFullYear();
-    $rootScope.tab = 'agentAnalytics';
+    $scope.$parent.tab = 'agentAnalytics';
     $scope.agentYear = thisYear;
     var years = [];
     for(var i = parseInt(thisYear); i > thisYear - $scope.config.noOfYears; i--) {
@@ -68,5 +73,10 @@ angular.module('logAggregator').controller('userAgentController', ['$scope', '$r
       if($scope.agentData)
         return (Object.keys($scope.agentData).length == 0 && $scope.agentMonth == 0)
     }
+  }
+
+  else{
+    $location.path('/');
+  }
   }
 ]);

@@ -1,6 +1,9 @@
-angular.module('logAggregator').controller('logController', ['$scope', '$rootScope','logService','$interval',
-function($scope, $rootScope, logService, $interval) {
-  $rootScope.tab = 'logListing';
+angular.module('logAggregator').controller('logController', ['$scope', '$cookies','$location','$rootScope','logService','$interval',
+function($scope,$cookies,$location, $rootScope, logService, $interval) {
+  if($cookies.get('login')==='true'){
+    var result=document.getElementsByClassName('homepage');
+    angular.element(result).css('display','block');
+  $scope.$parent.tab= 'logListing';
   $scope.showLogProgress = true;
   logService.getPath_count().then(function(response) {
     $scope.Path_Count = response.data.arr;
@@ -63,5 +66,9 @@ function($scope, $rootScope, logService, $interval) {
       $scope.clickedPath = response.data.collection_data;
       $scope.showLogDataProgress = false;
     });
-  }//close pagenoClickEventlick event
+  }
+}//close pagenoClickEventlick event
+else{
+  $location.path('/');
+}
 }]);//close fn

@@ -1,5 +1,5 @@
 <div class="page-header">
-  <h2><small> Listing of all requests based on path </small></h2>
+  <h2><small> Listing of all requests based on different paths </small></h2>
 </div>
 
 <!-- **Displaying all paths **********************************************************  -->
@@ -16,9 +16,9 @@
     </tr>
     <tr ng-repeat="obj in Path_Count">
       <td>
-        <button ng-click= 'pathClickEvent(obj)' class = "logButtonStyle" ng-class = "{btn: true, 'btn-default':true, 'withBorder': (obj.path == currentpath ), 'OnMouseEnter': hovered}" ng-mouseenter = "hovered = true" ng-mouseleave = "hovered = false">
+        <button ng-click= 'pathClickEvent(obj)' class = "logButtonStyle" ng-class = "{btn: true, 'btn-default':true, 'withBorder': (obj.path == currentpath ), 'OnMouseEnter': hovered}" ng-mouseenter = "hovered = true" ng-mouseleave = "hovered = false" ng-cloak>
             {{obj.path}}
-              <span>
+              <span ng-cloak>
                  ({{obj.count}})
               </span>
         </button>
@@ -36,7 +36,7 @@
       <td ng-repeat = "(key, value) in clickedPath[0]" class="headings" ng-if="(key=='agent')||(key=='code')||(key=='method')||(key=='agent')||(key=='referer')||(key=='remote')||(key=='size')||(key=='time')||(key=='path')&&(view=='All')"> {{key | uppercase}} </td>
    </tr>
 
-    <tr ng-repeat = "obj in clickedPath">
+    <tr ng-repeat = "obj in clickedPath" ng-cloak>
       <td title = {{obj.agent}}> <abbr> {{ obj.agent | agentFilter }} </abbr>   </td>
       <td > {{ obj.code}}   </td>
       <td > {{ obj.method}}   </td>
@@ -53,7 +53,7 @@
 
   <div ng-hide="showLogDataProgress">
     <span ng-if = "(no_of_pgs > 1)" ng-repeat = "pg in getPgs(no_of_pgs) track by $index">
-       <button  class = "pageno" ng-class = "{'currentpage': ( currentpage == ($index+1) )}" ng-click = 'pagenoClickEvent(($index+1))'>
+       <button  class = "pageno" ng-class = "{'currentpage': ( currentpage == ($index+1) )}" ng-click = 'pagenoClickEvent(($index+1))' ng-cloak>
          {{ $index+1 }}
        </button>
     </span>

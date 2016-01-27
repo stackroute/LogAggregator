@@ -49,7 +49,7 @@ angular.module('logAggregator').directive('trafficRateDirective', function() {
           d3.select('serverdown')
             .html('');
           d3.select('serverdown')
-            .html('Something went wrong! We are trying to get you back.');
+            .html('Something went wrong! Please wait while we connect to our servers');
         }
         else{
         d3.select('serverdown')
@@ -253,20 +253,3 @@ angular.module('logAggregator').directive('trafficRateDirective', function() {
     }
   }
 });
-//
-// angular.module('logAggregator').directive('a', function() {
-//     return {
-//         restrict: 'E',
-//         scope: {
-//           check: '=ngDisabled',
-//         },
-//         link: function(scope, elem, attrs) {
-//           //  console.log(attrs);
-//             if(attrs.ngClick &&  scope.check){
-//                 elem.on('click', function(e){
-//                     e.preventDefault();
-//                 });
-//             }
-//         }
-//    };
-// });
