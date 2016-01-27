@@ -29,14 +29,14 @@ angular.module('logAggregator').controller('userAgentController', ['$scope', "$c
     }
 
     var onComplete =function() {
-      var tabListener = $rootScope.$watch("tab", function() {
-        if($rootScope.tab != 'agentAnalytics') {
+      var tabListener = $scope.$parent.$watch("tab", function() {
+        if($scope.$parent.tab != 'agentAnalytics') {
           $interval.cancel(off);
           tabListener();
         }
       });
       var off = $interval(function() {
-        if($rootScope.tab == 'agentAnalytics') {
+        if($scope.$parent.tab == 'agentAnalytics') {
           agentDataService.getAgentData(handleSuccess, handleError, $scope.agentCriteria, $scope.agentYear, $scope.agentMonth);
         }
       }, $scope.config.refreshInterval);

@@ -26,14 +26,14 @@ function($scope,$cookies,$location, $rootScope, getTrafficData, $interval) {
   $scope.monthValue = months[currentMonth-1].value;
   // $scope.trafficData = [{}, {}];
   var onComplete=function(){
-    var tabListener = $rootScope.$watch("tab", function() {
-      if($rootScope.tab != 'requestRate') {
+    var tabListener = $scope.$parent.$watch("tab", function() {
+      if($scope.$parent.tab != 'requestRate') {
         $interval.cancel(off);
         tabListener();
       }
     });
     var off = $interval(function() {
-      if($rootScope.tab == 'requestRate') {
+      if($scope.$parent.tab == 'requestRate') {
         getTrafficData.getData($scope.yearSelected, $scope.monthValue).then(
           function(response) {
           var data = response.data;
