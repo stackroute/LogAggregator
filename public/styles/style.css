@@ -1,3 +1,4 @@
+
 /* Navbar styling start */
 .navbar-default{
   background-color: #333;
@@ -38,8 +39,24 @@
 
 /* Navbar styling end */
 /* About us page */
-.aboutus{
+div.card {
   margin: auto;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  margin-top: 150px;
+}
+
+div.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px;
+    font-size: 25px;
+}
+
+div.aboutusContainer {
+    padding: 30px;
+    font-size: 18px;
 }
 /* About us page styling end */
 
@@ -59,7 +76,7 @@
   text-align: center;
 }
 #main-tab  .nav-tabs li a{
-  font-size: 20px;
+  font-size: 16px;
   padding-bottom: 15px;
 }
 .change-pass{
