@@ -10,6 +10,7 @@ function($scope,$cookies,$location, $rootScope, logService, $interval) {
   });
   var onComplete =
   $interval(function(){
+    console.log($scope.$parent.tab);
       if($scope.$parent.tab == 'logListing') {
         logService.getPath_count().then(function(response) {
           if(!angular.equals($scope.Path_Count, response.data.arr)) {
