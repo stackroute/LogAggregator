@@ -33,7 +33,15 @@
   <img class="LogProgressIcon" ng-show="showLogDataProgress" src="svg/cube.svg" alt="progress">
   <table ng-hide="showLogDataProgress">
     <tr ng-model = "clickedPath[0]">
-      <td ng-repeat = "(key, value) in clickedPath[0]" class="headings" ng-if="(key=='agent')||(key=='code')||(key=='method')||(key=='agent')||(key=='referer')||(key=='remote')||(key=='size')||(key=='time')||(key=='path')&&(view=='All')"> {{key | uppercase}} </td>
+
+      <td >AGENT  </td>
+      <td >  CODE   </td>
+      <td >METHOD </td>
+      <td ng-if="(view =='All')" > PATH  </td>
+      <td > REFERER </td>
+      <td > REMOTE   </td>
+      <td >SIZE    </td>
+      <td> TIME    </td>
    </tr>
 
     <tr ng-repeat = "obj in clickedPath" ng-cloak>
