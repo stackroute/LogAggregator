@@ -1,3 +1,12 @@
+[ng:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+display: none !important;
+}
+
 /* Navbar styling start */
 .navbar-default{
   background-color: #333;
@@ -39,7 +48,7 @@
 /* Navbar styling end */
 /* About us page */
 .aboutus{
-  margin: auto; 
+  margin: auto;
 }
 /* About us page styling end */
 
