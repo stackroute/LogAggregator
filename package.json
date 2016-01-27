@@ -1,8 +1,12 @@
+
 {
   "name": "LogAggregatorExpress",
   "version": "0.0.0",
   "private": true,
   "scripts": {
+
+    "postinstall": "bower install",
+    "prestart": "npm install",
     "start": "node ./bin/www"
   },
   "dependencies": {
