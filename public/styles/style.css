@@ -454,9 +454,11 @@ serverdown{
 }
 .login-main{
   background-image: url("http://www.qhpress.org/quakerpages/qwhp/paper.gif");
-  /*background-image: url("../images/data.jpg");
-  background-position: left;*/
 }
+/*.login-main-tabs{
+  background-image: url("../images/data.jpg");
+  background-position: left-top;
+}*/
 .login-page{
   width: 100%;
   background-color: #222;
@@ -492,7 +494,7 @@ serverdown{
 .login-tabbable{
   width: 40%;
   margin: auto;
-  margin-top: 60px;
+  padding-top: 60px;
 
 }
 .login-tabbable input{
