@@ -678,12 +678,12 @@ h4.error{
 }
 
 @media (max-width: 900px){
-  .tab-pane h2 {
+  /*.tab-pane h2 {
     display: none;
-  }
-  .filters{
+  }*/
+  /*.filters{
     float: left;
-  }
+  }*/
 }
 
 @media (max-width: 900px){
