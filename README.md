@@ -10,3 +10,6 @@ This application aggregates the logs from different sources and represents them 
 6. To install the dependencies use ```npm install```
 7. Now run the application on a local server using ```npm start```
 8. Now go to any browser and type in the url ```localhost:8080```
+
+###License
+This project is licensed under the terms of the Apache-2.0 license
