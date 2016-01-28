@@ -41,6 +41,7 @@ function($scope,$cookies, $http, $rootScope, $location) {
         var result=document.getElementsByClassName('homepage');
         angular.element(result).css('display','block');
         $cookies.put('login','true');
+        $scope.$parent.clicked="";
         $location.path('/logListing');
       }
       else{

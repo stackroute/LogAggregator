@@ -49,9 +49,11 @@ This code is written by Prateek Reddy Yammanuru, Shiva Manognya Kandikuppa, Uday
         </div>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
-            <li class="active-nav" ng-class="{active: (tab == 'logListing')}"><a ng-href="#logListing" ng-click="tab='logListing'">Home <i class="fa fa-home fa-fw"></i></a>
+            <li ng-class="{active: (tab == 'logListing')}"><a ng-href="#logListing" ng-click="tab='logListing'" class="home">Home <i class="fa fa-home fa-fw"></i></a>
             </li>
-            <li><a ng-click="aboutus()" class="btn btn-link">About us</a></li>
+            <li ng-class="{active: (clicked == 'aboutus')}">
+              <a ng-click="aboutus()" class="btn btn-link">About us</a>
+            </li>
             <li><a ng-href="#/" ng-click="tab='logListing'" class="nginx">nginx</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">

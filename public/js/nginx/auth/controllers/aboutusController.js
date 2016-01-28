@@ -19,6 +19,7 @@ function($scope,$cookies, $http, $rootScope, $location) {
 
   var watchlist=document.getElementsByClassName('watchlist-tabs');
   angular.element(watchlist).css('display','none');
-
+  $scope.$parent.tab="";
+  $scope.$parent.clicked="aboutus";
 
 }]);

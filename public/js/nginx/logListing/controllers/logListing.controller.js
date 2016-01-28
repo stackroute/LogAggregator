@@ -20,6 +20,8 @@ function($scope,$cookies,$location, $rootScope, logService, $interval) {
     var result=document.getElementsByClassName('homepage');
     angular.element(result).css('display','block');
   // if $scope.$parent
+  $scope.$parent.clicked="";
+
   $scope.$parent.tab= 'logListing';
   $rootScope.tab = 'none'
   $scope.showLogProgress = true;
