@@ -344,7 +344,7 @@ td, tr, th{
   color: grey;
 }
 #dropdownMenu2{
-  width: 100px;
+  width: 120px;
 }
 .dropdown.months{
   width: 50px;
@@ -455,9 +455,8 @@ serverdown{
 .login-main{
   background-image: url("http://www.qhpress.org/quakerpages/qwhp/paper.gif");
 }
-/*.login-main-tabs{
+/*.login-main{
   background-image: url("../images/data.jpg");
-  background-position: left-top;
 }*/
 .login-page{
   width: 100%;
