@@ -439,6 +439,8 @@ serverdown{
 }
 .login-main{
   background-image: url("http://www.qhpress.org/quakerpages/qwhp/paper.gif");
+  /*background-image: url("../images/data.jpg");
+  background-position: left;*/
 }
 .login-page{
   width: 100%;
